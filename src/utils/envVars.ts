@@ -1,5 +1,5 @@
 export const IS_MAINNET                 = Boolean(process.env.REACT_APP_IS_MAINNET !== 'false');  // If REACT_APP_IS_MAINNET is unset, set it to true by default
-export const TESTNET_LAUNCHPAD_NAME     = process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME || 'Pyrmont';
+export const TESTNET_LAUNCHPAD_NAME     = process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME || 'Pandora';
 
 // private vars (or derived from)
 export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID     || '';
@@ -8,11 +8,12 @@ export const ENABLE_RPC_FEATURES        = Boolean(INFURA_PROJECT_ID && INFURA_PR
 export const INFURA_URL                 = `https://${IS_MAINNET ? "mainnet" : "goerli"}.infura.io/v3/${INFURA_PROJECT_ID}`;
 
 // public
-export const ETH2_NETWORK_NAME          = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'mainnet' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
-export const TICKER_NAME                = IS_MAINNET ? 'ETH' : 'L15LYX';
+export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'l15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
+export const TICKER_NAME                = IS_MAINNET ? 'LYXt' : 'LYXt';
 export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : 'https://explorer.pandora.l15.lukso.network';
 export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://explorer.vanguard.l15.lukso.network`;
 export const BEACONCHAIN_URL            = `https://explorer.pandora.l15.lukso.network`;
+
 export const FORTMATIC_KEY              = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
 export const CONTRACT_ADDRESS           = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';
 export const MIN_DEPOSIT_CLI_VERSION    = process.env.REACT_APP_MIN_DEPOSIT_CLI_VERSION  || '1.0.0';
@@ -23,16 +24,16 @@ export const TEKU_INSTALLATION_URL      = process.env.REACT_APP_TEKU_INSTALLATIO
 export const MAINNET_LAUNCHPAD_URL      = 'https://launchpad.ethereum.org/'
 export const TESTNET_LAUNCHPAD_URL      = `https://launchpad.l15.lukso.network/`
 
-if(process.env.REACT_APP_ETH_REQUIREMENT && Number.isNaN(Number(process.env.REACT_APP_ETH_REQUIREMENT))) {
-    throw new Error("REACT_APP_ETH_REQUIREMENT must be of type: number")
+if(process.env.REACT_APP_LYXT_REQUIREMENT && Number.isNaN(Number(process.env.REACT_APP_LYXT_REQUIREMENT))) {
+    throw new Error("REACT_APP_LYXT_REQUIREMENT must be of type: number")
 }
-export const ETH_REQUIREMENT            = process.env.REACT_APP_ETH_REQUIREMENT     || 524288;
+export const LYXT_REQUIREMENT            = process.env.REACT_APP_LYXT_REQUIREMENT     || 524288;
 
-// ETH_DEPOSIT_OFFSET is added to the balance of the deposit contract to account for testnet deposit-contracts that allow some number of free deposit
-if(process.env.REACT_APP_ETH_DEPOSIT_OFFSET && Number.isNaN(Number(process.env.REACT_APP_ETH_DEPOSIT_OFFSET))) {
-    throw new Error("REACT_APP_ETH_DEPOSIT_OFFSET must be of type: number")
+// LYXT_DEPOSIT_OFFSET is added to the balance of the deposit contract to account for testnet deposit-contracts that allow some number of free deposit
+if(process.env.REACT_APP_LYXT_DEPOSIT_OFFSET && Number.isNaN(Number(process.env.REACT_APP_LYXT_DEPOSIT_OFFSET))) {
+    throw new Error("REACT_APP_LYXT_DEPOSIT_OFFSET must be of type: number")
 }
-export const ETH_DEPOSIT_OFFSET = Number(process.env.REACT_APP_ETH_DEPOSIT_OFFSET) * Number(!IS_MAINNET) || 0;
+export const LYXT_DEPOSIT_OFFSET = Number(process.env.REACT_APP_LYXT_DEPOSIT_OFFSET) * Number(!IS_MAINNET) || 0;
 
 let forkVersion = Buffer.from('00000000', 'hex')
 if(typeof process.env.REACT_APP_GENESIS_FORK_VERSION === 'string'){
@@ -52,7 +53,7 @@ if(process.env.REACT_APP_EJECTION_PRICE && Number.isNaN(Number(process.env.REACT
 export const EJECTION_PRICE             = process.env.REACT_APP_EJECTION_PRICE || 16;
 
 // BLS signature verification variables
-export const ETHER_TO_GWEI              = 1e9;
-export const MIN_DEPOSIT_AMOUNT         = 1 * ETHER_TO_GWEI;
+export const LUKSO_TO_GWEI              = 1e9;
+export const MIN_DEPOSIT_AMOUNT         = 1 * LUKSO_TO_GWEI;
 export const DOMAIN_DEPOSIT             = Buffer.from('03000000', 'hex');
 export const EMPTY_ROOT                 = Buffer.from('0000000000000000000000000000000000000000000000000000000000000000', 'hex');

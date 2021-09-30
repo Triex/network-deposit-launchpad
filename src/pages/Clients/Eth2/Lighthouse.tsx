@@ -36,7 +36,7 @@ export const LighthouseDetails = ({ shortened }: { shortened?: boolean }) => (
     </SectionTitle>
     <Text className="mt10">
       <FormattedMessage
-        defaultMessage="An Eth2 client with a heavy focus on speed and security. Built by Sigma
+        defaultMessage="An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma
         Prime, an information security and software engineering firm who have
         funded Lighthouse along with the Ethereum Foundation, Consensys, and
         private individuals."
@@ -101,7 +101,7 @@ export const LighthouseDetails = ({ shortened }: { shortened?: boolean }) => (
           </SectionTitle>
           <Text className="mt10">
             <FormattedMessage
-              defaultMessage="Now that the keys are imported, all that is left to do (assuming your beacon node is already
+              defaultMessage="Now that the keys are imported, all that is left to do (assuming your vanguard node is already
                 running) is to run the validator client."
             />
           </Text>
@@ -129,7 +129,7 @@ export const Lighthouse = () => {
   return (
     <PageTemplate
       title={formatMessage(
-        { defaultMessage: 'Eth2 Clients: {clientName}' },
+        { defaultMessage: 'L15 Clients: {clientName}' },
         { clientName: 'Lighthouse' }
       )}
     >

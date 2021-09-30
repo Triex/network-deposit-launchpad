@@ -10,7 +10,7 @@ import { queryBeaconchain } from '../../utils/queryBeaconchain';
 
 export const LandingPage = (): JSX.Element => {
   const [state, setState] = useState({
-    amountEth: 0,
+    amountLyxt: 0,
     totalValidators: 0,
     status: 0,
   });
@@ -19,7 +19,7 @@ export const LandingPage = (): JSX.Element => {
     (async () => {
       const response = await queryBeaconchain();
       setState({
-        amountEth: response.body.amountEth,
+        amountLyxt: response.body.amountLyxt,
         totalValidators: response.body.totalValidators,
         status: response.statusCode,
       });
@@ -31,7 +31,7 @@ export const LandingPage = (): JSX.Element => {
       <AppBar />
       <Hero />
       <NetworkStatus {...{ state }} />
-      <StakingRewards currentStaked={state.amountEth} />
+      <StakingRewards currentStaked={state.amountLyxt} />
       <Introduction />
       <SignupSteps />
       <Upgrades />

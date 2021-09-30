@@ -15,24 +15,24 @@ export interface UpdateClientAction {
   type: ActionTypes.updateClient;
   payload: {
     clientId: ClientId;
-    ethVersion: 1 | 2;
+    luksoVersion: 'Pandora' | 'Vanguard';
   };
 }
 
 export const updateClient = (
   clientId: ClientId,
-  ethVersion: 1 | 2
+  luksoVersion: 'Pandora' | 'Vanguard'
 ): UpdateClientAction => {
   return {
     type: ActionTypes.updateClient,
     payload: {
       clientId,
-      ethVersion,
+      luksoVersion,
     },
   };
 };
 
 export type DispatchClientUpdate = (
   ValidatorId: ClientId,
-  ethVersion: 1 | 2
+  luksoVersion: 'Pandora' | 'Vanguard'
 ) => void;

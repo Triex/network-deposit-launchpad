@@ -65,7 +65,7 @@ export const SignupSteps = (): JSX.Element => {
             })}
             content={intl.formatMessage({
               defaultMessage:
-                'The Eth2 upgrades will only be successful if validators understand the risks and responsibilities.',
+                'The L15 upgrades will only be successful if validators understand the risks and responsibilities.',
             })}
           >
             <Link to={routesEnum.FaqPage} primary>
@@ -80,7 +80,7 @@ export const SignupSteps = (): JSX.Element => {
             title={intl.formatMessage({ defaultMessage: '2. Prep nodes' })}
             content={intl.formatMessage({
               defaultMessage:
-                "You'll need to run an Eth1 and an Eth2 node to become a validator. Take a look at the checklist to prepare yourself and your equipment.",
+                "You'll need to run a L15 node to become a validator. Take a look at the checklist to prepare yourself and your equipment.",
             })}
           >
             <Link to={routesEnum.checklistPage} primary>
@@ -135,7 +135,7 @@ export const SignupSteps = (): JSX.Element => {
             title={intl.formatMessage({ defaultMessage: '5. Time to deposit' })}
             content={intl.formatMessage({
               defaultMessage:
-                "Once you're comfortable, you'll go through generating your keys and depositing your ETH.",
+                "Once you're comfortable, you'll go through generating your keys and depositing your LYXt.",
             })}
           >
             <Link to={routesEnum.acknowledgementPage} primary>

@@ -92,7 +92,7 @@ export const Nimbus = () => {
   return (
     <PageTemplate
       title={formatMessage(
-        { defaultMessage: 'Eth2 Clients: {clientName}' },
+        { defaultMessage: 'L15 Clients: {clientName}' },
         { clientName: 'Nimbus' }
       )}
     >

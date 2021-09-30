@@ -12,7 +12,7 @@ import {
   BeaconchainDepositInterface,
 } from '../../store/reducers';
 import {
-  ETHER_TO_GWEI,
+  LUKSO_TO_GWEI,
   BEACONCHAIN_URL,
   MIN_DEPOSIT_AMOUNT,
   MIN_DEPOSIT_CLI_VERSION,
@@ -64,7 +64,7 @@ const validateFieldFormatting = (
   // check the deposit amount
   if (
     depositDatum.amount < MIN_DEPOSIT_AMOUNT ||
-    depositDatum.amount > 32 * ETHER_TO_GWEI
+    depositDatum.amount > 32 * LUKSO_TO_GWEI
   ) {
     return false;
   }

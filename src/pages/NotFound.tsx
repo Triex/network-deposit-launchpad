@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-import EthDiamondPlain from '../static/eth-diamond-plain.svg';
+import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { Text } from '../components/Text';
 import { Link } from '../components/Link';
 
@@ -15,8 +15,10 @@ const LogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-const EthLogo = styled.img`
+const LuksoLogo = styled.img`
   height: 100px;
+  width: 100px;
+  margin: 0 auto;
 `;
 const LogoText = styled(Text)`
   font-weight: bold;
@@ -47,9 +49,9 @@ export const NotFoundPage = (): JSX.Element => {
     <RainbowBackground>
       <Content>
         <LogoContainer>
-          <EthLogo src={EthDiamondPlain} />
+          <LuksoLogo src={LuksoLogoPng} />
           <LogoText className="mt20" center size="large">
-            Eth2 Launchpad
+            LUKSO L15 Testnet Launchpad
           </LogoText>
         </LogoContainer>
         <Text center className="mt20">

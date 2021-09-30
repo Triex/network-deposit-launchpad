@@ -38,7 +38,7 @@ export const NethermindDetails = () => (
         <FormattedMessage defaultMessage="Setup" />
       </SectionTitle>
       <Text className="mb20 mt10">
-        <FormattedMessage defaultMessage="Make sure you do the following to get your Eth1 client working properly." />
+        <FormattedMessage defaultMessage="Make sure you do the following to get your Pandora client working properly." />
       </Text>
       {IS_MAINNET && (
         <>
@@ -91,7 +91,7 @@ export const NethermindDetails = () => (
       </Heading>
       <Text className="mt10">
         <FormattedMessage
-          defaultMessage="Use {http} to connect your Eth2 node to the JSON RPC
+          defaultMessage="Use {http} to connect your L15 node to the JSON RPC
           endpoint. This will enable the JSON RPC services on the default 8545
           port."
           values={{

@@ -19,7 +19,7 @@ import { web3ReactInterface } from '../ConnectWallet';
 import { queryBeaconchain } from '../../utils/queryBeaconchain';
 import { DepositKeyInterface, StoreState } from '../../store/reducers';
 import { WorkflowStep } from '../../store/actions/workflowActions';
-import calculateEth2Rewards from '../../utils/calculateEth2Rewards';
+import calculateLyxtRewards from '../../utils/calculateLyxtRewards';
 import {
   PRICE_PER_VALIDATOR,
   TESTNET_LAUNCHPAD_NAME,
@@ -29,7 +29,7 @@ import {
   TICKER_NAME,
 } from '../../utils/envVars';
 import { routesEnum } from '../../Routes';
-import LeslieTheRhinoPNG from '../../static/eth2-leslie-rhino.png';
+import LuksoArtJpg from '../../static/LUKSO-art-800x1200.jpg';
 import { Button } from '../../components/Button';
 import { routeToCorrectWorkflowStep } from '../../utils/RouteToCorrectWorkflowStep';
 import {
@@ -182,7 +182,7 @@ const ChecklistAlert = styled.div`
   }
 `;
 
-const Leslie = styled.img.attrs({ src: LeslieTheRhinoPNG })`
+const LuksoArt = styled.img.attrs({ src: LuksoArtJpg })`
   width: 200px;
   transform: scale(-1.2, 1.2);
   margin: 3rem 0 5rem 4rem;
@@ -205,7 +205,7 @@ const _CongratulationsPage = ({
   dispatchTransactionStatusUpdate,
 }: Props): JSX.Element => {
   const [state, setState] = useState({
-    amountEth: 0,
+    amountLyxt: 0,
     status: 0,
   });
   const { status } = state;
@@ -232,7 +232,7 @@ const _CongratulationsPage = ({
 
   const actualTxConfirmed = totalTxCount - remainingTxCount;
 
-  const currentAPR = calculateEth2Rewards({ totalAtStake: state.amountEth });
+  const currentAPR = calculateLyxtRewards({ totalAtStake: state.amountLyxt });
   const formattedAPR = (Math.round(currentAPR * 1000) / 10).toLocaleString();
 
   const handleAllTransactionsClick = () => {
@@ -250,7 +250,7 @@ const _CongratulationsPage = ({
     (async () => {
       const response = await queryBeaconchain();
       setState({
-        amountEth: response.body.amountEth,
+        amountLyxt: response.body.amountLyxt,
         status: response.statusCode,
       });
     })();
@@ -485,15 +485,15 @@ const _CongratulationsPage = ({
             </div>
           )}
           <ChecklistAlert>
-            <Leslie />
+            <LuksoArt />
             <div>
               <div className="flex">
                 <Heading level={3} size="medium" color="white" margin="none">
-                  <FormattedMessage defaultMessage="Thank you for supporting the Eth2 network!" />
+                  <FormattedMessage defaultMessage="Thank you for supporting the LUKSO L15 ephemeral testnet!" />
                 </Heading>
                 <Text color="white" className="mt10">
                   <FormattedMessage
-                    defaultMessage="Be sure to complete the {stakerChecklist} as soon as possible. And join the EthStaker community for support and discussion with fellow validators."
+                    defaultMessage="Be sure to complete the {stakerChecklist} as soon as possible. And join the LUKSO Discord community (#validators channel) for support and discussion with fellow validators."
                     values={{
                       stakerChecklist: (
                         <strong>
@@ -516,13 +516,13 @@ const _CongratulationsPage = ({
                   </Link>
                   <Link
                     isTextLink={false}
-                    to="https://invite.gg/ethstaker"
+                    to="https://discord.gg/E2rJPP4"
                     className="mt20"
                   >
                     <Button
                       fullWidth
                       label={formatMessage({
-                        defaultMessage: 'EthStaker community',
+                        defaultMessage: 'LUKSO validators community',
                       })}
                     />
                   </Link>

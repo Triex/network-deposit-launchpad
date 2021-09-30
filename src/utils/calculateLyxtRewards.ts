@@ -1,4 +1,4 @@
-export interface CalculateEth2RewardsParams {
+export interface CalculateLyxtRewardsParams {
   slotTimeInSec?: number;
   slotsInEpoch?: number;
   baseRewardFactor?: number;
@@ -11,7 +11,7 @@ export interface CalculateEth2RewardsParams {
   validatorDeposit?: number;
 }
 
-const calculateEth2Rewards = ({
+const calculateLyxtRewards = ({
   slotTimeInSec = 12,
   slotsInEpoch = 32,
   baseRewardFactor = 64,
@@ -22,7 +22,7 @@ const calculateEth2Rewards = ({
   oneSlotLatePenalty = 0.0156,
   vaildatorUptime = 0.99,
   validatorDeposit = 32,
-}: CalculateEth2RewardsParams): number => {
+}: CalculateLyxtRewardsParams): number => {
   // Calculate number of epochs per year
   const avgSecInYear = 31556908.8; // 60 * 60 * 24 * 365.242
   const epochPerYear = avgSecInYear / (slotTimeInSec * slotsInEpoch);
@@ -65,4 +65,4 @@ const calculateEth2Rewards = ({
   return netRewardPerYear / 10e8 / validatorDeposit;
 };
 
-export default calculateEth2Rewards;
+export default calculateLyxtRewards;
