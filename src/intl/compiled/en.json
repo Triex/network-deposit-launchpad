@@ -339,6 +339,12 @@
       "value": "Validators FAQ"
     }
   ],
+  "0rSYdi": [
+    {
+      "type": 0,
+      "value": "Formerly known as Artemis, Teku is a Eth2/Vanguard client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
+    }
+  ],
   "0uqjBl": [
     {
       "type": 0,
@@ -357,6 +363,12 @@
     {
       "type": 0,
       "value": ", Eth1 is ~400GB and growing at ~1GB/day)."
+    }
+  ],
+  "1/7k1h": [
+    {
+      "type": 0,
+      "value": "An Ethereum/Pandora client with a huge pool of developers. It's perfect for enterprise-grade systems."
     }
   ],
   "122+yR": [
@@ -837,12 +849,6 @@
       "value": "You're joining a network in its early stages. As with any new piece of software, there is the potential for software bugs. While unlikely, potential bugs may result in slashing."
     }
   ],
-  "6zye8g": [
-    {
-      "type": 0,
-      "value": "An implementation of the Eth2 protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
-    }
-  ],
   "7+Domh": [
     {
       "type": 0,
@@ -935,12 +941,6 @@
       "value": "More on LUKSO economics"
     }
   ],
-  "7lhBkq": [
-    {
-      "type": 0,
-      "value": "Use L15LYX to sync the L15 testnet."
-    }
-  ],
   "7s6XNV": [
     {
       "type": 0,
@@ -1025,12 +1025,6 @@
     {
       "type": 0,
       "value": "Your balance is updated periodically by the LUKSO network rules as you carry (or fail to carry) out your responsibilities."
-    }
-  ],
-  "8wd0q5": [
-    {
-      "type": 0,
-      "value": "An Ethereum client designed to be enterprise-friendly for both public and private, permissioned network use cases."
     }
   ],
   "9+Ddtu": [
@@ -1277,6 +1271,12 @@
     {
       "type": 0,
       "value": "Download MetaMask"
+    }
+  ],
+  "BRAe8M": [
+    {
+      "type": 0,
+      "value": "Use L15LYXT to sync the L15 testnet."
     }
   ],
   "BWbrLK": [
@@ -1617,12 +1617,6 @@
       "value": "Try again"
     }
   ],
-  "FfLWt5": [
-    {
-      "type": 0,
-      "value": "An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems."
-    }
-  ],
   "FgraU0": [
     {
       "type": 0,
@@ -1801,6 +1795,12 @@
     {
       "type": 0,
       "value": "Can I change the withdrawal credentials of my validator after the first deposit?"
+    }
+  ],
+  "IBLsVn": [
+    {
+      "type": 0,
+      "value": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
     }
   ],
   "IJw06E": [
@@ -2425,6 +2425,12 @@
       "value": "As a validator, you'll need to have funds at stake so you can be penalized for behaving dishonestly."
     }
   ],
+  "P+zdRh": [
+    {
+      "type": 0,
+      "value": "An implementation of the Eth2/Vanguard protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
+    }
+  ],
   "P7/KZ1": [
     {
       "type": 0,
@@ -2603,12 +2609,6 @@
     {
       "type": 0,
       "value": " to use this launchpad."
-    }
-  ],
-  "QomLca": [
-    {
-      "type": 0,
-      "value": "Formerly known as Artemis, Teku is a Vanguard/Eth2 client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
     }
   ],
   "QqqeNk": [
@@ -2821,6 +2821,12 @@
     {
       "type": 0,
       "value": "rpc-http-enabled documentation"
+    }
+  ],
+  "TuaESA": [
+    {
+      "type": 0,
+      "value": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum/Pandora client”."
     }
   ],
   "U/NPbq": [
@@ -4077,12 +4083,6 @@
       "value": "With transfers disabled for now, you won't be able to voluntarily exit and then restart later. This means you need to be in it for the long haul."
     }
   ],
-  "iRQxxL": [
-    {
-      "type": 0,
-      "value": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
-    }
-  ],
   "iWg7mL": [
     {
       "type": 0,
@@ -4653,12 +4653,6 @@
       "value": "Responsibilities"
     }
   ],
-  "okxBZ6": [
-    {
-      "type": 0,
-      "value": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum client”."
-    }
-  ],
   "omJNJw": [
     {
       "type": 0,
@@ -4851,12 +4845,6 @@
     {
       "type": 0,
       "value": "Save the key files and get the validator file ready"
-    }
-  ],
-  "qpdTjz": [
-    {
-      "type": 0,
-      "value": "An Eth2 client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
     }
   ],
   "qwh6gM": [
@@ -5347,6 +5335,12 @@
       "value": "."
     }
   ],
+  "w40kaM": [
+    {
+      "type": 0,
+      "value": "An Ethereum/Pandora client designed to be enterprise-friendly for both public and private, permissioned network use cases."
+    }
+  ],
   "w6qYSU": [
     {
       "type": 0,
@@ -5565,6 +5559,12 @@
     {
       "type": 0,
       "value": "More on Lighthouse and Sigma Prime"
+    }
+  ],
+  "zM5D6p": [
+    {
+      "type": 0,
+      "value": "Nimbus is a client implementation for both Eth1/Pandora and Eth2/Vanguard that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
     }
   ],
   "zPLWB2": [

@@ -19,7 +19,7 @@ export const NimbusDetails = ({ shortened }: { shortened?: boolean }) => (
     </SectionTitle>
     <Text className="mt10">
       <FormattedMessage
-        defaultMessage="Nimbus is a client implementation for both Eth1 and Eth2
+        defaultMessage="Nimbus is a client implementation for both Eth1/Pandora and Eth2/Vanguard
                         that strives to be as lightweight as possible in terms of resources used.
                         This allows it to perform well on embedded systems, resource-restricted devices --
                         including Raspberry Pis -- and multi-purpose servers."

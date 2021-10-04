@@ -16,7 +16,7 @@ export const OpenEthereumDetails = () => (
     <Text className="mt10">
       <FormattedMessage
         defaultMessage="Formerly Parity, OpenEthereum is designed to be “the fastest,
-          lightest, and most secure Ethereum client”."
+          lightest, and most secure Ethereum/Pandora client”."
       />
     </Text>
     <SectionTitle level={2} className="mb5">

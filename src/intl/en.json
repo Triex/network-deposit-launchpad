@@ -122,11 +122,17 @@
   "0oNdmk": {
     "message": "Validators FAQ"
   },
+  "0rSYdi": {
+    "message": "Formerly known as Artemis, Teku is a Eth2/Vanguard client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
+  },
   "0uqjBl": {
     "message": "Earn continuous rewards for providing a public good to the community."
   },
   "0zaPZK": {
     "message": "You'll need a significant amount of space for the Pandora chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
+  },
+  "1/7k1h": {
+    "message": "An Ethereum/Pandora client with a huge pool of developers. It's perfect for enterprise-grade systems."
   },
   "122+yR": {
     "message": "withdrawal key"
@@ -304,9 +310,6 @@
   "6nh4de": {
     "message": "You're joining a network in its early stages. As with any new piece of software, there is the potential for software bugs. While unlikely, potential bugs may result in slashing."
   },
-  "6zye8g": {
-    "message": "An implementation of the Eth2 protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
-  },
   "7+Domh": {
     "message": "Notes"
   },
@@ -343,9 +346,6 @@
   },
   "7iEYck": {
     "message": "More on LUKSO economics"
-  },
-  "7lhBkq": {
-    "message": "Use L15LYX to sync the L15 testnet."
   },
   "7s6XNV": {
     "message": "Staking and rewards"
@@ -386,9 +386,6 @@
   },
   "8sTrb4": {
     "message": "Your balance is updated periodically by the LUKSO network rules as you carry (or fail to carry) out your responsibilities."
-  },
-  "8wd0q5": {
-    "message": "An Ethereum client designed to be enterprise-friendly for both public and private, permissioned network use cases."
   },
   "9+Ddtu": {
     "message": "Next"
@@ -491,6 +488,9 @@
   },
   "BPpnlJ": {
     "message": "Download MetaMask"
+  },
+  "BRAe8M": {
+    "message": "Use L15LYXT to sync the L15 testnet."
   },
   "BWbrLK": {
     "message": "Once you're comfortable, you'll go through generating your keys and depositing your LYXt."
@@ -642,9 +642,6 @@
   "FazwRl": {
     "message": "Try again"
   },
-  "FfLWt5": {
-    "message": "An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems."
-  },
   "FgraU0": {
     "message": "Step 1: Download the deposit command line interface app for your operating system"
   },
@@ -729,6 +726,9 @@
   },
   "I5lWZA": {
     "message": "Can I change the withdrawal credentials of my validator after the first deposit?"
+  },
+  "IBLsVn": {
+    "message": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
   },
   "IJw06E": {
     "message": "Sign transaction with your wallet"
@@ -974,6 +974,9 @@
   "P+nziG": {
     "message": "As a validator, you'll need to have funds at stake so you can be penalized for behaving dishonestly."
   },
+  "P+zdRh": {
+    "message": "An implementation of the Eth2/Vanguard protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
+  },
   "P7/KZ1": {
     "message": "The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L15 is the ephemeral testnet prior to L16, and mainnet launch."
   },
@@ -1033,9 +1036,6 @@
   },
   "QnS0CA": {
     "message": "Your wallet should be set to {networkName} to use this launchpad."
-  },
-  "QomLca": {
-    "message": "Formerly known as Artemis, Teku is a Vanguard/Eth2 client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
   },
   "QqqeNk": {
     "message": "Transaction rejected"
@@ -1133,6 +1133,9 @@
   },
   "Tpe6yK": {
     "message": "rpc-http-enabled documentation"
+  },
+  "TuaESA": {
+    "message": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum/Pandora client”."
   },
   "U/NPbq": {
     "message": "German"
@@ -1626,9 +1629,6 @@
   "iPRnRG": {
     "message": "With transfers disabled for now, you won't be able to voluntarily exit and then restart later. This means you need to be in it for the long haul."
   },
-  "iRQxxL": {
-    "message": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
-  },
   "iWg7mL": {
     "description": "{flag} and {network} are terminal commands styled as code.",
     "message": "Please make sure you have set {flag} for {network}, otherwise the deposit will be invalid."
@@ -1848,9 +1848,6 @@
   "ohspQX": {
     "message": "Responsibilities"
   },
-  "okxBZ6": {
-    "message": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum client”."
-  },
   "omJNJw": {
     "message": "Warning!"
   },
@@ -1940,9 +1937,6 @@
   },
   "qkhah0": {
     "message": "Save the key files and get the validator file ready"
-  },
-  "qpdTjz": {
-    "message": "An Eth2 client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
   },
   "qwh6gM": {
     "message": "I understand the early adopter and slashing risks."
@@ -2115,6 +2109,9 @@
   "vyvUB5": {
     "message": "This JSON file isn't for the right network. Upload a file generated for your current network: {network}."
   },
+  "w40kaM": {
+    "message": "An Ethereum/Pandora client designed to be enterprise-friendly for both public and private, permissioned network use cases."
+  },
   "w6qYSU": {
     "message": "Run the following command to launch the app"
   },
@@ -2208,6 +2205,9 @@
   },
   "zAVb0/": {
     "message": "More on Lighthouse and Sigma Prime"
+  },
+  "zM5D6p": {
+    "message": "Nimbus is a client implementation for both Eth1/Pandora and Eth2/Vanguard that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
   },
   "zPLWB2": {
     "message": "More on LUKSO"

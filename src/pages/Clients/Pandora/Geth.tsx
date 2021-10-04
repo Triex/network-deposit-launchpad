@@ -51,7 +51,7 @@ export const GethDetails = () => (
           </Heading>
           <Text className="mt10">
             <FormattedMessage
-              defaultMessage="Use L15LYX to sync the L15 testnet."
+              defaultMessage="Use L15LYXT to sync the L15 testnet."
               values={{
                 goerli: <Code className="mt20">--goerli</Code>,
               }}

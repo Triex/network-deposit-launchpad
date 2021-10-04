@@ -15,7 +15,7 @@ export const BesuDetails = () => (
     </SectionTitle>
     <Text className="mt10">
       <FormattedMessage
-        defaultMessage="An Ethereum client designed to be enterprise-friendly for
+        defaultMessage="An Ethereum/Pandora client designed to be enterprise-friendly for
           both public and private, permissioned network use cases."
       />
     </Text>

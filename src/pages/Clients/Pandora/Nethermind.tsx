@@ -14,7 +14,7 @@ export const NethermindDetails = () => (
       Nethermind
     </SectionTitle>
     <Text className="mt10">
-      <FormattedMessage defaultMessage="An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems." />
+      <FormattedMessage defaultMessage="An Ethereum/Pandora client with a huge pool of developers. It's perfect for enterprise-grade systems." />
     </Text>
     <SectionTitle level={2} className="mb5">
       <FormattedMessage defaultMessage="Language information" />
