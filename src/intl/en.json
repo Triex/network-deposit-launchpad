@@ -295,9 +295,6 @@
   "6RJOKW": {
     "message": "I've simulated how to migrate from one L15 client to another L15 client."
   },
-  "6S95Bo": {
-    "message": "Avoid phishing"
-  },
   "6UUL73": {
     "message": "More on validators"
   },
@@ -535,6 +532,10 @@
   "CF9vMR": {
     "message": "Proof of stake"
   },
+  "CZDZRh": {
+    "description": "Links to the documentation for the Pandora/eth1 client Nethermind, specifically for testnet Goerli",
+    "message": "Nethermind on Goerli documentation"
+  },
   "CcuTCU": {
     "description": "{stakerChecklist} = 'Staker Checklist' bolded to draw attention",
     "message": "Be sure to complete the {stakerChecklist} as soon as possible. And join the LUKSO Discord community (#validators channel) for support and discussion with fellow validators."
@@ -668,9 +669,6 @@
   "GBXzeJ": {
     "message": "Arguably the most impactful factor on rewards earned for validating transactions is the total amount of stake in the network. In other words, the total amount of validators. Depending on this figure the max annual return rate for a validator can be anywhere between 2 and 20%."
   },
-  "GCz3kj": {
-    "message": "Formerly known as Artemis, Teku is an Eth2 client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
-  },
   "GDaRAW": {
     "message": "Make sure you aren't being phished"
   },
@@ -731,9 +729,6 @@
   },
   "I5lWZA": {
     "message": "Can I change the withdrawal credentials of my validator after the first deposit?"
-  },
-  "IBLsVn": {
-    "message": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
   },
   "IJw06E": {
     "message": "Sign transaction with your wallet"
@@ -1038,6 +1033,9 @@
   },
   "QnS0CA": {
     "message": "Your wallet should be set to {networkName} to use this launchpad."
+  },
+  "QomLca": {
+    "message": "Formerly known as Artemis, Teku is a Vanguard/Eth2 client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
   },
   "QqqeNk": {
     "message": "Transaction rejected"
@@ -1943,6 +1941,9 @@
   "qkhah0": {
     "message": "Save the key files and get the validator file ready"
   },
+  "qpdTjz": {
+    "message": "An Eth2 client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
+  },
   "qwh6gM": {
     "message": "I understand the early adopter and slashing risks."
   },
@@ -2148,10 +2149,6 @@
   },
   "xH5GKj": {
     "message": "I am an early adopter, and I accept that software and design bugs may result in me being slashed."
-  },
-  "xOSMb1": {
-    "description": "Links to the documentation for the eth1 client Nethermind, specifically for testnet Goerli",
-    "message": "Nethermind on Goerli documentation"
   },
   "xP6BKs": {
     "message": "staker checklist"

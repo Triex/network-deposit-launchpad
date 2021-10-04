@@ -8,8 +8,8 @@ import { WorkflowPageTemplate } from '../../components/WorkflowPage/WorkflowPage
 import { routeToCorrectWorkflowStep } from '../../utils/RouteToCorrectWorkflowStep';
 import SelectClientSection from './SelectClientSection';
 import SelectClientButtons from './SelectClientButtons';
-import { PrysmDetails } from '../Clients/Eth2/Prysm';
-import { GethDetails } from '../Clients/Eth1/Geth';
+import { PrysmDetails } from '../Clients/Vanguard/Prysm';
+import { GethDetails } from '../Clients/Pandora/Geth';
 import PrysmaticCircle from '../../static/prysmatic-labs-circle.png';
 import GethCircle from '../../static/gethereum-mascot-circle.png';
 

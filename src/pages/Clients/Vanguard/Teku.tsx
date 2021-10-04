@@ -20,7 +20,7 @@ export const TekuDetails = ({ shortened }: { shortened?: boolean }) => (
     </SectionTitle>
     <Text className="mt10">
       <FormattedMessage
-        defaultMessage="Formerly known as Artemis, Teku is an Eth2 client built to meet
+        defaultMessage="Formerly known as Artemis, Teku is a Vanguard/Eth2 client built to meet
           institutional needs and security requirements. PegaSys is an arm of ConsenSys,
           dedicated to building enterprise-ready clients and tools for interacting with
           the core Ethereum platform."

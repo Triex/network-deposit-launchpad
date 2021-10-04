@@ -819,12 +819,6 @@
       "value": "I've simulated how to migrate from one L15 client to another L15 client."
     }
   ],
-  "6S95Bo": [
-    {
-      "type": 0,
-      "value": "Avoid phishing"
-    }
-  ],
   "6UUL73": [
     {
       "type": 0,
@@ -1371,6 +1365,12 @@
       "value": "Proof of stake"
     }
   ],
+  "CZDZRh": [
+    {
+      "type": 0,
+      "value": "Nethermind on Goerli documentation"
+    }
+  ],
   "CcuTCU": [
     {
       "type": 0,
@@ -1671,12 +1671,6 @@
       "value": "Arguably the most impactful factor on rewards earned for validating transactions is the total amount of stake in the network. In other words, the total amount of validators. Depending on this figure the max annual return rate for a validator can be anywhere between 2 and 20%."
     }
   ],
-  "GCz3kj": [
-    {
-      "type": 0,
-      "value": "Formerly known as Artemis, Teku is an Eth2 client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
-    }
-  ],
   "GDaRAW": [
     {
       "type": 0,
@@ -1807,12 +1801,6 @@
     {
       "type": 0,
       "value": "Can I change the withdrawal credentials of my validator after the first deposit?"
-    }
-  ],
-  "IBLsVn": [
-    {
-      "type": 0,
-      "value": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
     }
   ],
   "IJw06E": [
@@ -2615,6 +2603,12 @@
     {
       "type": 0,
       "value": " to use this launchpad."
+    }
+  ],
+  "QomLca": [
+    {
+      "type": 0,
+      "value": "Formerly known as Artemis, Teku is a Vanguard/Eth2 client built to meet institutional needs and security requirements. PegaSys is an arm of ConsenSys, dedicated to building enterprise-ready clients and tools for interacting with the core Ethereum platform."
     }
   ],
   "QqqeNk": [
@@ -4859,6 +4853,12 @@
       "value": "Save the key files and get the validator file ready"
     }
   ],
+  "qpdTjz": [
+    {
+      "type": 0,
+      "value": "An Eth2 client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
+    }
+  ],
   "qwh6gM": [
     {
       "type": 0,
@@ -5419,12 +5419,6 @@
     {
       "type": 0,
       "value": "I am an early adopter, and I accept that software and design bugs may result in me being slashed."
-    }
-  ],
-  "xOSMb1": [
-    {
-      "type": 0,
-      "value": "Nethermind on Goerli documentation"
     }
   ],
   "xP6BKs": [

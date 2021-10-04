@@ -81,7 +81,7 @@ export const NethermindDetails = () => (
           >
             <FormattedMessage
               defaultMessage="Nethermind on Goerli documentation"
-              description="Links to the documentation for the eth1 client Nethermind, specifically for testnet Goerli"
+              description="Links to the documentation for the Pandora/eth1 client Nethermind, specifically for testnet Goerli"
             />
           </Link>
         </>

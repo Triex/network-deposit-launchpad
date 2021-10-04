@@ -22,10 +22,10 @@ import {
   TopUpPage,
 } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
-import { Prysm } from './pages/Clients/Eth2/Prysm';
-import { Teku } from './pages/Clients/Eth2/Teku';
-import { Nimbus } from './pages/Clients/Eth2/Nimbus';
-import { Lighthouse } from './pages/Clients/Eth2/Lighthouse';
+import { Prysm } from './pages/Clients/Vanguard/Prysm';
+import { Teku } from './pages/Clients/Vanguard/Teku';
+import { Nimbus } from './pages/Clients/Vanguard/Nimbus';
+import { Lighthouse } from './pages/Clients/Vanguard/Lighthouse';
 
 type RouteType = {
   path: string;
