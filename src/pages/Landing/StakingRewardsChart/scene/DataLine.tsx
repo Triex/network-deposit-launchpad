@@ -49,10 +49,10 @@ const StyledDataLine = styled.path`
  * Main Component
  */
 
-const DataLine: React.FC<Props> = ({ data, chart, color = '#045388' }) => {
+const DataLine: React.FC<Props> = ({ data, chart }) => {
   const d = calculateLine(data, chart);
   return d.match(/NaN|undefined|null/) ? null : (
-    <StyledDataLine {...{ d, color }} />
+    <StyledDataLine {...{ d, color: '#1C2D54' }} />
   );
 };
 
