@@ -57,8 +57,8 @@ const Content = styled.div`
   margin: 30px 0;
 `;
 
-const BoldGreen = styled.span`
-  color: ${(p: { theme: any; fontSize: number }) => p.theme.green.dark};
+const BoldPurple = styled.span`
+  color: ${(p: { theme: any; fontSize: number }) => p.theme.purple.brand};
   font-size: ${(p: { theme: any; fontSize: number }) => p.fontSize}px;
   font-weight: bold;
 `;
@@ -344,9 +344,9 @@ const _CongratulationsPage = ({
                   <FormattedMessage defaultMessage="Your stake" />
                 </Heading>
                 <Text size="x-large" className="mt20">
-                  <BoldGreen className="mr10" fontSize={24}>
+                  <BoldPurple className="mr10" fontSize={24}>
                     {actualTxConfirmed * +PRICE_PER_VALIDATOR} {TICKER_NAME}
-                  </BoldGreen>
+                  </BoldPurple>
                 </Text>
               </Card>
               <Card>
@@ -354,14 +354,14 @@ const _CongratulationsPage = ({
                   <FormattedMessage defaultMessage="Your validators" />
                 </Heading>
                 <Text size="x-large" className="mt20">
-                  <BoldGreen className="mr10" fontSize={24}>
+                  <BoldPurple className="mr10" fontSize={24}>
                     <FormattedMessage
                       defaultMessage="{totalTxCount} validators"
                       values={{
                         totalTxCount: <span>{actualTxConfirmed}</span>,
                       }}
                     />
-                  </BoldGreen>
+                  </BoldPurple>
                 </Text>
                 {!allTxConfirmed && (
                   <WarningRow>
@@ -389,9 +389,9 @@ const _CongratulationsPage = ({
                   <FormattedMessage defaultMessage="Current APR" />
                 </Heading>
                 <Text size="x-large" className="mt20">
-                  <BoldGreen className="mr10" fontSize={24}>
+                  <BoldPurple className="mr10" fontSize={24}>
                     <LoadingHandler value={`${formattedAPR}%`} />
-                  </BoldGreen>
+                  </BoldPurple>
                 </Text>
               </Card>
               {!allTxConfirmed ? (

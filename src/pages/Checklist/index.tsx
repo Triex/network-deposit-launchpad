@@ -160,8 +160,8 @@ const Card = styled.div`
   }
 `;
 
-const BoldGreen = styled.span`
-  color: ${(p: { theme: any; fontSize: number }) => p.theme.green.dark};
+const BoldPurple = styled.span`
+  color: ${(p: { theme: any; fontSize: number }) => p.theme.purple.brand};
   font-size: ${(p: { theme: any; fontSize: number }) => p.fontSize}px;
   font-weight: bold;
 `;
@@ -259,9 +259,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 1" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="Before you start" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -272,9 +272,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 2" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="During setup" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -285,9 +285,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 3" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="After depositing" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
