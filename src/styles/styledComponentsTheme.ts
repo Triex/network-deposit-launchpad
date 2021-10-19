@@ -30,6 +30,8 @@ export const colors = {
     light: '#F0F2FB',
     medium: '#E3E5F2',
     dark: '#795da3',
+    brand: '#956098',
+    lavender: '#d7c7dd',
   },
   yellow: {
     light: '#fff0a8',

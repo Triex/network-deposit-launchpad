@@ -405,7 +405,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 }
               />
             )}
-            <Text size="small" className="ml10" color="blueDark">
+            <Text size="small" className="ml10" color="grayLight">
               {trimString(account as string, 10)}
             </Text>
           </Box>
