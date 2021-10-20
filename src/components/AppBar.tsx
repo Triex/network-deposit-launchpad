@@ -55,6 +55,12 @@ const NetworkText = styled.div`
     transform: scale(1.02);
     color: #000;
   }
+  svg {
+    stroke: #fff;
+  }
+  :hover svg {
+    stroke: #666;
+  }
 `;
 
 const NavBarLinks = styled.div`
