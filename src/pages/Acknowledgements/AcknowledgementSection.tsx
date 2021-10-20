@@ -16,8 +16,8 @@ const Container = styled.div`
 `;
 
 const AcknowledgementText = styled(Text as any)`
-  background: #ffdeb32e;
-  border: 1px solid burlywood;
+  background: #fcf5ff;
+  border: 1px solid #e8dced;
   padding: 30px;
   border-radius: 4px;
 `;
