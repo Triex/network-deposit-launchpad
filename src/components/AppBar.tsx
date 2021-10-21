@@ -20,9 +20,7 @@ import { Heading } from './Heading';
 import {
   IS_MAINNET,
   LUKSO_NETWORK_NAME,
-  MAINNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
-  TESTNET_LAUNCHPAD_URL,
 } from '../utils/envVars';
 import useMobileCheck from '../hooks/useMobileCheck';
 import { FormattedMessage } from 'react-intl';
@@ -146,9 +144,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
   );
 
   const mobile = useMobileCheck('1080px');
-  const switchLaunchpadUrl = IS_MAINNET
-    ? TESTNET_LAUNCHPAD_URL
-    : MAINNET_LAUNCHPAD_URL;
 
   const networkName = IS_MAINNET ? 'mainnet' : 'Göerli testnet';
 
@@ -271,18 +266,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                       {IS_MAINNET ? `L15` : `${TESTNET_LAUNCHPAD_NAME} testnet`}
                     </b>
                   </span>
-                  <Link primary to={switchLaunchpadUrl}>
-                    <FormattedMessage
-                      defaultMessage="Switch to {network} launchpad"
-                      values={{
-                        network: `${
-                          IS_MAINNET
-                            ? `${TESTNET_LAUNCHPAD_NAME} testnet`
-                            : `L15`
-                        }`,
-                      }}
-                    />
-                  </Link>
                   <Text className="mt20">
                     <em>
                       <FormattedMessage defaultMessage="Visit this site on desktop to become a validator." />
