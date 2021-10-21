@@ -107,9 +107,7 @@ const StyledLuksoArtImgNode = styled.img`
     max-height: 510px;
   }
   @media screen and (max-width: 800px) {
-    max-width: 220px;
-    margin: 30px auto;
-    display: block;
+    display: none;
   }
 `;
 
