@@ -311,7 +311,7 @@ const _SummaryPage = ({
         <Link to={routesEnum.transactionsPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
+            gradient
             disabled={!allChecked}
             label={formatMessage({ defaultMessage: 'Continue' })}
           />

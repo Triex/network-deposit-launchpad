@@ -181,7 +181,7 @@ const _TransactionsPage = ({
         <div className="flex center mt30">
           <Button
             fullWidth
-            rainbow
+            gradient
             label={createButtonText()}
             onClick={handleAllTransactionsClick}
             disabled={remainingTxCount === 0}
@@ -200,7 +200,7 @@ const _TransactionsPage = ({
         <Link to={routesEnum.congratulationsPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
+            gradient
             label={createContinueButtonText()}
             disabled={!oneTxConfirmed}
           />

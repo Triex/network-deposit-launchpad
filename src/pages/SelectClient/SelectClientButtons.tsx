@@ -33,7 +33,7 @@ const SelectClientButtons = ({
         </Link>
         <Button
           width={300}
-          rainbow
+          gradient
           disabled={!currentClient}
           label={formatMessage({ defaultMessage: 'Continue' })}
           onClick={() => updateStep('Vanguard')}
@@ -53,7 +53,7 @@ const SelectClientButtons = ({
       <Link to={routesEnum.generateKeysPage} onClick={handleSubmit}>
         <Button
           width={300}
-          rainbow
+          gradient
           disabled={!currentClient}
           label={formatMessage({ defaultMessage: 'Continue' })}
         />

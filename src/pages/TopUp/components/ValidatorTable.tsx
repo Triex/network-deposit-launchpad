@@ -108,7 +108,7 @@ const ValidatorTable: React.FC<{
       case 'active_online': {
         return (
           <div className="flex">
-            <Wifi color={theme.green.dark} />
+            <Wifi color={theme.purple.brand} />
             <Text className="ml10">
               <FormattedMessage defaultMessage="Online" />
             </Text>
@@ -190,7 +190,7 @@ const ValidatorTable: React.FC<{
               <Button
                 onClick={() => setSelectedValidator(validator)}
                 label={formatMessage({ defaultMessage: 'Top up' })}
-                rainbow
+                gradient
                 disabled={statusIneligible}
               />
             </TableCell>

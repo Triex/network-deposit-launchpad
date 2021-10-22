@@ -517,7 +517,7 @@ const _ConnectWalletPage = ({
         <Link to={routesEnum.summaryPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
+            gradient
             disabled={
               !walletProvider ||
               !walletConnected ||

@@ -6,8 +6,8 @@ import { WorkflowProgressBar } from './WorkflowProgressBar';
 import { AppBar } from '../AppBar';
 import { DesktopOnlyModal } from '../DesktopOnlyModal';
 import {
-  rainbowBGColors,
-  rainbowLightColors,
+  gradientBGColors,
+  gradientLightColors,
 } from '../../styles/styledComponentsTheme';
 import { routesEnum } from '../../Routes';
 import { WorkflowStep } from '../../store/actions/workflowActions';
@@ -28,8 +28,8 @@ const Gutter = styled.div`
 `;
 const Background = styled.div`
   background-image: ${(p: { workflowStep: WorkflowStep }) =>
-    `linear-gradient(to bottom right, ${rainbowLightColors[p.workflowStep]}, ${
-      rainbowBGColors[p.workflowStep]
+    `linear-gradient(to bottom right, ${gradientLightColors[p.workflowStep]}, ${
+      gradientBGColors[p.workflowStep]
     });`};
   min-height: 100vh;
 `;

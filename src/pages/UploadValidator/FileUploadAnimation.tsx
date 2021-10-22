@@ -13,7 +13,7 @@ const Container = styled.div`
   .circle {
     stroke-width: 1;
     stroke-miterlimit: 10;
-    stroke: ${colors.blue.light};
+    stroke: ${colors.purple.lavender};
     fill: none;
   }
   .circle-animated {

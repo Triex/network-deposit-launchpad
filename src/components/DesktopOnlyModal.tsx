@@ -9,9 +9,9 @@ import Mobile from '../static/mobile.svg';
 import Laptop from '../static/laptop.svg';
 import { Link } from './Link';
 
-const RainbowBackground = styled.div`
+const GradientBackground = styled.div`
   background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight}`});
+    `radial-gradient(circle at 100% -80%, ${p.theme.gradientLight}`});
   min-height: 100vh;
 `;
 
@@ -50,7 +50,7 @@ export const DesktopOnlyModal = (): JSX.Element => {
   const { formatMessage } = useIntl();
 
   return (
-    <RainbowBackground>
+    <GradientBackground>
       <Container>
         <Heading center>
           <FormattedMessage defaultMessage="Desktop only" />
@@ -76,10 +76,10 @@ export const DesktopOnlyModal = (): JSX.Element => {
           <Button
             fullWidth
             label={formatMessage({ defaultMessage: 'Close' })}
-            rainbow
+            gradient
           />
         </Link>
       </Container>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };

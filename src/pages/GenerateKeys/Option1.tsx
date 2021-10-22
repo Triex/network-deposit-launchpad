@@ -50,7 +50,7 @@ export const Option1 = ({
       >
         <Button
           className="flex"
-          rainbow
+          gradient
           label={formatMessage({ defaultMessage: 'Download from GitHub' })}
         />
       </Link>

@@ -165,7 +165,7 @@ export const SignupSteps = (): JSX.Element => {
         <ButtonContainer className="pt100">
           <Link to={routesEnum.acknowledgementPage}>
             <Button
-              rainbow
+              gradient
               className="m-auto"
               fullWidth
               width={m ? undefined : 400}

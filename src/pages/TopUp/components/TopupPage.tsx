@@ -326,7 +326,7 @@ const TopupPage: React.FC<Props> = ({ validator }) => {
             <SubmitButton
               className="ml10"
               label={formatMessage({ defaultMessage: 'Top up validator' })}
-              rainbow
+              gradient
               onClick={submitTopupTransaction}
               disabled={
                 value <= 0 ||

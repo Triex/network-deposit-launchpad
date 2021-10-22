@@ -16,11 +16,11 @@ const variantStyles = {
     borderColor: '#d3d3d3',
   },
   info: {
-    backgroundColor: '#d9edf7',
-    borderColor: '#bce8f1',
+    backgroundColor: '#eee0f3',
+    borderColor: '#d7c7dd',
   },
   error: {
-    backgroundColor: '#f2dede',
+    backgroundColor: '#fff2df',
     borderColor: '#ebccd1',
   },
   success: {
