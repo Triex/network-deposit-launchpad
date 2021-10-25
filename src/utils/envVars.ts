@@ -1,5 +1,12 @@
 export const IS_MAINNET                 = Boolean(process.env.REACT_APP_IS_MAINNET !== 'false');  // If REACT_APP_IS_MAINNET is unset, set it to true by default
 export const TESTNET_LAUNCHPAD_NAME     = process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME || 'Pandora';
+export let LUKSO_NETWORK_NAMESPACE      = (!process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE) ? 'dev' : process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE.toLowerCase();
+console.log(process.env)
+
+let networkName = ""
+if (LUKSO_NETWORK_NAMESPACE !== 'prod') {
+    networkName = LUKSO_NETWORK_NAMESPACE.concat(".")
+}
 
 // private vars (or derived from)
 export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID     || '';
@@ -10,19 +17,19 @@ export const INFURA_URL                 = `https://${IS_MAINNET ? "mainnet" : "g
 // public
 export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'l15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
 export const TICKER_NAME                = IS_MAINNET ? 'LYXt' : 'LYXt';
-export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : 'https://explorer.pandora.l15.lukso.network';
-export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://explorer.vanguard.l15.lukso.network`;
-export const BEACONCHAIN_URL            = `https://explorer.vanguard.l15.lukso.network`;
+export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : `https://${networkName}explorer.pandora.l15.lukso.network`;
+export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://${networkName}explorer.vanguard.l15.lukso.network`;
+export const BEACONCHAIN_URL            = `https://${networkName}explorer.vanguard.l15.lukso.network`;
 
-export const FORTMATIC_KEY              = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
-export const CONTRACT_ADDRESS           = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';
-export const MIN_DEPOSIT_CLI_VERSION    = process.env.REACT_APP_MIN_DEPOSIT_CLI_VERSION  || '1.0.0';
-export const LIGHTHOUSE_INSTALLATION_URL = process.env.REACT_APP_LIGHTHOUSE_INSTALLATION_URL || 'https://lighthouse-book.sigmaprime.io/';
-export const NIMBUS_INSTALLATION_URL    = process.env.REACT_APP_NIMBUS_INSTALLATION_URL  || 'https://status-im.github.io/nimbus-eth2/intro.html';
-export const PRYSM_INSTALLATION_URL     = process.env.REACT_APP_PRYSM_INSTALLATION_URL   || 'https://docs.lukso.tech/networks/l15-testnet';
-export const TEKU_INSTALLATION_URL      = process.env.REACT_APP_TEKU_INSTALLATION_URL    || 'https://docs.teku.pegasys.tech/en/latest/HowTo/Get-Started/Build-From-Source/';
-export const MAINNET_LAUNCHPAD_URL      = 'https://launchpad.ethereum.org/'
-export const TESTNET_LAUNCHPAD_URL      = `https://launchpad.l15.lukso.network/`
+export const FORTMATIC_KEY                  = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
+export const CONTRACT_ADDRESS               = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';
+export const MIN_DEPOSIT_CLI_VERSION        = process.env.REACT_APP_MIN_DEPOSIT_CLI_VERSION  || '1.0.0';
+export const LIGHTHOUSE_INSTALLATION_URL    = process.env.REACT_APP_LIGHTHOUSE_INSTALLATION_URL || 'https://lighthouse-book.sigmaprime.io/';
+export const NIMBUS_INSTALLATION_URL        = process.env.REACT_APP_NIMBUS_INSTALLATION_URL  || 'https://status-im.github.io/nimbus-eth2/intro.html';
+export const PRYSM_INSTALLATION_URL         = process.env.REACT_APP_PRYSM_INSTALLATION_URL   || 'https://docs.lukso.tech/networks/l15-testnet';
+export const TEKU_INSTALLATION_URL          = process.env.REACT_APP_TEKU_INSTALLATION_URL    || 'https://docs.teku.pegasys.tech/en/latest/HowTo/Get-Started/Build-From-Source/';
+export const MAINNET_LAUNCHPAD_URL          = 'https://launchpad.ethereum.org/'
+export const TESTNET_LAUNCHPAD_URL          = `https://${networkName}launchpad.l15.lukso.network/`
 
 if(process.env.REACT_APP_LYXT_REQUIREMENT && Number.isNaN(Number(process.env.REACT_APP_LYXT_REQUIREMENT))) {
     throw new Error("REACT_APP_LYXT_REQUIREMENT must be of type: number")
