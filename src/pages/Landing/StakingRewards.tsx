@@ -8,7 +8,6 @@ import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
 import calculateLyxtRewards from '../../utils/calculateLyxtRewards';
-import StakingRewardsChart from './StakingRewardsChart';
 import { TICKER_NAME } from '../../utils/envVars';
 
 /**
@@ -105,33 +104,6 @@ export const StakingRewards: React.FC<{ currentStaked?: number }> = ({
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn" animateOnce delay={450}>
           <div style={{ width: '100%', marginTop: 100 }}>
-            <StakingRewardsChart
-              height={450}
-              data={data}
-              domains={{ x: [0, xMax + 1_000_000], y: [0, 0.26] }}
-              color="#045388"
-              showTooltips
-              current={{
-                x: xMin,
-                y: calculateLyxtRewards({ totalAtStake: xMin }),
-              }}
-              xAxis={{
-                range: [1_000_000, xMax],
-                ticks: Math.floor(xMax / 1_000_000),
-                format: (xAxisValue: number) =>
-                  xAxisValue < 1_000_000
-                    ? ''
-                    : `${Math.floor(xAxisValue / 1_000_000)}`,
-              }}
-              yAxis={{
-                range: [0, 0.26],
-                ticks: 14,
-                format: (yAxisValue: number) =>
-                  yAxisValue && Math.round(yAxisValue) % 2
-                    ? ''
-                    : `${Math.round(yAxisValue * 100)}%`,
-              }}
-            />
           </div>
         </ScrollAnimation>
       </SubContainer>

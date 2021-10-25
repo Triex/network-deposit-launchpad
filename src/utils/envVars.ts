@@ -12,7 +12,7 @@ export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_
 export const TICKER_NAME                = IS_MAINNET ? 'LYXt' : 'LYXt';
 export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : 'https://explorer.pandora.l15.lukso.network';
 export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://explorer.vanguard.l15.lukso.network`;
-export const BEACONCHAIN_URL            = `https://explorer.pandora.l15.lukso.network`;
+export const BEACONCHAIN_URL            = `https://staging.explorer.vanguard.l15.lukso.network`;
 
 export const FORTMATIC_KEY              = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
 export const CONTRACT_ADDRESS           = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';
