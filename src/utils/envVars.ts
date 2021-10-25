@@ -7,6 +7,8 @@ if (LUKSO_NETWORK_NAMESPACE !== 'prod') {
     networkName = LUKSO_NETWORK_NAMESPACE.concat(".")
 }
 
+LUKSO_NETWORK_NAMESPACE = networkName
+
 // private vars (or derived from)
 export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID     || '';
 export const INFURA_PROJECT_ID          = process.env.REACT_APP_INFURA_PROJECT_ID  || '';

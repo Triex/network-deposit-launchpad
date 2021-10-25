@@ -7,7 +7,7 @@ import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
 import { Alert } from '../../components/Alert';
 import { Code } from '../../components/Code';
-import { LUKSO_NETWORK_NAME, IS_MAINNET } from '../../utils/envVars';
+import {LUKSO_NETWORK_NAME, IS_MAINNET, LUKSO_NETWORK_NAMESPACE} from '../../utils/envVars';
 import { Button } from '../../components/Button';
 import githubScreenshot from '../../static/github-cli-screenshot.png';
 import { colors } from '../../styles/styledComponentsTheme';
@@ -107,13 +107,7 @@ export const Option1 = ({
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
             {(os === 'linux' || os === 'mac') && (
-              <span style={{ color: colors.red.medium }}>./deposit </span>
-            )}
-            {os === 'windows' && (
-              <>
-                <span style={{ color: colors.red.medium }}>.\deposit</span>
-                <span style={{ color: colors.purple.dark }}>.exe </span>
-              </>
+              <span style={{ color: colors.red.medium }}>./lukso-deposit-cli-Linux-x86_64 </span>
             )}
             <span style={{ color: colors.red.medium }}>new-mnemonic</span>
             <span style={{ color: colors.red.medium }}>
@@ -129,7 +123,7 @@ export const Option1 = ({
               {`--${formatMessage({
                 defaultMessage: 'chain',
                 description: 'this is used as a command line flag',
-              })} ${LUKSO_NETWORK_NAME.toLowerCase()}`}
+              })} ${LUKSO_NETWORK_NAME.toLowerCase()}-${LUKSO_NETWORK_NAMESPACE.toLowerCase()}`}
             </span>
           </Pre>
         </Alert>
