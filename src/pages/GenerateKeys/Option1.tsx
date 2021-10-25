@@ -45,7 +45,7 @@ export const Option1 = ({
       </Text>
       <Link
         isTextLink={false}
-        to="https://github.com/lukso-network/network-deposit-cli/releases/tag/v1.2.0-l15"
+        to="https://github.com/lukso-network/network-deposit-cli/releases/tag/v1.2.6-LUKSO"
         className="my40"
       >
         <Button
@@ -70,7 +70,7 @@ export const Option1 = ({
               values={{
                 url: (
                   <strong>
-                    https://github.com/lukso-network/eth2.0-deposit-cli/releases/
+                      https://github.com/lukso-network/network-deposit-cli/releases/
                   </strong>
                 ),
               }}
