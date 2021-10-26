@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { operatingSystem } from './index';
 import MacLogo from '../../static/apple.svg';
 import LinuxLogo from '../../static/linux.svg';
+import WindowsLogo from '../../static/windows.svg';
 import { ImageSelectionBox } from '../../components/ImageSelectionBox';
 
 const Container = styled.div`

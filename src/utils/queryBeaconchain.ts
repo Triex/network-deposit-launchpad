@@ -25,8 +25,7 @@ export const queryBeaconchain = async () => {
         amountLyxt: lyxtBalance + LYXT_DEPOSIT_OFFSET,
       },
     };
-  } catch (error: any) {
-    // eslint-disable-next-line no-console
+  } catch (error) {
     console.error(error);
     return {
       statusCode: 500,

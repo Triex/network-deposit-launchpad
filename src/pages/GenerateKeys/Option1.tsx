@@ -10,6 +10,7 @@ import { Code } from '../../components/Code';
 import {
     LUKSO_NETWORK_NAME,
     IS_MAINNET,
+    LUKSO_NETWORK_NAMESPACE,
     LUKSO_NETWORK_NAMESPACE_NAME
 } from '../../utils/envVars';
 import { Button } from '../../components/Button';
@@ -74,7 +75,7 @@ export const Option1 = ({
               values={{
                 url: (
                   <strong>
-                    https://github.com/lukso-network/network-deposit-cli/releases/
+                      https://github.com/lukso-network/network-deposit-cli/releases/
                   </strong>
                 ),
               }}
