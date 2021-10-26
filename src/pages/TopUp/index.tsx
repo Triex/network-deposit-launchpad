@@ -106,10 +106,12 @@ const _TopUpPage: React.FC<Props> = () => {
                 .map(validator => validator.publickey)
                 .join(',')}`;
 
+              
               fetch(
                 `${BEACONCHAIN_URL}/api/v1/validator/${pubKeysCommaDelineated}`
               )
                 .then(r => r.json())
+                // eslint-disable-next-line no-shadow
                 .then(({ data }: { data: BeaconChainValidator[] }) => {
                   if (data.length === 0) {
                     setShowDepositVerificationWarning(true);
@@ -118,6 +120,7 @@ const _TopUpPage: React.FC<Props> = () => {
                   setLoading(false);
                 })
                 .catch(error => {
+                  // eslint-disable-next-line no-console
                   console.log(error);
                   setLoading(false);
                   setValidatorLoadError(true);
@@ -126,6 +129,7 @@ const _TopUpPage: React.FC<Props> = () => {
           }
         )
         .catch(error => {
+          // eslint-disable-next-line no-console
           console.log(error);
           setLoading(false);
           setValidatorLoadError(true);

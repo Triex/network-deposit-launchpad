@@ -147,6 +147,7 @@ const routes: RouteType[] = [
   { path: routesEnum.notFoundPage, component: NotFoundPage },
 ];
 
+// eslint-disable-next-line no-shadow
 const localizeRoutes = (locale: String, routes: RouteType[]) => {
   return routes.map(route => {
     const languagePath = route.path.split('/')[1];

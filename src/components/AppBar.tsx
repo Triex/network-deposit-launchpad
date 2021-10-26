@@ -5,6 +5,7 @@ import { Box, DropButton } from 'grommet';
 import { Menu, FormDown } from 'grommet-icons';
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
+import { FormattedMessage } from 'react-intl';
 import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { web3ReactInterface } from '../pages/ConnectWallet';
 import { trimString } from '../utils/trimString';
@@ -25,7 +26,6 @@ import {
   TESTNET_LAUNCHPAD_URL,
 } from '../utils/envVars';
 import useMobileCheck from '../hooks/useMobileCheck';
-import { FormattedMessage } from 'react-intl';
 
 const GradientBackground = styled(Box)`
   background-image: ${p =>
@@ -127,6 +127,7 @@ const NavLinksRight = styled.div`
   }
 `;
 
+// eslint-ignore
 const BarLinkText = styled(Heading)`
   :not(.no-padding) {
     padding: 0 12px;
@@ -156,15 +157,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
   const pathname: string = React.useMemo(() => location.pathname, [
     location.pathname,
   ]);
-
-  const isDropdownPage = React.useMemo(
-    () =>
-      pathname === routesEnum.lighthouse ||
-      pathname === routesEnum.nimbus ||
-      pathname === routesEnum.prysm ||
-      pathname === routesEnum.teku,
-    [pathname]
-  );
 
   const mobile = useMobileCheck('1080px');
   const switchLaunchpadUrl = IS_MAINNET
@@ -221,28 +213,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             <FormattedMessage defaultMessage="Deposit" />
           </BarLinkText>
         </Link>
-        <ValidatorDropdown
-          className="secondary-link"
-          label={
-            <BarLinkText
-              level={4}
-              margin="none"
-              active={isDropdownPage}
-              className="white"
-            >
-              <FormattedMessage defaultMessage="Clients" />
-            </BarLinkText>
-          }
-          dropAlign={{ top: 'bottom', right: 'right' }}
-          dropContent={
-            <Box pad="small">
-              <DropdownLink to={routesEnum.lighthouse}>Lighthouse</DropdownLink>
-              <DropdownLink to={routesEnum.nimbus}>Nimbus</DropdownLink>
-              <DropdownLink to={routesEnum.prysm}>Prysm</DropdownLink>
-              <DropdownLink to={routesEnum.teku}>Teku</DropdownLink>
-            </Box>
-          }
-        />
         <Link to={routesEnum.checklistPage} className="mx10 secondary-link">
           <BarLinkText
             level={4}
@@ -280,7 +250,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             className="secondary-link"
             label={<Menu color="white" />}
             dropAlign={{ top: 'bottom', right: 'right' }}
-            dropContent={
+            dropContent={(
               <Card>
                 <NetworkInfo>
                   {walletConnected && (
@@ -338,20 +308,20 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   <DropdownLink to={routesEnum.teku}>Teku</DropdownLink>
                 </Box>
               </Card>
-            }
+            )}
           />
         )}
         {!mobile && (
           <ValidatorDropdown
             className="secondary-link"
-            label={
+            label={(
               <NetworkText>
                 {IS_MAINNET ? `L15` : `${LUKSO_NETWORK_NAME}`}
                 <FormDown />
               </NetworkText>
-            }
+            )}
             dropAlign={{ top: 'bottom', right: 'right' }}
-            dropContent={
+            dropContent={(
               <Card>
                 <Box pad="small" className="mt0">
                   {!IS_MAINNET && (
@@ -373,7 +343,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   </DropdownLink>
                 </Box>
               </Card>
-            }
+            )}
           />
         )}
         {!mobile && walletConnected && (
@@ -383,13 +353,13 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 className="secondary-link"
                 label={<Dot success={networkAllowed} error={!networkAllowed} />}
                 dropAlign={{ top: 'bottom', right: 'right' }}
-                dropContent={
+                dropContent={(
                   <Box pad="small">
                     <Text>
                       <FormattedMessage defaultMessage="Your wallet is connected to the right network!" />
                     </Text>
                   </Box>
-                }
+                )}
               />
             )}
             {!networkAllowed && (
@@ -397,7 +367,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 className="secondary-link"
                 label={<Dot error={!networkAllowed} />}
                 dropAlign={{ top: 'bottom', right: 'right' }}
-                dropContent={
+                dropContent={(
                   <Box pad="small">
                     <Text>
                       <FormattedMessage
@@ -408,7 +378,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                       />
                     </Text>
                   </Box>
-                }
+                )}
               />
             )}
             <Text size="small" className="ml10" color="grayLight">

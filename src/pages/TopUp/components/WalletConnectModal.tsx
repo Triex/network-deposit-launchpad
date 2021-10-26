@@ -14,12 +14,8 @@ import { WalletButton } from '../../ConnectWallet/WalletButton';
 import { web3ReactInterface } from '../../ConnectWallet';
 import metamaskLogo from '../../../static/metamask.svg';
 import {
-  ENABLE_RPC_FEATURES,
   IS_MAINNET,
-  PORTIS_DAPP_ID,
 } from '../../../utils/envVars';
-import portisLogo from '../../../static/portis.svg';
-import fortmaticLogo from '../../../static/fortmatic.svg';
 import { Heading } from '../../../components/Heading';
 import { Text } from '../../../components/Text';
 import { MetamaskHardwareButton } from '../../ConnectWallet/MetamaskHardwareButton';
