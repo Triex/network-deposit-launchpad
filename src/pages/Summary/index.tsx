@@ -53,7 +53,7 @@ const Container = styled.div`
 `;
 const NETWORK_ID = IS_MAINNET
   ? NetworkChainId.Mainnet
-  : NetworkChainId['Göerli'];
+  : NetworkChainId['l15-dev'];
 
 // Prop definitions
 interface OwnProps {}
@@ -187,7 +187,7 @@ const _SummaryPage = ({
         <Row>
           <Link
             isTextLink={false}
-            to="https://ethereum.org/eth2/deposit-contract/"
+            to="https://explorer.pandora.l15.lukso.network/address/0x000000000000000000000000000000000000cafE"
             primary
           >
             <Button

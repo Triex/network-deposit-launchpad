@@ -37,7 +37,7 @@ import { routeToCorrectWorkflowStep } from '../../utils/RouteToCorrectWorkflowSt
 
 const NETWORK_ID = IS_MAINNET
   ? NetworkChainId.Mainnet
-  : NetworkChainId['Göerli'];
+  : NetworkChainId['l15-dev'];
 
 // Prop definitions
 interface OwnProps {}

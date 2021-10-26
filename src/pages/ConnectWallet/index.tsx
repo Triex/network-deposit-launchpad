@@ -14,10 +14,8 @@ import { formatEther } from '@ethersproject/units';
 import { NoEthereumProviderError } from '@web3-react/injected-connector';
 import {
   AllowedNetworks,
-  fortmatic,
   metamask,
   NetworkChainId,
-  portis,
   useMetamaskEagerConnect,
   useMetamaskListener,
 } from './web3Utils';
@@ -266,8 +264,6 @@ const _ConnectWalletPage = ({
   const getWalletName = (provider?: AbstractConnector) => {
     if (!provider) return '';
     if (provider === metamask) return 'Metamask';
-    if (provider === portis) return 'Portis';
-    if (provider === fortmatic) return 'Fortmatic';
     return '';
   };
 
@@ -443,26 +439,6 @@ const _ConnectWalletPage = ({
                 walletProvider={metamask}
                 title="Metamask"
                 error={walletProvider === metamask ? error : undefined}
-              />
-
-              <WalletButton
-                invalid={PORTIS_DAPP_ID === ''}
-                selectedWallet={selectedWallet}
-                setSelectedWallet={setSelectedWallet}
-                logoSource={portisLogo}
-                walletProvider={portis}
-                title="Portis"
-                error={walletProvider === portis ? error : undefined}
-              />
-
-              <WalletButton
-                invalid={!ENABLE_RPC_FEATURES}
-                selectedWallet={selectedWallet}
-                setSelectedWallet={setSelectedWallet}
-                logoSource={fortmaticLogo}
-                walletProvider={fortmatic}
-                title="Fortmatic"
-                error={walletProvider === fortmatic ? error : undefined}
               />
               <MetamaskHardwareButton />
             </WalletButtonSubContainer>
