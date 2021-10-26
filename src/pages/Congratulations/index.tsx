@@ -92,7 +92,8 @@ const CardLink = styled(Link)`
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.gradient})`};
+    background-image: ${p =>
+      `linear-gradient(to right, ${p.theme.gradientButtonHover})`};
     transition: transform 0.1s;
     transform: scale(1.02);
   }
@@ -114,7 +115,8 @@ const CardButton = styled.div`
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.gradient})`};
+    background-image: ${p =>
+      `linear-gradient(to right, ${p.theme.gradientButtonHover})`};
     transition: transform 0.1s;
     transform: scale(1.02);
   }

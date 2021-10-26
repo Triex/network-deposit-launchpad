@@ -87,6 +87,7 @@ export const gradientFooterColors = [
 export const gradientBlackColors = ['#000000', '#0a0a0a', '#1f1f1f', '#151515'];
 export const gradientNavbarColors = ['#7043b0', '#b47983'];
 export const gradientDisclaimerColors = ['#f2dede', '#fff0f0'];
+export const brandButtonHoverColours = ['#dcc2c1', '#efd8d5'];
 
 export const gradient = gradientColors.join(', ');
 export const gradientLight = gradientLightColors.join(', ');
@@ -94,6 +95,7 @@ export const gradientBlack = gradientBlackColors.join(', ');
 export const gradientNavbar = gradientNavbarColors.join(', ');
 export const gradientDisclaimer = gradientDisclaimerColors.join(', ');
 export const gradientFooter = gradientFooterColors.join(', ');
+export const gradientButtonHover = brandButtonHoverColours.join(', ');
 
 export const screenSizes = {
   smaller: '420px',
@@ -116,4 +118,5 @@ export const styledComponentsTheme = {
   gradientLightColors,
   gradientDisclaimer,
   gradientFooter,
+  gradientButtonHover,
 };

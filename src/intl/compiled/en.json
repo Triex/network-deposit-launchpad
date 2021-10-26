@@ -195,20 +195,6 @@
       "value": "Understand the risks"
     }
   ],
-  "/vkCbT": [
-    {
-      "type": 0,
-      "value": "Validators get rewarded for proposing and attesting to blocks. The rewards are tied to the overall amount of "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " staked in the network."
-    }
-  ],
   "/w/KT4": [
     {
       "type": 0,
@@ -939,12 +925,6 @@
     {
       "type": 0,
       "value": "Use L15LYX to sync the L15 testnet."
-    }
-  ],
-  "7s6XNV": [
-    {
-      "type": 0,
-      "value": "Staking and rewards"
     }
   ],
   "7sZfCF": [
@@ -3157,12 +3137,6 @@
     {
       "type": 0,
       "value": "."
-    }
-  ],
-  "XmddSV": [
-    {
-      "type": 0,
-      "value": "Build from source"
     }
   ],
   "Xwdwnq": [

@@ -73,9 +73,6 @@
   "/ub26/": {
     "message": "Understand the risks"
   },
-  "/vkCbT": {
-    "message": "Validators get rewarded for proposing and attesting to blocks. The rewards are tied to the overall amount of {TICKER_NAME} staked in the network."
-  },
   "/w/KT4": {
     "description": "{eip2334} shows 'EIP2334' and links to EIP documentation. {strongText} is important information bolded for emphasis",
     "message": "However, all is not lost. Assuming you derive your keys using {eip2334} (as per the default onboarding flow) then {strongText}."
@@ -346,9 +343,6 @@
   },
   "7lhBkq": {
     "message": "Use L15LYX to sync the L15 testnet."
-  },
-  "7s6XNV": {
-    "message": "Staking and rewards"
   },
   "7sZfCF": {
     "message": "More on Nimbus"
@@ -1257,9 +1251,6 @@
   "XVehvN": {
     "description": "{filesPattern} refers to a computer command which will find {keyFile} and\n                {passwordFile} - both files within a computer.",
     "message": "{filesPattern} will expect that the {keyFile} exists, and the file containing the password for it is {passwordFile}."
-  },
-  "XmddSV": {
-    "message": "Build from source"
   },
   "Xwdwnq": {
     "message": "Limiting the maximum stake to {pricePerValidator} LYXt encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
