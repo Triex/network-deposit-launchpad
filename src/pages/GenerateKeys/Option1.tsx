@@ -7,7 +7,12 @@ import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
 import { Alert } from '../../components/Alert';
 import { Code } from '../../components/Code';
-import {LUKSO_NETWORK_NAME, IS_MAINNET, LUKSO_NETWORK_NAMESPACE} from '../../utils/envVars';
+import {
+    LUKSO_NETWORK_NAME,
+    IS_MAINNET,
+    LUKSO_NETWORK_NAMESPACE,
+    LUKSO_NETWORK_NAMESPACE_NAME
+} from '../../utils/envVars';
 import { Button } from '../../components/Button';
 import githubScreenshot from '../../static/github-cli-screenshot.png';
 import { colors } from '../../styles/styledComponentsTheme';
@@ -123,7 +128,7 @@ export const Option1 = ({
               {`--${formatMessage({
                 defaultMessage: 'chain',
                 description: 'this is used as a command line flag',
-              })} ${LUKSO_NETWORK_NAME.toLowerCase()}-${LUKSO_NETWORK_NAMESPACE.toLowerCase()}`}
+              })} ${LUKSO_NETWORK_NAME.toLowerCase()}-${LUKSO_NETWORK_NAMESPACE_NAME.toLowerCase()}`}
             </span>
           </Pre>
         </Alert>
