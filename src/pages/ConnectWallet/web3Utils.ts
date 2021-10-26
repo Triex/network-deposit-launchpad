@@ -20,6 +20,9 @@ export enum NetworkChainId {
   'Rinkeby' = 4,
   'Göerli' = 5,
   'Kovan' = 42,
+  'l15-dev' = 231,
+  'l15-staging' = 232,
+  'l15' = 23,
 }
 
 /*
@@ -33,10 +36,16 @@ const supportedNetworks = [
   NetworkChainId.Rinkeby,
   NetworkChainId.Ropsten,
   NetworkChainId.Kovan,
+  NetworkChainId["l15-dev"],
+  NetworkChainId["l15-staging"],
+  NetworkChainId["l15"],
 ];
 
 enum Testnet {
   'Göerli',
+  'l15-dev',
+  'l15-staging',
+  'l15',
 }
 
 enum Mainnet {
