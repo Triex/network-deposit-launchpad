@@ -24,7 +24,7 @@ const LangItem = styled(Link)`
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+    background-image: ${p => `linear-gradient(to right, ${p.theme.gradient})`};
     transition: transform 0.1s;
     transform: scale(1.02);
   }

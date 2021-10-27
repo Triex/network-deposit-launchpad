@@ -167,10 +167,12 @@ const _Routes = () => {
   const { locale, formatMessage } = useIntl();
   const localizedRoutes = localizeRoutes(locale, routes);
 
-  const title = formatMessage({ defaultMessage: 'Eth2 Launchpad' });
+  const title = formatMessage({
+    defaultMessage: 'LUKSO L15 Ephemeral Testnet Launchpad',
+  });
   const description = formatMessage({
     defaultMessage:
-      'Become a validator and help secure the future of Ethereum.',
+      'Become a L15 testnet validator and help secure the future of LUKSO.',
   });
   return (
     <>

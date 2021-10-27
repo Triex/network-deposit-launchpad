@@ -2,10 +2,10 @@ import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import { Box, DropButton } from 'grommet';
-import { Menu, Language, FormDown } from 'grommet-icons';
+import { Menu, FormDown } from 'grommet-icons';
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
-import EthDiamond from '../static/eth-diamond-plain.svg';
+import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { web3ReactInterface } from '../pages/ConnectWallet';
 import { trimString } from '../utils/trimString';
 import {
@@ -19,7 +19,7 @@ import { routesEnum } from '../Routes';
 import { Heading } from './Heading';
 import {
   IS_MAINNET,
-  ETH2_NETWORK_NAME,
+  LUKSO_NETWORK_NAME,
   MAINNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
   TESTNET_LAUNCHPAD_URL,
@@ -27,13 +27,14 @@ import {
 import useMobileCheck from '../hooks/useMobileCheck';
 import { FormattedMessage } from 'react-intl';
 
-const RainbowBackground = styled(Box)`
-  background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+const GradientBackground = styled(Box)`
+  background-image: ${p =>
+    `linear-gradient(177deg, ${p.theme.gradientNavbar})`};
 `;
 
-const EthLogo = styled.img`
-  height: 40px;
-  width: 40px;
+const LuksoLogo = styled.img`
+  height: 50px;
+  width: 50px;
 `;
 
 const NetworkText = styled.div`
@@ -49,14 +50,30 @@ const NetworkText = styled.div`
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+    background: rgba(255, 255, 255, 0.6);
     transition: transform 0.1s;
     transform: scale(1.02);
+    color: #000;
+  }
+  svg {
+    stroke: #fff;
+  }
+  :hover svg {
+    stroke: #666;
   }
 `;
 
 const NavBarLinks = styled.div`
   display: flex;
+  .white {
+    color: #fff;
+  }
+  .white span {
+    color: #fff;
+  }
+  .bold span {
+    font-weight: 600;
+  }
   @media only screen and (max-width: 1080px) {
     .secondary-link {
       display: none;
@@ -74,6 +91,7 @@ const ValidatorDropdown = styled(DropButton)`
     border: none;
     box-shadow: none;
   }
+  color: #fff;
 `;
 
 const DotDropdown = styled(DropButton)`
@@ -104,6 +122,9 @@ const NetworkInfo = styled.div`
 const NavLinksRight = styled.div`
   display: flex;
   align-items: center;
+  .white {
+    color: #fff;
+  }
 `;
 
 const BarLinkText = styled(Heading)`
@@ -114,7 +135,7 @@ const BarLinkText = styled(Heading)`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-weight: ${(p: { active?: boolean }) => (p.active ? 'bold' : 300)};
+  font-weight: ${(p: { active?: boolean }) => (p.active ? 'bold' : 400)};
 `;
 
 const _AppBar = ({ location }: RouteComponentProps) => {
@@ -153,7 +174,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
   const networkName = IS_MAINNET ? 'mainnet' : 'Göerli testnet';
 
   return (
-    <RainbowBackground
+    <GradientBackground
       tag="header"
       direction="row"
       align="center"
@@ -164,20 +185,20 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     >
       <NavBarLinks>
         <Link to={routesEnum.landingPage} className="mr30">
-          <EthLogo src={EthDiamond} alt="eth-diamond" />
+          <LuksoLogo src={LuksoLogoPng} alt="LUKSO-logo" />
           {!mobile && (
             <div className="flex flex-column center ml5">
               <BarLinkText
                 active={pathname === routesEnum.landingPage}
                 level={4}
                 margin="none"
-                className="bar-link-text no-padding"
+                className="bar-link-text no-padding white bold"
               >
                 <Text>
                   <FormattedMessage
-                    defaultMessage="Eth2 {network} Launchpad"
+                    defaultMessage="LUKSO L15 Testnet Launchpad"
                     values={{
-                      network: IS_MAINNET ? '' : `${ETH2_NETWORK_NAME} `,
+                      network: IS_MAINNET ? '' : `${LUKSO_NETWORK_NAME} `,
                     }}
                     description="{network} inserts the testnet name, only if on the testnet"
                   />
@@ -194,7 +215,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.acknowledgementPage}
           >
             <FormattedMessage defaultMessage="Deposit" />
@@ -203,7 +224,12 @@ const _AppBar = ({ location }: RouteComponentProps) => {
         <ValidatorDropdown
           className="secondary-link"
           label={
-            <BarLinkText level={4} margin="none" active={isDropdownPage}>
+            <BarLinkText
+              level={4}
+              margin="none"
+              active={isDropdownPage}
+              className="white"
+            >
               <FormattedMessage defaultMessage="Clients" />
             </BarLinkText>
           }
@@ -221,7 +247,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.checklistPage}
           >
             <FormattedMessage defaultMessage="Checklist" />
@@ -231,7 +257,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.FaqPage}
           >
             <FormattedMessage defaultMessage="FAQ" />
@@ -241,7 +267,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.topUpPage}
           >
             <FormattedMessage defaultMessage="Top Up" />
@@ -249,27 +275,10 @@ const _AppBar = ({ location }: RouteComponentProps) => {
         </Link>
       </NavBarLinks>
       <NavLinksRight>
-        {!mobile && (
-          <Link to={routesEnum.languagesPage} className="mx10 secondary-link">
-            <BarLinkText
-              level={4}
-              margin="none"
-              className="bar-link-text"
-              active={pathname === routesEnum.languagesPage}
-            >
-              <FormattedMessage defaultMessage="Languages" />
-            </BarLinkText>
-          </Link>
-        )}
-        {mobile && (
-          <Link to={routesEnum.languagesPage} className="mx10">
-            <Language color="black" />
-          </Link>
-        )}
         {mobile && (
           <ValidatorDropdown
             className="secondary-link"
-            label={<Menu color="black" />}
+            label={<Menu color="white" />}
             dropAlign={{ top: 'bottom', right: 'right' }}
             dropContent={
               <Card>
@@ -277,7 +286,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   {walletConnected && (
                     <Box className="flex flex-row mb20">
                       <Dot success={networkAllowed} error={!networkAllowed} />
-                      <Text size="small" className="ml10" color="blueDark">
+                      <Text size="small" className="ml10" color="white">
                         {trimString(account as string, 10)}
                       </Text>
                     </Box>
@@ -285,9 +294,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   <span>
                     <FormattedMessage defaultMessage="Launchpad network:" />{' '}
                     <b>
-                      {IS_MAINNET
-                        ? `mainnet`
-                        : `${TESTNET_LAUNCHPAD_NAME} testnet`}
+                      {IS_MAINNET ? `L15` : `${TESTNET_LAUNCHPAD_NAME} testnet`}
                     </b>
                   </span>
                   <Link primary to={switchLaunchpadUrl}>
@@ -297,7 +304,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                         network: `${
                           IS_MAINNET
                             ? `${TESTNET_LAUNCHPAD_NAME} testnet`
-                            : `mainnet`
+                            : `L15`
                         }`,
                       }}
                     />
@@ -320,7 +327,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   </DropdownLink>
                   <Text className="my20">
                     <b>
-                      <FormattedMessage defaultMessage="The Eth2 clients" />
+                      <FormattedMessage defaultMessage="The L15 clients" />
                     </b>
                   </Text>
                   <DropdownLink to={routesEnum.lighthouse}>
@@ -339,7 +346,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             className="secondary-link"
             label={
               <NetworkText>
-                {IS_MAINNET ? `Mainnet` : `${ETH2_NETWORK_NAME}`}
+                {IS_MAINNET ? `L15` : `${LUKSO_NETWORK_NAME}`}
                 <FormDown />
               </NetworkText>
             }
@@ -352,14 +359,14 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                       <FormattedMessage defaultMessage="This is a test network ⚠️" />
                     </Text>
                   )}
-                  <DropdownLink to={switchLaunchpadUrl}>
+                  <DropdownLink to="#">
                     <FormattedMessage
-                      defaultMessage="Switch to {network} launchpad"
+                      defaultMessage="L16 Coming Soon"
                       values={{
                         network: `${
                           IS_MAINNET
                             ? `${TESTNET_LAUNCHPAD_NAME} testnet`
-                            : `mainnet`
+                            : `L15`
                         }`,
                       }}
                     />
@@ -404,13 +411,13 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 }
               />
             )}
-            <Text size="small" className="ml10" color="blueDark">
+            <Text size="small" className="ml10" color="grayLight">
               {trimString(account as string, 10)}
             </Text>
           </Box>
         )}
       </NavLinksRight>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };
 

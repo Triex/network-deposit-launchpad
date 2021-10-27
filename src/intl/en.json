@@ -1,6 +1,6 @@
 {
-  "+3PPtT": {
-    "message": "Today, you'll secure the Beacon Chain, the first Eth2 upgrade. It's a separate chain that uses a proof-of-stake consensus mechanism. Eventually you'll help secure all of Ethereum, once mainnet (the Ethereum we use today) merges with the Beacon Chain."
+  "+Cieba": {
+    "message": "{withdrawalCredentials} is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
   },
   "+L0IkF": {
     "message": "Step 2: Generate deposit keys using the Ethereum Foundation deposit tool"
@@ -10,6 +10,9 @@
   },
   "+V+ZX+": {
     "message": "Validator uptime"
+  },
+  "+VetqJ": {
+    "message": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 LYXt) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
   },
   "+e8bO+": {
     "message": "I understand that I will not be able to withdraw my funds if I lose my mnemonic phrase."
@@ -23,8 +26,16 @@
   "+ozGrs": {
     "message": "Polish"
   },
+  "+rEvxo": {
+    "description": "{lyxt} injects Pandora or Vanguard networks depending on step",
+    "message": "Choose {lyxt} client"
+  },
   "+s8Gac": {
     "message": "Connect {wallet} to {network}"
+  },
+  "+sCvYi": {
+    "description": "{http} shows '--http' terminal command",
+    "message": "Use {http} to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
   },
   "/+atl4": {
     "message": "Recommendation disclaimer"
@@ -56,11 +67,11 @@
   "/jJLYy": {
     "message": "Transactions"
   },
+  "/mj2YE": {
+    "message": "Cross check the deposit contract address against other websites – for example: Reddit, Twitter, and GitHub."
+  },
   "/ub26/": {
     "message": "Understand the risks"
-  },
-  "/vPNsl": {
-    "message": "The merge, also known as the docking, will see the Ethereum mainnet we use today merge with the Beacon Chain. This is when Ethereum will fully transition to proof-of-stake."
   },
   "/vkCbT": {
     "message": "Validators get rewarded for proposing and attesting to blocks. The rewards are tied to the overall amount of {TICKER_NAME} staked in the network."
@@ -99,6 +110,9 @@
   "0S8/Wo": {
     "message": "Testnet practice"
   },
+  "0ac/fX": {
+    "message": "To become a validator, you will need to be able to run commands in the terminal on your computer. Generating your new BLS key pairs and installing the validator software are both done in the terminal."
+  },
   "0i4cCJ": {
     "message": "Confirm deposits ({depositKeys})"
   },
@@ -108,17 +122,20 @@
   "0oNdmk": {
     "message": "Validators FAQ"
   },
-  "0qvZJn": {
-    "message": "More on the Eth2 vision"
-  },
   "0uqjBl": {
     "message": "Earn continuous rewards for providing a public good to the community."
+  },
+  "0zaPZK": {
+    "message": "You'll need a significant amount of space for the Pandora chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
   },
   "122+yR": {
     "message": "withdrawal key"
   },
   "19o6KO": {
     "message": "When can I withdraw my funds, and what’s the difference between exiting and withdrawing?"
+  },
+  "1CNYN4": {
+    "message": "I understand that keys are my responsibility and that my mnemonic (seed) will be the {onlyWay} to withdraw my funds in the future."
   },
   "1FdDAV": {
     "message": "JSON RPC endpoint"
@@ -147,8 +164,8 @@
   "1fytak": {
     "message": "Check deposit contract details"
   },
-  "2+TGmE": {
-    "message": "To process incoming validator deposits from the Eth1 chain, you'll need to run an Eth1 client as well as your Eth2 client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
+  "1lwIVT": {
+    "message": "LUKSO validator checklist"
   },
   "22EpKq": {
     "description": "{JSON} is filetype extension",
@@ -161,12 +178,17 @@
   "2AHkym": {
     "message": "There was an error loading your validator information from Beaconcha.in"
   },
+  "2Avb9j": {
+    "message": "Thank you for supporting the LUKSO L15 ephemeral testnet!"
+  },
   "2CYEJa": {
     "message": "Troubleshooting"
   },
-  "2DuJTX": {
-    "description": "{http} shows '-rpc-http-enabled' terminal command",
-    "message": "Use {http} to connect your Eth2 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+  "2PgclB": {
+    "message": "It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
+  },
+  "2Qn0Hh": {
+    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
   },
   "2a1GTh": {
     "message": "you can always recalculate your signing key from your withdrawal key"
@@ -179,9 +201,6 @@
   },
   "32rBNK": {
     "message": "Terms of Service"
-  },
-  "36KKVb": {
-    "message": "More on Eth2 economics"
   },
   "38VH2G": {
     "message": "Install deposit-cli tool"
@@ -204,18 +223,14 @@
   "3PbtmF": {
     "message": "Check the whole address, not just a portion of it. There could be just a few bytes different."
   },
-  "3Pmjlx": {
-    "description": "{latestReleased} = 'latest stable software release', being styled in bold",
-    "message": "I've installed the {latestRelease} of my Eth2 client."
-  },
   "3Q43SM": {
     "message": "Become a validator"
   },
   "3QmqFf": {
     "message": "Top-up transaction"
   },
-  "3XK21U": {
-    "message": "We'll help you create a signing key for every validator you want to run. Because there are no withdrawals until The Merge, you will not create your withdrawal keys now. When it is possible to withdraw your funds, you can derive your withdrawal keys from your mnemonic."
+  "3UO4hS": {
+    "message": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
   },
   "3tR/V9": {
     "message": "Section 2 - During setup"
@@ -230,14 +245,18 @@
   "47svuN": {
     "message": "Installation"
   },
+  "4At0e7": {
+    "description": "{pricePerValidator} represents deposit amount styled in bold",
+    "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} LYXt. This forms your initial balance."
+  },
   "4FcLja": {
     "message": "Prysm is a Go implementation of Ethereum 2.0 protocol with a focus on usability, security, and reliability."
   },
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
   },
-  "4QNsja": {
-    "message": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of ETH staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
+  "4TOYsg": {
+    "message": "LUKSO L15 Ephemeral Testnet Launchpad"
   },
   "4hnEBA": {
     "message": "Has the smart contract code been verified?"
@@ -247,6 +266,9 @@
   },
   "52qGy6": {
     "message": "CURRENT"
+  },
+  "53xzcb": {
+    "message": "Configure your L15 client"
   },
   "54J/qs": {
     "message": "What happens if I use BLS withdrawal and I lose my withdrawal key?"
@@ -263,15 +285,15 @@
   "5UH1sh": {
     "message": "Romanian"
   },
-  "5t8oYl": {
-    "description": "{variables} are social media platform links to Discord and Reddit (do not translate names)",
-    "message": "Visit EthStaker on {discord} or {reddit} at any time during your setup for some friendly help!"
+  "60BCbB": {
+    "description": "{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on",
+    "message": "Choose your {luksoVersionStep} client and set up a node"
   },
   "6CK2Nu": {
     "message": "Your wallet is on the wrong network. Switch to {network}"
   },
-  "6HBTTN": {
-    "message": "Proof-of-stake (PoS) and the Beacon Chain"
+  "6RJOKW": {
+    "message": "I've simulated how to migrate from one L15 client to another L15 client."
   },
   "6UUL73": {
     "message": "More on validators"
@@ -297,6 +319,9 @@
   "793QlI": {
     "message": "{title} is not supported in offline mode."
   },
+  "7RVokJ": {
+    "message": "More on the Vanguard Consensus Chain"
+  },
   "7UOvbT": {
     "message": "Offline"
   },
@@ -306,9 +331,18 @@
   "7XiYRi": {
     "message": "Slashed?"
   },
+  "7bEnm6": {
+    "message": "If you go offline for a number of days under normal conditions you will lose an amount of LYXt roughly equivalent to the amount of LYXt you would have gained in that period. In other words, if you stood to earn ≈0.01 LYXt, you would instead be penalised ≈0.01 LYXt."
+  },
   "7d3Nzd": {
     "description": "{variables} are Beacon Chain block explorers, with links to each (do not translate names)",
     "message": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using {beaconchain} or {beaconscan} blockchain explorers."
+  },
+  "7gmpID": {
+    "message": "LUKSO validators community"
+  },
+  "7iEYck": {
+    "message": "More on LUKSO economics"
   },
   "7lhBkq": {
     "message": "Use L15LYX to sync the L15 testnet."
@@ -321,10 +355,6 @@
   },
   "7tRtDE": {
     "message": "Every epoch, the network measures the actions of each validator and issues your rewards or penalties appropriately."
-  },
-  "7y4xl1": {
-    "description": "This phrase is a sentence ",
-    "message": "Eth2 Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
   },
   "80eWKU": {
     "message": "True balance"
@@ -354,6 +384,9 @@
   "8boRAk": {
     "message": "slashings"
   },
+  "8sTrb4": {
+    "message": "Your balance is updated periodically by the LUKSO network rules as you carry (or fail to carry) out your responsibilities."
+  },
   "8wd0q5": {
     "message": "An Ethereum client designed to be enterprise-friendly for both public and private, permissioned network use cases."
   },
@@ -369,8 +402,8 @@
   "96pen8": {
     "message": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
   },
-  "9DZdsc": {
-    "message": "Is there any advantage to having more than {pricePerValidator} ETH at stake?"
+  "9BcSOf": {
+    "message": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of LYXt staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
   },
   "9JktQX": {
     "message": "There is no easy answer to this question as there are many factors that go into this calculation."
@@ -390,9 +423,6 @@
   "9uOFF3": {
     "message": "Overview"
   },
-  "A/iYbo": {
-    "message": "The Eth2 upgrades will only be successful if validators understand the risks and responsibilities."
-  },
   "A2b4uB": {
     "message": "Send deposit"
   },
@@ -402,8 +432,18 @@
   "AC669U": {
     "message": "If you need help, check out the Python documentation."
   },
-  "AEp7+F": {
-    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake. The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current Ethereum chain."
+  "AIEf0K": {
+    "description": "This phrase is a sentence ",
+    "message": "LUKSO L15 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
+  },
+  "ALg2MW": {
+    "message": "Check the deposit contract on your favorite block explorer:"
+  },
+  "AMajpT": {
+    "message": "Block rewards are calculated using a sliding scale based on the total amount of LYXt staked on the network."
+  },
+  "ANsnxE": {
+    "message": "No. There is no advantage to having more than {pricePerValidator} LYXt staked."
   },
   "AYKxmf": {
     "message": "Connect your hardware wallet to Metamask"
@@ -413,6 +453,9 @@
   },
   "AbBgEs": {
     "message": "understanding validator effective balance"
+  },
+  "AbTYBZ": {
+    "message": "Transfers between validators aren't possible yet. You will have to wait until after the Vanguard Consensus Engine mainnet is released before you can deposit, withdraw or transfer real tokens."
   },
   "Ad61gz": {
     "description": "{url} is link to GitHub CLI release, made bold for emphasis",
@@ -433,20 +476,14 @@
   "Aw1mMs": {
     "message": "Top up validator"
   },
-  "B2EKj+": {
-    "message": "I understand that I need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} to become a validator, and that the transfer of {TICKER_NAME} to the Beacon Chain is one-way, and non-reversible."
-  },
-  "BB65vH": {
-    "message": "You can think of the deposit contract as a transfer of funds between Ethereum accounts and Eth2 validators."
+  "AzR2Fq": {
+    "message": "I've simulated how to manually stop and restart my Vanguard Node (VN) and Validator Client (VC) gracefully."
   },
   "BCsPjJ": {
     "message": "Start deposit process"
   },
   "BFAvr/": {
     "message": "Top up a validator"
-  },
-  "BFfsSX": {
-    "message": "The Eth2 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted."
   },
   "BFsUAH": {
     "description": "{code} values are terminal outputs to look for, should not translate",
@@ -455,11 +492,14 @@
   "BPpnlJ": {
     "message": "Download MetaMask"
   },
-  "BUFaRV": {
-    "message": "EthStaker community"
+  "BWbrLK": {
+    "message": "Once you're comfortable, you'll go through generating your keys and depositing your LYXt."
   },
   "Bf2QKg": {
     "message": "Validating is a long-term commitment"
+  },
+  "BiP9Gq": {
+    "message": "More on the LUKSO vision"
   },
   "Bj5yI5": {
     "message": "Effective balance"
@@ -473,11 +513,18 @@
   "C/gb74": {
     "message": "Configure Lighthouse"
   },
+  "C9dXhY": {
+    "message": "The L15 clients"
+  },
   "C9fTX1": {
     "message": "Answers to common questions on becoming a validator."
   },
   "CACPC+": {
     "message": "Czech"
+  },
+  "CALy1/": {
+    "description": "Asks users to check deposit contract address against a block explorer and confirm 32 LYXt deposits are present",
+    "message": "Are there recent {lyxtAmount} deposits?"
   },
   "CBbRux": {
     "message": "OpenEthereum is written in Rust and licensed under the GPLv3."
@@ -485,18 +532,12 @@
   "CF9vMR": {
     "message": "Proof of stake"
   },
-  "CVDzDs": {
-    "message": "You should certainly top up if your balance is close to 16 ETH. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 ETH)."
-  },
-  "CdKEd/": {
-    "description": "{strongText} is a warning, bolded for emphasis",
-    "message": "The minimum amount that can be slashed is 1 ETH, but {strongText}."
+  "CcuTCU": {
+    "description": "{stakerChecklist} = 'Staker Checklist' bolded to draw attention",
+    "message": "Be sure to complete the {stakerChecklist} as soon as possible. And join the LUKSO Discord community (#validators channel) for support and discussion with fellow validators."
   },
   "CeeJfw": {
     "message": "I've set up a firewall."
-  },
-  "Cv+T7+": {
-    "message": "Slashing has two purposes: (1) to make it prohibitively expensive to attack Eth2, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
   },
   "D0Rigq": {
     "message": "NO"
@@ -504,9 +545,6 @@
   "D33f/7": {
     "description": "APR refers to Annual Percentage Rate",
     "message": "Current APR"
-  },
-  "D4cQV/": {
-    "message": "How much ETH do I need to stake to become a validator?"
   },
   "DCaq7N": {
     "message": "Your wallet is connected to the right network!"
@@ -543,15 +581,15 @@
     "description": "this is used as a command line flag",
     "message": "chain"
   },
-  "E8t6ru": {
-    "message": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, so store your mnemonic safely in order to be able to withdraw later."
-  },
   "EFjTSf": {
     "message": "Minor penalties are given for inadvertant actions (or inactions) that hinder consensus."
   },
   "EIUapL": {
     "description": "{deposit} = 'deposit' styled as code",
     "message": "Use the terminal to move into the directory that contains the {deposit} executable"
+  },
+  "EOAJVt": {
+    "message": "Today, you'll secure LUKSO's Vanguard Consensus Chain. It's a new and separate chain that uses a proof-of-stake consensus mechanism."
   },
   "EPCHZV": {
     "message": "If you lose your signing key, your validator can no longer propose or attest."
@@ -568,6 +606,17 @@
   "EXLB88": {
     "message": "This is a test network ⚠️"
   },
+  "EoeAcv": {
+    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
+    "message": "I've synced my L15 vanguard node on {LUKSO_NETWORK_NAME}."
+  },
+  "EuhIal": {
+    "message": "Syncing your Pandora client may take a few days in the worst-case scenario."
+  },
+  "F7VIgY": {
+    "description": "Link to documentation about Pandora client Besu, specifically for goerli testnet",
+    "message": "Besu on Goerli documentation"
+  },
   "FEbVwB": {
     "message": "The key concept is the following:"
   },
@@ -577,6 +626,9 @@
   "FSRfSJ": {
     "message": "I understand that this transaction is not reversible."
   },
+  "FYRKlK": {
+    "message": "Proof-of-stake (PoS) and the Vanguard Consensus Chain"
+  },
   "FZa0R+": {
     "message": "This scenario is very extreme and unlikely to happen."
   },
@@ -585,9 +637,6 @@
   },
   "FazwRl": {
     "message": "Try again"
-  },
-  "FdbNS6": {
-    "message": "Configure your Eth1 Client"
   },
   "FfLWt5": {
     "message": "An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems."
@@ -609,9 +658,6 @@
   },
   "G5IMoZ": {
     "message": "Download master branch source code"
-  },
-  "G6kg26": {
-    "message": "Eth2 Clients: {clientName}"
   },
   "G8tAKU": {
     "message": "Choose client"
@@ -637,9 +683,6 @@
   "Gbo300": {
     "message": "Generate keys"
   },
-  "GrU/lp": {
-    "message": "The Eth2 clients"
-  },
   "GsBRWL": {
     "message": "Languages"
   },
@@ -649,14 +692,27 @@
   "GuIwY6": {
     "message": "When should I top up my validator’s balance?"
   },
+  "GxQors": {
+    "message": "You'll need to run a L15 node to become a validator. Take a look at the checklist to prepare yourself and your equipment."
+  },
   "H+Wcch": {
     "message": "Section 2"
+  },
+  "H+cVuO": {
+    "message": "LUKSO L15 Testnet Launchpad"
   },
   "H+kIpp": {
     "message": "Total amount required"
   },
   "H5+NAX": {
     "message": "Balance"
+  },
+  "HJVEQL": {
+    "description": "{lyxtAmount} will generally refer to 32 LYXt",
+    "message": "Does the site asking you for your {lyxtAmount} deposit have a URL you expect?"
+  },
+  "HMpGw2": {
+    "message": "You should certainly top up if your balance is close to 16 LYXt. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYXt)."
   },
   "HoahTd": {
     "message": "If you do not supply a password, Nimbus will interactively ask for it on startup."
@@ -673,14 +729,11 @@
   "I5lWZA": {
     "message": "Can I change the withdrawal credentials of my validator after the first deposit?"
   },
-  "IAKvZ0": {
-    "message": "The Eth2 upgrades"
+  "IBLsVn": {
+    "message": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
   },
   "IJw06E": {
     "message": "Sign transaction with your wallet"
-  },
-  "IVyWYt": {
-    "message": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 ETH) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
   },
   "IZFEUg": {
     "message": "Ready"
@@ -701,9 +754,6 @@
   "IwrKbS": {
     "description": "{impact} shows 'impact of effective balance' and links to article on 'Effective Balance'",
     "message": "It depends. In addition to the {impact} there are two important scenarios to be aware of:"
-  },
-  "J0DclJ": {
-    "message": "Syncing your Eth1 client may take a few days in the worst-case scenario."
   },
   "J455S4": {
     "message": "If you’re a git user, you can run {gitClone} to download the {master} branch."
@@ -726,11 +776,11 @@
   "JPT/TK": {
     "message": "4. Avoid phishing"
   },
-  "JYrJic": {
-    "message": "Avoid Eth2 phishing"
-  },
   "JhUYU3": {
     "message": "Download CLI app"
+  },
+  "JpZRE1": {
+    "message": "Can I withdraw my L15 LYXt to LYX or LYXe?"
   },
   "JqVeL+": {
     "message": "Resource usage can vary significantly between clients. Research the different clients if you're working with resource constraints."
@@ -757,15 +807,21 @@
   "KC9jbz": {
     "message": "Hardware checklist"
   },
+  "KCBqlo": {
+    "message": "Check your favorite L15 block explorer:"
+  },
+  "KFSZ68": {
+    "message": "{warning} Duplicate deposits with the same keyfile public key will be considered as a double deposit. Any extra balance more than {lyxt} will NOT be counted in your effective balance on the Vanguard Chain. Withdrawing your deposits also won't currently be possible."
+  },
+  "KLfakO": {
+    "description": "{latestReleased} = 'latest stable software release', being styled in bold",
+    "message": "I've installed the {latestRelease} of my L15 client."
+  },
+  "KMyzzI": {
+    "message": "How LUKSO moves towards Mainnet?"
+  },
   "KN7zKn": {
     "message": "Error"
-  },
-  "KV017i": {
-    "message": "A validator is an entity that participates in the consensus of the Ethereum 2.0 protocol."
-  },
-  "KhEtqB": {
-    "description": "Link to documentation about eth1 client Besu, specifically for goerli testnet",
-    "message": "Besu on Goerli documentation"
   },
   "KjcAm2": {
     "message": "Rewards and penalties are issued roughly every six and a half minutes – a period of time known as an epoch."
@@ -809,8 +865,14 @@
     "description": "{directoriesPattern} refers to a computer command which will find {keyDirectory} and\n                {passwordDirectory} - both folders within a computer.",
     "message": "{directoriesPattern} will find {keyDirectory}, and expect to find {passwordDirectory}."
   },
+  "LuxuL7": {
+    "message": "Avoid LYXt phishing"
+  },
   "Lv3Pmp": {
     "message": "Your initial deposit has already been made for this validator public key. Please wait and check the status of your deposit on the Beaconchain data provider."
+  },
+  "Lva1dX": {
+    "message": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset."
   },
   "LyJqWj": {
     "message": "More on validator roles and responsibilities"
@@ -820,9 +882,6 @@
   },
   "MIsmjW": {
     "message": "Connect new wallet"
-  },
-  "MPHPEO": {
-    "message": "I'm able to connect my Eth2 beacon node to my Eth1 client via HTTP API(s)."
   },
   "MQTBvH": {
     "message": "Protect yourself against double deposits"
@@ -842,25 +901,14 @@
   "Mb3npQ": {
     "message": "Using the terminal"
   },
-  "MbsAo3": {
-    "message": "This launchpad will help you become a validator, so you can play an active part in Ethereum's future. Validators are key to the more secure, scalable, and sustainable Ethereum we're building together."
-  },
   "Mc8nNE": {
     "message": "Transaction failed"
   },
   "MmZjeu": {
     "message": "Top-up details"
   },
-  "N+2G1J": {
-    "description": "{ethereum} injects Eth1 or Eth2 depending on step",
-    "message": "Choose {ethereum} client"
-  },
   "N0rwnt": {
     "message": "{depositFileName} isn't a valid deposit_data JSON file. Try again."
-  },
-  "NBJR7v": {
-    "description": "{http} shows '--http' terminal command",
-    "message": "Use {http} to connect your Eth2 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
   },
   "NEmnAV": {
     "message": "Italian"
@@ -880,9 +928,6 @@
   "NTWnJC": {
     "message": "Download command line app"
   },
-  "NVQd7i": {
-    "message": "To process incoming validator deposits from mainnet (the Eth1 chain), you'll need to run an Eth1 client in parallel to your Eth2 client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
-  },
   "NVljH4": {
     "message": "More on Prysmatic Labs"
   },
@@ -895,11 +940,11 @@
   "NZUWs7": {
     "message": "Remember that a validator’s vote is weighted by the amount it has at stake."
   },
-  "NZsVaA": {
-    "message": "Validators and Eth2"
-  },
   "Nb5DNK": {
     "message": "Become a validator with Teku"
+  },
+  "NmiAuT": {
+    "message": "Learn more about the roles and responsibilities of L15 validators."
   },
   "NwzcYT": {
     "message": "Teku needs to be pointed at files containing keystores and their associated passwords at startup. There are 3 methods for doing so."
@@ -907,14 +952,17 @@
   "O+3LJ1": {
     "message": "This validator's balance is at the effective maximum: {PRICE_PER_VALIDATOR} {TICKER_NAME}."
   },
-  "O54B/F": {
-    "message": "The Eth2 network"
+  "OF9qv9": {
+    "message": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client in parallel to your Vanguard client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
   },
   "OIvXIO": {
     "message": "Complete remaining {remainingTxCount} deposits"
   },
   "ON2tXT": {
     "message": "The Nethermind documentation explains how to download and install the client."
+  },
+  "OQ0r3H": {
+    "message": "I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)."
   },
   "OdYQYh": {
     "message": "More on ConsenSys"
@@ -928,12 +976,8 @@
   "P+nziG": {
     "message": "As a validator, you'll need to have funds at stake so you can be penalized for behaving dishonestly."
   },
-  "P0kiYS": {
-    "message": "The Beacon Chain upgrade brings proof-of-stake consensus to Ethereum."
-  },
-  "P1QerV": {
-    "description": "{discord} and {reddit} are links to EthStaker forums on Discord and Reddit respectively",
-    "message": "If you have questions, EthStaker community is a good place to get help! You can find support on {discord} or {reddit}."
+  "P7/KZ1": {
+    "message": "The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L15 is the ephemeral testnet prior to L16, and mainnet launch."
   },
   "P91KmA": {
     "message": "Become a validator {emoji}"
@@ -943,9 +987,6 @@
   },
   "PIQDar": {
     "message": "We recommend you go through the entire process on a testnet first to get comfortable."
-  },
-  "PboOCR": {
-    "message": "Configure your Eth2 client"
   },
   "PfoT0C": {
     "message": "This checklist will help you understand the role of a validator and prepare you for the role."
@@ -968,14 +1009,17 @@
   "Px7wWb": {
     "message": "pip documentation"
   },
-  "PyArfT": {
-    "message": "Eth1 address withdrawal: If you want to withdraw to Eth1 chain after the merge, you can set {eth1AddressWithdraw} when running deposit-cli. {boldWarning}"
+  "Q+vr3v": {
+    "message": "To become a validator on the L15 testnet, you need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
   },
   "Q1ZwPT": {
     "message": "clipboard"
   },
   "Q8P0rZ": {
     "message": "Validators have a maximum effective balance of {PRICE_PER_VALIDATOR} {TICKER_NAME}. You only need to top up {maxTopupValue} {TICKER_NAME} to max out your effective balance."
+  },
+  "QBAX97": {
+    "message": "L15 Vanguard Node (VN)"
   },
   "QKFeMq": {
     "message": "Internet"
@@ -1004,9 +1048,6 @@
   "RCGrka": {
     "message": "only way"
   },
-  "RIFLCz": {
-    "message": "Phishing is a very real risk for Eth2 validators and, unfortunately, many people will lose funds due to these attacks."
-  },
   "ROHpFF": {
     "message": "1. Learn about your responsibilities"
   },
@@ -1016,20 +1057,11 @@
   "RWqrlk": {
     "message": "congratulations"
   },
-  "RYUKCz": {
-    "message": "I've simulated how to migrate from one Eth2 client to another Eth2 client."
-  },
-  "RaBZna": {
-    "message": "If you go offline for a number of days under normal conditions you will lose an amount of ETH roughly equivalent to the amount of ETH you would have gained in that period. In other words, if you stood to earn ≈0.01 ETH, you would instead be penalised ≈0.01 ETH."
-  },
   "Rg5ySE": {
     "message": "How many validators would you like to run?"
   },
   "Rj0OAx": {
     "message": "Or in other words, a human running a computer process. This process proposes and vouches for new blocks to be added to the blockchain."
-  },
-  "RkbwNZ": {
-    "message": "Withdrawing your deposit won't be possible until mainnet merges with the Beacon Chain."
   },
   "Rm2GQZ": {
     "message": "Total {TICKER_NAME} staked (millions)"
@@ -1055,10 +1087,6 @@
   "SGzXoY": {
     "message": "Your stake has reached the deposit contract!"
   },
-  "SMffKt": {
-    "description": "{ethVersionStep} is either 1 or 2, depending on which step user is on",
-    "message": "Choose your Eth{ethVersionStep} client and set up a node"
-  },
   "SR0qHv": {
     "message": "Avoid overly-complicated setups and be aware of trade offs. Being offline for brief periods of time will result in small inactivity penalities, but will be recouped easily after being online again for about the same amount of time. Complicated power backups can add to the expense of your setup, and redundant backup validators can lead to slashing."
   },
@@ -1083,6 +1111,12 @@
   "Seanpx": {
     "message": "Required"
   },
+  "ShW01z": {
+    "message": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Vanguard Consensus Chain / L15 testnet."
+  },
+  "Skc8c/": {
+    "message": "I've imported my keystore(s) into my L15 validator client."
+  },
   "SqKNq2": {
     "description": "{homebrew} = 'homebrew' and links to the homebrew package manager website documentation",
     "message": "You can install python3 on your macOS device using {homebrew}"
@@ -1090,18 +1124,11 @@
   "Szwbym": {
     "message": "wrench"
   },
-  "TLEziZ": {
-    "message": "The Beacon Chain had its genesis on {date}. It is growing in size over time, and the introduction of sharding will also increase storage, memory, and bandwidth requirements."
-  },
   "TMw9oz": {
     "message": "Visit this site on desktop to become a validator."
   },
   "TfNuWP": {
     "message": "virtualenv would help you to create an isolated Python environment for deposit-cli tool."
-  },
-  "TmYprU": {
-    "description": "{network} inserts the testnet name, only if on the testnet",
-    "message": "Eth2 {network} Launchpad"
   },
   "Tpe6yK": {
     "message": "rpc-http-enabled documentation"
@@ -1112,25 +1139,31 @@
   "U0yY/A": {
     "message": "View extensive client comparison"
   },
+  "U3D1AX": {
+    "message": "You can think of the deposit contract as a transfer of funds between LUKSO accounts and L15 validators."
+  },
   "U7AOxj": {
     "message": "greater than 50%"
   },
-  "U7PMU1": {
-    "description": "{variables} are client names, each linking to documentation (do not translate names)",
-    "message": "The Eth2 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: {lighthouse} | {nimbus} | {prysm} | {teku}"
-  },
   "UHbYCa": {
     "message": "Your validator has its own balance – with the initial balance outlined in the deposit contract. Your rewards and penalties are reflected in your validator's balance over time."
+  },
+  "UJFSst": {
+    "message": "The current URLs are: https://explorer.pandora.l15.lukso.network/ and https://explorer.vanguard.l15.lukso.network/"
   },
   "UJMct0": {
     "description": "{etherscan} is a share link to this transaction on etherscan.io, labeled 'Etherscan'",
     "message": "Check {etherscan} for more details"
   },
-  "UWv7yD": {
-    "message": "Check the deposit contract on your favorite Ethereum block explorer:"
+  "UYxJLB": {
+    "description": "{strongText} is a warning, bolded for emphasis",
+    "message": "The minimum amount that can be slashed is 1 LYXt, but {strongText}."
   },
   "Utck3E": {
     "message": "Language support"
+  },
+  "UuqWUf": {
+    "message": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your vanguard node is vulnerable, your keystore is stored on a different machine."
   },
   "Uxs0RD": {
     "message": "Graffiti"
@@ -1147,6 +1180,9 @@
   },
   "V0cb8p": {
     "message": "If you do not have a testnet folder it is likely you have not built and run Nimbus correctly. Run the make commands again."
+  },
+  "V1O8Ob": {
+    "message": "How much LYXt do I need to stake to become a validator?"
   },
   "VASo1/": {
     "message": "Connect wallet"
@@ -1166,17 +1202,8 @@
   "VLDKor": {
     "message": "{PRICE_PER_VALIDATOR} {TICKER_NAME} is the maximum effective validator balance. This means you won't earn more rewards if your validator's balance goes above {PRICE_PER_VALIDATOR}. However you will earn less if it dips below {PRICE_PER_VALIDATOR}."
   },
-  "VPpHAq": {
-    "message": "I understand that I {cannotTransfer} my stake for a while, and I {cannotWithdraw} until the merge. I understand that if I exit, I will not be able to rejoin until much later. This is a long term commitment."
-  },
-  "VSSmNp": {
-    "message": "In other words: if the total amount of ETH staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
-  },
   "VUuZsb": {
     "message": "martial arts uniform"
-  },
-  "VY3/Wo": {
-    "message": "To become a validator, you will need to be able to run commands in the terminal on your computer. Generating your new Eth2 key pairs and installing the validator software are both done in the terminal."
   },
   "VctWDX": {
     "message": "I am certain that the validator I am topping up is my validator."
@@ -1193,24 +1220,18 @@
   "W8nHSd": {
     "message": "FAQ"
   },
-  "W9JuAN": {
-    "message": "Eth2 Validator Client (VC)"
+  "WDkfhR": {
+    "description": "{http} shows '--JsonRpc.Enabled true' terminal command",
+    "message": "Use {http} to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
   },
-  "WFVzvu": {
-    "message": "{warning} Duplicate deposits with the same keyfile public key will be considered as a double deposit. Any extra balance more than {eth} will NOT be counted in your effective balance on the Beacon Chain. You also won't be able to withdraw it until the Beacon Chain merges with mainnet."
+  "WDszx6": {
+    "message": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client as well as your Vanguard client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
   },
   "WMLn/w": {
     "message": "{totalTxCount} validators"
   },
-  "WRevBY": {
-    "description": "{http} shows '--JsonRpc.Enabled true' terminal command",
-    "message": "Use {http} to connect your Eth2 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
-  },
   "WTPUDZ": {
     "message": "These steps are optional but are recommended to optimize your node."
-  },
-  "Wao7OA": {
-    "message": "Eth2 Beacon Node (BN)"
   },
   "WkrNSk": {
     "message": "English"
@@ -1227,9 +1248,6 @@
   "X/fKmY": {
     "message": "Has the block explorer named the contract?"
   },
-  "X0dSr0": {
-    "message": "It is high risk to run your Eth2 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
-  },
   "X5KFEh": {
     "message": "That is not a valid deposit_data JSON file."
   },
@@ -1243,8 +1261,14 @@
   "XmddSV": {
     "message": "Build from source"
   },
+  "Xwdwnq": {
+    "message": "Limiting the maximum stake to {pricePerValidator} LYXt encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
+  },
   "Y47aYU": {
     "message": "Top up"
+  },
+  "Y4OdcM": {
+    "message": "The first LUKSO testnet brings a series of upgrades that makes things easier, more scaleable, secure, and sustainable. LUKSO aims to change the way you think about, use and interact with the blockchain, dApps, NFTs, wallets, both as a user, and as a developer. More on how we do that:"
   },
   "Y8YLHs": {
     "message": "If your signing key is not under the thief’s control, the thief cannot exit your validator."
@@ -1268,8 +1292,8 @@
     "description": "{grafana} is 'Grafana' service, with link to its homepage (do not translate name)",
     "message": "I've set up my {grafana} service."
   },
-  "YZtdY1": {
-    "message": "As of {date}, you'll need ~400GB for the Eth1 mainnet chain data alone (growing at ~1GB/day)."
+  "YbS71f": {
+    "message": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
   },
   "Yganfl": {
     "message": "Type the following lines into the terminal window:"
@@ -1306,14 +1330,11 @@
   "ZPRDyW": {
     "message": "Again, it depends. Behaving maliciously – for example attesting to invalid or contradicting blocks, will lead to your stake being slashed."
   },
-  "ZPpZDC": {
-    "message": "Please ensure that you have control over the Eth1 address."
-  },
-  "ZRbxwY": {
-    "message": "Eth2 validator checklist"
-  },
   "ZTo0Fl": {
     "message": "Why is there a wait?"
+  },
+  "ZVn96Y": {
+    "message": "Is there any advantage to having more than {pricePerValidator} LYXt at stake?"
   },
   "Zi+EED": {
     "message": "PegaSys Teku is a Java-based Ethereum 2.0 client built to meet institutional needs and security requirements."
@@ -1327,14 +1348,11 @@
   "a+xjjV": {
     "message": "Become a validator with Prysm"
   },
-  "aDomwX": {
-    "message": "If you try to cheat the system, or act contrary to the specification, you will be liable to incur a penalty, known as slashing. Running your validator keys simultaneously on two or more machines will result in slashing."
+  "aC5KNK": {
+    "message": "The answer to this question very much depends on how much LYXt you have at your disposal."
   },
   "aEBE6s": {
     "message": "2. Prep nodes"
-  },
-  "aMcG1s": {
-    "message": "Check your favorite Eth2 block explorer:"
   },
   "aS6dBe": {
     "message": "Configure Nimbus"
@@ -1342,20 +1360,17 @@
   "aXT3iO": {
     "message": "Nimbus is Apache 2 licensed and written in Nim, a language with Python-like syntax that compiles to C."
   },
-  "aXWL9X": {
-    "message": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until the merge (which means your funds will remain inaccessible until then)."
-  },
-  "aZ7pUj": {
-    "message": "Your wallet is on the wrong Ethereum network. To continue, connect to the {networkName} network."
-  },
   "acrOoz": {
     "message": "Continue"
+  },
+  "ap/jla": {
+    "message": "Phishing is a very real risk for LUKSO validators and, unfortunately, many people will lose funds due to these attacks."
   },
   "azLmaD": {
     "message": "Build deposit-cli from the Python source code"
   },
-  "b3J7Pw": {
-    "message": "No. There is no advantage to having more than {pricePerValidator} ETH staked."
+  "b4Fwl0": {
+    "message": "The L15 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted."
   },
   "b4csjU": {
     "message": "However, bear in mind that for the foreseeable future, once you’ve exited, there’s no going back."
@@ -1375,20 +1390,29 @@
   "bbr+aD": {
     "message": "The YAML files can have different syntaxes."
   },
+  "bcyLj/": {
+    "message": "Now that the keys are imported, all that is left to do (assuming your vanguard node is already running) is to run the validator client."
+  },
   "bnuvhg": {
     "message": "Lighthouse is built in Rust and offered under an Apache 2.0 License."
+  },
+  "bt03u4": {
+    "message": "L15 Clients: {clientName}"
   },
   "bxU6sX": {
     "message": "Python installation instructions"
   },
+  "c4KIsA": {
+    "message": "LYXt Faucet"
+  },
   "c9DSZ1": {
     "message": "We strongly recommended you complete these steps on the current testnet before mainnet."
   },
+  "cFG5C+": {
+    "message": "L16 Coming Soon"
+  },
   "cHUoV9": {
     "message": "The Geth documentation explains how to download and install the client."
-  },
-  "cPsIkp": {
-    "message": "Become a validator and help secure the future of Ethereum."
   },
   "cRzxes": {
     "message": "Current APR"
@@ -1410,9 +1434,6 @@
   },
   "cpxfOR": {
     "message": "What are withdrawal credentials?"
-  },
-  "cs9mQw": {
-    "message": "Learn more about the roles and responsibilities of Eth2 validators."
   },
   "cyR7Kh": {
     "message": "Back"
@@ -1455,9 +1476,6 @@
     "description": "{code} values are terminal outputs and commands.",
     "message": "If {code1} is not {code2}, run: {code3}"
   },
-  "eIRc60": {
-    "message": "More on Eth2"
-  },
   "eKEL/g": {
     "message": "Pending"
   },
@@ -1467,14 +1485,17 @@
   "eOpZjd": {
     "message": "It specifies who is staking, who is validating, how much is being staked, and who can withdraw the funds."
   },
+  "eRntau": {
+    "message": "The L15 upgrades will only be successful if validators understand the risks and responsibilities."
+  },
   "eaU/aL": {
     "message": "To maximize security and efficiency of your node, use dedicated hardware to run your clients. This reduces risk of malware exposure and minimizes competition for computing resources, ensuring your node handles the network load and its validator responsibilities at all times."
   },
   "egVO5r": {
     "message": "More on shard chains"
   },
-  "elCkOU": {
-    "message": "More on the merge"
+  "el/dXY": {
+    "message": "Note: Withdrawing your deposits won't currently be possible."
   },
   "erZJkZ": {
     "message": "When launching Teku, keystores and passwords can be provided in different ways."
@@ -1482,14 +1503,15 @@
   "esDvdR": {
     "message": "Validator balance is over {PRICE_PER_VALIDATOR}, but effective balance is low ({effectiveBalance}). Adding {minTopupValue} {TICKER_NAME} (the minimum allowed by the deposit contract) will max out your effective balance."
   },
+  "evn4VC": {
+    "description": "{discord} is a link to the LUKSO Discord (do not translate names)",
+    "message": "If you have questions, the LUKSO community is a good place to get help! You can find support on the {discord} #validators channel."
+  },
   "eyK2E3": {
     "message": "Complete checklist"
   },
   "f/N7FO": {
     "message": "What happens if I lose my signing key?"
-  },
-  "fHLKXR": {
-    "message": "The answer to this question very much depends on how much ETH you have at your disposal."
   },
   "fQ5yno": {
     "message": "Arabic"
@@ -1500,14 +1522,18 @@
   "fbiteI": {
     "message": "only stored on one validator machine"
   },
+  "fhvkT2": {
+    "description": "{discord} is a link to the LUKSO Discord (do not translate names)",
+    "message": "Visit the LUKSO #validators channel on {discord} at any time during your setup for some friendly help!"
+  },
   "fnMHGO": {
     "message": "Waiting for wallet confirmation"
   },
   "frGVRP": {
     "message": "impact of effective balance"
   },
-  "g/DxI7": {
-    "message": "Moreover, you can set your Validator Client (VC) and Beacon Node (BN) on separate machines and IPs so that even if your beacon node is vulnerable, your keystore is stored on a different machine."
+  "fw/omY": {
+    "message": "Configure your Pandora Client"
   },
   "g0zIUd": {
     "message": "cannot withdraw"
@@ -1515,8 +1541,11 @@
   "g37XKP": {
     "message": "More on virtualenv"
   },
-  "gAdE9y": {
-    "message": "Thank you for supporting the Eth2 network!"
+  "g6zrLr": {
+    "message": "Become a L15 testnet validator and help secure the future of LUKSO."
+  },
+  "gFkou2": {
+    "message": "Your wallet is on the wrong network. To continue, connect to the {networkName} network."
   },
   "gIauNz": {
     "message": "You should see that you have one keystore per validator. This keystore contains your signing key, encrypted with your password. You can use your mnemonic to generate your withdrawal key when you wish to withdraw."
@@ -1526,9 +1555,6 @@
   },
   "gVC0Wl": {
     "message": "It uses the assisted password in your secrets folder."
-  },
-  "gfLdAQ": {
-    "message": "More on the Beacon Chain"
   },
   "gjBiyj": {
     "message": "Loading..."
@@ -1549,11 +1575,11 @@
   "gx6frf": {
     "message": "clock"
   },
+  "h1nTWx": {
+    "message": "If you try to cheat the system, you will be liable to incur a penalty, known as slashing. Running your validator keys simultaneously on two or more machines will result in slashing."
+  },
   "h8MTUo": {
     "message": "Your stake"
-  },
-  "h8ZHus": {
-    "message": "Transfers between validators aren't possible yet. You will have to wait until mainnet merges with the Beacon Chain (around two years) before you can withdraw or transfer your {TICKER_NAME}."
   },
   "hFzE1M": {
     "message": "Rewards are given for actions that help the network reach consensus."
@@ -1571,8 +1597,11 @@
   "hZrkPB": {
     "message": "In other words, you maximize your rewards by providing the greatest benefit to the network as a whole."
   },
-  "hjrLbR": {
-    "message": "For this, we need active participants - known as validators - to propose, verify, and vouch for the validity of blocks. In exchange, honest validators receive financial rewards."
+  "hat13W": {
+    "message": "Validators and L15"
+  },
+  "hjjX06": {
+    "message": "L15 Validator Client (VC)"
   },
   "hkg3fb": {
     "message": "More on effective balance"
@@ -1584,11 +1613,11 @@
   "hzLd+/": {
     "message": "I understand that it is important to keep my validator online and updated."
   },
-  "iBYfM0": {
-    "message": "You'll need to run an Eth1 and an Eth2 node to become a validator. Take a look at the checklist to prepare yourself and your equipment."
-  },
   "iCpuph": {
     "message": "Clients"
+  },
+  "iHH0gC": {
+    "message": "A validator is an entity that participates in the consensus of LUKSO's Vanguard Chain protocol."
   },
   "iMvXLd": {
     "message": "Running the validator client"
@@ -1609,29 +1638,44 @@
   "idDbou": {
     "message": "Thinking about staking?"
   },
+  "igGcu9": {
+    "message": "Validating in LUKSO is not the same as mining. The outcomes are similar: the work you do will extend and secure the chain. But the process is completely different because they use different consensus mechanisms."
+  },
+  "ijbdN4": {
+    "message": "L15 validator checklist"
+  },
   "irRdC0": {
     "message": "Hardware suggestions are an ever-evolving target. Current minimum requirements are likely to increase by an order of magnitude after the merge and introduction of shard chains. Do your own research before depositing funds."
   },
   "isGKnz": {
     "message": "Documentation"
   },
+  "itLVZL": {
+    "message": "You need enough upload bandwidth too. As of {date}, for Eth this is ~700-800 MB/hour, and is likely to increase over time."
+  },
   "iv88b5": {
     "message": "Send all {totalTxCount} deposits"
   },
-  "j4ctVP": {
-    "message": "The Eth2 specification"
+  "j81rpi": {
+    "message": "Dig deeper into how LUKSO moves towards Mainnet."
   },
   "jDv/zO": {
     "message": "While validating on the testnet, perform these simulations to learn more about your node, and better prepare yourself for mainnet:"
+  },
+  "jG8C6h": {
+    "message": "The LUKSO upgrades"
+  },
+  "jOwYzp": {
+    "message": "Make sure you do the following to get your Pandora client working properly."
+  },
+  "jThhoD": {
+    "message": "We'll help you create a signing key for every validator you want to run. Because there are no withdrawals until Mainnet, you will not create your withdrawal keys now. When it is possible to withdraw funds, you will be able to derive your withdrawal keys from your mnemonic."
   },
   "jXer8/": {
     "message": "Prysm documentation"
   },
   "jYVeq4": {
     "message": "Lighthouse installation documentation"
-  },
-  "jZVChZ": {
-    "message": "I've imported my keystore(s) into my Eth2 validator client."
   },
   "jecC36": {
     "message": "Public key"
@@ -1646,14 +1690,14 @@
     "description": "Warns users to not run backup validators that have a live copy of their signing keys. Keys should only be on one validator machine at once.",
     "message": "Warning: Do not store keys on multiple (backup) validators at once"
   },
+  "jsaN7g": {
+    "message": "The L15 ephemeral test network"
+  },
   "jse8rl": {
     "message": "How great does my uptime need to be for my validator to be net profitable?"
   },
   "jvB4W9": {
     "message": "Environment variables"
-  },
-  "jyN21A": {
-    "message": "Eth2 Launchpad"
   },
   "jytPQU": {
     "message": "Nimbus documentation"
@@ -1678,9 +1722,6 @@
   },
   "kd/f4u": {
     "message": "Key list"
-  },
-  "km7b1A": {
-    "message": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 ETH, you will be automatically exited from the validator pool."
   },
   "kn7kJd": {
     "message": "More on consensus mechanisms"
@@ -1712,20 +1753,16 @@
   "lD66ab": {
     "message": "Outstanding deposit"
   },
-  "lJNmgK": {
-    "message": "How does Eth2 upgrade Ethereum?"
-  },
   "lLOZMD": {
     "description": "{apt} and {yum} are both package manager names styled as code",
     "message": "You can install pip using a Linux Package Manager like {apt} or {yum}."
   },
-  "lM/dEI": {
-    "description": "{ethAmount} will generally refer to 32 ETH",
-    "message": "Does the site asking you for your {ethAmount} deposit have a URL you expect?"
-  },
   "lQzdpT": {
     "description": "this is used as a command line flag, short for \"number of validators\"",
     "message": "num_validators"
+  },
+  "lR5uPQ": {
+    "message": "I've installed and synced my Pandora node on {network} (do not wait on this as it can take several days)."
   },
   "lS9VhN": {
     "message": "Total {TICKER_NAME} staked"
@@ -1739,8 +1776,8 @@
   "lfV1bj": {
     "message": "Importing from Launchpad documentation"
   },
-  "ljWKM1": {
-    "message": "BLS withdrawal: By default, deposit-cli would generate withdrawal credentials with the {boldWithdrawalKey} derived via mnemonics in {eip2334} format."
+  "lfnq69": {
+    "message": "I understand that I {cannotTransfer} my stake and I {cannotWithdraw} from the Testnet. I understand that if I exit, I will not be able to rejoin until much later. This is a long term commitment."
   },
   "ll/zMW": {
     "message": "This is a non-reversible transaction."
@@ -1750,6 +1787,9 @@
   },
   "lrdlY6": {
     "message": "File uploaded"
+  },
+  "lxfupg": {
+    "message": "By default, deposit-cli would generate withdrawal credentials with the {boldWithdrawalKey} derived via mnemonics in {eip2334} format."
   },
   "mArJcj": {
     "message": "Hard drive"
@@ -1763,17 +1803,18 @@
   "mpmFDY": {
     "message": "No pending deposits"
   },
+  "mqhL5p": {
+    "description": "{http} shows '-rpc-http-enabled' terminal command",
+    "message": "Use {http} to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+  },
   "mr1BWl": {
     "message": "Risks and acknowledgements:"
-  },
-  "n6Uub0": {
-    "message": "I've installed and synced my Eth1 node on {network} (do not wait on this as it can take several days)."
   },
   "n7yYXG": {
     "message": "Service"
   },
-  "nHk8Et": {
-    "message": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Beacon Chain."
+  "nGXGJr": {
+    "message": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, when validating on Mainnet you will need to store your mnemonic safely in order to be able to withdraw."
   },
   "nIb6XF": {
     "description": "{slashings} shows 'slashings' in bold for emphasis",
@@ -1782,11 +1823,11 @@
   "nRdJct": {
     "message": "Continue without all transactions confirmed"
   },
+  "nYkH/p": {
+    "message": "At the other end of the spectrum, if your balance is closer to 31 LYXt, it’s probably not worth adding the extra LYXt required to get back to 32."
+  },
   "nZTFTz": {
     "message": "I understand that there is no advantage to depositing more than once per validator. Any extra {TICKER_NAME} sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
-  },
-  "ndhFef": {
-    "message": "Once you're comfortable, you'll go through generating your keys and depositing your ETH."
   },
   "njAU72": {
     "message": "French"
@@ -1797,24 +1838,11 @@
   "ntG2by": {
     "message": "Advanced system architecture"
   },
-  "nz27+c": {
-    "description": "{variables} social media platform links to Discord and Reddit (do not translate names)",
-    "message": "If you have questions, EthStaker community is a good place to get help! You can find support on {discord} or {reddit}."
-  },
   "o9QvTP": {
     "message": "Before you start"
   },
-  "oLxfO1": {
-    "message": "Now that the keys are imported, all that is left to do (assuming your beacon node is already running) is to run the validator client."
-  },
-  "oPdwwC": {
-    "message": "Limiting the maximum stake to {pricePerValidator} ETH encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
-  },
   "oWhj8Q": {
     "message": "How often are rewards/penalties issued?"
-  },
-  "ogbG7r": {
-    "message": "To become a validator on the Beacon Chain, you need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
   },
   "ohspQX": {
     "message": "Responsibilities"
@@ -1827,6 +1855,9 @@
   },
   "on8WXn": {
     "message": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
+  },
+  "opSPEl": {
+    "message": "In other words: if the total amount of LYXt staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
   },
   "orM+1T": {
     "message": "Teku will also load validators from keystores (and passwords) from the paths found in the validator keys environment variable."
@@ -1856,11 +1887,12 @@
   "pXyH++": {
     "message": "The Besu documentation explains how to download and install the client."
   },
-  "penFMT": {
-    "message": "Eth2 is a set of upgrades that will make Ethereum more scalable, secure, and sustainable. These upgrades will improve Ethereum while seamlessly continuing on the chain of today. Here's more on the different upgrades:"
-  },
   "pfJX2D": {
     "message": "More on phishing"
+  },
+  "pkgxrV": {
+    "description": "{network} inserts the testnet name, only if on the testnet",
+    "message": "LUKSO L15 Testnet Launchpad"
   },
   "pnxB8A": {
     "message": "Nimbus looks for keystores in your validators folder."
@@ -1872,23 +1904,14 @@
     "description": "{expected} shows 'This is the expected scenario' and is bolded for emphasis",
     "message": "Being offline while a supermajority (2/3) of validators is still online leads to relatively small penalties as there are still enough validators online for the chain to finalize. {expected}"
   },
-  "ptWiT7": {
-    "message": "I've simulated how to manually stop and restart my Beacon Node (BN) and Validator Client (VC) gracefully."
-  },
   "pyWt01": {
     "message": "Deposit summary"
   },
+  "q0rXsF": {
+    "message": "🌈 Forked from the Eth2 Launchpad"
+  },
   "q2XW/k": {
     "message": "If your withdrawal key is stolen, the thief can transfer your validator’s balance, but only once the validator has exited."
-  },
-  "q6sz6X": {
-    "message": "Eth2 economics"
-  },
-  "qDcbPp": {
-    "message": "Your 16 ETH can then be withdrawn – with your withdrawal key – after a delay of around a day."
-  },
-  "qDvaNm": {
-    "message": "I understand that keys are my responsibility and that my mnemonic (seed) will be the {onlyWay} to withdraw my funds."
   },
   "qK4+NQ": {
     "message": "The terminal"
@@ -1899,11 +1922,11 @@
   "qMePPG": {
     "message": "Note"
   },
-  "qPG/YN": {
-    "message": "{withdrawalCredentials} is a 32-byte field in the deposit, for verifying the destination of valid withdrawals. Currently, there are two types of withdrawals: BLS withdrawal and Eth1 address withdrawal."
-  },
   "qQ+Xla": {
     "message": "Korean"
+  },
+  "qROJ5v": {
+    "message": "Your 16 LYXt can then be withdrawn – with your withdrawal key – after a delay of around a day."
   },
   "qZ59xY": {
     "message": "All validators"
@@ -1916,12 +1939,6 @@
   },
   "qkhah0": {
     "message": "Save the key files and get the validator file ready"
-  },
-  "qpdTjz": {
-    "message": "An Eth2 client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
-  },
-  "quIMjo": {
-    "message": "Make sure you do the following to get your Eth1 client working properly."
   },
   "qwh6gM": {
     "message": "I understand the early adopter and slashing risks."
@@ -1978,15 +1995,14 @@
   "sXV95+": {
     "message": "CPU and RAM"
   },
+  "sf0AS/": {
+    "message": "For this, we need active participants - known as validators - to propose, verify, and vouch for the validity of blocks. In exchange, honest validators on mainnet will receive financial rewards."
+  },
   "soCLV+": {
     "message": "Checklist"
   },
   "sraQ3P": {
     "message": "Waiting to connect..."
-  },
-  "svsq8J": {
-    "description": "{ETH2_NETWORK_NAME} is name of network, do not translate",
-    "message": "I've synced my Eth2 beacon node on {ETH2_NETWORK_NAME}."
   },
   "sy35J+": {
     "message": "What is the deposit contract?"
@@ -1994,8 +2010,15 @@
   "szN3Fl": {
     "message": "I understand and agree to the terms-of-service and everything stated in the previous sections."
   },
+  "tDJxoT": {
+    "message": "Become a L15 testnet validator and help secure the future of LUKSO"
+  },
   "tJcyUM": {
     "message": "Your deposit_data.json suggests you wanted to set up more validators. These deposits are still outstanding. If you think you've already made these deposits, wait an hour before trying again to avoid duplicate deposits."
+  },
+  "tYu+4O": {
+    "description": "{variables} are client names, each linking to documentation (do not translate names)",
+    "message": "The L15 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: {lighthouse} | {nimbus} | {prysm} | {teku}"
   },
   "teyxVk": {
     "message": "What should the address be?"
@@ -2005,6 +2028,9 @@
   },
   "tkFTZw": {
     "message": "Balance after topping up"
+  },
+  "tkad+U": {
+    "message": "Currently we are running the L15 Ephemeral Testnet to prepare for L16, and we need your help!"
   },
   "tsfX5f": {
     "message": "Confirm deposit"
@@ -2024,9 +2050,6 @@
   },
   "u81G9+": {
     "message": "Uptime"
-  },
-  "uCikFk": {
-    "message": "You need enough upload bandwidth too. As of {date} this is ~700-800 MB/hour, and is likely to increase."
   },
   "uHaXQZ": {
     "message": "Geth on L15 documentation"
@@ -2049,16 +2072,14 @@
   "ukfwum": {
     "message": "Become a validator with Nimbus"
   },
-  "unzIoE": {
-    "description": "{pricePerValidator} represents deposit amount styled in bold",
-    "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} ETH. This forms your initial balance."
+  "ulXbuO": {
+    "message": "Slashing has two purposes: (1) to make it prohibitively expensive to attack L15, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
   },
-  "up+5YH": {
-    "description": "Asks users to check deposit contract address against a block explorer and confirm 32 ETH deposits are present",
-    "message": "Are there recent {ethAmount} deposits?"
+  "uprpgn": {
+    "message": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
   },
-  "vBOf5K": {
-    "message": "Your balance is updated periodically by the Ethereum network rules as you carry (or fail to carry) out your responsibilities."
+  "v2/6AL": {
+    "message": "I understand that I need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} to become a validator, and that the transfer of {TICKER_NAME} to the Vanguard Consensus Chain is one-way, and non-reversible."
   },
   "vCHTnu": {
     "message": "Withdrawal credentials"
@@ -2066,11 +2087,11 @@
   "vEJDo8": {
     "message": "Protect your funds using monitoring software, and learn how to handle different real world scenarios."
   },
-  "vIF140": {
-    "message": "Become a validator and help secure the future of Ethereum"
-  },
   "vJez0K": {
     "message": "Proceed with caution. Our on-chain data source is down and we are unable to flag any double deposits."
+  },
+  "vNopl9": {
+    "message": "The Vanguard Chain had its genesis on {date}. It is growing in size over time, and the introduction of sharding will also increase storage, memory, and bandwidth requirements."
   },
   "vY2wig": {
     "message": "Loading error"
@@ -2084,18 +2105,11 @@
   "va96SS": {
     "message": "I've forwarded the necessary ports to the correct machine(s) from my router (only open the ports that apply to your installation)."
   },
-  "vbVsqW": {
-    "description": "{stakerChecklist} = 'Staker Checklist' bolded to draw attention",
-    "message": "Be sure to complete the {stakerChecklist} as soon as possible. And join the EthStaker community for support and discussion with fellow validators."
-  },
   "vg1dVR": {
     "message": "With your signing key, you could attempt to quickly exit the validator and then transfer the funds – with the withdrawal key – before the thief."
   },
   "vyvUB5": {
     "message": "This JSON file isn't for the right network. Upload a file generated for your current network: {network}."
-  },
-  "w/ghcK": {
-    "message": "Dig deeper into how Eth2 upgrades Ethereum."
   },
   "w6qYSU": {
     "message": "Run the following command to launch the app"
@@ -2129,13 +2143,6 @@
   "x+fF+M": {
     "message": "Testnet simulations"
   },
-  "x0tVK4": {
-    "message": "Validating in Ethereum is not the same as mining. The outcomes are similar: the work you do will extend and secure the chain. But the process is completely different because they use different consensus mechanisms."
-  },
-  "xDyl3T": {
-    "description": "{ethereumorg} is a link to deposit contract page on ethereum.org",
-    "message": "Cross check the deposit contract address against other websites – for example: Reddit, Twitter, and GitHub. There's also a list of trusted sources on {ethereumorg}"
-  },
   "xH5GKj": {
     "message": "I am an early adopter, and I accept that software and design bugs may result in me being slashed."
   },
@@ -2148,9 +2155,6 @@
   },
   "xQrU13": {
     "message": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-  },
-  "xSvJIi": {
-    "message": "Block rewards are calculated using a sliding scale based on the total amount of ETH staked on the network."
   },
   "xYRzZY": {
     "message": "Nimbus is a research project and a client implementation for Ethereum 2.0 designed to perform well on embedded systems and personal mobile devices."
@@ -2205,8 +2209,8 @@
   "zAVb0/": {
     "message": "More on Lighthouse and Sigma Prime"
   },
-  "zGkAVo": {
-    "message": "At the other end of the spectrum, if your balance is closer to 31 ETH, it’s probably not worth adding the extra ETH required to get back to 32."
+  "zPLWB2": {
+    "message": "More on LUKSO"
   },
   "zbEBi9": {
     "description": "{mainnet} shows '--config mainnet' terminal command",

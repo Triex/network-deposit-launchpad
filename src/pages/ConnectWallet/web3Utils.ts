@@ -11,7 +11,7 @@ import {
   FORTMATIC_KEY,
   IS_MAINNET,
   PORTIS_DAPP_ID,
-  INFURA_URL,
+  INFURA_URL, LUKSO_NETWORK_NAME, LUKSO_NETWORK_NAMESPACE,
 } from '../../utils/envVars';
 
 export enum NetworkChainId {
@@ -20,6 +20,7 @@ export enum NetworkChainId {
   'Rinkeby' = 4,
   'Göerli' = 5,
   'Kovan' = 42,
+  'l15-dev' = 231,
 }
 
 /*
@@ -33,10 +34,12 @@ const supportedNetworks = [
   NetworkChainId.Rinkeby,
   NetworkChainId.Ropsten,
   NetworkChainId.Kovan,
+  NetworkChainId["l15-dev"],
 ];
 
 enum Testnet {
   'Göerli',
+  'l15-dev',
 }
 
 enum Mainnet {
@@ -47,17 +50,6 @@ export const AllowedNetworks = IS_MAINNET ? Mainnet : Testnet;
 
 export const metamask: InjectedConnector = new MetamaskConnector({
   supportedChainIds: supportedNetworks,
-});
-
-export const portis: PortisConnector = new PortisConnector({
-  dAppId: PORTIS_DAPP_ID,
-  networks: supportedNetworks,
-});
-
-export const fortmatic: FortmaticConnector = new FortmaticConnector({
-  apiKey: FORTMATIC_KEY as string,
-  chainId: IS_MAINNET ? NetworkChainId.Mainnet : NetworkChainId['Göerli'],
-  rpcUrl: INFURA_URL,
 });
 
 // sets up initial call to MM

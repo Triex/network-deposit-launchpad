@@ -8,7 +8,7 @@ import { Link } from '../../../components/Link';
 import { Button } from '../../../components/Button';
 import { numberWithCommas } from '../../../utils/numberWithCommas';
 import { BEACONCHAIN_URL, TICKER_NAME } from '../../../utils/envVars';
-import calculateEth2Rewards from '../../../utils/calculateEth2Rewards';
+import calculateLyxtRewards from '../../../utils/calculateLyxtRewards';
 
 //
 // Styled Components
@@ -29,8 +29,8 @@ const Content = styled.div`
   }
 `;
 
-const BoldGreen = styled.span`
-  color: ${(p: { theme: any; fontSize: number }) => p.theme.green.dark};
+const BoldPurple = styled.span`
+  color: ${(p: { theme: any; fontSize: number }) => p.theme.purple.brand};
   font-size: ${(p: { theme: any; fontSize: number }) => p.fontSize}px;
   font-weight: bold;
 `;
@@ -62,7 +62,7 @@ const ButtonContainer = styled.div`
 `;
 
 type PropData = {
-  amountEth: number;
+  amountLyxt: number;
   totalValidators: number;
   status: number;
 };
@@ -75,7 +75,7 @@ export const NetworkStatus: React.FC<{
 }> = ({ state }): JSX.Element | null => {
   const { formatMessage } = useIntl();
   const [m, setM] = React.useState<boolean>((window as any).mobileCheck());
-  const { amountEth, totalValidators, status } = state;
+  const { amountLyxt, totalValidators, status } = state;
 
   React.useEffect(() => {
     const resizeListener = () => {
@@ -85,7 +85,7 @@ export const NetworkStatus: React.FC<{
     return () => window.removeEventListener('resize', resizeListener);
   }, []);
 
-  const currentAPR = calculateEth2Rewards({ totalAtStake: amountEth });
+  const currentAPR = calculateLyxtRewards({ totalAtStake: amountLyxt });
   const formattedAPR = (Math.round(currentAPR * 1000) / 10).toLocaleString();
 
   const LoadingHandler: React.FC<{
@@ -105,7 +105,7 @@ export const NetworkStatus: React.FC<{
       <ScrollAnimation delay={750} animateIn="fadeIn" animateOnce>
         <Content isMobile={m}>
           <Heading level={2} size="medium" color="blueDark" className="mb40">
-            <FormattedMessage defaultMessage="The Eth2 network" />
+            <FormattedMessage defaultMessage="The L15 ephemeral test network" />
           </Heading>
           <CardContainer>
             <Card>
@@ -116,11 +116,11 @@ export const NetworkStatus: React.FC<{
                 />
               </Heading>
               <Text size="x-large" className="mt20">
-                <BoldGreen className="mr10" fontSize={24}>
+                <BoldPurple className="mr10" fontSize={24}>
                   <LoadingHandler
-                    value={`${numberWithCommas(amountEth)} ${TICKER_NAME}`}
+                    value={`${numberWithCommas(amountLyxt)} ${TICKER_NAME}`}
                   />
-                </BoldGreen>
+                </BoldPurple>
               </Text>
             </Card>
             <Card>
@@ -128,9 +128,9 @@ export const NetworkStatus: React.FC<{
                 <FormattedMessage defaultMessage="Total validators" />
               </Heading>
               <Text size="x-large" className="mt20">
-                <BoldGreen className="mr10" fontSize={24}>
+                <BoldPurple className="mr10" fontSize={24}>
                   <LoadingHandler value={numberWithCommas(totalValidators)} />
-                </BoldGreen>
+                </BoldPurple>
               </Text>
             </Card>
             <Card>
@@ -141,9 +141,9 @@ export const NetworkStatus: React.FC<{
                 />
               </Heading>
               <Text size="x-large" className="mt20">
-                <BoldGreen className="mr10" fontSize={24}>
+                <BoldPurple className="mr10" fontSize={24}>
                   {formattedAPR}%
-                </BoldGreen>
+                </BoldPurple>
               </Text>
             </Card>
           </CardContainer>

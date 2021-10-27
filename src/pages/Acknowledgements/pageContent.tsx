@@ -22,22 +22,33 @@ export const pageContent = {
     content: (
       <>
         <Text size="medium" className="my10">
-          <FormattedMessage defaultMessage="The Beacon Chain upgrade brings proof-of-stake consensus to Ethereum." />
+          <FormattedMessage defaultMessage="The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L15 is the ephemeral testnet prior to L16, and mainnet launch." />
         </Text>
         <Text size="medium" className="my10">
           <FormattedMessage
             defaultMessage="For this, we need active participants - known as validators - to
               propose, verify, and vouch for the validity of blocks. In exchange, honest
-              validators receive financial rewards."
+              validators on mainnet will receive financial rewards."
           />
         </Text>
         <Text size="medium" className="my10">
           <FormattedMessage
             defaultMessage="Importantly, as a validator you'll need to post {TICKER_NAME} as
-              collateral - in other words, have some funds at stake. The only way to become a
+              collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a
               validator is to make a one-way {TICKER_NAME} transaction to the deposit contract
-              on the current Ethereum chain."
-            values={{ TICKER_NAME }}
+              on the current LUKSO L15 Testnet."
+            values={{
+              TICKER_NAME,
+              faucetLink: (
+                <Link
+                  to="https://faucet.l15.lukso.network/"
+                  className="inline"
+                  primary
+                >
+                  <FormattedMessage defaultMessage="LYXt Faucet" />
+                </Link>
+              ),
+            }}
           />
         </Text>
         <Link
@@ -59,7 +70,7 @@ export const pageContent = {
       <>
         <Text size="medium" className="my10">
           <FormattedMessage
-            defaultMessage="To become a validator on the Beacon Chain, you need to deposit
+            defaultMessage="To become a validator on the L15 testnet, you need to deposit
               {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
             values={{ PRICE_PER_VALIDATOR, TICKER_NAME }}
           />
@@ -68,20 +79,14 @@ export const pageContent = {
           <FormattedMessage defaultMessage="This is a non-reversible transaction." />
         </Text>
         <Text size="medium" className="my20">
-          <FormattedMessage
-            defaultMessage="Withdrawing your deposit won't be possible until mainnet merges
-              with the Beacon Chain."
-          />
+          <FormattedMessage defaultMessage="Note: Withdrawing your deposits won't currently be possible." />
         </Text>
-        <Link to="https://ethereum.org/eth2/docking/" className="my10" primary>
-          <FormattedMessage defaultMessage="More on the merge" />
-        </Link>
       </>
     ),
     acknowledgementText: (
       <FormattedMessage
         defaultMessage="I understand that I need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME}
-          to become a validator, and that the transfer of {TICKER_NAME} to the Beacon Chain is
+          to become a validator, and that the transfer of {TICKER_NAME} to the Vanguard Consensus Chain is
           one-way, and non-reversible."
         values={{ PRICE_PER_VALIDATOR, TICKER_NAME }}
       />
@@ -105,7 +110,7 @@ export const pageContent = {
           primary
           inline
         >
-          <FormattedMessage defaultMessage="More on Eth2 economics" />
+          <FormattedMessage defaultMessage="More on LUKSO economics" />
         </Link>
       </>
     ),
@@ -119,17 +124,10 @@ export const pageContent = {
       <>
         <Text size="medium" className="my10">
           <FormattedMessage
-            defaultMessage="If you try to cheat the system, or act contrary to the specification,
+            defaultMessage="If you try to cheat the system, 
               you will be liable to incur a penalty, known as slashing. Running your validator keys simultaneously on two or more machines will result in slashing."
           />
         </Text>
-        <Link
-          to="https://github.com/ethereum/eth2.0-specs"
-          className="my10"
-          primary
-        >
-          <FormattedMessage defaultMessage="The Eth2 specification" />
-        </Link>
         <Link shouldOpenNewTab={true} to="/faq" className="my10" primary>
           <FormattedMessage defaultMessage="More on slashing risks" />
         </Link>
@@ -151,11 +149,11 @@ export const pageContent = {
             defaultMessage="To become a validator you'll need to know about managing keys and
               protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please
               do not proceed. Note that during this process you will not derive the keys needed to
-              withdraw later, so store your mnemonic safely in order to be able to withdraw later."
+              withdraw later, when validating on Mainnet you will need to store your mnemonic safely in order to be able to withdraw."
           />
         </Text>
         <Text size="medium" className="mt20">
-          <FormattedMessage defaultMessage="We'll help you create a signing key for every validator you want to run. Because there are no withdrawals until The Merge, you will not create your withdrawal keys now. When it is possible to withdraw your funds, you can derive your withdrawal keys from your mnemonic." />
+          <FormattedMessage defaultMessage="We'll help you create a signing key for every validator you want to run. Because there are no withdrawals until Mainnet, you will not create your withdrawal keys now. When it is possible to withdraw funds, you will be able to derive your withdrawal keys from your mnemonic." />
         </Text>
         <Text size="medium" className="mt20">
           <FormattedMessage
@@ -170,7 +168,7 @@ export const pageContent = {
     acknowledgementText: (
       <FormattedMessage
         defaultMessage="I understand that keys are my responsibility and that my mnemonic (seed)
-          will be the {onlyWay} to withdraw my funds."
+          will be the {onlyWay} to withdraw my funds in the future."
         values={{
           onlyWay: (
             <BoldCaps>
@@ -190,18 +188,10 @@ export const pageContent = {
         <Text size="medium" className="my10">
           <FormattedMessage
             defaultMessage={`Transfers between validators aren't possible yet. You will have to
-              wait until mainnet merges with the Beacon Chain (around two years) before you can
-              withdraw or transfer your {TICKER_NAME}.`}
-            values={{ TICKER_NAME }}
+              wait until after the Vanguard Consensus Engine mainnet is released before you can deposit,
+              withdraw or transfer real tokens.`}
           />
         </Text>
-        <Link
-          to="https://ethereum.org/en/eth2/docking"
-          className="my10"
-          primary
-        >
-          <FormattedMessage defaultMessage="More on the merge" />
-        </Link>
         <Text size="medium" className="my10">
           <FormattedMessage
             defaultMessage="With transfers disabled for now, you won't be able to voluntarily exit
@@ -212,8 +202,8 @@ export const pageContent = {
     ),
     acknowledgementText: (
       <FormattedMessage
-        defaultMessage="I understand that I {cannotTransfer} my stake for a while, and I
-          {cannotWithdraw} until the merge. I understand that if I exit, I will not be able
+        defaultMessage="I understand that I {cannotTransfer} my stake and I
+          {cannotWithdraw} from the Testnet. I understand that if I exit, I will not be able
           to rejoin until much later. This is a long term commitment."
         values={{
           cannotTransfer: (
@@ -254,7 +244,7 @@ export const pageContent = {
       <Text size="medium" className="my10">
         <FormattedMessage
           defaultMessage="To become a validator, you will need to be able to run commands in
-            the terminal on your computer. Generating your new Eth2 key pairs and installing
+            the terminal on your computer. Generating your new BLS key pairs and installing
             the validator software are both done in the terminal."
         />
       </Text>
@@ -277,7 +267,7 @@ export const pageContent = {
           className="my10"
           primary
         >
-          <FormattedMessage defaultMessage="Eth2 validator checklist" />
+          <FormattedMessage defaultMessage="LUKSO validator checklist" />
         </Link>
       </>
     ),

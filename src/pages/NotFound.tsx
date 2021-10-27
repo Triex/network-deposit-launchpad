@@ -1,13 +1,13 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-import EthDiamondPlain from '../static/eth-diamond-plain.svg';
+import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { Text } from '../components/Text';
 import { Link } from '../components/Link';
 
-const RainbowBackground = styled.div`
+const GradientBackground = styled.div`
   background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+    `radial-gradient(circle at 100% -80%, ${p.theme.gradientLight})`};
   min-height: 100vh;
 `;
 const LogoContainer = styled.div`
@@ -15,8 +15,10 @@ const LogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-const EthLogo = styled.img`
+const LuksoLogo = styled.img`
   height: 100px;
+  width: 100px;
+  margin: 0 auto;
 `;
 const LogoText = styled(Text)`
   font-weight: bold;
@@ -44,12 +46,12 @@ const Content = styled.div`
 
 export const NotFoundPage = (): JSX.Element => {
   return (
-    <RainbowBackground>
+    <GradientBackground>
       <Content>
         <LogoContainer>
-          <EthLogo src={EthDiamondPlain} />
+          <LuksoLogo src={LuksoLogoPng} />
           <LogoText className="mt20" center size="large">
-            Eth2 Launchpad
+            LUKSO L15 Testnet Launchpad
           </LogoText>
         </LogoContainer>
         <Text center className="mt20">
@@ -60,6 +62,6 @@ export const NotFoundPage = (): JSX.Element => {
           </Link>
         </Text>
       </Content>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };

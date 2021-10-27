@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
+import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { useLocation } from 'react-router-dom';
 import { Heading } from './Heading';
 import { routesEnum } from '../Routes';
@@ -8,15 +9,17 @@ import { Link } from './Link';
 
 import { Button } from './Button';
 
-const Rhino = styled.span`
-  font-size: 20px;
+const LUKSOMiniLogo = styled.img`
+  height: 20px;
+  width: 20px;
+  margin-bottom: -3px;
 `;
 
-const RainbowBackground = styled.div`
+const GradientBackground = styled.div`
   min-width: 100%;
   overflow: hidden;
   background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+    `radial-gradient(circle at 100% -80%, ${p.theme.gradientFooter})`};
 `;
 
 const FooterStyles = styled.div`
@@ -65,11 +68,11 @@ export const Footer = () => {
   ];
 
   return (
-    <RainbowBackground>
-      <FooterStyles>
+    <GradientBackground>
+      <FooterStyles className="pb30">
         <div className="col">
           <Heading level={4}>
-            <FormattedMessage defaultMessage="Eth2 Launchpad" />
+            <FormattedMessage defaultMessage="LUKSO L15 Testnet Launchpad" />
           </Heading>
           <Link to={routesEnum.acknowledgementPage}>
             <FormattedMessage defaultMessage="Deposit" />
@@ -92,7 +95,7 @@ export const Footer = () => {
               className="cta-button"
             >
               <Button
-                rainbow
+                gradient
                 fullWidth
                 width={400}
                 label={
@@ -100,11 +103,7 @@ export const Footer = () => {
                     defaultMessage="Become a validator {emoji}"
                     values={{
                       emoji: (
-                        <Rhino>
-                          <span role="img" aria-label="rhino">
-                            🦏
-                          </span>
-                        </Rhino>
+                        <LUKSOMiniLogo src={LuksoLogoPng} alt="LUKSO-logo" />
                       ),
                     }}
                   />
@@ -115,26 +114,18 @@ export const Footer = () => {
         )}
         <div className="col extra-links">
           <Heading level={4}>
-            <FormattedMessage defaultMessage="More on Eth2" />
+            <FormattedMessage defaultMessage="More on LUKSO" />
           </Heading>
-          <Link to="https://ethereum.org/en/eth2/">
-            <FormattedMessage defaultMessage="The Eth2 upgrades" />
-          </Link>
-          <Link to={routesEnum.phishingPage}>
-            <FormattedMessage defaultMessage="Avoid Eth2 phishing" />
-          </Link>
-          <Link to="https://docs.google.com/spreadsheets/d/15tmPOvOgi3wKxJw7KQJKoUe-uonbYR6HF7u83LR5Mj4/edit#gid=842896204">
-            <FormattedMessage defaultMessage="Eth2 economics" />
-          </Link>
-          {/* TODO: add this link when page goes live */}
-          {/* <Link to="http://activate.codefi.network/eth2"> */}
-          {/*  Calculator */}
-          {/* </Link> */}
-          <Link to="https://github.com/runtimeverification/deposit-contract-verification/blob/96434de/deposit-contract-verification.pdf">
-            <FormattedMessage defaultMessage="Formal verification report" />
+          <Link to="https://medium.com/lukso">
+            <FormattedMessage defaultMessage="The LUKSO upgrades" />
           </Link>
         </div>
       </FooterStyles>
-    </RainbowBackground>
+      <FooterStyles className="pt0">
+        <Link to="https://github.com/ethereum/staking-launchpad">
+          <FormattedMessage defaultMessage="🌈 Forked from the Eth2 Launchpad" />
+        </Link>
+      </FooterStyles>
+    </GradientBackground>
   );
 };

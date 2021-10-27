@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FormattedMessage } from 'react-intl';
-import EthDiamondPlain from '../../static/eth-diamond-plain.svg';
-import EthRound from '../../static/eth-round-landing.svg';
+import LuksoLogoPng from '../../static/LUKSO-logo.png';
+import LuksoRound from '../../static/lukso-round-landing.svg';
 import { Text } from '../../components/Text';
 import { Heading } from '../../components/Heading';
 import { Link } from '../../components/Link';
@@ -45,7 +45,7 @@ const ContentContainer = styled.div`
       height: 400px;
       z-index: 1;
       opacity: 0.15;
-      background-image: url(${EthDiamondPlain});
+      background-image: url(${LuksoLogoPng});
       background-repeat: no-repeat;
       background-position: 50% 0;
       -ms-background-size: cover;
@@ -61,28 +61,28 @@ export const Introduction = (): JSX.Element => {
     <Container>
       <SubContainer className="py100 flex">
         <ImgContainer>
-          <img src={EthRound} alt="" />
+          <img src={LuksoRound} alt="" />
         </ImgContainer>
         <ContentContainer>
           <ScrollAnimation animateIn="fadeIn" animateOnce>
             <Heading level={2} size="medium" color="blueDark" margin="none">
-              <FormattedMessage defaultMessage="Validators and Eth2" />
+              <FormattedMessage defaultMessage="Validators and L15" />
             </Heading>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
             <Text className="mt20">
               <FormattedMessage
                 defaultMessage="This launchpad will help you become a validator, so you can play
-                  an active part in Ethereum's future. Validators are key to the
-                  more secure, scalable, and sustainable Ethereum we're building
+                  an active part in LUKSO's future. Validators are key to the
+                  more secure, scalable, and sustainable network we're building
                   together."
               />
             </Text>
-            <Link
-              className="mt20 mb40"
-              to="https://ethereum.org/en/eth2/vision/"
-            >
-              <FormattedMessage defaultMessage="More on the Eth2 vision" />
+            <Text className="mt20">
+              <FormattedMessage defaultMessage="Currently we are running the L15 Ephemeral Testnet to prepare for L16, and we need your help!" />
+            </Text>
+            <Link className="mt20 mb40" to="https://medium.com/lukso">
+              <FormattedMessage defaultMessage="More on the LUKSO vision" />
             </Link>
             <Text className="mt20">
               <FormattedMessage
@@ -93,21 +93,14 @@ export const Introduction = (): JSX.Element => {
             </Text>
             <Text className="mt20">
               <FormattedMessage
-                defaultMessage="Today, you'll secure the Beacon Chain, the first Eth2 upgrade.
-                  It's a separate chain that uses a proof-of-stake consensus
-                  mechanism. Eventually you'll help secure all of Ethereum, once
-                  mainnet (the Ethereum we use today) merges with the Beacon Chain."
+                defaultMessage="Today, you'll secure LUKSO's Vanguard Consensus Chain.
+                  It's a new and separate chain that uses a proof-of-stake consensus
+                  mechanism."
               />
             </Text>
-            <Link
-              className="mt20 mb40"
-              to="https://ethereum.org/en/eth2/docking/"
-            >
-              <FormattedMessage defaultMessage="More on the merge" />
-            </Link>
             <Text className="mt20">
               <FormattedMessage
-                defaultMessage="Validating in Ethereum is not the same as mining. The outcomes are
+                defaultMessage="Validating in LUKSO is not the same as mining. The outcomes are
                   similar: the work you do will extend and secure the chain. But the
                   process is completely different because they use different
                   consensus mechanisms."
@@ -115,7 +108,7 @@ export const Introduction = (): JSX.Element => {
             </Text>
             <Link
               className="mt20 mb40"
-              to="https://ethereum.org/en/developers/docs/consensus-mechanisms/"
+              to="https://arxiv.org/pdf/1710.09437.pdf"
             >
               <FormattedMessage defaultMessage="More on consensus mechanisms" />
             </Link>

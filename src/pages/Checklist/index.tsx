@@ -10,7 +10,7 @@ import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import {
   BEACONCHAIN_URL,
-  ETH2_NETWORK_NAME,
+  LUKSO_NETWORK_NAME,
   IS_MAINNET,
   TESTNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
@@ -122,10 +122,10 @@ const SectionHeader = styled.div`
   }
 `;
 
-const RainbowHeader = styled(SectionHeader as any)`
+const GradientHeader = styled(SectionHeader as any)`
   margin: 3rem 1rem 1rem;
   background-image: ${p =>
-    `linear-gradient(to right, ${p.theme.rainbowLight})`};
+    `linear-gradient(to right, ${p.theme.gradientDisclaimer})`};
 `;
 
 const CardContainer = styled.div`
@@ -160,8 +160,8 @@ const Card = styled.div`
   }
 `;
 
-const BoldGreen = styled.span`
-  color: ${(p: { theme: any; fontSize: number }) => p.theme.green.dark};
+const BoldPurple = styled.span`
+  color: ${(p: { theme: any; fontSize: number }) => p.theme.purple.brand};
   font-size: ${(p: { theme: any; fontSize: number }) => p.fontSize}px;
   font-weight: bold;
 `;
@@ -233,27 +233,22 @@ export const Checklist = () => {
 
   return (
     <PageTemplate
-      title={formatMessage({ defaultMessage: 'Eth2 validator checklist' })}
+      title={formatMessage({ defaultMessage: 'L15 validator checklist' })}
     >
       <div id="top" />
       <Subtitle>
         <FormattedMessage defaultMessage="This checklist will help you understand the role of a validator and prepare you for the role." />
         <Text className="mt10">
           <FormattedMessage
-            defaultMessage="Visit EthStaker on {discord} or {reddit} at any time during your setup for some friendly help!"
+            defaultMessage="Visit the LUKSO #validators channel on {discord} at any time during your setup for some friendly help!"
             values={{
               discord: (
-                <Link primary inline to="https://invite.gg/ethstaker">
+                <Link primary inline to="https://discord.gg/E2rJPP4">
                   Discord
                 </Link>
               ),
-              reddit: (
-                <Link primary inline to="https://reddit.com/r/ethstaker">
-                  Reddit
-                </Link>
-              ),
             }}
-            description="{variables} are social media platform links to Discord and Reddit (do not translate names)"
+            description="{discord} is a link to the LUKSO Discord (do not translate names)"
           />
         </Text>
       </Subtitle>
@@ -264,9 +259,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 1" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="Before you start" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -277,9 +272,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 2" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="During setup" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -290,9 +285,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 3" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="After depositing" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -327,9 +322,9 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="To process incoming validator deposits from the Eth1
-                    chain, you'll need to run an Eth1 client as well as your
-                    Eth2 client. You can use a third-party service
+                  defaultMessage="To process incoming validator deposits from the Pandora
+                    chain, you'll need to run a Pandora client as well as your
+                    Vanguard client. You can use a third-party service
                     like Infura, but we recommend running your own client to
                     keep the network as decentralised as possible."
                 />
@@ -338,7 +333,7 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="As of {date}, you'll need ~400GB for the Eth1 mainnet chain data alone (growing at ~1GB/day)."
+                  defaultMessage="You'll need a significant amount of space for the Pandora chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
                   values={{
                     date: (
                       <FormattedDate
@@ -354,7 +349,7 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="The Beacon Chain had its genesis on {date}. It is growing in size over time, and the
+                  defaultMessage="The Vanguard Chain had its genesis on {date}. It is growing in size over time, and the
                     introduction of sharding will also increase storage, memory, and bandwidth requirements."
                   values={{
                     date: (
@@ -416,7 +411,7 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="You need enough upload bandwidth too. As of {date} this is ~700-800 MB/hour, and is likely to increase."
+                  defaultMessage="You need enough upload bandwidth too. As of {date}, for Eth this is ~700-800 MB/hour, and is likely to increase over time."
                   values={{
                     date: (
                       <FormattedDate
@@ -444,7 +439,7 @@ export const Checklist = () => {
             </li>
             <li className="py5">
               <Text>
-                <FormattedMessage defaultMessage="Syncing your Eth1 client may take a few days in the worst-case scenario." />
+                <FormattedMessage defaultMessage="Syncing your Pandora client may take a few days in the worst-case scenario." />
               </Text>
             </li>
           </ul>
@@ -661,13 +656,13 @@ export const Checklist = () => {
         </Alert>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="Configure your Eth1 Client" />
+            <FormattedMessage defaultMessage="Configure your Pandora Client" />
           </Heading>
           <CheckBox
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've installed and synced my Eth1 node on {network} (do not wait on this as it can take several days)."
+                  defaultMessage="I've installed and synced my Pandora node on {network} (do not wait on this as it can take several days)."
                   values={{
                     network: IS_MAINNET ? 'mainnet' : 'Goerli',
                   }}
@@ -678,7 +673,7 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="Configure your Eth2 client" />
+            <FormattedMessage defaultMessage="Configure your L15 client" />
           </Heading>
           <Link className="mt10" to="/faq" primary>
             <FormattedMessage defaultMessage="More on validator roles and responsibilities" />
@@ -702,7 +697,7 @@ export const Checklist = () => {
             </Heading>
             <Text className="mt20">
               <FormattedMessage
-                defaultMessage="It is high risk to run your Eth2 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
+                defaultMessage="It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
                 values={{
                   learnMore: (
                     <Link primary inline to="/faq#responsibilities">
@@ -719,7 +714,7 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've installed the {latestRelease} of my Eth2 client."
+                  defaultMessage="I've installed the {latestRelease} of my L15 client."
                   values={{
                     latestRelease: (
                       <strong>
@@ -737,7 +732,7 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="Eth2 Beacon Node (BN)" />
+            <FormattedMessage defaultMessage="L15 Vanguard Node (VN)" />
           </Heading>
           <Heading level={4} className="mt10">
             <FormattedMessage defaultMessage="Required" />
@@ -745,7 +740,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I'm able to connect my Eth2 beacon node to my Eth1 client via HTTP API(s)." />
+                <FormattedMessage defaultMessage="I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)." />
               </Text>
             }
           />
@@ -765,9 +760,9 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've synced my Eth2 beacon node on {ETH2_NETWORK_NAME}."
-                  values={{ ETH2_NETWORK_NAME }}
-                  description="{ETH2_NETWORK_NAME} is name of network, do not translate"
+                  defaultMessage="I've synced my L15 vanguard node on {LUKSO_NETWORK_NAME}."
+                  values={{ LUKSO_NETWORK_NAME }}
+                  description="{LUKSO_NETWORK_NAME} is name of network, do not translate"
                 />
               </Text>
             }
@@ -809,7 +804,7 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="Eth2 Validator Client (VC)" />
+            <FormattedMessage defaultMessage="L15 Validator Client (VC)" />
           </Heading>
           <Heading level={4} className="mt10">
             <FormattedMessage defaultMessage="Required" />
@@ -817,7 +812,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I've imported my keystore(s) into my Eth2 validator client." />
+                <FormattedMessage defaultMessage="I've imported my keystore(s) into my L15 validator client." />
               </Text>
             }
           />
@@ -869,7 +864,7 @@ export const Checklist = () => {
           </Heading>
           <Text>
             <FormattedMessage
-              defaultMessage="The Eth2 clients support Prometheus and Grafana to help you
+              defaultMessage="The L15 clients support Prometheus and Grafana to help you
                 visualise important real-time metrics about your validator. You can
                 find client-specific instructions here: {lighthouse} | {nimbus} | {prysm} | {teku}"
               values={{
@@ -972,7 +967,7 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've simulated how to manually stop and restart my Beacon Node (BN)
+                  defaultMessage="I've simulated how to manually stop and restart my Vanguard Node (VN)
                     and Validator Client (VC) gracefully."
                 />
               </Text>
@@ -988,7 +983,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I've simulated how to migrate from one Eth2 client to another Eth2 client." />
+                <FormattedMessage defaultMessage="I've simulated how to migrate from one L15 client to another L15 client." />
               </Text>
             }
           />
@@ -1009,8 +1004,8 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="Moreover, you can set your Validator Client (VC) and Beacon Node (BN)
-                    on separate machines and IPs so that even if your beacon node is vulnerable, your 
+                  defaultMessage="Moreover, you can set your Validator Client (VC) and Vanguard Node (VN)
+                    on separate machines and IPs so that even if your vanguard node is vulnerable, your 
                     keystore is stored on a different machine."
                 />
               </Text>
@@ -1049,25 +1044,20 @@ export const Checklist = () => {
             }
           />
         </section>
-        <RainbowHeader>
+        <GradientHeader>
           <FormattedMessage
-            defaultMessage="If you have questions, EthStaker community is a good place to get help!
-                You can find support on {discord} or {reddit}."
+            defaultMessage="If you have questions, the LUKSO community is a good place to get
+                  help! You can find support on the {discord} #validators channel."
             values={{
               discord: (
-                <Link primary inline to="https://invite.gg/ethstaker">
+                <Link primary inline to="https://discord.gg/E2rJPP4">
                   Discord
                 </Link>
               ),
-              reddit: (
-                <Link primary inline to="https://reddit.com/r/ethstaker">
-                  Reddit
-                </Link>
-              ),
             }}
-            description="{variables} social media platform links to Discord and Reddit (do not translate names)"
+            description="{discord} is a link to the LUKSO Discord (do not translate names)"
           />
-        </RainbowHeader>
+        </GradientHeader>
       </ChecklistPageStyles>
     </PageTemplate>
   );

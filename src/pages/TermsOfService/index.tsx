@@ -60,7 +60,7 @@ export const TermsOfService = () => {
             color="grayDark"
             className="tos-text last-updated-text"
           >
-            Page last updated: November 3, 2020
+            Page last updated: September 24, 2021
           </Text>
           <Heading level={2}>Terms of Use</Heading>
           <Text className="section-title tos-text" weight={500}>
@@ -68,61 +68,44 @@ export const TermsOfService = () => {
           </Text>
           <Text className="tos-text">
             Acceptance of the Terms of Use These terms of use are entered into
-            by and between you and the Ethereum Foundation ("Foundation", "we"
-            or "us"). The following terms and conditions, together with any
+            by and between you and LUKSO Blockchain GmbH ("LUKSO", "we" or
+            "us"). The following terms and conditions, together with any
             documents they expressly incorporate by reference (collectively,
             these "Terms of Use"), govern your access to and use of
-            ethereum.org, including any content, functionality and services
-            offered on or through ethereum.org, ethereum.foundation, devcon.org,
-            and blog.ethereum.org (together, the "Website").
+            lukso.network, including any content, functionality and services
+            offered on or through lukso.network (together, the "Website").
           </Text>
           <Text className="tos-text">
             Please read the Terms of Use carefully before you start to use the
-            Websites. By using the Websites or by clicking to accept or agree to
+            Website. By using the Website or by clicking to accept or agree to
             the Terms of Use when this option is made available to you, you
             accept and agree to be bound and abide by these Terms of Use in
             addition to
             <ul>
               <li>
                 our{' '}
-                <Link
-                  primary
-                  inline
-                  to="https://ethereum.org/en/privacy-policy/"
-                >
+                <Link primary inline to="https://www.lukso.network/privacy">
                   Privacy Policy
                 </Link>
                 , incorporated herein by reference; and
-              </li>
-              <li>
-                our{' '}
-                <Link
-                  primary
-                  inline
-                  to="https://ethereum.org/en/cookie-policy/"
-                >
-                  Cookie Policy
-                </Link>
-                , incorporated herein by reference (note: no cookies are used on
-                launchpad.ethereum.org).
               </li>
             </ul>
           </Text>
           <Text className="tos-text">
             If you do not to agree to these Terms of Use or the Privacy Policy,
-            you must not access or use the Websites.
+            you must not access or use the Website.
           </Text>
           <Text className="section-title tos-text" weight={500}>
-            Who May Use the Websites
+            Who May Use the Website
           </Text>
           <Text className="tos-text">
-            This Websites is offered and available to users who are 13 years of
-            age or older. The Websites is not intended for children under 13
+            The Website is offered and available to users who are 13 years of
+            age or older. The Website is not intended for children under 13
             years of age. By using this Website, you represent and warrant that
             you (i) are 13 years of age or older, (ii) are not barred to use the
-            Websites under any applicable law, and (iii) are using the Websites
+            Website under any applicable law, and (iii) are using the Website
             only for your own personal use. If you do not meet these
-            requirements, you must not access or use the Websites.
+            requirements, you must not access or use the Website.
           </Text>
           <Text className="section-title tos-text" weight={500}>
             Changes to the Terms of Use
@@ -133,20 +116,20 @@ export const TermsOfService = () => {
             them.
           </Text>
           <Text className="tos-text">
-            Your continued use of the Websites following the posting of revised
+            Your continued use of the Website following the posting of revised
             Terms of Use means that you accept and agree to the changes. You are
             expected to check this page frequently so you are aware of any
             changes, as they are binding on you.
           </Text>
           <Text className="section-title tos-text" weight={500}>
-            Accessing the Websites and Account Security
+            Accessing the Website and Account Security
           </Text>
           <Text className="tos-text">
             We reserve the right to withdraw or amend this Website, and any
             service or material we provide on the Website, in our sole
             discretion without notice. We do not guarantee that our site or any
             content on it, will always be available or be interrupted. We will
-            not be liable if for any reason all or any part of the Websites is
+            not be liable if for any reason all or any part of the Website is
             unavailable at any time or for any period. From time to time, we may
             restrict access to some parts of the Website, or the entire Website,
             to users.
@@ -156,47 +139,46 @@ export const TermsOfService = () => {
             <ul>
               <li>
                 Making all arrangements necessary for you to have access to the
-                Websites.
+                Website.
               </li>
               <li>
-                Ensuring that all persons who access the Websites through your
+                Ensuring that all persons who access the Website through your
                 internet connection are aware of these Terms of Use and comply
                 with them.
               </li>
             </ul>
           </Text>
           <Text className="tos-text">
-            To access the Websites or some of the resources it offers, you may
-            be asked to provide certain registration details or other
-            information. It is a condition of your use of the Websites that all
-            the information you provide on the Websites is correct, current and
+            To access the Website or some of the resources it offers, you may be
+            asked to provide certain registration details or other information.
+            It is a condition of your use of the Website that all the
+            information you provide on the Website is correct, current and
             complete. You agree that all information you provide to register
-            using this Websites or otherwise, including, but not limited to,
+            using this Website or otherwise, including, but not limited to,
             using any interactive features on the Website, is governed by our
             Privacy Policy, and you consent to all actions we take with respect
             to your information consistent with our Privacy Policy.
           </Text>
           <Text className="tos-text">
             You should use particular caution when inputting personal
-            information on to the Websites on a public or shared computer so
-            that others are not able to view or record your personal
-            information.
+            information on to the Website on a public or shared computer so that
+            others are not able to view or record your personal information.
           </Text>
           <Text className="section-title tos-text" weight={500}>
             Intellectual Property Rights
           </Text>
           <Text className="tos-text">
-            The Websites and its entire contents, features and functionality
+            The Website and its entire contents, features and functionality
             (including but not limited to all information, software, text,
             displays, images, video and audio, and the design, selection and
-            arrangement thereof), are owned by the Foundation, its licensors or
-            other providers of such material and are protected by copyright,
+            arrangement thereof), are owned by LUKSO, its licensors or other
+            providers of such material and are protected by copyright,
             trademark, patent, trade secret and other intellectual property or
             proprietary rights laws.
           </Text>
           <Text className="tos-text">
             Unless otherwise marked: (a) all material, data, and information on
-            the Websites, such as data files, text, music, audio files or other
+            the Website, such as data files, text, music, audio files or other
             sounds, photographs, videos, or other images, but excluding any
             software or computer code (collectively, the “Non- Code Content”) is
             licensed under the Creative Commons Attribution 4.0 International
@@ -207,19 +189,18 @@ export const TermsOfService = () => {
             Trademarks
           </Text>
           <Text className="tos-text">
-            The Foundation name, the terms Ethereum Switzerland, Ethereum Asia,
-            the Foundation logo and all related names, logos, product and
-            service names, designs and slogans are trademarks of the Foundation
-            or its affiliates or licensors. You must not use such marks without
-            the prior written permission of the Foundation. All other names,
-            logos, product and service names, designs and slogans on this
-            Websites are the trademarks of their respective owners.
+            The LUKSO name, the LUKSO logo and all related names, logos, product
+            and service names, designs and slogans are trademarks of LUKSO or
+            its affiliates or licensors. You must not use such marks without the
+            prior written permission of LUKSO. All other names, logos, product
+            and service names, designs and slogans on this Website are the
+            trademarks of their respective owners.
           </Text>
           <Text className="section-title tos-text" weight={500}>
             Prohibited Uses
           </Text>
           <Text className="tos-text">
-            You may use the Websites only for lawful purposes and in accordance
+            You may use the Website only for lawful purposes and in accordance
             with these Terms of Use. You agree not to use the Website:
             <ul>
               <li>
@@ -245,16 +226,16 @@ export const TermsOfService = () => {
                 similar solicitation.
               </li>
               <li>
-                To impersonate or attempt to impersonate the Foundation, a
-                Foundation employee, another user or any other person or entity
-                (including, without limitation, by using e-mail addresses or
-                screen names associated with any of the foregoing).
+                To impersonate or attempt to impersonate LUKSO, a LUKSO
+                employee, another user or any other person or entity (including,
+                without limitation, by using e-mail addresses or screen names
+                associated with any of the foregoing).
               </li>
               <li>
                 To engage in any other conduct that restricts or inhibits
                 anyone's use or enjoyment of the Website, or which, as
-                determined by us, may harm the Foundation or users of the
-                Websites or expose them to liability.
+                determined by us, may harm LUKSO or users of the Website or
+                expose them to liability.
               </li>
             </ul>
           </Text>
@@ -262,24 +243,24 @@ export const TermsOfService = () => {
             Additionally, you agree not to:
             <ul>
               <li>
-                Use the Websites in any manner that could disable, overburden,
+                Use the Website in any manner that could disable, overburden,
                 damage, or impair the site or interfere with any other party's
                 use of the Website, including their ability to engage in real
-                time activities through the Websites.
+                time activities through the Website.
               </li>
               <li>
                 Use any robot, spider or other automatic device, process or
-                means to access the Websites for any purpose, including
-                monitoring or copying any of the material on the Websites.
+                means to access the Website for any purpose, including
+                monitoring or copying any of the material on the Website.
               </li>
               <li>
                 Use any manual process to monitor or copy any of the material on
-                the Websites or for any other unauthorized purpose without our
+                the Website or for any other unauthorized purpose without our
                 prior written consent.
               </li>
               <li>
                 Use any device, software or routine that interferes with the
-                proper working of the Websites.
+                proper working of the Website.
               </li>
               <li>
                 Introduce any viruses, trojan horses, worms, logic bombs or
@@ -288,16 +269,16 @@ export const TermsOfService = () => {
               <li>
                 Attempt to gain unauthorized access to, interfere with, damage
                 or disrupt any parts of the Website, the server on which the
-                Websites is stored, or any server, computer or database
-                connected to the Websites.
+                Website is stored, or any server, computer or database connected
+                to the Website.
               </li>
               <li>
-                Attack the Websites via a denial-of-service attack or a
+                Attack the Website via a denial-of-service attack or a
                 distributed denial-of-service attack.
               </li>
               <li>
                 Otherwise attempt to interfere with the proper working of the
-                Websites.
+                Website.
               </li>
             </ul>
           </Text>
@@ -305,7 +286,7 @@ export const TermsOfService = () => {
             Reliance on Information Posted
           </Text>
           <Text className="tos-text">
-            The information presented on or through the Websites is made
+            The information presented on or through the Website is made
             available solely for general information purposes. We do not warrant
             the accuracy, completeness or usefulness of this information. Any
             reliance you place on such information is strictly at your own risk.
@@ -314,35 +295,34 @@ export const TermsOfService = () => {
             Website, or by anyone who may be informed of any of its contents.
           </Text>
           <Text className="tos-text">
-            This Websites includes content provided by third parties, including
+            This Website includes content provided by third parties, including
             materials provided by other users, bloggers and third-party
             licensors, syndicators, aggregators and/or reporting services. All
             statements and/or opinions expressed in these materials, and all
             articles and responses to questions and other content, other than
-            the content provided by the Foundation, are solely the opinions and
-            the responsibility of the person or entity providing those
-            materials. These materials do not necessarily reflect the opinion of
-            the Foundation. We are not responsible, or liable to you or any
-            third party, for the content or accuracy of any materials provided
-            by any third parties.
+            the content provided by LUKSO, are solely the opinions and the
+            responsibility of the person or entity providing those materials.
+            These materials do not necessarily reflect the opinion of LUKSO. We
+            are not responsible, or liable to you or any third party, for the
+            content or accuracy of any materials provided by any third parties.
           </Text>
           <Text className="section-title tos-text" weight={500}>
-            Changes to the Websites
+            Changes to the Website
           </Text>
           <Text className="tos-text">
-            We may update the content on this Websites from time to time, but
-            its content is not necessarily complete or up-to-date. Any of the
-            material on the Websites may be out of date at any given time, and
-            we are under no obligation to update such material.
+            We may update the content on this Website from time to time, but its
+            content is not necessarily complete or up-to-date. Any of the
+            material on the Website may be out of date at any given time, and we
+            are under no obligation to update such material.
           </Text>
 
           <Text className="section-title tos-text" weight={500}>
-            Information About You and Your Visits to the Websites
+            Information About You and Your Visits to the Website
           </Text>
 
           <Text className="tos-text">
-            All information we collect on this Websites is subject to our{' '}
-            <Link primary inline to="https://ethereum.org/en/privacy-policy/">
+            All information we collect on this Website is subject to our{' '}
+            <Link primary inline to="https://www.lukso.network/privacy">
               Privacy Policy
             </Link>
             . By using the Website, you consent to all actions taken by us with
@@ -365,7 +345,7 @@ export const TermsOfService = () => {
           </Text>
 
           <Text className="section-title tos-text" weight={500}>
-            Linking to the Websites and Social Media Features
+            Linking to the Website and Social Media Features
           </Text>
           <Text className="tos-text">
             You may link to our homepage, provided you do so in a way that is
@@ -375,10 +355,10 @@ export const TermsOfService = () => {
             our express written consent.
           </Text>
           <Text className="section-title tos-text" weight={500}>
-            Links from the Websites
+            Links from the Website
           </Text>
           <Text className="tos-text">
-            If the Websites contains links to other sites and resources provided
+            If the Website contains links to other sites and resources provided
             by third parties, these links are provided for your convenience
             only. This includes links contained in advertisements, including
             banner advertisements and sponsored links. We have no control over
@@ -394,11 +374,11 @@ export const TermsOfService = () => {
             Geographic Restrictions
           </Text>
           <Text className="tos-text">
-            The owner of the Websites is based in Switzerland. We make no claims
-            that the Websites or any of its content is accessible or appropriate
-            outside of Switzerland. Access to the Websites may not be legal by
-            certain persons or in certain countries. If you access the Websites
-            from outside Switzerland, you do so on your own initiative and are
+            The owner of the Website is based in Germany. We make no claims that
+            the Website or any of its content is accessible or appropriate
+            outside of Germany. Access to the Website may not be legal by
+            certain persons or in certain countries. If you access the Website
+            from outside Germany, you do so on your own initiative and are
             responsible for compliance with local laws.
           </Text>
           <Text className="section-title tos-text" weight={500}>
@@ -406,7 +386,7 @@ export const TermsOfService = () => {
           </Text>
           <Text className="tos-text">
             You understand that we cannot and do not guarantee or warrant that
-            files available for downloading from the internet or the Websites
+            files available for downloading from the internet or the Website
             will be free of viruses or other destructive code. You are
             responsible for implementing sufficient procedures and checkpoints
             to satisfy your particular requirements for anti-virus protection
@@ -415,34 +395,34 @@ export const TermsOfService = () => {
             WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED
             DENIAL-OF-SERVICE ATTACK, VIRUSES OR OTHER TECHNOLOGICALLY HARMFUL
             MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS,
-            DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE WEBSITES
-            OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITES OR TO YOUR
+            DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE WEBSITE OR
+            ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR TO YOUR
             DOWNLOADING OF ANY MATERIAL POSTED ON IT, OR ON ANY WEBSITES LINKED
             TO IT.
           </Text>
           <Text className="tos-text">
             YOUR USE OF THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS
-            OBTAINED THROUGH THE WEBSITES IS AT YOUR OWN RISK. THE WEBSITE, ITS
-            CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITES ARE
+            OBTAINED THROUGH THE WEBSITE IS AT YOUR OWN RISK. THE WEBSITE, ITS
+            CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE ARE
             PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY
-            WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER THE
-            FOUNDATION NOR ANY PERSON ASSOCIATED WITH THE FOUNDATION MAKES ANY
-            WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS,
-            SECURITY, RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE
-            WEBSITES. WITHOUT LIMITING THE FOREGOING, NEITHER THE FOUNDATION NOR
-            ANYONE ASSOCIATED WITH THE FOUNDATION REPRESENTS OR WARRANTS THAT
-            THE WEBSITE, ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH
-            THE WEBSITES WILL BE ACCURATE, RELIABLE, ERROR-FREE OR
-            UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE
-            SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL
-            COMPONENTS OR THAT THE WEBSITES OR ANY SERVICES OR ITEMS OBTAINED
-            THROUGH THE WEBSITES WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.
+            WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER LUKSO NOR
+            ANY PERSON ASSOCIATED WITH LUKSO MAKES ANY WARRANTY OR
+            REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY,
+            RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE WEBSITE.
+            WITHOUT LIMITING THE FOREGOING, NEITHER LUKSO NOR ANYONE ASSOCIATED
+            WITH LUKSO REPRESENTS OR WARRANTS THAT THE WEBSITE, ITS CONTENT OR
+            ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL BE ACCURATE,
+            RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE
+            CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE
+            FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE WEBSITE OR
+            ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL OTHERWISE
+            MEET YOUR NEEDS OR EXPECTATIONS.
           </Text>
           <Text className="tos-text">
-            THE FOUNDATION HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER
-            EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT
-            LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND
-            FITNESS FOR PARTICULAR PURPOSE.
+            LUKSO HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS
+            OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY
+            WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR
+            PARTICULAR PURPOSE.
           </Text>
           <Text className="tos-text">
             SOME JURISDICTIONS DO NOT ALLOW EXCLUSION OF WARRIANTIES OR
@@ -454,12 +434,12 @@ export const TermsOfService = () => {
             Limitation on Liability
           </Text>
           <Text className="tos-text">
-            IN NO EVENT WILL THE FOUNDATION, ITS AFFILIATES OR THEIR LICENSORS,
-            SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE
-            LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT
-            OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE WEBSITE,
-            ANY WEBSITES LINKED TO IT, ANY CONTENT ON THE WEBSITES OR SUCH OTHER
-            WEBSITES OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITES OR
+            IN NO EVENT WILL LUKSO, ITS AFFILIATES OR THEIR LICENSORS, SERVICE
+            PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE LIABLE FOR
+            DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN
+            CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE WEBSITE, ANY
+            WEBSITES LINKED TO IT, ANY CONTENT ON THE WEBSITE OR SUCH OTHER
+            WEBSITES OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR
             SUCH OTHER WEBSITES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL,
             INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING BUT NOT
             LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS,
@@ -474,7 +454,7 @@ export const TermsOfService = () => {
             Indemnification
           </Text>
           <Text className="tos-text">
-            You agree to defend, indemnify and hold harmless the Foundation, its
+            You agree to defend, indemnify and hold harmless LUKSO, its
             affiliates, licensors and service providers, and its and their
             respective officers, directors, employees, contractors, agents,
             licensors, suppliers, successors and assigns from and against any
@@ -484,38 +464,38 @@ export const TermsOfService = () => {
             of the Website, including, but not limited to, any use of the
             Website's content, services and products other than as expressly
             authorized in these Terms of Use or your use of any information
-            obtained from the Websites.
+            obtained from the Website.
           </Text>
           <Text className="section-title tos-text" weight={500}>
             Governing Law and Jurisdiction
           </Text>
           <Text className="tos-text">
-            All matters relating to the Websites and these Terms of Use and any
+            All matters relating to the Website and these Terms of Use and any
             dispute or claim arising therefrom or related thereto (in each case,
             including non-contractual disputes or claims), shall be governed by
-            and construed in accordance with the internal laws of Switzerland
+            and construed in accordance with the internal laws of Germany
             without giving effect to any choice or conflict of law provision or
-            rule (whether of Switzerland or any other jurisdiction).
+            rule (whether of Germany or any other jurisdiction).
           </Text>
           <Text className="tos-text">
             Any legal suit, action or proceeding arising out of, or related to,
-            these Terms of Use or the Websites shall be instituted exclusively
-            in the Switzerland in the Kanton of Zug although we retain the right
-            to bring any suit, action or proceeding against you for breach of
-            these Terms of Use in your country of residence or any other
-            relevant country. You waive any and all objections to the exercise
-            of jurisdiction over you by such courts and to venue in such courts.
+            these Terms of Use or the Website shall be instituted exclusively in
+            Germany although we retain the right to bring any suit, action or
+            proceeding against you for breach of these Terms of Use in your
+            country of residence or any other relevant country. You waive any
+            and all objections to the exercise of jurisdiction over you by such
+            courts and to venue in such courts.
           </Text>
           <Text className="section-title tos-text" weight={500}>
             Waiver and Severability
           </Text>
           <Text className="tos-text">
-            No waiver of by the Foundation of any term or condition set forth in
-            these Terms of Use shall be deemed a further or continuing waiver of
-            such term or condition or a waiver of any other term or condition,
-            and any failure of the Foundation to assert a right or provision
-            under these Terms of Use shall not constitute a waiver of such right
-            or provision.
+            No waiver of by LUKSO of any term or condition set forth in these
+            Terms of Use shall be deemed a further or continuing waiver of such
+            term or condition or a waiver of any other term or condition, and
+            any failure of LUKSO to assert a right or provision under these
+            Terms of Use shall not constitute a waiver of such right or
+            provision.
           </Text>
           <Text className="tos-text">
             If any provision of these Terms of Use is held by a court or other
@@ -530,19 +510,18 @@ export const TermsOfService = () => {
           <Text className="tos-text">
             The Terms of Use, our Privacy Policy and terms of conditions for the
             registration of events constitute the sole and entire agreement
-            between you and the Ethereum Foundation with respect to the Websites
-            and supersede all prior and contemporaneous understandings,
-            agreements, representations and warranties, both written and oral,
-            with respect to the Websites.
+            between you and LUKSO with respect to the Website and supersede all
+            prior and contemporaneous understandings, agreements,
+            representations and warranties, both written and oral, with respect
+            to the Website.
           </Text>
           <Text className="section-title tos-text" weight={500}>
             Your Comments and Concerns
           </Text>
           <Text className="tos-text">
-            This Websites is operated by the Foundation. All other feedback,
-            comments, requests for technical support and other communications
-            relating to the Websites should be directed to:
-            support@ethereum.org.
+            This Website is operated by LUKSO. All other feedback, comments,
+            requests for technical support and other communications relating to
+            the Website should be directed to: hello@lukso.network.
           </Text>
         </TermsOfServiceStyles>
       </Container>

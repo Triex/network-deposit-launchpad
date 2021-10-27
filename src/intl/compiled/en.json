@@ -1,8 +1,12 @@
 {
-  "+3PPtT": [
+  "+Cieba": [
+    {
+      "type": 1,
+      "value": "withdrawalCredentials"
+    },
     {
       "type": 0,
-      "value": "Today, you'll secure the Beacon Chain, the first Eth2 upgrade. It's a separate chain that uses a proof-of-stake consensus mechanism. Eventually you'll help secure all of Ethereum, once mainnet (the Ethereum we use today) merges with the Beacon Chain."
+      "value": " is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
     }
   ],
   "+L0IkF": [
@@ -21,6 +25,12 @@
     {
       "type": 0,
       "value": "Validator uptime"
+    }
+  ],
+  "+VetqJ": [
+    {
+      "type": 0,
+      "value": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 LYXt) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
     }
   ],
   "+e8bO+": [
@@ -47,6 +57,20 @@
       "value": "Polish"
     }
   ],
+  "+rEvxo": [
+    {
+      "type": 0,
+      "value": "Choose "
+    },
+    {
+      "type": 1,
+      "value": "lyxt"
+    },
+    {
+      "type": 0,
+      "value": " client"
+    }
+  ],
   "+s8Gac": [
     {
       "type": 0,
@@ -63,6 +87,20 @@
     {
       "type": 1,
       "value": "network"
+    }
+  ],
+  "+sCvYi": [
+    {
+      "type": 0,
+      "value": "Use "
+    },
+    {
+      "type": 1,
+      "value": "http"
+    },
+    {
+      "type": 0,
+      "value": " to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
     }
   ],
   "/+atl4": [
@@ -145,16 +183,16 @@
       "value": "Transactions"
     }
   ],
+  "/mj2YE": [
+    {
+      "type": 0,
+      "value": "Cross check the deposit contract address against other websites – for example: Reddit, Twitter, and GitHub."
+    }
+  ],
   "/ub26/": [
     {
       "type": 0,
       "value": "Understand the risks"
-    }
-  ],
-  "/vPNsl": [
-    {
-      "type": 0,
-      "value": "The merge, also known as the docking, will see the Ethereum mainnet we use today merge with the Beacon Chain. This is when Ethereum will fully transition to proof-of-stake."
     }
   ],
   "/vkCbT": [
@@ -269,6 +307,12 @@
       "value": "Testnet practice"
     }
   ],
+  "0ac/fX": [
+    {
+      "type": 0,
+      "value": "To become a validator, you will need to be able to run commands in the terminal on your computer. Generating your new BLS key pairs and installing the validator software are both done in the terminal."
+    }
+  ],
   "0i4cCJ": [
     {
       "type": 0,
@@ -295,16 +339,24 @@
       "value": "Validators FAQ"
     }
   ],
-  "0qvZJn": [
-    {
-      "type": 0,
-      "value": "More on the Eth2 vision"
-    }
-  ],
   "0uqjBl": [
     {
       "type": 0,
       "value": "Earn continuous rewards for providing a public good to the community."
+    }
+  ],
+  "0zaPZK": [
+    {
+      "type": 0,
+      "value": "You'll need a significant amount of space for the Pandora chain data alone (For reference; as of "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": ", Eth1 is ~400GB and growing at ~1GB/day)."
     }
   ],
   "122+yR": [
@@ -317,6 +369,20 @@
     {
       "type": 0,
       "value": "When can I withdraw my funds, and what’s the difference between exiting and withdrawing?"
+    }
+  ],
+  "1CNYN4": [
+    {
+      "type": 0,
+      "value": "I understand that keys are my responsibility and that my mnemonic (seed) will be the "
+    },
+    {
+      "type": 1,
+      "value": "onlyWay"
+    },
+    {
+      "type": 0,
+      "value": " to withdraw my funds in the future."
     }
   ],
   "1FdDAV": [
@@ -373,10 +439,10 @@
       "value": "Check deposit contract details"
     }
   ],
-  "2+TGmE": [
+  "1lwIVT": [
     {
       "type": 0,
-      "value": "To process incoming validator deposits from the Eth1 chain, you'll need to run an Eth1 client as well as your Eth2 client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
+      "value": "LUKSO validator checklist"
     }
   ],
   "22EpKq": [
@@ -421,24 +487,56 @@
       "value": "There was an error loading your validator information from Beaconcha.in"
     }
   ],
+  "2Avb9j": [
+    {
+      "type": 0,
+      "value": "Thank you for supporting the LUKSO L15 ephemeral testnet!"
+    }
+  ],
   "2CYEJa": [
     {
       "type": 0,
       "value": "Troubleshooting"
     }
   ],
-  "2DuJTX": [
+  "2PgclB": [
     {
       "type": 0,
-      "value": "Use "
+      "value": "It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. "
     },
     {
       "type": 1,
-      "value": "http"
+      "value": "learnMore"
+    }
+  ],
+  "2Qn0Hh": [
+    {
+      "type": 0,
+      "value": "Importantly, as a validator you'll need to post "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
     },
     {
       "type": 0,
-      "value": " to connect your Eth2 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+      "value": " as collateral - in other words, have some funds at stake (get some at the "
+    },
+    {
+      "type": 1,
+      "value": "faucetLink"
+    },
+    {
+      "type": 0,
+      "value": "). The only way to become a validator is to make a one-way "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
+    },
+    {
+      "type": 0,
+      "value": " transaction to the deposit contract on the current LUKSO L15 Testnet."
     }
   ],
   "2a1GTh": [
@@ -471,12 +569,6 @@
     {
       "type": 0,
       "value": "Terms of Service"
-    }
-  ],
-  "36KKVb": [
-    {
-      "type": 0,
-      "value": "More on Eth2 economics"
     }
   ],
   "38VH2G": [
@@ -541,20 +633,6 @@
       "value": "Check the whole address, not just a portion of it. There could be just a few bytes different."
     }
   ],
-  "3Pmjlx": [
-    {
-      "type": 0,
-      "value": "I've installed the "
-    },
-    {
-      "type": 1,
-      "value": "latestRelease"
-    },
-    {
-      "type": 0,
-      "value": " of my Eth2 client."
-    }
-  ],
   "3Q43SM": [
     {
       "type": 0,
@@ -567,10 +645,10 @@
       "value": "Top-up transaction"
     }
   ],
-  "3XK21U": [
+  "3UO4hS": [
     {
       "type": 0,
-      "value": "We'll help you create a signing key for every validator you want to run. Because there are no withdrawals until The Merge, you will not create your withdrawal keys now. When it is possible to withdraw your funds, you can derive your withdrawal keys from your mnemonic."
+      "value": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
     }
   ],
   "3tR/V9": [
@@ -625,6 +703,20 @@
       "value": "Installation"
     }
   ],
+  "4At0e7": [
+    {
+      "type": 0,
+      "value": "Before you can run a validator and start to secure the network, you need to stake "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " LYXt. This forms your initial balance."
+    }
+  ],
   "4FcLja": [
     {
       "type": 0,
@@ -637,10 +729,10 @@
       "value": "Start by setting up your chosen hardware and operating system."
     }
   ],
-  "4QNsja": [
+  "4TOYsg": [
     {
       "type": 0,
-      "value": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of ETH staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
+      "value": "LUKSO L15 Ephemeral Testnet Launchpad"
     }
   ],
   "4hnEBA": [
@@ -659,6 +751,12 @@
     {
       "type": 0,
       "value": "CURRENT"
+    }
+  ],
+  "53xzcb": [
+    {
+      "type": 0,
+      "value": "Configure your L15 client"
     }
   ],
   "54J/qs": [
@@ -691,26 +789,18 @@
       "value": "Romanian"
     }
   ],
-  "5t8oYl": [
+  "60BCbB": [
     {
       "type": 0,
-      "value": "Visit EthStaker on "
+      "value": "Choose your "
     },
     {
       "type": 1,
-      "value": "discord"
+      "value": "luksoVersionStep"
     },
     {
       "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "reddit"
-    },
-    {
-      "type": 0,
-      "value": " at any time during your setup for some friendly help!"
+      "value": " client and set up a node"
     }
   ],
   "6CK2Nu": [
@@ -723,10 +813,10 @@
       "value": "network"
     }
   ],
-  "6HBTTN": [
+  "6RJOKW": [
     {
       "type": 0,
-      "value": "Proof-of-stake (PoS) and the Beacon Chain"
+      "value": "I've simulated how to migrate from one L15 client to another L15 client."
     }
   ],
   "6UUL73": [
@@ -781,6 +871,12 @@
       "value": " is not supported in offline mode."
     }
   ],
+  "7RVokJ": [
+    {
+      "type": 0,
+      "value": "More on the Vanguard Consensus Chain"
+    }
+  ],
   "7UOvbT": [
     {
       "type": 0,
@@ -797,6 +893,12 @@
     {
       "type": 0,
       "value": "Slashed?"
+    }
+  ],
+  "7bEnm6": [
+    {
+      "type": 0,
+      "value": "If you go offline for a number of days under normal conditions you will lose an amount of LYXt roughly equivalent to the amount of LYXt you would have gained in that period. In other words, if you stood to earn ≈0.01 LYXt, you would instead be penalised ≈0.01 LYXt."
     }
   ],
   "7d3Nzd": [
@@ -821,6 +923,18 @@
       "value": " blockchain explorers."
     }
   ],
+  "7gmpID": [
+    {
+      "type": 0,
+      "value": "LUKSO validators community"
+    }
+  ],
+  "7iEYck": [
+    {
+      "type": 0,
+      "value": "More on LUKSO economics"
+    }
+  ],
   "7lhBkq": [
     {
       "type": 0,
@@ -843,20 +957,6 @@
     {
       "type": 0,
       "value": "Every epoch, the network measures the actions of each validator and issues your rewards or penalties appropriately."
-    }
-  ],
-  "7y4xl1": [
-    {
-      "type": 0,
-      "value": "Eth2 Launchpad for "
-    },
-    {
-      "type": 1,
-      "value": "TESTNET_LAUNCHPAD_NAME"
-    },
-    {
-      "type": 0,
-      "value": " testnet"
     }
   ],
   "80eWKU": [
@@ -921,6 +1021,12 @@
       "value": "slashings"
     }
   ],
+  "8sTrb4": [
+    {
+      "type": 0,
+      "value": "Your balance is updated periodically by the LUKSO network rules as you carry (or fail to carry) out your responsibilities."
+    }
+  ],
   "8wd0q5": [
     {
       "type": 0,
@@ -951,18 +1057,10 @@
       "value": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
     }
   ],
-  "9DZdsc": [
+  "9BcSOf": [
     {
       "type": 0,
-      "value": "Is there any advantage to having more than "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " ETH at stake?"
+      "value": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of LYXt staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
     }
   ],
   "9JktQX": [
@@ -1013,12 +1111,6 @@
       "value": "Overview"
     }
   ],
-  "A/iYbo": [
-    {
-      "type": 0,
-      "value": "The Eth2 upgrades will only be successful if validators understand the risks and responsibilities."
-    }
-  ],
   "A2b4uB": [
     {
       "type": 0,
@@ -1037,26 +1129,44 @@
       "value": "If you need help, check out the Python documentation."
     }
   ],
-  "AEp7+F": [
+  "AIEf0K": [
     {
       "type": 0,
-      "value": "Importantly, as a validator you'll need to post "
+      "value": "LUKSO L15 Testnet Launchpad for "
     },
     {
       "type": 1,
-      "value": "TICKER_NAME"
+      "value": "TESTNET_LAUNCHPAD_NAME"
     },
     {
       "type": 0,
-      "value": " as collateral - in other words, have some funds at stake. The only way to become a validator is to make a one-way "
+      "value": " testnet"
+    }
+  ],
+  "ALg2MW": [
+    {
+      "type": 0,
+      "value": "Check the deposit contract on your favorite block explorer:"
+    }
+  ],
+  "AMajpT": [
+    {
+      "type": 0,
+      "value": "Block rewards are calculated using a sliding scale based on the total amount of LYXt staked on the network."
+    }
+  ],
+  "ANsnxE": [
+    {
+      "type": 0,
+      "value": "No. There is no advantage to having more than "
     },
     {
       "type": 1,
-      "value": "TICKER_NAME"
+      "value": "pricePerValidator"
     },
     {
       "type": 0,
-      "value": " transaction to the deposit contract on the current Ethereum chain."
+      "value": " LYXt staked."
     }
   ],
   "AYKxmf": [
@@ -1075,6 +1185,12 @@
     {
       "type": 0,
       "value": "understanding validator effective balance"
+    }
+  ],
+  "AbTYBZ": [
+    {
+      "type": 0,
+      "value": "Transfers between validators aren't possible yet. You will have to wait until after the Vanguard Consensus Engine mainnet is released before you can deposit, withdraw or transfer real tokens."
     }
   ],
   "Ad61gz": [
@@ -1117,40 +1233,10 @@
       "value": "Top up validator"
     }
   ],
-  "B2EKj+": [
+  "AzR2Fq": [
     {
       "type": 0,
-      "value": "I understand that I need to deposit "
-    },
-    {
-      "type": 1,
-      "value": "PRICE_PER_VALIDATOR"
-    },
-    {
-      "type": 0,
-      "value": " "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " to become a validator, and that the transfer of "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " to the Beacon Chain is one-way, and non-reversible."
-    }
-  ],
-  "BB65vH": [
-    {
-      "type": 0,
-      "value": "You can think of the deposit contract as a transfer of funds between Ethereum accounts and Eth2 validators."
+      "value": "I've simulated how to manually stop and restart my Vanguard Node (VN) and Validator Client (VC) gracefully."
     }
   ],
   "BCsPjJ": [
@@ -1163,28 +1249,6 @@
     {
       "type": 0,
       "value": "Top up a validator"
-    }
-  ],
-  "BFfsSX": [
-    {
-      "type": 0,
-      "value": "The Eth2 deposit contract requires a minimum of "
-    },
-    {
-      "type": 1,
-      "value": "minTopupValue"
-    },
-    {
-      "type": 0,
-      "value": " "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " to be sent at one time to be accepted."
     }
   ],
   "BFsUAH": [
@@ -1215,16 +1279,22 @@
       "value": "Download MetaMask"
     }
   ],
-  "BUFaRV": [
+  "BWbrLK": [
     {
       "type": 0,
-      "value": "EthStaker community"
+      "value": "Once you're comfortable, you'll go through generating your keys and depositing your LYXt."
     }
   ],
   "Bf2QKg": [
     {
       "type": 0,
       "value": "Validating is a long-term commitment"
+    }
+  ],
+  "BiP9Gq": [
+    {
+      "type": 0,
+      "value": "More on the LUKSO vision"
     }
   ],
   "Bj5yI5": [
@@ -1251,6 +1321,12 @@
       "value": "Configure Lighthouse"
     }
   ],
+  "C9dXhY": [
+    {
+      "type": 0,
+      "value": "The L15 clients"
+    }
+  ],
   "C9fTX1": [
     {
       "type": 0,
@@ -1261,6 +1337,20 @@
     {
       "type": 0,
       "value": "Czech"
+    }
+  ],
+  "CALy1/": [
+    {
+      "type": 0,
+      "value": "Are there recent "
+    },
+    {
+      "type": 1,
+      "value": "lyxtAmount"
+    },
+    {
+      "type": 0,
+      "value": " deposits?"
     }
   ],
   "CBbRux": [
@@ -1275,36 +1365,24 @@
       "value": "Proof of stake"
     }
   ],
-  "CVDzDs": [
+  "CcuTCU": [
     {
       "type": 0,
-      "value": "You should certainly top up if your balance is close to 16 ETH. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 ETH)."
-    }
-  ],
-  "CdKEd/": [
-    {
-      "type": 0,
-      "value": "The minimum amount that can be slashed is 1 ETH, but "
+      "value": "Be sure to complete the "
     },
     {
       "type": 1,
-      "value": "strongText"
+      "value": "stakerChecklist"
     },
     {
       "type": 0,
-      "value": "."
+      "value": " as soon as possible. And join the LUKSO Discord community (#validators channel) for support and discussion with fellow validators."
     }
   ],
   "CeeJfw": [
     {
       "type": 0,
       "value": "I've set up a firewall."
-    }
-  ],
-  "Cv+T7+": [
-    {
-      "type": 0,
-      "value": "Slashing has two purposes: (1) to make it prohibitively expensive to attack Eth2, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
     }
   ],
   "D0Rigq": [
@@ -1317,12 +1395,6 @@
     {
       "type": 0,
       "value": "Current APR"
-    }
-  ],
-  "D4cQV/": [
-    {
-      "type": 0,
-      "value": "How much ETH do I need to stake to become a validator?"
     }
   ],
   "DCaq7N": [
@@ -1415,12 +1487,6 @@
       "value": "chain"
     }
   ],
-  "E8t6ru": [
-    {
-      "type": 0,
-      "value": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, so store your mnemonic safely in order to be able to withdraw later."
-    }
-  ],
   "EFjTSf": [
     {
       "type": 0,
@@ -1439,6 +1505,12 @@
     {
       "type": 0,
       "value": " executable"
+    }
+  ],
+  "EOAJVt": [
+    {
+      "type": 0,
+      "value": "Today, you'll secure LUKSO's Vanguard Consensus Chain. It's a new and separate chain that uses a proof-of-stake consensus mechanism."
     }
   ],
   "EPCHZV": [
@@ -1471,6 +1543,32 @@
       "value": "This is a test network ⚠️"
     }
   ],
+  "EoeAcv": [
+    {
+      "type": 0,
+      "value": "I've synced my L15 vanguard node on "
+    },
+    {
+      "type": 1,
+      "value": "LUKSO_NETWORK_NAME"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "EuhIal": [
+    {
+      "type": 0,
+      "value": "Syncing your Pandora client may take a few days in the worst-case scenario."
+    }
+  ],
+  "F7VIgY": [
+    {
+      "type": 0,
+      "value": "Besu on Goerli documentation"
+    }
+  ],
   "FEbVwB": [
     {
       "type": 0,
@@ -1489,6 +1587,12 @@
       "value": "I understand that this transaction is not reversible."
     }
   ],
+  "FYRKlK": [
+    {
+      "type": 0,
+      "value": "Proof-of-stake (PoS) and the Vanguard Consensus Chain"
+    }
+  ],
   "FZa0R+": [
     {
       "type": 0,
@@ -1505,12 +1609,6 @@
     {
       "type": 0,
       "value": "Try again"
-    }
-  ],
-  "FdbNS6": [
-    {
-      "type": 0,
-      "value": "Configure your Eth1 Client"
     }
   ],
   "FfLWt5": [
@@ -1553,16 +1651,6 @@
     {
       "type": 0,
       "value": "Download master branch source code"
-    }
-  ],
-  "G6kg26": [
-    {
-      "type": 0,
-      "value": "Eth2 Clients: "
-    },
-    {
-      "type": 1,
-      "value": "clientName"
     }
   ],
   "G8tAKU": [
@@ -1613,12 +1701,6 @@
       "value": "Generate keys"
     }
   ],
-  "GrU/lp": [
-    {
-      "type": 0,
-      "value": "The Eth2 clients"
-    }
-  ],
   "GsBRWL": [
     {
       "type": 0,
@@ -1637,10 +1719,22 @@
       "value": "When should I top up my validator’s balance?"
     }
   ],
+  "GxQors": [
+    {
+      "type": 0,
+      "value": "You'll need to run a L15 node to become a validator. Take a look at the checklist to prepare yourself and your equipment."
+    }
+  ],
   "H+Wcch": [
     {
       "type": 0,
       "value": "Section 2"
+    }
+  ],
+  "H+cVuO": [
+    {
+      "type": 0,
+      "value": "LUKSO L15 Testnet Launchpad"
     }
   ],
   "H+kIpp": [
@@ -1653,6 +1747,26 @@
     {
       "type": 0,
       "value": "Balance"
+    }
+  ],
+  "HJVEQL": [
+    {
+      "type": 0,
+      "value": "Does the site asking you for your "
+    },
+    {
+      "type": 1,
+      "value": "lyxtAmount"
+    },
+    {
+      "type": 0,
+      "value": " deposit have a URL you expect?"
+    }
+  ],
+  "HMpGw2": [
+    {
+      "type": 0,
+      "value": "You should certainly top up if your balance is close to 16 LYXt. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYXt)."
     }
   ],
   "HoahTd": [
@@ -1689,22 +1803,16 @@
       "value": "Can I change the withdrawal credentials of my validator after the first deposit?"
     }
   ],
-  "IAKvZ0": [
+  "IBLsVn": [
     {
       "type": 0,
-      "value": "The Eth2 upgrades"
+      "value": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
     }
   ],
   "IJw06E": [
     {
       "type": 0,
       "value": "Sign transaction with your wallet"
-    }
-  ],
-  "IVyWYt": [
-    {
-      "type": 0,
-      "value": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 ETH) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
     }
   ],
   "IZFEUg": [
@@ -1757,12 +1865,6 @@
     {
       "type": 0,
       "value": " there are two important scenarios to be aware of:"
-    }
-  ],
-  "J0DclJ": [
-    {
-      "type": 0,
-      "value": "Syncing your Eth1 client may take a few days in the worst-case scenario."
     }
   ],
   "J455S4": [
@@ -1831,16 +1933,16 @@
       "value": "4. Avoid phishing"
     }
   ],
-  "JYrJic": [
-    {
-      "type": 0,
-      "value": "Avoid Eth2 phishing"
-    }
-  ],
   "JhUYU3": [
     {
       "type": 0,
       "value": "Download CLI app"
+    }
+  ],
+  "JpZRE1": [
+    {
+      "type": 0,
+      "value": "Can I withdraw my L15 LYXt to LYX or LYXe?"
     }
   ],
   "JqVeL+": [
@@ -1907,22 +2009,54 @@
       "value": "Hardware checklist"
     }
   ],
+  "KCBqlo": [
+    {
+      "type": 0,
+      "value": "Check your favorite L15 block explorer:"
+    }
+  ],
+  "KFSZ68": [
+    {
+      "type": 1,
+      "value": "warning"
+    },
+    {
+      "type": 0,
+      "value": " Duplicate deposits with the same keyfile public key will be considered as a double deposit. Any extra balance more than "
+    },
+    {
+      "type": 1,
+      "value": "lyxt"
+    },
+    {
+      "type": 0,
+      "value": " will NOT be counted in your effective balance on the Vanguard Chain. Withdrawing your deposits also won't currently be possible."
+    }
+  ],
+  "KLfakO": [
+    {
+      "type": 0,
+      "value": "I've installed the "
+    },
+    {
+      "type": 1,
+      "value": "latestRelease"
+    },
+    {
+      "type": 0,
+      "value": " of my L15 client."
+    }
+  ],
+  "KMyzzI": [
+    {
+      "type": 0,
+      "value": "How LUKSO moves towards Mainnet?"
+    }
+  ],
   "KN7zKn": [
     {
       "type": 0,
       "value": "Error"
-    }
-  ],
-  "KV017i": [
-    {
-      "type": 0,
-      "value": "A validator is an entity that participates in the consensus of the Ethereum 2.0 protocol."
-    }
-  ],
-  "KhEtqB": [
-    {
-      "type": 0,
-      "value": "Besu on Goerli documentation"
     }
   ],
   "KjcAm2": [
@@ -2039,10 +2173,22 @@
       "value": "."
     }
   ],
+  "LuxuL7": [
+    {
+      "type": 0,
+      "value": "Avoid LYXt phishing"
+    }
+  ],
   "Lv3Pmp": [
     {
       "type": 0,
       "value": "Your initial deposit has already been made for this validator public key. Please wait and check the status of your deposit on the Beaconchain data provider."
+    }
+  ],
+  "Lva1dX": [
+    {
+      "type": 0,
+      "value": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset."
     }
   ],
   "LyJqWj": [
@@ -2061,12 +2207,6 @@
     {
       "type": 0,
       "value": "Connect new wallet"
-    }
-  ],
-  "MPHPEO": [
-    {
-      "type": 0,
-      "value": "I'm able to connect my Eth2 beacon node to my Eth1 client via HTTP API(s)."
     }
   ],
   "MQTBvH": [
@@ -2105,12 +2245,6 @@
       "value": "Using the terminal"
     }
   ],
-  "MbsAo3": [
-    {
-      "type": 0,
-      "value": "This launchpad will help you become a validator, so you can play an active part in Ethereum's future. Validators are key to the more secure, scalable, and sustainable Ethereum we're building together."
-    }
-  ],
   "Mc8nNE": [
     {
       "type": 0,
@@ -2123,20 +2257,6 @@
       "value": "Top-up details"
     }
   ],
-  "N+2G1J": [
-    {
-      "type": 0,
-      "value": "Choose "
-    },
-    {
-      "type": 1,
-      "value": "ethereum"
-    },
-    {
-      "type": 0,
-      "value": " client"
-    }
-  ],
   "N0rwnt": [
     {
       "type": 1,
@@ -2145,20 +2265,6 @@
     {
       "type": 0,
       "value": " isn't a valid deposit_data JSON file. Try again."
-    }
-  ],
-  "NBJR7v": [
-    {
-      "type": 0,
-      "value": "Use "
-    },
-    {
-      "type": 1,
-      "value": "http"
-    },
-    {
-      "type": 0,
-      "value": " to connect your Eth2 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
     }
   ],
   "NEmnAV": [
@@ -2197,12 +2303,6 @@
       "value": "Download command line app"
     }
   ],
-  "NVQd7i": [
-    {
-      "type": 0,
-      "value": "To process incoming validator deposits from mainnet (the Eth1 chain), you'll need to run an Eth1 client in parallel to your Eth2 client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
-    }
-  ],
   "NVljH4": [
     {
       "type": 0,
@@ -2235,16 +2335,16 @@
       "value": "Remember that a validator’s vote is weighted by the amount it has at stake."
     }
   ],
-  "NZsVaA": [
-    {
-      "type": 0,
-      "value": "Validators and Eth2"
-    }
-  ],
   "Nb5DNK": [
     {
       "type": 0,
       "value": "Become a validator with Teku"
+    }
+  ],
+  "NmiAuT": [
+    {
+      "type": 0,
+      "value": "Learn more about the roles and responsibilities of L15 validators."
     }
   ],
   "NwzcYT": [
@@ -2275,10 +2375,10 @@
       "value": "."
     }
   ],
-  "O54B/F": [
+  "OF9qv9": [
     {
       "type": 0,
-      "value": "The Eth2 network"
+      "value": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client in parallel to your Vanguard client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
     }
   ],
   "OIvXIO": [
@@ -2299,6 +2399,12 @@
     {
       "type": 0,
       "value": "The Nethermind documentation explains how to download and install the client."
+    }
+  ],
+  "OQ0r3H": [
+    {
+      "type": 0,
+      "value": "I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)."
     }
   ],
   "OdYQYh": [
@@ -2325,32 +2431,10 @@
       "value": "As a validator, you'll need to have funds at stake so you can be penalized for behaving dishonestly."
     }
   ],
-  "P0kiYS": [
+  "P7/KZ1": [
     {
       "type": 0,
-      "value": "The Beacon Chain upgrade brings proof-of-stake consensus to Ethereum."
-    }
-  ],
-  "P1QerV": [
-    {
-      "type": 0,
-      "value": "If you have questions, EthStaker community is a good place to get help! You can find support on "
-    },
-    {
-      "type": 1,
-      "value": "discord"
-    },
-    {
-      "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "reddit"
-    },
-    {
-      "type": 0,
-      "value": "."
+      "value": "The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L15 is the ephemeral testnet prior to L16, and mainnet launch."
     }
   ],
   "P91KmA": [
@@ -2373,12 +2457,6 @@
     {
       "type": 0,
       "value": "We recommend you go through the entire process on a testnet first to get comfortable."
-    }
-  ],
-  "PboOCR": [
-    {
-      "type": 0,
-      "value": "Configure your Eth2 client"
     }
   ],
   "PfoT0C": [
@@ -2423,22 +2501,26 @@
       "value": "pip documentation"
     }
   ],
-  "PyArfT": [
+  "Q+vr3v": [
     {
       "type": 0,
-      "value": "Eth1 address withdrawal: If you want to withdraw to Eth1 chain after the merge, you can set "
+      "value": "To become a validator on the L15 testnet, you need to deposit "
     },
     {
       "type": 1,
-      "value": "eth1AddressWithdraw"
+      "value": "PRICE_PER_VALIDATOR"
     },
     {
       "type": 0,
-      "value": " when running deposit-cli. "
+      "value": " "
     },
     {
       "type": 1,
-      "value": "boldWarning"
+      "value": "TICKER_NAME"
+    },
+    {
+      "type": 0,
+      "value": " per validator that you wish to run."
     }
   ],
   "Q1ZwPT": [
@@ -2483,6 +2565,12 @@
     {
       "type": 0,
       "value": " to max out your effective balance."
+    }
+  ],
+  "QBAX97": [
+    {
+      "type": 0,
+      "value": "L15 Vanguard Node (VN)"
     }
   ],
   "QKFeMq": [
@@ -2555,12 +2643,6 @@
       "value": "only way"
     }
   ],
-  "RIFLCz": [
-    {
-      "type": 0,
-      "value": "Phishing is a very real risk for Eth2 validators and, unfortunately, many people will lose funds due to these attacks."
-    }
-  ],
   "ROHpFF": [
     {
       "type": 0,
@@ -2579,18 +2661,6 @@
       "value": "congratulations"
     }
   ],
-  "RYUKCz": [
-    {
-      "type": 0,
-      "value": "I've simulated how to migrate from one Eth2 client to another Eth2 client."
-    }
-  ],
-  "RaBZna": [
-    {
-      "type": 0,
-      "value": "If you go offline for a number of days under normal conditions you will lose an amount of ETH roughly equivalent to the amount of ETH you would have gained in that period. In other words, if you stood to earn ≈0.01 ETH, you would instead be penalised ≈0.01 ETH."
-    }
-  ],
   "Rg5ySE": [
     {
       "type": 0,
@@ -2601,12 +2671,6 @@
     {
       "type": 0,
       "value": "Or in other words, a human running a computer process. This process proposes and vouches for new blocks to be added to the blockchain."
-    }
-  ],
-  "RkbwNZ": [
-    {
-      "type": 0,
-      "value": "Withdrawing your deposit won't be possible until mainnet merges with the Beacon Chain."
     }
   ],
   "Rm2GQZ": [
@@ -2665,20 +2729,6 @@
       "value": "Your stake has reached the deposit contract!"
     }
   ],
-  "SMffKt": [
-    {
-      "type": 0,
-      "value": "Choose your Eth"
-    },
-    {
-      "type": 1,
-      "value": "ethVersionStep"
-    },
-    {
-      "type": 0,
-      "value": " client and set up a node"
-    }
-  ],
   "SR0qHv": [
     {
       "type": 0,
@@ -2727,6 +2777,18 @@
       "value": "Required"
     }
   ],
+  "ShW01z": [
+    {
+      "type": 0,
+      "value": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Vanguard Consensus Chain / L15 testnet."
+    }
+  ],
+  "Skc8c/": [
+    {
+      "type": 0,
+      "value": "I've imported my keystore(s) into my L15 validator client."
+    }
+  ],
   "SqKNq2": [
     {
       "type": 0,
@@ -2743,20 +2805,6 @@
       "value": "wrench"
     }
   ],
-  "TLEziZ": [
-    {
-      "type": 0,
-      "value": "The Beacon Chain had its genesis on "
-    },
-    {
-      "type": 1,
-      "value": "date"
-    },
-    {
-      "type": 0,
-      "value": ". It is growing in size over time, and the introduction of sharding will also increase storage, memory, and bandwidth requirements."
-    }
-  ],
   "TMw9oz": [
     {
       "type": 0,
@@ -2767,20 +2815,6 @@
     {
       "type": 0,
       "value": "virtualenv would help you to create an isolated Python environment for deposit-cli tool."
-    }
-  ],
-  "TmYprU": [
-    {
-      "type": 0,
-      "value": "Eth2 "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": " Launchpad"
     }
   ],
   "Tpe6yK": [
@@ -2801,50 +2835,28 @@
       "value": "View extensive client comparison"
     }
   ],
+  "U3D1AX": [
+    {
+      "type": 0,
+      "value": "You can think of the deposit contract as a transfer of funds between LUKSO accounts and L15 validators."
+    }
+  ],
   "U7AOxj": [
     {
       "type": 0,
       "value": "greater than 50%"
     }
   ],
-  "U7PMU1": [
-    {
-      "type": 0,
-      "value": "The Eth2 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: "
-    },
-    {
-      "type": 1,
-      "value": "lighthouse"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "nimbus"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "prysm"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "teku"
-    }
-  ],
   "UHbYCa": [
     {
       "type": 0,
       "value": "Your validator has its own balance – with the initial balance outlined in the deposit contract. Your rewards and penalties are reflected in your validator's balance over time."
+    }
+  ],
+  "UJFSst": [
+    {
+      "type": 0,
+      "value": "The current URLs are: https://explorer.pandora.l15.lukso.network/ and https://explorer.vanguard.l15.lukso.network/"
     }
   ],
   "UJMct0": [
@@ -2861,16 +2873,30 @@
       "value": " for more details"
     }
   ],
-  "UWv7yD": [
+  "UYxJLB": [
     {
       "type": 0,
-      "value": "Check the deposit contract on your favorite Ethereum block explorer:"
+      "value": "The minimum amount that can be slashed is 1 LYXt, but "
+    },
+    {
+      "type": 1,
+      "value": "strongText"
+    },
+    {
+      "type": 0,
+      "value": "."
     }
   ],
   "Utck3E": [
     {
       "type": 0,
       "value": "Language support"
+    }
+  ],
+  "UuqWUf": [
+    {
+      "type": 0,
+      "value": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your vanguard node is vulnerable, your keystore is stored on a different machine."
     }
   ],
   "Uxs0RD": [
@@ -2905,6 +2931,12 @@
     {
       "type": 0,
       "value": "If you do not have a testnet folder it is likely you have not built and run Nimbus correctly. Run the make commands again."
+    }
+  ],
+  "V1O8Ob": [
+    {
+      "type": 0,
+      "value": "How much LYXt do I need to stake to become a validator?"
     }
   ],
   "VASo1/": [
@@ -2987,44 +3019,10 @@
       "value": "."
     }
   ],
-  "VPpHAq": [
-    {
-      "type": 0,
-      "value": "I understand that I "
-    },
-    {
-      "type": 1,
-      "value": "cannotTransfer"
-    },
-    {
-      "type": 0,
-      "value": " my stake for a while, and I "
-    },
-    {
-      "type": 1,
-      "value": "cannotWithdraw"
-    },
-    {
-      "type": 0,
-      "value": " until the merge. I understand that if I exit, I will not be able to rejoin until much later. This is a long term commitment."
-    }
-  ],
-  "VSSmNp": [
-    {
-      "type": 0,
-      "value": "In other words: if the total amount of ETH staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
-    }
-  ],
   "VUuZsb": [
     {
       "type": 0,
       "value": "martial arts uniform"
-    }
-  ],
-  "VY3/Wo": [
-    {
-      "type": 0,
-      "value": "To become a validator, you will need to be able to run commands in the terminal on your computer. Generating your new Eth2 key pairs and installing the validator software are both done in the terminal."
     }
   ],
   "VctWDX": [
@@ -3057,28 +3055,24 @@
       "value": "FAQ"
     }
   ],
-  "W9JuAN": [
+  "WDkfhR": [
     {
       "type": 0,
-      "value": "Eth2 Validator Client (VC)"
+      "value": "Use "
+    },
+    {
+      "type": 1,
+      "value": "http"
+    },
+    {
+      "type": 0,
+      "value": " to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
     }
   ],
-  "WFVzvu": [
-    {
-      "type": 1,
-      "value": "warning"
-    },
+  "WDszx6": [
     {
       "type": 0,
-      "value": " Duplicate deposits with the same keyfile public key will be considered as a double deposit. Any extra balance more than "
-    },
-    {
-      "type": 1,
-      "value": "eth"
-    },
-    {
-      "type": 0,
-      "value": " will NOT be counted in your effective balance on the Beacon Chain. You also won't be able to withdraw it until the Beacon Chain merges with mainnet."
+      "value": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client as well as your Vanguard client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
     }
   ],
   "WMLn/w": [
@@ -3091,30 +3085,10 @@
       "value": " validators"
     }
   ],
-  "WRevBY": [
-    {
-      "type": 0,
-      "value": "Use "
-    },
-    {
-      "type": 1,
-      "value": "http"
-    },
-    {
-      "type": 0,
-      "value": " to connect your Eth2 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
-    }
-  ],
   "WTPUDZ": [
     {
       "type": 0,
       "value": "These steps are optional but are recommended to optimize your node."
-    }
-  ],
-  "Wao7OA": [
-    {
-      "type": 0,
-      "value": "Eth2 Beacon Node (BN)"
     }
   ],
   "WkrNSk": [
@@ -3145,16 +3119,6 @@
     {
       "type": 0,
       "value": "Has the block explorer named the contract?"
-    }
-  ],
-  "X0dSr0": [
-    {
-      "type": 0,
-      "value": "It is high risk to run your Eth2 validator in multiple places. It will lead to a slashable event and ejection from the network. "
-    },
-    {
-      "type": 1,
-      "value": "learnMore"
     }
   ],
   "X5KFEh": [
@@ -3201,10 +3165,30 @@
       "value": "Build from source"
     }
   ],
+  "Xwdwnq": [
+    {
+      "type": 0,
+      "value": "Limiting the maximum stake to "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " LYXt encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
+    }
+  ],
   "Y47aYU": [
     {
       "type": 0,
       "value": "Top up"
+    }
+  ],
+  "Y4OdcM": [
+    {
+      "type": 0,
+      "value": "The first LUKSO testnet brings a series of upgrades that makes things easier, more scaleable, secure, and sustainable. LUKSO aims to change the way you think about, use and interact with the blockchain, dApps, NFTs, wallets, both as a user, and as a developer. More on how we do that:"
     }
   ],
   "Y8YLHs": [
@@ -3273,18 +3257,10 @@
       "value": " service."
     }
   ],
-  "YZtdY1": [
+  "YbS71f": [
     {
       "type": 0,
-      "value": "As of "
-    },
-    {
-      "type": 1,
-      "value": "date"
-    },
-    {
-      "type": 0,
-      "value": ", you'll need ~400GB for the Eth1 mainnet chain data alone (growing at ~1GB/day)."
+      "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
     }
   ],
   "Yganfl": [
@@ -3377,22 +3353,24 @@
       "value": "Again, it depends. Behaving maliciously – for example attesting to invalid or contradicting blocks, will lead to your stake being slashed."
     }
   ],
-  "ZPpZDC": [
-    {
-      "type": 0,
-      "value": "Please ensure that you have control over the Eth1 address."
-    }
-  ],
-  "ZRbxwY": [
-    {
-      "type": 0,
-      "value": "Eth2 validator checklist"
-    }
-  ],
   "ZTo0Fl": [
     {
       "type": 0,
       "value": "Why is there a wait?"
+    }
+  ],
+  "ZVn96Y": [
+    {
+      "type": 0,
+      "value": "Is there any advantage to having more than "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " LYXt at stake?"
     }
   ],
   "Zi+EED": [
@@ -3419,22 +3397,16 @@
       "value": "Become a validator with Prysm"
     }
   ],
-  "aDomwX": [
+  "aC5KNK": [
     {
       "type": 0,
-      "value": "If you try to cheat the system, or act contrary to the specification, you will be liable to incur a penalty, known as slashing. Running your validator keys simultaneously on two or more machines will result in slashing."
+      "value": "The answer to this question very much depends on how much LYXt you have at your disposal."
     }
   ],
   "aEBE6s": [
     {
       "type": 0,
       "value": "2. Prep nodes"
-    }
-  ],
-  "aMcG1s": [
-    {
-      "type": 0,
-      "value": "Check your favorite Eth2 block explorer:"
     }
   ],
   "aS6dBe": [
@@ -3449,30 +3421,16 @@
       "value": "Nimbus is Apache 2 licensed and written in Nim, a language with Python-like syntax that compiles to C."
     }
   ],
-  "aXWL9X": [
-    {
-      "type": 0,
-      "value": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until the merge (which means your funds will remain inaccessible until then)."
-    }
-  ],
-  "aZ7pUj": [
-    {
-      "type": 0,
-      "value": "Your wallet is on the wrong Ethereum network. To continue, connect to the "
-    },
-    {
-      "type": 1,
-      "value": "networkName"
-    },
-    {
-      "type": 0,
-      "value": " network."
-    }
-  ],
   "acrOoz": [
     {
       "type": 0,
       "value": "Continue"
+    }
+  ],
+  "ap/jla": [
+    {
+      "type": 0,
+      "value": "Phishing is a very real risk for LUKSO validators and, unfortunately, many people will lose funds due to these attacks."
     }
   ],
   "azLmaD": [
@@ -3481,18 +3439,26 @@
       "value": "Build deposit-cli from the Python source code"
     }
   ],
-  "b3J7Pw": [
+  "b4Fwl0": [
     {
       "type": 0,
-      "value": "No. There is no advantage to having more than "
+      "value": "The L15 deposit contract requires a minimum of "
     },
     {
       "type": 1,
-      "value": "pricePerValidator"
+      "value": "minTopupValue"
     },
     {
       "type": 0,
-      "value": " ETH staked."
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
+    },
+    {
+      "type": 0,
+      "value": " to be sent at one time to be accepted."
     }
   ],
   "b4csjU": [
@@ -3531,10 +3497,26 @@
       "value": "The YAML files can have different syntaxes."
     }
   ],
+  "bcyLj/": [
+    {
+      "type": 0,
+      "value": "Now that the keys are imported, all that is left to do (assuming your vanguard node is already running) is to run the validator client."
+    }
+  ],
   "bnuvhg": [
     {
       "type": 0,
       "value": "Lighthouse is built in Rust and offered under an Apache 2.0 License."
+    }
+  ],
+  "bt03u4": [
+    {
+      "type": 0,
+      "value": "L15 Clients: "
+    },
+    {
+      "type": 1,
+      "value": "clientName"
     }
   ],
   "bxU6sX": [
@@ -3543,22 +3525,28 @@
       "value": "Python installation instructions"
     }
   ],
+  "c4KIsA": [
+    {
+      "type": 0,
+      "value": "LYXt Faucet"
+    }
+  ],
   "c9DSZ1": [
     {
       "type": 0,
       "value": "We strongly recommended you complete these steps on the current testnet before mainnet."
     }
   ],
+  "cFG5C+": [
+    {
+      "type": 0,
+      "value": "L16 Coming Soon"
+    }
+  ],
   "cHUoV9": [
     {
       "type": 0,
       "value": "The Geth documentation explains how to download and install the client."
-    }
-  ],
-  "cPsIkp": [
-    {
-      "type": 0,
-      "value": "Become a validator and help secure the future of Ethereum."
     }
   ],
   "cRzxes": [
@@ -3601,12 +3589,6 @@
     {
       "type": 0,
       "value": "What are withdrawal credentials?"
-    }
-  ],
-  "cs9mQw": [
-    {
-      "type": 0,
-      "value": "Learn more about the roles and responsibilities of Eth2 validators."
     }
   ],
   "cyR7Kh": [
@@ -3715,12 +3697,6 @@
       "value": "code3"
     }
   ],
-  "eIRc60": [
-    {
-      "type": 0,
-      "value": "More on Eth2"
-    }
-  ],
   "eKEL/g": [
     {
       "type": 0,
@@ -3739,6 +3715,12 @@
       "value": "It specifies who is staking, who is validating, how much is being staked, and who can withdraw the funds."
     }
   ],
+  "eRntau": [
+    {
+      "type": 0,
+      "value": "The L15 upgrades will only be successful if validators understand the risks and responsibilities."
+    }
+  ],
   "eaU/aL": [
     {
       "type": 0,
@@ -3751,10 +3733,10 @@
       "value": "More on shard chains"
     }
   ],
-  "elCkOU": [
+  "el/dXY": [
     {
       "type": 0,
-      "value": "More on the merge"
+      "value": "Note: Withdrawing your deposits won't currently be possible."
     }
   ],
   "erZJkZ": [
@@ -3801,6 +3783,20 @@
       "value": " (the minimum allowed by the deposit contract) will max out your effective balance."
     }
   ],
+  "evn4VC": [
+    {
+      "type": 0,
+      "value": "If you have questions, the LUKSO community is a good place to get help! You can find support on the "
+    },
+    {
+      "type": 1,
+      "value": "discord"
+    },
+    {
+      "type": 0,
+      "value": " #validators channel."
+    }
+  ],
   "eyK2E3": [
     {
       "type": 0,
@@ -3811,12 +3807,6 @@
     {
       "type": 0,
       "value": "What happens if I lose my signing key?"
-    }
-  ],
-  "fHLKXR": [
-    {
-      "type": 0,
-      "value": "The answer to this question very much depends on how much ETH you have at your disposal."
     }
   ],
   "fQ5yno": [
@@ -3837,6 +3827,20 @@
       "value": "only stored on one validator machine"
     }
   ],
+  "fhvkT2": [
+    {
+      "type": 0,
+      "value": "Visit the LUKSO #validators channel on "
+    },
+    {
+      "type": 1,
+      "value": "discord"
+    },
+    {
+      "type": 0,
+      "value": " at any time during your setup for some friendly help!"
+    }
+  ],
   "fnMHGO": [
     {
       "type": 0,
@@ -3849,10 +3853,10 @@
       "value": "impact of effective balance"
     }
   ],
-  "g/DxI7": [
+  "fw/omY": [
     {
       "type": 0,
-      "value": "Moreover, you can set your Validator Client (VC) and Beacon Node (BN) on separate machines and IPs so that even if your beacon node is vulnerable, your keystore is stored on a different machine."
+      "value": "Configure your Pandora Client"
     }
   ],
   "g0zIUd": [
@@ -3867,10 +3871,24 @@
       "value": "More on virtualenv"
     }
   ],
-  "gAdE9y": [
+  "g6zrLr": [
     {
       "type": 0,
-      "value": "Thank you for supporting the Eth2 network!"
+      "value": "Become a L15 testnet validator and help secure the future of LUKSO."
+    }
+  ],
+  "gFkou2": [
+    {
+      "type": 0,
+      "value": "Your wallet is on the wrong network. To continue, connect to the "
+    },
+    {
+      "type": 1,
+      "value": "networkName"
+    },
+    {
+      "type": 0,
+      "value": " network."
     }
   ],
   "gIauNz": [
@@ -3889,12 +3907,6 @@
     {
       "type": 0,
       "value": "It uses the assisted password in your secrets folder."
-    }
-  ],
-  "gfLdAQ": [
-    {
-      "type": 0,
-      "value": "More on the Beacon Chain"
     }
   ],
   "gjBiyj": [
@@ -3957,24 +3969,16 @@
       "value": "clock"
     }
   ],
+  "h1nTWx": [
+    {
+      "type": 0,
+      "value": "If you try to cheat the system, you will be liable to incur a penalty, known as slashing. Running your validator keys simultaneously on two or more machines will result in slashing."
+    }
+  ],
   "h8MTUo": [
     {
       "type": 0,
       "value": "Your stake"
-    }
-  ],
-  "h8ZHus": [
-    {
-      "type": 0,
-      "value": "Transfers between validators aren't possible yet. You will have to wait until mainnet merges with the Beacon Chain (around two years) before you can withdraw or transfer your "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": "."
     }
   ],
   "hFzE1M": [
@@ -4011,10 +4015,16 @@
       "value": "In other words, you maximize your rewards by providing the greatest benefit to the network as a whole."
     }
   ],
-  "hjrLbR": [
+  "hat13W": [
     {
       "type": 0,
-      "value": "For this, we need active participants - known as validators - to propose, verify, and vouch for the validity of blocks. In exchange, honest validators receive financial rewards."
+      "value": "Validators and L15"
+    }
+  ],
+  "hjjX06": [
+    {
+      "type": 0,
+      "value": "L15 Validator Client (VC)"
     }
   ],
   "hkg3fb": [
@@ -4043,16 +4053,16 @@
       "value": "I understand that it is important to keep my validator online and updated."
     }
   ],
-  "iBYfM0": [
-    {
-      "type": 0,
-      "value": "You'll need to run an Eth1 and an Eth2 node to become a validator. Take a look at the checklist to prepare yourself and your equipment."
-    }
-  ],
   "iCpuph": [
     {
       "type": 0,
       "value": "Clients"
+    }
+  ],
+  "iHH0gC": [
+    {
+      "type": 0,
+      "value": "A validator is an entity that participates in the consensus of LUKSO's Vanguard Chain protocol."
     }
   ],
   "iMvXLd": [
@@ -4107,6 +4117,18 @@
       "value": "Thinking about staking?"
     }
   ],
+  "igGcu9": [
+    {
+      "type": 0,
+      "value": "Validating in LUKSO is not the same as mining. The outcomes are similar: the work you do will extend and secure the chain. But the process is completely different because they use different consensus mechanisms."
+    }
+  ],
+  "ijbdN4": [
+    {
+      "type": 0,
+      "value": "L15 validator checklist"
+    }
+  ],
   "irRdC0": [
     {
       "type": 0,
@@ -4117,6 +4139,20 @@
     {
       "type": 0,
       "value": "Documentation"
+    }
+  ],
+  "itLVZL": [
+    {
+      "type": 0,
+      "value": "You need enough upload bandwidth too. As of "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": ", for Eth this is ~700-800 MB/hour, and is likely to increase over time."
     }
   ],
   "iv88b5": [
@@ -4133,16 +4169,34 @@
       "value": " deposits"
     }
   ],
-  "j4ctVP": [
+  "j81rpi": [
     {
       "type": 0,
-      "value": "The Eth2 specification"
+      "value": "Dig deeper into how LUKSO moves towards Mainnet."
     }
   ],
   "jDv/zO": [
     {
       "type": 0,
       "value": "While validating on the testnet, perform these simulations to learn more about your node, and better prepare yourself for mainnet:"
+    }
+  ],
+  "jG8C6h": [
+    {
+      "type": 0,
+      "value": "The LUKSO upgrades"
+    }
+  ],
+  "jOwYzp": [
+    {
+      "type": 0,
+      "value": "Make sure you do the following to get your Pandora client working properly."
+    }
+  ],
+  "jThhoD": [
+    {
+      "type": 0,
+      "value": "We'll help you create a signing key for every validator you want to run. Because there are no withdrawals until Mainnet, you will not create your withdrawal keys now. When it is possible to withdraw funds, you will be able to derive your withdrawal keys from your mnemonic."
     }
   ],
   "jXer8/": [
@@ -4155,12 +4209,6 @@
     {
       "type": 0,
       "value": "Lighthouse installation documentation"
-    }
-  ],
-  "jZVChZ": [
-    {
-      "type": 0,
-      "value": "I've imported my keystore(s) into my Eth2 validator client."
     }
   ],
   "jecC36": [
@@ -4187,6 +4235,12 @@
       "value": "Warning: Do not store keys on multiple (backup) validators at once"
     }
   ],
+  "jsaN7g": [
+    {
+      "type": 0,
+      "value": "The L15 ephemeral test network"
+    }
+  ],
   "jse8rl": [
     {
       "type": 0,
@@ -4197,12 +4251,6 @@
     {
       "type": 0,
       "value": "Environment variables"
-    }
-  ],
-  "jyN21A": [
-    {
-      "type": 0,
-      "value": "Eth2 Launchpad"
     }
   ],
   "jytPQU": [
@@ -4251,12 +4299,6 @@
     {
       "type": 0,
       "value": "Key list"
-    }
-  ],
-  "km7b1A": [
-    {
-      "type": 0,
-      "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 ETH, you will be automatically exited from the validator pool."
     }
   ],
   "kn7kJd": [
@@ -4327,12 +4369,6 @@
       "value": "Outstanding deposit"
     }
   ],
-  "lJNmgK": [
-    {
-      "type": 0,
-      "value": "How does Eth2 upgrade Ethereum?"
-    }
-  ],
   "lLOZMD": [
     {
       "type": 0,
@@ -4355,24 +4391,24 @@
       "value": "."
     }
   ],
-  "lM/dEI": [
-    {
-      "type": 0,
-      "value": "Does the site asking you for your "
-    },
-    {
-      "type": 1,
-      "value": "ethAmount"
-    },
-    {
-      "type": 0,
-      "value": " deposit have a URL you expect?"
-    }
-  ],
   "lQzdpT": [
     {
       "type": 0,
       "value": "num_validators"
+    }
+  ],
+  "lR5uPQ": [
+    {
+      "type": 0,
+      "value": "I've installed and synced my Pandora node on "
+    },
+    {
+      "type": 1,
+      "value": "network"
+    },
+    {
+      "type": 0,
+      "value": " (do not wait on this as it can take several days)."
     }
   ],
   "lS9VhN": [
@@ -4423,26 +4459,26 @@
       "value": "Importing from Launchpad documentation"
     }
   ],
-  "ljWKM1": [
+  "lfnq69": [
     {
       "type": 0,
-      "value": "BLS withdrawal: By default, deposit-cli would generate withdrawal credentials with the "
+      "value": "I understand that I "
     },
     {
       "type": 1,
-      "value": "boldWithdrawalKey"
+      "value": "cannotTransfer"
     },
     {
       "type": 0,
-      "value": " derived via mnemonics in "
+      "value": " my stake and I "
     },
     {
       "type": 1,
-      "value": "eip2334"
+      "value": "cannotWithdraw"
     },
     {
       "type": 0,
-      "value": " format."
+      "value": " from the Testnet. I understand that if I exit, I will not be able to rejoin until much later. This is a long term commitment."
     }
   ],
   "ll/zMW": [
@@ -4461,6 +4497,28 @@
     {
       "type": 0,
       "value": "File uploaded"
+    }
+  ],
+  "lxfupg": [
+    {
+      "type": 0,
+      "value": "By default, deposit-cli would generate withdrawal credentials with the "
+    },
+    {
+      "type": 1,
+      "value": "boldWithdrawalKey"
+    },
+    {
+      "type": 0,
+      "value": " derived via mnemonics in "
+    },
+    {
+      "type": 1,
+      "value": "eip2334"
+    },
+    {
+      "type": 0,
+      "value": " format."
     }
   ],
   "mArJcj": [
@@ -4487,24 +4545,24 @@
       "value": "No pending deposits"
     }
   ],
+  "mqhL5p": [
+    {
+      "type": 0,
+      "value": "Use "
+    },
+    {
+      "type": 1,
+      "value": "http"
+    },
+    {
+      "type": 0,
+      "value": " to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+    }
+  ],
   "mr1BWl": [
     {
       "type": 0,
       "value": "Risks and acknowledgements:"
-    }
-  ],
-  "n6Uub0": [
-    {
-      "type": 0,
-      "value": "I've installed and synced my Eth1 node on "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": " (do not wait on this as it can take several days)."
     }
   ],
   "n7yYXG": [
@@ -4513,10 +4571,10 @@
       "value": "Service"
     }
   ],
-  "nHk8Et": [
+  "nGXGJr": [
     {
       "type": 0,
-      "value": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Beacon Chain."
+      "value": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, when validating on Mainnet you will need to store your mnemonic safely in order to be able to withdraw."
     }
   ],
   "nIb6XF": [
@@ -4539,6 +4597,12 @@
       "value": "Continue without all transactions confirmed"
     }
   ],
+  "nYkH/p": [
+    {
+      "type": 0,
+      "value": "At the other end of the spectrum, if your balance is closer to 31 LYXt, it’s probably not worth adding the extra LYXt required to get back to 32."
+    }
+  ],
   "nZTFTz": [
     {
       "type": 0,
@@ -4551,12 +4615,6 @@
     {
       "type": 0,
       "value": " sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
-    }
-  ],
-  "ndhFef": [
-    {
-      "type": 0,
-      "value": "Once you're comfortable, you'll go through generating your keys and depositing your ETH."
     }
   ],
   "njAU72": [
@@ -4577,80 +4635,16 @@
       "value": "Advanced system architecture"
     }
   ],
-  "nz27+c": [
-    {
-      "type": 0,
-      "value": "If you have questions, EthStaker community is a good place to get help! You can find support on "
-    },
-    {
-      "type": 1,
-      "value": "discord"
-    },
-    {
-      "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "reddit"
-    },
-    {
-      "type": 0,
-      "value": "."
-    }
-  ],
   "o9QvTP": [
     {
       "type": 0,
       "value": "Before you start"
     }
   ],
-  "oLxfO1": [
-    {
-      "type": 0,
-      "value": "Now that the keys are imported, all that is left to do (assuming your beacon node is already running) is to run the validator client."
-    }
-  ],
-  "oPdwwC": [
-    {
-      "type": 0,
-      "value": "Limiting the maximum stake to "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " ETH encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
-    }
-  ],
   "oWhj8Q": [
     {
       "type": 0,
       "value": "How often are rewards/penalties issued?"
-    }
-  ],
-  "ogbG7r": [
-    {
-      "type": 0,
-      "value": "To become a validator on the Beacon Chain, you need to deposit "
-    },
-    {
-      "type": 1,
-      "value": "PRICE_PER_VALIDATOR"
-    },
-    {
-      "type": 0,
-      "value": " "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " per validator that you wish to run."
     }
   ],
   "ohspQX": [
@@ -4675,6 +4669,12 @@
     {
       "type": 0,
       "value": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
+    }
+  ],
+  "opSPEl": [
+    {
+      "type": 0,
+      "value": "In other words: if the total amount of LYXt staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
     }
   ],
   "orM+1T": [
@@ -4747,16 +4747,16 @@
       "value": "The Besu documentation explains how to download and install the client."
     }
   ],
-  "penFMT": [
-    {
-      "type": 0,
-      "value": "Eth2 is a set of upgrades that will make Ethereum more scalable, secure, and sustainable. These upgrades will improve Ethereum while seamlessly continuing on the chain of today. Here's more on the different upgrades:"
-    }
-  ],
   "pfJX2D": [
     {
       "type": 0,
       "value": "More on phishing"
+    }
+  ],
+  "pkgxrV": [
+    {
+      "type": 0,
+      "value": "LUKSO L15 Testnet Launchpad"
     }
   ],
   "pnxB8A": [
@@ -4781,48 +4781,22 @@
       "value": "expected"
     }
   ],
-  "ptWiT7": [
-    {
-      "type": 0,
-      "value": "I've simulated how to manually stop and restart my Beacon Node (BN) and Validator Client (VC) gracefully."
-    }
-  ],
   "pyWt01": [
     {
       "type": 0,
       "value": "Deposit summary"
     }
   ],
+  "q0rXsF": [
+    {
+      "type": 0,
+      "value": "🌈 Forked from the Eth2 Launchpad"
+    }
+  ],
   "q2XW/k": [
     {
       "type": 0,
       "value": "If your withdrawal key is stolen, the thief can transfer your validator’s balance, but only once the validator has exited."
-    }
-  ],
-  "q6sz6X": [
-    {
-      "type": 0,
-      "value": "Eth2 economics"
-    }
-  ],
-  "qDcbPp": [
-    {
-      "type": 0,
-      "value": "Your 16 ETH can then be withdrawn – with your withdrawal key – after a delay of around a day."
-    }
-  ],
-  "qDvaNm": [
-    {
-      "type": 0,
-      "value": "I understand that keys are my responsibility and that my mnemonic (seed) will be the "
-    },
-    {
-      "type": 1,
-      "value": "onlyWay"
-    },
-    {
-      "type": 0,
-      "value": " to withdraw my funds."
     }
   ],
   "qK4+NQ": [
@@ -4843,20 +4817,16 @@
       "value": "Note"
     }
   ],
-  "qPG/YN": [
-    {
-      "type": 1,
-      "value": "withdrawalCredentials"
-    },
-    {
-      "type": 0,
-      "value": " is a 32-byte field in the deposit, for verifying the destination of valid withdrawals. Currently, there are two types of withdrawals: BLS withdrawal and Eth1 address withdrawal."
-    }
-  ],
   "qQ+Xla": [
     {
       "type": 0,
       "value": "Korean"
+    }
+  ],
+  "qROJ5v": [
+    {
+      "type": 0,
+      "value": "Your 16 LYXt can then be withdrawn – with your withdrawal key – after a delay of around a day."
     }
   ],
   "qZ59xY": [
@@ -4881,18 +4851,6 @@
     {
       "type": 0,
       "value": "Save the key files and get the validator file ready"
-    }
-  ],
-  "qpdTjz": [
-    {
-      "type": 0,
-      "value": "An Eth2 client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
-    }
-  ],
-  "quIMjo": [
-    {
-      "type": 0,
-      "value": "Make sure you do the following to get your Eth1 client working properly."
     }
   ],
   "qwh6gM": [
@@ -5043,6 +5001,12 @@
       "value": "CPU and RAM"
     }
   ],
+  "sf0AS/": [
+    {
+      "type": 0,
+      "value": "For this, we need active participants - known as validators - to propose, verify, and vouch for the validity of blocks. In exchange, honest validators on mainnet will receive financial rewards."
+    }
+  ],
   "soCLV+": [
     {
       "type": 0,
@@ -5053,20 +5017,6 @@
     {
       "type": 0,
       "value": "Waiting to connect..."
-    }
-  ],
-  "svsq8J": [
-    {
-      "type": 0,
-      "value": "I've synced my Eth2 beacon node on "
-    },
-    {
-      "type": 1,
-      "value": "ETH2_NETWORK_NAME"
-    },
-    {
-      "type": 0,
-      "value": "."
     }
   ],
   "sy35J+": [
@@ -5081,10 +5031,50 @@
       "value": "I understand and agree to the terms-of-service and everything stated in the previous sections."
     }
   ],
+  "tDJxoT": [
+    {
+      "type": 0,
+      "value": "Become a L15 testnet validator and help secure the future of LUKSO"
+    }
+  ],
   "tJcyUM": [
     {
       "type": 0,
       "value": "Your deposit_data.json suggests you wanted to set up more validators. These deposits are still outstanding. If you think you've already made these deposits, wait an hour before trying again to avoid duplicate deposits."
+    }
+  ],
+  "tYu+4O": [
+    {
+      "type": 0,
+      "value": "The L15 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: "
+    },
+    {
+      "type": 1,
+      "value": "lighthouse"
+    },
+    {
+      "type": 0,
+      "value": " | "
+    },
+    {
+      "type": 1,
+      "value": "nimbus"
+    },
+    {
+      "type": 0,
+      "value": " | "
+    },
+    {
+      "type": 1,
+      "value": "prysm"
+    },
+    {
+      "type": 0,
+      "value": " | "
+    },
+    {
+      "type": 1,
+      "value": "teku"
     }
   ],
   "teyxVk": [
@@ -5111,6 +5101,12 @@
     {
       "type": 0,
       "value": "Balance after topping up"
+    }
+  ],
+  "tkad+U": [
+    {
+      "type": 0,
+      "value": "Currently we are running the L15 Ephemeral Testnet to prepare for L16, and we need your help!"
     }
   ],
   "tsfX5f": [
@@ -5159,20 +5155,6 @@
     {
       "type": 0,
       "value": "Uptime"
-    }
-  ],
-  "uCikFk": [
-    {
-      "type": 0,
-      "value": "You need enough upload bandwidth too. As of "
-    },
-    {
-      "type": 1,
-      "value": "date"
-    },
-    {
-      "type": 0,
-      "value": " this is ~700-800 MB/hour, and is likely to increase."
     }
   ],
   "uHaXQZ": [
@@ -5237,38 +5219,46 @@
       "value": "Become a validator with Nimbus"
     }
   ],
-  "unzIoE": [
+  "ulXbuO": [
     {
       "type": 0,
-      "value": "Before you can run a validator and start to secure the network, you need to stake "
+      "value": "Slashing has two purposes: (1) to make it prohibitively expensive to attack L15, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
+    }
+  ],
+  "uprpgn": [
+    {
+      "type": 0,
+      "value": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
+    }
+  ],
+  "v2/6AL": [
+    {
+      "type": 0,
+      "value": "I understand that I need to deposit "
     },
     {
       "type": 1,
-      "value": "pricePerValidator"
+      "value": "PRICE_PER_VALIDATOR"
     },
     {
       "type": 0,
-      "value": " ETH. This forms your initial balance."
-    }
-  ],
-  "up+5YH": [
-    {
-      "type": 0,
-      "value": "Are there recent "
+      "value": " "
     },
     {
       "type": 1,
-      "value": "ethAmount"
+      "value": "TICKER_NAME"
     },
     {
       "type": 0,
-      "value": " deposits?"
-    }
-  ],
-  "vBOf5K": [
+      "value": " to become a validator, and that the transfer of "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
+    },
     {
       "type": 0,
-      "value": "Your balance is updated periodically by the Ethereum network rules as you carry (or fail to carry) out your responsibilities."
+      "value": " to the Vanguard Consensus Chain is one-way, and non-reversible."
     }
   ],
   "vCHTnu": [
@@ -5283,16 +5273,24 @@
       "value": "Protect your funds using monitoring software, and learn how to handle different real world scenarios."
     }
   ],
-  "vIF140": [
-    {
-      "type": 0,
-      "value": "Become a validator and help secure the future of Ethereum"
-    }
-  ],
   "vJez0K": [
     {
       "type": 0,
       "value": "Proceed with caution. Our on-chain data source is down and we are unable to flag any double deposits."
+    }
+  ],
+  "vNopl9": [
+    {
+      "type": 0,
+      "value": "The Vanguard Chain had its genesis on "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": ". It is growing in size over time, and the introduction of sharding will also increase storage, memory, and bandwidth requirements."
     }
   ],
   "vY2wig": [
@@ -5323,20 +5321,6 @@
       "value": "I've forwarded the necessary ports to the correct machine(s) from my router (only open the ports that apply to your installation)."
     }
   ],
-  "vbVsqW": [
-    {
-      "type": 0,
-      "value": "Be sure to complete the "
-    },
-    {
-      "type": 1,
-      "value": "stakerChecklist"
-    },
-    {
-      "type": 0,
-      "value": " as soon as possible. And join the EthStaker community for support and discussion with fellow validators."
-    }
-  ],
   "vg1dVR": [
     {
       "type": 0,
@@ -5355,12 +5339,6 @@
     {
       "type": 0,
       "value": "."
-    }
-  ],
-  "w/ghcK": [
-    {
-      "type": 0,
-      "value": "Dig deeper into how Eth2 upgrades Ethereum."
     }
   ],
   "w6qYSU": [
@@ -5431,22 +5409,6 @@
       "value": "Testnet simulations"
     }
   ],
-  "x0tVK4": [
-    {
-      "type": 0,
-      "value": "Validating in Ethereum is not the same as mining. The outcomes are similar: the work you do will extend and secure the chain. But the process is completely different because they use different consensus mechanisms."
-    }
-  ],
-  "xDyl3T": [
-    {
-      "type": 0,
-      "value": "Cross check the deposit contract address against other websites – for example: Reddit, Twitter, and GitHub. There's also a list of trusted sources on "
-    },
-    {
-      "type": 1,
-      "value": "ethereumorg"
-    }
-  ],
   "xH5GKj": [
     {
       "type": 0,
@@ -5469,12 +5431,6 @@
     {
       "type": 0,
       "value": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-    }
-  ],
-  "xSvJIi": [
-    {
-      "type": 0,
-      "value": "Block rewards are calculated using a sliding scale based on the total amount of ETH staked on the network."
     }
   ],
   "xYRzZY": [
@@ -5611,10 +5567,10 @@
       "value": "More on Lighthouse and Sigma Prime"
     }
   ],
-  "zGkAVo": [
+  "zPLWB2": [
     {
       "type": 0,
-      "value": "At the other end of the spectrum, if your balance is closer to 31 ETH, it’s probably not worth adding the extra ETH required to get back to 32."
+      "value": "More on LUKSO"
     }
   ],
   "zbEBi9": [

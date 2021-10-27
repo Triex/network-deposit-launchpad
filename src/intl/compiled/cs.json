@@ -4316,7 +4316,7 @@
     },
     {
       "type": 1,
-      "value": "ethAmount"
+      "value": "lyxtAmount"
     },
     {
       "type": 0,
@@ -4974,7 +4974,7 @@
     },
     {
       "type": 1,
-      "value": "ETH2_NETWORK_NAME"
+      "value": "LUKSO_NETWORK_NAME"
     }
   ],
   "sy35J+": [
@@ -5164,7 +5164,7 @@
     },
     {
       "type": 1,
-      "value": "ethAmount"
+      "value": "lyxtAmount"
     },
     {
       "type": 0,

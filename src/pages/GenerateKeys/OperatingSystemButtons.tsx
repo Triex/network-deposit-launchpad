@@ -38,12 +38,6 @@ export const OperatingSystemButtons = ({
         src={LinuxLogo}
       />
       <ImageSelectionBox
-        text="Windows"
-        onClick={() => setChosenOs(operatingSystem.WINDOWS)}
-        isActive={chosenOs === operatingSystem.WINDOWS}
-        src={WindowsLogo}
-      />
-      <ImageSelectionBox
         text="Mac"
         onClick={() => setChosenOs(operatingSystem.MAC)}
         isActive={chosenOs === operatingSystem.MAC}

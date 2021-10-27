@@ -53,7 +53,7 @@ const Container = styled.div`
 `;
 const NETWORK_ID = IS_MAINNET
   ? NetworkChainId.Mainnet
-  : NetworkChainId['Göerli'];
+  : NetworkChainId['l15-dev'];
 
 // Prop definitions
 interface OwnProps {}
@@ -187,7 +187,7 @@ const _SummaryPage = ({
         <Row>
           <Link
             isTextLink={false}
-            to="https://ethereum.org/eth2/deposit-contract/"
+            to="https://explorer.pandora.l15.lukso.network/address/0x000000000000000000000000000000000000cafE"
             primary
           >
             <Button
@@ -250,8 +250,8 @@ const _SummaryPage = ({
           <FormattedMessage
             defaultMessage="{warning} Duplicate
           deposits with the same keyfile public key will be considered as a
-          double deposit. Any extra balance more than {eth} will NOT be counted in your effective balance on the
-          Beacon Chain. You also won't be able to withdraw it until the Beacon Chain merges with mainnet."
+          double deposit. Any extra balance more than {lyxt} will NOT be counted in your effective balance on the
+          Vanguard Chain. Withdrawing your deposits also won't currently be possible."
             values={{
               warning: (
                 <em>
@@ -260,7 +260,7 @@ const _SummaryPage = ({
                   })}
                 </em>
               ),
-              eth: `${PRICE_PER_VALIDATOR} ${TICKER_NAME}`,
+              lyxt: `${PRICE_PER_VALIDATOR} ${TICKER_NAME}`,
             }}
           />
         </Text>
@@ -311,7 +311,7 @@ const _SummaryPage = ({
         <Link to={routesEnum.transactionsPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
+            gradient
             disabled={!allChecked}
             label={formatMessage({ defaultMessage: 'Continue' })}
           />

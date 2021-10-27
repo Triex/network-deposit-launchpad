@@ -7,8 +7,7 @@ import { FormattedMessage } from 'react-intl';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
-import calculateEth2Rewards from '../../utils/calculateEth2Rewards';
-import StakingRewardsChart from './StakingRewardsChart';
+import calculateLyxtRewards from '../../utils/calculateLyxtRewards';
 import { TICKER_NAME } from '../../utils/envVars';
 
 /**
@@ -70,10 +69,10 @@ export const StakingRewards: React.FC<{ currentStaked?: number }> = ({
   // points)
   const { xMax, xMin, increment } = calcChartParams(currentStaked);
   const data = [
-    { x: 524_288, y: calculateEth2Rewards({ totalAtStake: 524_288 }) },
+    { x: 524_288, y: calculateLyxtRewards({ totalAtStake: 524_288 }) },
     ...d3Range(550_000, xMax, increment).map(totalAtStake => ({
       x: totalAtStake,
-      y: calculateEth2Rewards({ totalAtStake }),
+      y: calculateLyxtRewards({ totalAtStake }),
     })),
   ];
 
@@ -100,38 +99,11 @@ export const StakingRewards: React.FC<{ currentStaked?: number }> = ({
             primary
             inline
           >
-            <FormattedMessage defaultMessage="More on Eth2 economics" />
+            <FormattedMessage defaultMessage="More on LUKSO economics" />
           </Link>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn" animateOnce delay={450}>
           <div style={{ width: '100%', marginTop: 100 }}>
-            <StakingRewardsChart
-              height={450}
-              data={data}
-              domains={{ x: [0, xMax + 1_000_000], y: [0, 0.26] }}
-              color="#045388"
-              showTooltips
-              current={{
-                x: xMin,
-                y: calculateEth2Rewards({ totalAtStake: xMin }),
-              }}
-              xAxis={{
-                range: [1_000_000, xMax],
-                ticks: Math.floor(xMax / 1_000_000),
-                format: (xAxisValue: number) =>
-                  xAxisValue < 1_000_000
-                    ? ''
-                    : `${Math.floor(xAxisValue / 1_000_000)}`,
-              }}
-              yAxis={{
-                range: [0, 0.26],
-                ticks: 14,
-                format: (yAxisValue: number) =>
-                  yAxisValue && Math.round(yAxisValue) % 2
-                    ? ''
-                    : `${Math.round(yAxisValue * 100)}%`,
-              }}
-            />
           </div>
         </ScrollAnimation>
       </SubContainer>

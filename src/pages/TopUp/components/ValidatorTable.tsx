@@ -24,7 +24,7 @@ import {
   BEACONCHAIN_URL,
   PRICE_PER_VALIDATOR,
   TICKER_NAME,
-  ETHER_TO_GWEI,
+  LUKSO_TO_GWEI,
 } from '../../../utils/envVars';
 
 const FakeLink = styled.span`
@@ -108,7 +108,7 @@ const ValidatorTable: React.FC<{
       case 'active_online': {
         return (
           <div className="flex">
-            <Wifi color={theme.green.dark} />
+            <Wifi color={theme.purple.brand} />
             <Text className="ml10">
               <FormattedMessage defaultMessage="Online" />
             </Text>
@@ -124,7 +124,7 @@ const ValidatorTable: React.FC<{
     return validators.map(validator => {
       const alreadyToppedUp =
         validator.effectivebalance >=
-        Number(PRICE_PER_VALIDATOR) * ETHER_TO_GWEI;
+        Number(PRICE_PER_VALIDATOR) * LUKSO_TO_GWEI;
       // No top-ups for exited or slashed validators:
       const statusIneligible =
         validator.status === 'slashed' || validator.status === 'exited';
@@ -174,14 +174,14 @@ const ValidatorTable: React.FC<{
             </TableCell>
             <TableCell scope="col" border="bottom">
               <Text>
-                {`${numeral(validator.balance / ETHER_TO_GWEI).format(
+                {`${numeral(validator.balance / LUKSO_TO_GWEI).format(
                   '0.00000'
                 )} ${TICKER_NAME}`}
               </Text>
             </TableCell>
             <TableCell scope="col" border="bottom">
               <Text>
-                {`${numeral(validator.effectivebalance / ETHER_TO_GWEI).format(
+                {`${numeral(validator.effectivebalance / LUKSO_TO_GWEI).format(
                   '0.00000'
                 )} ${TICKER_NAME}`}
               </Text>
@@ -190,7 +190,7 @@ const ValidatorTable: React.FC<{
               <Button
                 onClick={() => setSelectedValidator(validator)}
                 label={formatMessage({ defaultMessage: 'Top up' })}
-                rainbow
+                gradient
                 disabled={statusIneligible}
               />
             </TableCell>

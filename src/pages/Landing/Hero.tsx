@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 // @ts-ignore
 import Animate from 'animate.css-react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import LeslieTheRhinoPNG from '../../static/eth2-leslie-rhino.png';
+import LuksoArtJpg from '../../static/LUKSO-art-800x1200.jpg';
 import { routesEnum } from '../../Routes';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
@@ -18,11 +18,11 @@ interface mobile {
   isMobile: boolean;
 }
 
-const RainbowBackground = styled.div`
+const GradientBackground = styled.div`
   min-width: 100%;
   overflow: hidden;
   background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+    `radial-gradient(circle at 100% -80%, ${p.theme.gradientLight})`};
   min-height: ${(p: mobile) => p.isMobile && 'calc(100vh - 20px)'};
 `;
 const MainContainer = styled.div`
@@ -93,11 +93,13 @@ const LogoText = styled(Text)`
     line-height: 24px;
   }
 `;
-const StyledLeslieImgNode = styled.img`
+
+const StyledLuksoArtImgNode = styled.img`
   max-width: 100%;
   margin: 3rem 0 5rem;
   transform: scale(1.2, 1.2);
   transform-origin: 0% 0%;
+  width: 520px;
   @media screen and (min-width: 800px) {
     transform: translate3d(0, 0, 0);
     margin: 0 -3rem 0 3rem;
@@ -105,9 +107,7 @@ const StyledLeslieImgNode = styled.img`
     max-height: 510px;
   }
   @media screen and (max-width: 800px) {
-    max-width: 220px;
-    margin: 30px auto;
-    display: block;
+    display: none;
   }
 `;
 
@@ -127,15 +127,26 @@ const ButtonContainer = styled.div`
   }
 `;
 
+const HeroButton = styled(Button)`
+  background: #915d9b;
+  border-color: #915d9b;
+  :hover {
+    background: ${p => p.theme.gray.brand};
+    color: ${p => p.theme.gray.dark};
+  }
+`;
+
 //
 // Sub-components
 
-const LeslieImage: React.FC<{ style?: React.CSSProperties }> = ({ style }) => (
+const LuksoArtImage: React.FC<{ style?: React.CSSProperties }> = ({
+  style,
+}) => (
   <div>
     <ScrollAnimation animateIn="fadeIn" delay={750} animateOnce>
-      <StyledLeslieImgNode
-        src={LeslieTheRhinoPNG}
-        alt="Leslie the Rhino - eth2 mascot"
+      <StyledLuksoArtImgNode
+        src={LuksoArtJpg}
+        alt="Pandora X Vanguard - Art By Fongshader & ItzMike"
         {...{ style }}
       />
     </ScrollAnimation>
@@ -151,7 +162,7 @@ export const Hero = () => {
   const isMediumScreen = useMobileCheck('1080px');
   const m: boolean = (window as any).mobileCheck();
   return (
-    <RainbowBackground isMobile={m}>
+    <GradientBackground isMobile={m}>
       <MainContainer isMobile={m}>
         <ResponsiveContainer isMobile={m}>
           <div className={`flex ${m ? 'flex-column is-mobile' : ''}`}>
@@ -163,10 +174,10 @@ export const Hero = () => {
                       <LogoContainer className={m ? 'mb50' : undefined}>
                         <LogoText>
                           {IS_MAINNET ? (
-                            <FormattedMessage defaultMessage="Eth2 Launchpad" />
+                            <FormattedMessage defaultMessage="LUKSO L15 Testnet Launchpad" />
                           ) : (
                             <FormattedMessage
-                              defaultMessage="Eth2 Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
+                              defaultMessage="LUKSO L15 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
                               values={{ TESTNET_LAUNCHPAD_NAME }}
                               description="This phrase is a sentence "
                             />
@@ -184,7 +195,7 @@ export const Hero = () => {
                       color="brand"
                       className="my20"
                     >
-                      <FormattedMessage defaultMessage="Become a validator and help secure the future of Ethereum" />
+                      <FormattedMessage defaultMessage="Become a L15 testnet validator and help secure the future of LUKSO" />
                     </Heading>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="fadeInUp" delay={750} animateOnce>
@@ -193,7 +204,7 @@ export const Hero = () => {
                     </Text>
                   </ScrollAnimation>
 
-                  {!!isSmallScreen && <LeslieImage />}
+                  {!!isSmallScreen && <LuksoArtImage />}
                   <Animate
                     enter="fadeIn"
                     appear="fadeIn"
@@ -202,9 +213,9 @@ export const Hero = () => {
                     <ButtonRow>
                       <ButtonContainer>
                         <Link to={routesEnum.acknowledgementPage}>
-                          <Button
+                          <HeroButton
                             fullWidth={m || isSmallScreen}
-                            rainbow
+                            gradient
                             label={
                               m
                                 ? formatMessage({
@@ -234,11 +245,11 @@ export const Hero = () => {
                   </Animate>
                 </InfoContainer>
               </LefContentContainer>
-              {!isSmallScreen && <LeslieImage />}
+              {!isSmallScreen && <LuksoArtImage />}
             </ContentContainer>
           </div>
         </ResponsiveContainer>
       </MainContainer>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };

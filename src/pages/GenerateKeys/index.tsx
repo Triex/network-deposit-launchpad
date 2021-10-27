@@ -213,7 +213,7 @@ const _GenerateKeysPage = ({
         <Link to={routesEnum.uploadValidatorPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
+            gradient
             disabled={!mnemonicAcknowledgementChecked}
             label={formatMessage({ defaultMessage: 'Continue' })}
           />

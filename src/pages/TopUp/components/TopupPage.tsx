@@ -33,7 +33,7 @@ import {
   PRICE_PER_VALIDATOR,
   TICKER_NAME,
   CONTRACT_ADDRESS,
-  ETHER_TO_GWEI,
+  LUKSO_TO_GWEI,
 } from '../../../utils/envVars';
 
 interface Props {
@@ -90,11 +90,11 @@ const TopupPage: React.FC<Props> = ({ validator }) => {
   const { connector, account } = useWeb3React();
 
   const effectiveBalance = useMemo(
-    () => Number(validator.effectivebalance) / ETHER_TO_GWEI,
+    () => Number(validator.effectivebalance) / LUKSO_TO_GWEI,
     [validator]
   );
 
-  const balance = useMemo(() => Number(validator.balance) / ETHER_TO_GWEI, [
+  const balance = useMemo(() => Number(validator.balance) / LUKSO_TO_GWEI, [
     validator,
   ]);
 
@@ -230,7 +230,7 @@ const TopupPage: React.FC<Props> = ({ validator }) => {
     if (value < minTopupValue)
       return formatMessage(
         {
-          defaultMessage: `The Eth2 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted.`,
+          defaultMessage: `The L15 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted.`,
         },
         { minTopupValue, TICKER_NAME }
       );
@@ -326,7 +326,7 @@ const TopupPage: React.FC<Props> = ({ validator }) => {
             <SubmitButton
               className="ml10"
               label={formatMessage({ defaultMessage: 'Top up validator' })}
-              rainbow
+              gradient
               onClick={submitTopupTransaction}
               disabled={
                 value <= 0 ||

@@ -7,7 +7,12 @@ import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
 import { Alert } from '../../components/Alert';
 import { Code } from '../../components/Code';
-import { ETH2_NETWORK_NAME, IS_MAINNET } from '../../utils/envVars';
+import {
+    LUKSO_NETWORK_NAME,
+    IS_MAINNET,
+    LUKSO_NETWORK_NAMESPACE,
+    LUKSO_NETWORK_NAMESPACE_NAME
+} from '../../utils/envVars';
 import { Button } from '../../components/Button';
 import githubScreenshot from '../../static/github-cli-screenshot.png';
 import { colors } from '../../styles/styledComponentsTheme';
@@ -45,12 +50,12 @@ export const Option1 = ({
       </Text>
       <Link
         isTextLink={false}
-        to="https://github.com/lukso-network/network-deposit-cli/releases/tag/v1.2.0-l15"
+        to="https://github.com/lukso-network/network-deposit-cli/releases/tag/v1.2.6-LUKSO"
         className="my40"
       >
         <Button
           className="flex"
-          rainbow
+          gradient
           label={formatMessage({ defaultMessage: 'Download from GitHub' })}
         />
       </Link>
@@ -70,7 +75,7 @@ export const Option1 = ({
               values={{
                 url: (
                   <strong>
-                    https://github.com/lukso-network/eth2.0-deposit-cli/releases/
+                      https://github.com/lukso-network/network-deposit-cli/releases/
                   </strong>
                 ),
               }}
@@ -107,13 +112,7 @@ export const Option1 = ({
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
             {(os === 'linux' || os === 'mac') && (
-              <span style={{ color: colors.red.medium }}>./deposit </span>
-            )}
-            {os === 'windows' && (
-              <>
-                <span style={{ color: colors.red.medium }}>.\deposit</span>
-                <span style={{ color: colors.purple.dark }}>.exe </span>
-              </>
+              <span style={{ color: colors.red.medium }}>./lukso-deposit-cli-Linux-x86_64 </span>
             )}
             <span style={{ color: colors.red.medium }}>new-mnemonic</span>
             <span style={{ color: colors.red.medium }}>
@@ -129,7 +128,7 @@ export const Option1 = ({
               {`--${formatMessage({
                 defaultMessage: 'chain',
                 description: 'this is used as a command line flag',
-              })} ${ETH2_NETWORK_NAME.toLowerCase()}`}
+              })} ${LUKSO_NETWORK_NAME.toLowerCase()}-${LUKSO_NETWORK_NAMESPACE_NAME.toLowerCase()}`}
             </span>
           </Pre>
         </Alert>
@@ -143,14 +142,14 @@ export const Option1 = ({
                     {`--${formatMessage({
                       defaultMessage: 'chain',
                       description: 'this is used as a command line flag',
-                    })} ${ETH2_NETWORK_NAME.toLowerCase()}`}
+                    })} ${LUKSO_NETWORK_NAME.toLowerCase()}`}
                   </Code>
                 ),
                 network: (
                   <span>
                     {IS_MAINNET
-                      ? ETH2_NETWORK_NAME
-                      : `${ETH2_NETWORK_NAME} testnet`}
+                      ? LUKSO_NETWORK_NAME
+                      : `${LUKSO_NETWORK_NAME} testnet`}
                   </span>
                 ),
               }}

@@ -51,10 +51,10 @@ export type Client = {
 };
 
 // define and shuffle the clients
-const ethClients: {
-  [ethVersion: number]: Array<Client>;
+const luksoClients: {
+  [luksoVersion: string]: Array<Client>;
 } = {
-  1: _shuffle([
+  Pandora: _shuffle([
     {
       clientId: ClientId.GETH,
       name: 'Pandora',
@@ -62,7 +62,7 @@ const ethClients: {
       language: 'Go',
     },
   ]),
-  2: _shuffle([
+  Vanguard: _shuffle([
     {
       clientId: ClientId.PRYSM,
       name: 'Vanguard',
@@ -79,26 +79,28 @@ const _SelectClientPage = ({
   dispatchClientUpdate,
 }: Props): JSX.Element => {
   // set the default the eth version to 1 on initial render
-  const [ethVersionStep, setEthVersionStep] = useState<1 | 2>(1);
+  const [luksoVersionStep, setLuksoVersionStep] = useState<
+    'Pandora' | 'Vanguard'
+  >('Pandora');
 
   const { formatMessage } = useIntl();
 
   // filter the options based on the eth version the user is on
-  const clientOptions = React.useMemo(() => ethClients[ethVersionStep], [
-    ethVersionStep,
+  const clientOptions = React.useMemo(() => luksoClients[luksoVersionStep], [
+    luksoVersionStep,
   ]);
 
   // memoize the chosen client by step
   const selectedClient: ClientId = React.useMemo(
     () =>
-      ethVersionStep === 1
-        ? chosenClients.eth1Client
-        : chosenClients.eth2Client,
-    [ethVersionStep, chosenClients]
+      luksoVersionStep === 'Pandora'
+        ? chosenClients.pandoraClient
+        : chosenClients.vanguardClient,
+    [luksoVersionStep, chosenClients]
   );
 
   const setClientFxn = (clientId: ClientId) => {
-    dispatchClientUpdate(clientId, ethVersionStep);
+    dispatchClientUpdate(clientId, luksoVersionStep);
   };
 
   React.useEffect(() => {
@@ -107,7 +109,7 @@ const _SelectClientPage = ({
     if (header) {
       header.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [ethVersionStep]);
+  }, [luksoVersionStep]);
 
   const handleSubmit = () => {
     if (workflow === WorkflowStep.SELECT_CLIENT) {
@@ -121,11 +123,12 @@ const _SelectClientPage = ({
 
   const title = formatMessage(
     {
-      defaultMessage: `Choose {ethereum} client`,
-      description: '{ethereum} injects Eth1 or Eth2 depending on step',
+      defaultMessage: `Choose {lyxt} client`,
+      description:
+        '{lyxt} injects Pandora or Vanguard networks depending on step',
     },
     {
-      ethereum: `Eth${ethVersionStep}`,
+      lyxt: `${luksoVersionStep}`,
     }
   );
 
@@ -134,21 +137,21 @@ const _SelectClientPage = ({
       <SelectClientSection
         title={formatMessage(
           {
-            defaultMessage: `Choose your Eth{ethVersionStep} client and set up a node`,
-            description: `{ethVersionStep} is either 1 or 2, depending on which step user is on`,
+            defaultMessage: `Choose your {luksoVersionStep} client and set up a node`,
+            description: `{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on`,
           },
-          { ethVersionStep }
+          { luksoVersionStep }
         )}
         clients={clientOptions}
         currentClient={selectedClient}
         setCurrentClient={setClientFxn}
         clientDetails={clientDetails}
-        ethVersionStep={ethVersionStep}
+        luksoVersionStep={luksoVersionStep}
       />
       <div className="flex center p30">
         <SelectClientButtons
-          updateStep={setEthVersionStep}
-          ethVersionStep={ethVersionStep}
+          updateStep={setLuksoVersionStep}
+          luksoVersionStep={luksoVersionStep}
           handleSubmit={handleSubmit}
           currentClient={selectedClient}
         />
@@ -163,8 +166,11 @@ const mapStateToProps = ({ workflow, client }: StoreState): StateProps => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
-  dispatchClientUpdate: (clientId: ClientId, ethVersion: 1 | 2) => {
-    dispatch(updateClient(clientId, ethVersion));
+  dispatchClientUpdate: (
+    clientId: ClientId,
+    luksoVersion: 'Pandora' | 'Vanguard'
+  ) => {
+    dispatch(updateClient(clientId, luksoVersion));
   },
   dispatchWorkflowUpdate: (step: WorkflowStep) => {
     dispatch(updateWorkflow(step));

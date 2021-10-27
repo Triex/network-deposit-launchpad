@@ -3,18 +3,18 @@ import { Action, ActionTypes } from '../actions';
 import { ClientId } from '../actions/clientActions';
 
 export type clientState = {
-  eth1Client: ClientId;
-  eth2Client: ClientId;
+  pandoraClient: ClientId;
+  vanguardClient: ClientId;
 };
 
-const eth1ClientIds = [
+const pandoraClientIds = [
   ClientId.BESU,
   ClientId.NETHERMIND,
   ClientId.OPEN_ETHEREUM,
   ClientId.GETH,
 ];
 
-const eth2ClientIds = [
+const vanguardClientIds = [
   ClientId.LIGHTHOUSE,
   ClientId.NIMBUS,
   ClientId.TEKU,
@@ -22,8 +22,8 @@ const eth2ClientIds = [
 ];
 
 const initialState: clientState = {
-  eth1Client: _sample(eth1ClientIds) || eth2ClientIds[0],
-  eth2Client: _sample(eth2ClientIds) || eth2ClientIds[0],
+  pandoraClient: _sample(pandoraClientIds) || vanguardClientIds[0],
+  vanguardClient: _sample(vanguardClientIds) || vanguardClientIds[0],
 };
 
 export const clientReducer = (
@@ -31,17 +31,17 @@ export const clientReducer = (
   action: Action
 ) => {
   if (action.type === ActionTypes.updateClient) {
-    if (action.payload.ethVersion === 1) {
+    if (action.payload.luksoVersion === 'Pandora') {
       return {
         ...state,
-        eth1Client: action.payload.clientId,
+        pandoraClient: action.payload.clientId,
       };
     }
 
-    if (action.payload.ethVersion === 2) {
+    if (action.payload.luksoVersion === 'Vanguard') {
       return {
         ...state,
-        eth2Client: action.payload.clientId,
+        vanguardClient: action.payload.clientId,
       };
     }
   }
