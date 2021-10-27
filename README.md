@@ -1,3 +1,6 @@
+[![Build status](https://img.shields.io/github/workflow/status/lukso-network/network-deposit-launchpad/ci)](https://github.com/lukso-network/network-deposit-launchpad/actions)
+[![Licence](https://img.shields.io/github/license/lukso-network/network-deposit-launchpad.svg)](https://github.com/lukso-network/network-deposit-launchpad/blob/master/LICENSE)
+
 # LUKSO L15 Ephemeral Testnet Launchpad
 
 The [Launchpad](https://launchpad.l15.lukso.network/) is the official way to deposit your LYXt for the L15 testnet
