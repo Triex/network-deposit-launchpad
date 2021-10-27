@@ -8,10 +8,9 @@ import { Link } from '../../components/Link';
 import { Alert } from '../../components/Alert';
 import { Code } from '../../components/Code';
 import {
-    LUKSO_NETWORK_NAME,
-    IS_MAINNET,
-    LUKSO_NETWORK_NAMESPACE,
-    LUKSO_NETWORK_NAMESPACE_NAME
+  LUKSO_NETWORK_NAME,
+  IS_MAINNET,
+  LUKSO_NETWORK_NAMESPACE_NAME,
 } from '../../utils/envVars';
 import { Button } from '../../components/Button';
 import githubScreenshot from '../../static/github-cli-screenshot.png';
@@ -75,7 +74,7 @@ export const Option1 = ({
               values={{
                 url: (
                   <strong>
-                      https://github.com/lukso-network/network-deposit-cli/releases/
+                    https://github.com/lukso-network/network-deposit-cli/releases/
                   </strong>
                 ),
               }}
@@ -112,7 +111,9 @@ export const Option1 = ({
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
             {(os === 'linux' || os === 'mac') && (
-              <span style={{ color: colors.red.medium }}>./lukso-deposit-cli-Linux-x86_64 </span>
+              <span style={{ color: colors.red.medium }}>
+                ./lukso-deposit-cli-Linux-x86_64{' '}
+              </span>
             )}
             <span style={{ color: colors.red.medium }}>new-mnemonic</span>
             <span style={{ color: colors.red.medium }}>

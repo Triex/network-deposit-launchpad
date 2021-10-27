@@ -147,8 +147,8 @@ const routes: RouteType[] = [
   { path: routesEnum.notFoundPage, component: NotFoundPage },
 ];
 
-const localizeRoutes = (locale: String, routes: RouteType[]) => {
-  return routes.map(route => {
+const localizeRoutes = (locale: String, _routes: RouteType[]) => {
+  return _routes.map(route => {
     const languagePath = route.path.split('/')[1];
     const routeHasLangPath = supportedLanguages.includes(languagePath);
     if (routeHasLangPath || route.path === '/*') {

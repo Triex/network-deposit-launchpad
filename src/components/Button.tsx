@@ -10,6 +10,7 @@ interface CustomButtonProps {
   onClick?: () => any;
 }
 
+// eslint-disable-next-line consistent-return
 const calculateWidth = (p: { width?: number; fullWidth?: boolean }) => {
   if (p.width) {
     return `${p.width}px`;

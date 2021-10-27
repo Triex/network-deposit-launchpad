@@ -27,8 +27,6 @@ import { Link } from '../../components/Link';
 import { Text } from '../../components/Text';
 import { WalletButton } from './WalletButton';
 import metamaskLogo from '../../static/metamask.svg';
-import portisLogo from '../../static/portis.svg';
-import fortmaticLogo from '../../static/fortmatic.svg';
 import { Paper } from '../../components/Paper';
 import { Heading } from '../../components/Heading';
 import { Dot } from '../../components/Dot';
@@ -38,8 +36,6 @@ import {
   WorkflowStep,
 } from '../../store/actions/workflowActions';
 import {
-  PORTIS_DAPP_ID,
-  ENABLE_RPC_FEATURES,
   IS_MAINNET,
   PRICE_PER_VALIDATOR,
   TICKER_NAME,
@@ -207,6 +203,7 @@ const _ConnectWalletPage = ({
   useMetamaskListener(!attemptedMMConnection);
 
   // sets the balance to the current wallet on provider or network change
+  // eslint-disable-next-line consistent-return
   useEffect((): any => {
     if (!!account && !!library) {
       library
@@ -231,6 +228,7 @@ const _ConnectWalletPage = ({
   }, [selectedWallet, walletProvider, library, chainId, depositKeys, account]);
 
   // adds event emitter to listen to new blocks & update balance if it changed
+  // eslint-disable-next-line consistent-return
   useEffect((): any => {
     if (!!account && !!library) {
       library.on('block', () => {
