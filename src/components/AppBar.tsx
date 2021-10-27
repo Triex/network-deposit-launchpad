@@ -5,6 +5,7 @@ import { Box, DropButton } from 'grommet';
 import { Menu, FormDown } from 'grommet-icons';
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
+import { FormattedMessage } from 'react-intl';
 import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { web3ReactInterface } from '../pages/ConnectWallet';
 import { trimString } from '../utils/trimString';
@@ -25,7 +26,6 @@ import {
   TESTNET_LAUNCHPAD_URL,
 } from '../utils/envVars';
 import useMobileCheck from '../hooks/useMobileCheck';
-import { FormattedMessage } from 'react-intl';
 
 const GradientBackground = styled(Box)`
   background-image: ${p =>
@@ -157,15 +157,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     location.pathname,
   ]);
 
-  const isDropdownPage = React.useMemo(
-    () =>
-      pathname === routesEnum.lighthouse ||
-      pathname === routesEnum.nimbus ||
-      pathname === routesEnum.prysm ||
-      pathname === routesEnum.teku,
-    [pathname]
-  );
-
   const mobile = useMobileCheck('1080px');
   const switchLaunchpadUrl = IS_MAINNET
     ? TESTNET_LAUNCHPAD_URL
@@ -221,28 +212,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             <FormattedMessage defaultMessage="Deposit" />
           </BarLinkText>
         </Link>
-        <ValidatorDropdown
-          className="secondary-link"
-          label={
-            <BarLinkText
-              level={4}
-              margin="none"
-              active={isDropdownPage}
-              className="white"
-            >
-              <FormattedMessage defaultMessage="Clients" />
-            </BarLinkText>
-          }
-          dropAlign={{ top: 'bottom', right: 'right' }}
-          dropContent={
-            <Box pad="small">
-              <DropdownLink to={routesEnum.lighthouse}>Lighthouse</DropdownLink>
-              <DropdownLink to={routesEnum.nimbus}>Nimbus</DropdownLink>
-              <DropdownLink to={routesEnum.prysm}>Prysm</DropdownLink>
-              <DropdownLink to={routesEnum.teku}>Teku</DropdownLink>
-            </Box>
-          }
-        />
         <Link to={routesEnum.checklistPage} className="mx10 secondary-link">
           <BarLinkText
             level={4}

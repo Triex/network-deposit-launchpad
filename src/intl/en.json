@@ -104,6 +104,9 @@
   "0PlVao": {
     "message": "More on slashing prevention"
   },
+  "0QLzxo": {
+    "message": "Protocol"
+  },
   "0RmIrh": {
     "message": "Your deposit_data.json suggests you wanted to set up one more validator. This deposit is still outstanding. If you think you've already made this deposit, wait an hour before trying again to avoid duplicate deposits."
   },
@@ -149,9 +152,6 @@
   "1QW89r": {
     "message": "More stats"
   },
-  "1UmyRL": {
-    "message": "latest stable software release"
-  },
   "1VJ05X": {
     "message": "Section 3"
   },
@@ -183,9 +183,6 @@
   },
   "2CYEJa": {
     "message": "Troubleshooting"
-  },
-  "2PgclB": {
-    "message": "It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
   },
   "2Qn0Hh": {
     "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
@@ -249,9 +246,6 @@
     "description": "{pricePerValidator} represents deposit amount styled in bold",
     "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} LYXt. This forms your initial balance."
   },
-  "4FcLja": {
-    "message": "Prysm is a Go implementation of Ethereum 2.0 protocol with a focus on usability, security, and reliability."
-  },
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
   },
@@ -266,9 +260,6 @@
   },
   "52qGy6": {
     "message": "CURRENT"
-  },
-  "53xzcb": {
-    "message": "Configure your L15 client"
   },
   "54J/qs": {
     "message": "What happens if I use BLS withdrawal and I lose my withdrawal key?"
@@ -364,9 +355,6 @@
   },
   "8FmuYF": {
     "message": "Install pip3"
-  },
-  "8HxLGA": {
-    "message": "Configure Teku"
   },
   "8JtiQS": {
     "message": "Does the contract address listed on the website match?"
@@ -506,12 +494,6 @@
   },
   "BoEpk9": {
     "message": "Introduction"
-  },
-  "BvD9ay": {
-    "message": "Lighthouse is a Ethereum 2.0 implementation, written in Rust with a heavy focus on speed and security."
-  },
-  "C/gb74": {
-    "message": "Configure Lighthouse"
   },
   "C9dXhY": {
     "message": "The L15 clients"
@@ -813,10 +795,6 @@
   "KFSZ68": {
     "message": "{warning} Duplicate deposits with the same keyfile public key will be considered as a double deposit. Any extra balance more than {lyxt} will NOT be counted in your effective balance on the Vanguard Chain. Withdrawing your deposits also won't currently be possible."
   },
-  "KLfakO": {
-    "description": "{latestReleased} = 'latest stable software release', being styled in bold",
-    "message": "I've installed the {latestRelease} of my L15 client."
-  },
   "KMyzzI": {
     "message": "How LUKSO moves towards Mainnet?"
   },
@@ -828,9 +806,6 @@
   },
   "KqGKRA": {
     "message": "Once the process is complete, you should see the following:"
-  },
-  "KrVaDy": {
-    "message": "I've joined my client's Discord server."
   },
   "KvRSg5": {
     "message": "What exactly is slashing?"
@@ -873,9 +848,6 @@
   },
   "Lva1dX": {
     "message": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset."
-  },
-  "LyJqWj": {
-    "message": "More on validator roles and responsibilities"
   },
   "M3GwXS": {
     "message": "You'll only get your full rewards if your validator is online and up to date. This is your responsibility. If your validator goes offline you'll be penalized. The penalties for being offline are roughly equal to the rewards for actively participating."
@@ -1196,9 +1168,6 @@
   "VJZrCQ": {
     "message": "Switch to {network} launchpad"
   },
-  "VKfWR3": {
-    "message": "Recommended"
-  },
   "VLDKor": {
     "message": "{PRICE_PER_VALIDATOR} {TICKER_NAME} is the maximum effective validator balance. This means you won't earn more rewards if your validator's balance goes above {PRICE_PER_VALIDATOR}. However you will earn less if it dips below {PRICE_PER_VALIDATOR}."
   },
@@ -1333,9 +1302,6 @@
   "ZVn96Y": {
     "message": "Is there any advantage to having more than {pricePerValidator} LYXt at stake?"
   },
-  "Zi+EED": {
-    "message": "PegaSys Teku is a Java-based Ethereum 2.0 client built to meet institutional needs and security requirements."
-  },
   "Zspg8H": {
     "message": "Section 1 - Before you start"
   },
@@ -1350,9 +1316,6 @@
   },
   "aEBE6s": {
     "message": "2. Prep nodes"
-  },
-  "aS6dBe": {
-    "message": "Configure Nimbus"
   },
   "aXT3iO": {
     "message": "Nimbus is Apache 2 licensed and written in Nim, a language with Python-like syntax that compiles to C."
@@ -1610,9 +1573,6 @@
   "hzLd+/": {
     "message": "I understand that it is important to keep my validator online and updated."
   },
-  "iCpuph": {
-    "message": "Clients"
-  },
   "iHH0gC": {
     "message": "A validator is an entity that participates in the consensus of LUKSO's Vanguard Chain protocol."
   },
@@ -1847,9 +1807,6 @@
   "okxBZ6": {
     "message": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum client”."
   },
-  "omJNJw": {
-    "message": "Warning!"
-  },
   "on8WXn": {
     "message": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
   },
@@ -1940,9 +1897,6 @@
   "qwh6gM": {
     "message": "I understand the early adopter and slashing risks."
   },
-  "r2BH1M": {
-    "message": "Configure Prysm"
-  },
   "r4JsKB": {
     "message": "Transaction successful"
   },
@@ -2012,10 +1966,6 @@
   },
   "tJcyUM": {
     "message": "Your deposit_data.json suggests you wanted to set up more validators. These deposits are still outstanding. If you think you've already made these deposits, wait an hour before trying again to avoid duplicate deposits."
-  },
-  "tYu+4O": {
-    "description": "{variables} are client names, each linking to documentation (do not translate names)",
-    "message": "The L15 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: {lighthouse} | {nimbus} | {prysm} | {teku}"
   },
   "teyxVk": {
     "message": "What should the address be?"
@@ -2152,9 +2102,6 @@
   },
   "xQrU13": {
     "message": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-  },
-  "xYRzZY": {
-    "message": "Nimbus is a research project and a client implementation for Ethereum 2.0 designed to perform well on embedded systems and personal mobile devices."
   },
   "xbet2w": {
     "message": "Install python3.7+"

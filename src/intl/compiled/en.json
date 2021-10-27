@@ -295,6 +295,12 @@
       "value": "More on slashing prevention"
     }
   ],
+  "0QLzxo": [
+    {
+      "type": 0,
+      "value": "Protocol"
+    }
+  ],
   "0RmIrh": [
     {
       "type": 0,
@@ -409,12 +415,6 @@
       "value": "More stats"
     }
   ],
-  "1UmyRL": [
-    {
-      "type": 0,
-      "value": "latest stable software release"
-    }
-  ],
   "1VJ05X": [
     {
       "type": 0,
@@ -497,16 +497,6 @@
     {
       "type": 0,
       "value": "Troubleshooting"
-    }
-  ],
-  "2PgclB": [
-    {
-      "type": 0,
-      "value": "It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. "
-    },
-    {
-      "type": 1,
-      "value": "learnMore"
     }
   ],
   "2Qn0Hh": [
@@ -717,12 +707,6 @@
       "value": " LYXt. This forms your initial balance."
     }
   ],
-  "4FcLja": [
-    {
-      "type": 0,
-      "value": "Prysm is a Go implementation of Ethereum 2.0 protocol with a focus on usability, security, and reliability."
-    }
-  ],
   "4NvAhl": [
     {
       "type": 0,
@@ -751,12 +735,6 @@
     {
       "type": 0,
       "value": "CURRENT"
-    }
-  ],
-  "53xzcb": [
-    {
-      "type": 0,
-      "value": "Configure your L15 client"
     }
   ],
   "54J/qs": [
@@ -975,12 +953,6 @@
     {
       "type": 0,
       "value": "Install pip3"
-    }
-  ],
-  "8HxLGA": [
-    {
-      "type": 0,
-      "value": "Configure Teku"
     }
   ],
   "8JtiQS": [
@@ -1307,18 +1279,6 @@
     {
       "type": 0,
       "value": "Introduction"
-    }
-  ],
-  "BvD9ay": [
-    {
-      "type": 0,
-      "value": "Lighthouse is a Ethereum 2.0 implementation, written in Rust with a heavy focus on speed and security."
-    }
-  ],
-  "C/gb74": [
-    {
-      "type": 0,
-      "value": "Configure Lighthouse"
     }
   ],
   "C9dXhY": [
@@ -2033,20 +1993,6 @@
       "value": " will NOT be counted in your effective balance on the Vanguard Chain. Withdrawing your deposits also won't currently be possible."
     }
   ],
-  "KLfakO": [
-    {
-      "type": 0,
-      "value": "I've installed the "
-    },
-    {
-      "type": 1,
-      "value": "latestRelease"
-    },
-    {
-      "type": 0,
-      "value": " of my L15 client."
-    }
-  ],
   "KMyzzI": [
     {
       "type": 0,
@@ -2069,12 +2015,6 @@
     {
       "type": 0,
       "value": "Once the process is complete, you should see the following:"
-    }
-  ],
-  "KrVaDy": [
-    {
-      "type": 0,
-      "value": "I've joined my client's Discord server."
     }
   ],
   "KvRSg5": [
@@ -2189,12 +2129,6 @@
     {
       "type": 0,
       "value": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset."
-    }
-  ],
-  "LyJqWj": [
-    {
-      "type": 0,
-      "value": "More on validator roles and responsibilities"
     }
   ],
   "M3GwXS": [
@@ -2979,12 +2913,6 @@
       "value": " launchpad"
     }
   ],
-  "VKfWR3": [
-    {
-      "type": 0,
-      "value": "Recommended"
-    }
-  ],
   "VLDKor": [
     {
       "type": 1,
@@ -3367,12 +3295,6 @@
       "value": " LYXt at stake?"
     }
   ],
-  "Zi+EED": [
-    {
-      "type": 0,
-      "value": "PegaSys Teku is a Java-based Ethereum 2.0 client built to meet institutional needs and security requirements."
-    }
-  ],
   "Zspg8H": [
     {
       "type": 0,
@@ -3401,12 +3323,6 @@
     {
       "type": 0,
       "value": "2. Prep nodes"
-    }
-  ],
-  "aS6dBe": [
-    {
-      "type": 0,
-      "value": "Configure Nimbus"
     }
   ],
   "aXT3iO": [
@@ -4047,12 +3963,6 @@
       "value": "I understand that it is important to keep my validator online and updated."
     }
   ],
-  "iCpuph": [
-    {
-      "type": 0,
-      "value": "Clients"
-    }
-  ],
   "iHH0gC": [
     {
       "type": 0,
@@ -4653,12 +4563,6 @@
       "value": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum client”."
     }
   ],
-  "omJNJw": [
-    {
-      "type": 0,
-      "value": "Warning!"
-    }
-  ],
   "on8WXn": [
     {
       "type": 0,
@@ -4853,12 +4757,6 @@
       "value": "I understand the early adopter and slashing risks."
     }
   ],
-  "r2BH1M": [
-    {
-      "type": 0,
-      "value": "Configure Prysm"
-    }
-  ],
   "r4JsKB": [
     {
       "type": 0,
@@ -5035,40 +4933,6 @@
     {
       "type": 0,
       "value": "Your deposit_data.json suggests you wanted to set up more validators. These deposits are still outstanding. If you think you've already made these deposits, wait an hour before trying again to avoid duplicate deposits."
-    }
-  ],
-  "tYu+4O": [
-    {
-      "type": 0,
-      "value": "The L15 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: "
-    },
-    {
-      "type": 1,
-      "value": "lighthouse"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "nimbus"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "prysm"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "teku"
     }
   ],
   "teyxVk": [
@@ -5425,12 +5289,6 @@
     {
       "type": 0,
       "value": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-    }
-  ],
-  "xYRzZY": [
-    {
-      "type": 0,
-      "value": "Nimbus is a research project and a client implementation for Ethereum 2.0 designed to perform well on embedded systems and personal mobile devices."
     }
   ],
   "xbet2w": [
