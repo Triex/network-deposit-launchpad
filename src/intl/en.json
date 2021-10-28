@@ -660,9 +660,6 @@
   "Gbo300": {
     "message": "Generate keys"
   },
-  "GsBRWL": {
-    "message": "Languages"
-  },
   "Gsixxx": {
     "message": "Early adoption risks"
   },
@@ -1165,9 +1162,6 @@
   },
   "VIMMdE": {
     "message": "Do not submit any transaction with a {depositData} file that you did not create yourself, or that you do not own the mnemonic phrase for."
-  },
-  "VKfWR3": {
-    "message": "Recommended"
   },
   "VLDKor": {
     "message": "{PRICE_PER_VALIDATOR} {TICKER_NAME} is the maximum effective validator balance. This means you won't earn more rewards if your validator's balance goes above {PRICE_PER_VALIDATOR}. However you will earn less if it dips below {PRICE_PER_VALIDATOR}."
@@ -1804,9 +1798,6 @@
   },
   "ohspQX": {
     "message": "Responsibilities"
-  },
-  "omJNJw": {
-    "message": "Warning!"
   },
   "on8WXn": {
     "message": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
