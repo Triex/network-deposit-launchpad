@@ -6,6 +6,7 @@ export const colors = {
     light: '#F0F4F8',
     medium: '#B6B6B6',
     dark: '#4A4A4A',
+    brand: '#f5f0f8',
   },
   black: '#333333',
   blue: {
@@ -29,6 +30,8 @@ export const colors = {
     light: '#F0F2FB',
     medium: '#E3E5F2',
     dark: '#795da3',
+    brand: '#956098',
+    lavender: '#d7c7dd',
   },
   yellow: {
     light: '#fff0a8',
@@ -41,7 +44,7 @@ export const details = {
   borderRadius: '3px',
 };
 
-export const rainbowColors = [
+export const gradientColors = [
   '#fdccd3', // pink
   '#fca09a', // red
   '#ffcc9e', // yellow
@@ -51,7 +54,7 @@ export const rainbowColors = [
   '#a0aaed', // purple
 ];
 
-export const rainbowBGColors = [
+export const gradientBGColors = [
   '#fdccd3', // pink
   '#FED4D1', // red
   '#fcead9', // yellow-orange
@@ -61,18 +64,36 @@ export const rainbowBGColors = [
   '#a0aaed', // purple
 ];
 
-export const rainbowLightColors = [
-  '#fef2f4', // pink
-  '#fdf8f7', // red
-  '#FFF2E6', // yellow-orange
-  '#e5f6ea', // green
-  '#dff5fa', // blue
-  '#E3EFFA', // blurple
-  '#e7e9fa', // purple
+export const gradientLightColors = [
+  '#fef2f4',
+  '#c7abab',
+  '#f1dad7',
+  '#f6e5e5',
+  '#fae9df',
+  '#f1dad7',
+  '#dabfbf',
 ];
 
-export const rainbow = rainbowColors.join(', ');
-export const rainbowLight = rainbowLightColors.join(', ');
+export const gradientFooterColors = [
+  '#fef2f4',
+  '#d9c1c1',
+  '#f1dad7',
+  '#f6e5e5',
+  '#fae9df',
+  '#f1dad7',
+  '#dabfbf',
+];
+
+export const gradientBlackColors = ['#000000', '#0a0a0a', '#1f1f1f', '#151515'];
+export const gradientNavbarColors = ['#7043b0', '#b47983'];
+export const gradientDisclaimerColors = ['#f2dede', '#fff0f0'];
+
+export const gradient = gradientColors.join(', ');
+export const gradientLight = gradientLightColors.join(', ');
+export const gradientBlack = gradientBlackColors.join(', ');
+export const gradientNavbar = gradientNavbarColors.join(', ');
+export const gradientDisclaimer = gradientDisclaimerColors.join(', ');
+export const gradientFooter = gradientFooterColors.join(', ');
 
 export const screenSizes = {
   smaller: '420px',
@@ -88,7 +109,11 @@ export const styledComponentsTheme = {
   ...colors,
   screenSizes,
   ...details,
-  rainbow,
-  rainbowLight,
-  rainbowLightColors,
+  gradient,
+  gradientLight,
+  gradientBlack,
+  gradientNavbar,
+  gradientLightColors,
+  gradientDisclaimer,
+  gradientFooter,
 };

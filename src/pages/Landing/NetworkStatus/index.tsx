@@ -29,8 +29,8 @@ const Content = styled.div`
   }
 `;
 
-const BoldGreen = styled.span`
-  color: ${(p: { theme: any; fontSize: number }) => p.theme.green.dark};
+const BoldPurple = styled.span`
+  color: ${(p: { theme: any; fontSize: number }) => p.theme.purple.brand};
   font-size: ${(p: { theme: any; fontSize: number }) => p.fontSize}px;
   font-weight: bold;
 `;
@@ -116,11 +116,11 @@ export const NetworkStatus: React.FC<{
                 />
               </Heading>
               <Text size="x-large" className="mt20">
-                <BoldGreen className="mr10" fontSize={24}>
+                <BoldPurple className="mr10" fontSize={24}>
                   <LoadingHandler
                     value={`${numberWithCommas(amountLyxt)} ${TICKER_NAME}`}
                   />
-                </BoldGreen>
+                </BoldPurple>
               </Text>
             </Card>
             <Card>
@@ -128,9 +128,9 @@ export const NetworkStatus: React.FC<{
                 <FormattedMessage defaultMessage="Total validators" />
               </Heading>
               <Text size="x-large" className="mt20">
-                <BoldGreen className="mr10" fontSize={24}>
+                <BoldPurple className="mr10" fontSize={24}>
                   <LoadingHandler value={numberWithCommas(totalValidators)} />
-                </BoldGreen>
+                </BoldPurple>
               </Text>
             </Card>
             <Card>
@@ -141,9 +141,9 @@ export const NetworkStatus: React.FC<{
                 />
               </Heading>
               <Text size="x-large" className="mt20">
-                <BoldGreen className="mr10" fontSize={24}>
+                <BoldPurple className="mr10" fontSize={24}>
                   {formattedAPR}%
-                </BoldGreen>
+                </BoldPurple>
               </Text>
             </Card>
           </CardContainer>

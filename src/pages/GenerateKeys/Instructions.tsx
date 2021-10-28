@@ -27,12 +27,6 @@ export const Instructions = ({ validatorCount, os }: Props) => {
         >
           {formatMessage({ defaultMessage: 'Download CLI app' })}
         </TextSelectionBox>
-        <TextSelectionBox
-          isActive={selectedOption === 2}
-          onClick={() => setSelectedOption(2)}
-        >
-          {formatMessage({ defaultMessage: 'Build from source' })}
-        </TextSelectionBox>
       </div>
       <div>
         {selectedOption === 1 ? (

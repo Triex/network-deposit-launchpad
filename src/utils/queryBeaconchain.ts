@@ -26,6 +26,7 @@ export const queryBeaconchain = async () => {
       },
     };
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error(error);
     return {
       statusCode: 500,

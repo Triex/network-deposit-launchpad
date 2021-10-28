@@ -3,16 +3,9 @@ import {
   InjectedConnector,
   InjectedConnector as MetamaskConnector,
 } from '@web3-react/injected-connector';
-import { PortisConnector } from '@web3-react/portis-connector';
 import { useWeb3React } from '@web3-react/core';
-import { FortmaticConnector } from './fortmaticConnector';
 import { web3ReactInterface } from './index';
-import {
-  FORTMATIC_KEY,
-  IS_MAINNET,
-  PORTIS_DAPP_ID,
-  INFURA_URL,
-} from '../../utils/envVars';
+import { IS_MAINNET } from '../../utils/envVars';
 
 export enum NetworkChainId {
   'Mainnet' = 1,
@@ -20,6 +13,7 @@ export enum NetworkChainId {
   'Rinkeby' = 4,
   'Göerli' = 5,
   'Kovan' = 42,
+  'l15-dev' = 231,
 }
 
 /*
@@ -33,10 +27,12 @@ const supportedNetworks = [
   NetworkChainId.Rinkeby,
   NetworkChainId.Ropsten,
   NetworkChainId.Kovan,
+  NetworkChainId['l15-dev'],
 ];
 
 enum Testnet {
   'Göerli',
+  'l15-dev',
 }
 
 enum Mainnet {
@@ -47,17 +43,6 @@ export const AllowedNetworks = IS_MAINNET ? Mainnet : Testnet;
 
 export const metamask: InjectedConnector = new MetamaskConnector({
   supportedChainIds: supportedNetworks,
-});
-
-export const portis: PortisConnector = new PortisConnector({
-  dAppId: PORTIS_DAPP_ID,
-  networks: supportedNetworks,
-});
-
-export const fortmatic: FortmaticConnector = new FortmaticConnector({
-  apiKey: FORTMATIC_KEY as string,
-  chainId: IS_MAINNET ? NetworkChainId.Mainnet : NetworkChainId['Göerli'],
-  rpcUrl: INFURA_URL,
 });
 
 // sets up initial call to MM
@@ -90,6 +75,7 @@ export function useMetamaskEagerConnect(): boolean {
 export function useMetamaskListener(suppress: boolean = false) {
   const { active, error, activate: connectTo } = useWeb3React();
 
+  // eslint-disable-next-line consistent-return
   useEffect((): any => {
     const { ethereum } = window as any;
 

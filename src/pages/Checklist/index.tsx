@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import _shuffle from 'lodash/shuffle';
 import { CheckBox } from 'grommet';
 import { FormattedDate, FormattedMessage, useIntl } from 'react-intl';
 import { FormNext } from 'grommet-icons';
@@ -15,11 +14,6 @@ import {
   TESTNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
 } from '../../utils/envVars';
-import { ClientCard } from '../Congratulations/ClientCard';
-import PrysmaticBg from '../../static/prysmatic-bg.png';
-import LighthouseBg from '../../static/lighthouse-bg.png';
-import NimbusBg from '../../static/nimbus-bg.png';
-import TekuBg from '../../static/teku-bg.png';
 import { routesEnum } from '../../Routes';
 import { Code } from '../../components/Code';
 import { Alert } from '../../components/Alert';
@@ -76,13 +70,6 @@ const CodeSnippet = styled.div`
   }
 `;
 
-const ClientContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 2.5rem;
-`;
-
 const Subtitle = styled.p`
   font-size: 20px;
   margin-bottom: 32px;
@@ -122,10 +109,10 @@ const SectionHeader = styled.div`
   }
 `;
 
-const RainbowHeader = styled(SectionHeader as any)`
+const GradientHeader = styled(SectionHeader as any)`
   margin: 3rem 1rem 1rem;
   background-image: ${p =>
-    `linear-gradient(to right, ${p.theme.rainbowLight})`};
+    `linear-gradient(to right, ${p.theme.gradientDisclaimer})`};
 `;
 
 const CardContainer = styled.div`
@@ -160,8 +147,8 @@ const Card = styled.div`
   }
 `;
 
-const BoldGreen = styled.span`
-  color: ${(p: { theme: any; fontSize: number }) => p.theme.green.dark};
+const BoldPurple = styled.span`
+  color: ${(p: { theme: any; fontSize: number }) => p.theme.purple.brand};
   font-size: ${(p: { theme: any; fontSize: number }) => p.fontSize}px;
   font-weight: bold;
 `;
@@ -180,56 +167,6 @@ interface Client {
 
 export const Checklist = () => {
   const { formatMessage } = useIntl();
-  const clientInfo: Client[] = _shuffle([
-    {
-      header: 'Lighthouse',
-      text: formatMessage({
-        defaultMessage:
-          'Lighthouse is a Ethereum 2.0 implementation, written in Rust with a heavy focus on speed and security.',
-      }),
-      imgUrl: LighthouseBg,
-      url: routesEnum.lighthouse,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Lighthouse',
-      }),
-    },
-    {
-      header: 'Nimbus',
-      text: formatMessage({
-        defaultMessage:
-          'Nimbus is a research project and a client implementation for Ethereum 2.0 designed to perform well on embedded systems and personal mobile devices.',
-      }),
-      imgUrl: NimbusBg,
-      url: routesEnum.nimbus,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Nimbus',
-      }),
-    },
-    {
-      header: 'Prysm',
-      text: formatMessage({
-        defaultMessage:
-          'Prysm is a Go implementation of Ethereum 2.0 protocol with a focus on usability, security, and reliability.',
-      }),
-      imgUrl: PrysmaticBg,
-      url: routesEnum.prysm,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Prysm',
-      }),
-    },
-    {
-      header: 'Teku',
-      text: formatMessage({
-        defaultMessage:
-          'PegaSys Teku is a Java-based Ethereum 2.0 client built to meet institutional needs and security requirements.',
-      }),
-      imgUrl: TekuBg,
-      url: routesEnum.teku,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Teku',
-      }),
-    },
-  ]);
 
   return (
     <PageTemplate
@@ -259,9 +196,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 1" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="Before you start" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -272,9 +209,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 2" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="During setup" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -285,9 +222,9 @@ export const Checklist = () => {
               <Heading level={4} className="mb10">
                 <FormattedMessage defaultMessage="Section 3" />
               </Heading>
-              <BoldGreen className="mr10" fontSize={24}>
+              <BoldPurple className="mr10" fontSize={24}>
                 <FormattedMessage defaultMessage="After depositing" />
-              </BoldGreen>
+              </BoldPurple>
             </div>
             <FormNext size="large" />
           </Card>
@@ -512,28 +449,29 @@ export const Checklist = () => {
                 <th>
                   <FormattedMessage defaultMessage="Default Port" />
                 </th>
+                <th>
+                  <FormattedMessage defaultMessage="Protocol" />
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Geth</td>
-                <td>30303 TCP/UDP</td>
+                <td>Pandora</td>
+                <td>30303</td>
+                <td>TCP</td>
               </tr>
               <tr>
-                <td>Lighthouse</td>
-                <td>9000 TCP/UDP</td>
-              </tr>
-              <tr>
-                <td>Nimbus</td>
-                <td>9000 UDP/TCP</td>
-              </tr>
-              <tr>
-                <td>Prysm</td>
-                <td>12000 UDP, 13000 TCP</td>
-              </tr>
-              <tr>
-                <td>Teku</td>
-                <td>9000 TCP/UDP</td>
+                <td>Vanguard</td>
+                <td>
+                  12000
+                  <br />
+                  13000
+                </td>
+                <td>
+                  UDP
+                  <br />
+                  TCP
+                </td>
               </tr>
             </tbody>
           </PortTable>
@@ -673,65 +611,6 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="Configure your L15 client" />
-          </Heading>
-          <Link className="mt10" to="/faq" primary>
-            <FormattedMessage defaultMessage="More on validator roles and responsibilities" />
-          </Link>
-          <ClientContainer>
-            {clientInfo.map(client => (
-              <ClientCard
-                className="mt10"
-                header={client.header}
-                imgUrl={client.imgUrl}
-                text={client.text}
-                key={client.header}
-                url={client.url}
-                linkText={client.linkText}
-              />
-            ))}
-          </ClientContainer>
-          <Alert variant="error" className="mt30 mb20">
-            <Heading level={4}>
-              <FormattedMessage defaultMessage="Warning!" />
-            </Heading>
-            <Text className="mt20">
-              <FormattedMessage
-                defaultMessage="It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
-                values={{
-                  learnMore: (
-                    <Link primary inline to="/faq#responsibilities">
-                      {formatMessage({
-                        defaultMessage: 'More on slashing risks',
-                      })}
-                    </Link>
-                  ),
-                }}
-              />
-            </Text>
-          </Alert>
-          <CheckBox
-            label={
-              <Text className="checkbox-label">
-                <FormattedMessage
-                  defaultMessage="I've installed the {latestRelease} of my L15 client."
-                  values={{
-                    latestRelease: (
-                      <strong>
-                        {formatMessage({
-                          defaultMessage: 'latest stable software release',
-                        })}
-                      </strong>
-                    ),
-                  }}
-                  description="{latestReleased} = 'latest stable software release', being styled in bold"
-                />
-              </Text>
-            }
-          />
-        </section>
-        <section>
-          <Heading level={3}>
             <FormattedMessage defaultMessage="L15 Vanguard Node (VN)" />
           </Heading>
           <Heading level={4} className="mt10">
@@ -774,33 +653,6 @@ export const Checklist = () => {
               </Text>
             </li>
           </ul>
-          <Heading level={4} className="mt10">
-            <FormattedMessage defaultMessage="Recommended" />
-          </Heading>
-          <CheckBox
-            label={
-              <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I've joined my client's Discord server." />
-              </Text>
-            }
-          />
-          <Text className="ml20">
-            <Link primary inline to="https://discord.gg/uC7TuaH">
-              Lighthouse
-            </Link>{' '}
-            |{' '}
-            <Link primary inline to="https://discord.gg/YbTCNat">
-              Nimbus
-            </Link>{' '}
-            |{' '}
-            <Link primary inline to="https://discord.gg/z9efH7e">
-              Prysm
-            </Link>{' '}
-            |{' '}
-            <Link primary inline to="https://discord.gg/7hPv2T6">
-              Teku
-            </Link>
-          </Text>
         </section>
         <section>
           <Heading level={3}>
@@ -862,52 +714,6 @@ export const Checklist = () => {
           <Heading level={4} className="my10">
             <FormattedMessage defaultMessage="Prometheus and Grafana monitor" />
           </Heading>
-          <Text>
-            <FormattedMessage
-              defaultMessage="The L15 clients support Prometheus and Grafana to help you
-                visualise important real-time metrics about your validator. You can
-                find client-specific instructions here: {lighthouse} | {nimbus} | {prysm} | {teku}"
-              values={{
-                lighthouse: (
-                  <Link
-                    primary
-                    inline
-                    to="https://github.com/sigp/lighthouse-metrics"
-                  >
-                    Lighthouse
-                  </Link>
-                ),
-                nimbus: (
-                  <Link
-                    primary
-                    inline
-                    to="https://status-im.github.io/nimbus-eth2/metrics-pretty-pictures.html"
-                  >
-                    Nimbus
-                  </Link>
-                ),
-                prysm: (
-                  <Link
-                    primary
-                    inline
-                    to="https://docs.prylabs.network/docs/prysm-usage/monitoring/grafana-dashboard/"
-                  >
-                    Prysm
-                  </Link>
-                ),
-                teku: (
-                  <Link
-                    primary
-                    inline
-                    to="https://docs.teku.consensys.net/en/latest/HowTo/Monitor/Metrics/"
-                  >
-                    Teku
-                  </Link>
-                ),
-              }}
-              description="{variables} are client names, each linking to documentation (do not translate names)"
-            />
-          </Text>
           <CheckBox
             label={
               <Text className="checkbox-label">
@@ -1044,7 +850,7 @@ export const Checklist = () => {
             }
           />
         </section>
-        <RainbowHeader>
+        <GradientHeader>
           <FormattedMessage
             defaultMessage="If you have questions, the LUKSO community is a good place to get
                   help! You can find support on the {discord} #validators channel."
@@ -1057,7 +863,7 @@ export const Checklist = () => {
             }}
             description="{discord} is a link to the LUKSO Discord (do not translate names)"
           />
-        </RainbowHeader>
+        </GradientHeader>
       </ChecklistPageStyles>
     </PageTemplate>
   );

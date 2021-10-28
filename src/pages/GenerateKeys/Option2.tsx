@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FormattedMessage, useIntl } from 'react-intl';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
@@ -8,7 +9,6 @@ import { Alert } from '../../components/Alert';
 import { Code } from '../../components/Code';
 import { LUKSO_NETWORK_NAME, IS_MAINNET } from '../../utils/envVars';
 import { colors } from '../../styles/styledComponentsTheme';
-import { FormattedMessage, useIntl } from 'react-intl';
 
 const Pre = styled.pre`
   white-space: normal;
@@ -22,6 +22,7 @@ export const Option2 = ({
   os: string;
 }) => {
   const { formatMessage } = useIntl();
+  // eslint-disable-next-line consistent-return
   const renderPythonInstructions = () => {
     if (os === 'linux')
       return (
@@ -66,6 +67,7 @@ export const Option2 = ({
       );
   };
 
+  // eslint-disable-next-line consistent-return
   const renderPipInstructions = () => {
     if (os === 'linux') {
       return (
@@ -143,6 +145,7 @@ export const Option2 = ({
     }
   };
 
+  // eslint-disable-next-line consistent-return
   const renderDepositKeyCommand = () => {
     const translateFlags = false;
 
@@ -327,10 +330,12 @@ export const Option2 = ({
             defaultMessage="Make sure you have set {flag} for {network}, otherwise the deposit will be invalid."
             values={{
               flag: (
-                <Code>{`--${formatMessage({
-                  defaultMessage: 'chain',
-                  description: 'this is used as a command line flag',
-                })} ${LUKSO_NETWORK_NAME.toLowerCase()}`}</Code>
+                <Code>
+                  {`--${formatMessage({
+                    defaultMessage: 'chain',
+                    description: 'this is used as a command line flag',
+                  })} ${LUKSO_NETWORK_NAME.toLowerCase()}`}
+                </Code>
               ),
               network: (
                 <span>

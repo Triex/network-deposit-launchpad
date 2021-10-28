@@ -5,6 +5,7 @@ import { Box, DropButton } from 'grommet';
 import { Menu, FormDown } from 'grommet-icons';
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
+import { FormattedMessage } from 'react-intl';
 import LuksoLogoPng from '../static/LUKSO-logo.png';
 import { web3ReactInterface } from '../pages/ConnectWallet';
 import { trimString } from '../utils/trimString';
@@ -23,10 +24,10 @@ import {
   TESTNET_LAUNCHPAD_NAME,
 } from '../utils/envVars';
 import useMobileCheck from '../hooks/useMobileCheck';
-import { FormattedMessage } from 'react-intl';
 
-const RainbowBackground = styled(Box)`
-  background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+const GradientBackground = styled(Box)`
+  background-image: ${p =>
+    `linear-gradient(177deg, ${p.theme.gradientNavbar})`};
 `;
 
 const LuksoLogo = styled.img`
@@ -47,14 +48,30 @@ const NetworkText = styled.div`
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+    background: rgba(255, 255, 255, 0.6);
     transition: transform 0.1s;
     transform: scale(1.02);
+    color: #000;
+  }
+  svg {
+    stroke: #fff;
+  }
+  :hover svg {
+    stroke: #666;
   }
 `;
 
 const NavBarLinks = styled.div`
   display: flex;
+  .white {
+    color: #fff;
+  }
+  .white span {
+    color: #fff;
+  }
+  .bold span {
+    font-weight: 600;
+  }
   @media only screen and (max-width: 1080px) {
     .secondary-link {
       display: none;
@@ -72,6 +89,7 @@ const ValidatorDropdown = styled(DropButton)`
     border: none;
     box-shadow: none;
   }
+  color: #fff;
 `;
 
 const DotDropdown = styled(DropButton)`
@@ -102,6 +120,9 @@ const NetworkInfo = styled.div`
 const NavLinksRight = styled.div`
   display: flex;
   align-items: center;
+  .white {
+    color: #fff;
+  }
 `;
 
 const BarLinkText = styled(Heading)`
@@ -112,7 +133,7 @@ const BarLinkText = styled(Heading)`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-weight: ${(p: { active?: boolean }) => (p.active ? 'bold' : 300)};
+  font-weight: ${(p: { active?: boolean }) => (p.active ? 'bold' : 400)};
 `;
 
 const _AppBar = ({ location }: RouteComponentProps) => {
@@ -134,21 +155,12 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     location.pathname,
   ]);
 
-  const isDropdownPage = React.useMemo(
-    () =>
-      pathname === routesEnum.lighthouse ||
-      pathname === routesEnum.nimbus ||
-      pathname === routesEnum.prysm ||
-      pathname === routesEnum.teku,
-    [pathname]
-  );
-
   const mobile = useMobileCheck('1080px');
 
   const networkName = IS_MAINNET ? 'mainnet' : 'Göerli testnet';
 
   return (
-    <RainbowBackground
+    <GradientBackground
       tag="header"
       direction="row"
       align="center"
@@ -166,7 +178,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 active={pathname === routesEnum.landingPage}
                 level={4}
                 margin="none"
-                className="bar-link-text no-padding"
+                className="bar-link-text no-padding white bold"
               >
                 <Text>
                   <FormattedMessage
@@ -189,34 +201,17 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.acknowledgementPage}
           >
             <FormattedMessage defaultMessage="Deposit" />
           </BarLinkText>
         </Link>
-        <ValidatorDropdown
-          className="secondary-link"
-          label={
-            <BarLinkText level={4} margin="none" active={isDropdownPage}>
-              <FormattedMessage defaultMessage="Clients" />
-            </BarLinkText>
-          }
-          dropAlign={{ top: 'bottom', right: 'right' }}
-          dropContent={
-            <Box pad="small">
-              <DropdownLink to={routesEnum.lighthouse}>Lighthouse</DropdownLink>
-              <DropdownLink to={routesEnum.nimbus}>Nimbus</DropdownLink>
-              <DropdownLink to={routesEnum.prysm}>Prysm</DropdownLink>
-              <DropdownLink to={routesEnum.teku}>Teku</DropdownLink>
-            </Box>
-          }
-        />
         <Link to={routesEnum.checklistPage} className="mx10 secondary-link">
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.checklistPage}
           >
             <FormattedMessage defaultMessage="Checklist" />
@@ -226,7 +221,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.FaqPage}
           >
             <FormattedMessage defaultMessage="FAQ" />
@@ -236,7 +231,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           <BarLinkText
             level={4}
             margin="none"
-            className="bar-link-text"
+            className="bar-link-text white"
             active={pathname === routesEnum.topUpPage}
           >
             <FormattedMessage defaultMessage="Top Up" />
@@ -247,7 +242,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
         {mobile && (
           <ValidatorDropdown
             className="secondary-link"
-            label={<Menu color="black" />}
+            label={<Menu color="white" />}
             dropAlign={{ top: 'bottom', right: 'right' }}
             dropContent={
               <Card>
@@ -255,7 +250,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   {walletConnected && (
                     <Box className="flex flex-row mb20">
                       <Dot success={networkAllowed} error={!networkAllowed} />
-                      <Text size="small" className="ml10" color="blueDark">
+                      <Text size="small" className="ml10" color="white">
                         {trimString(account as string, 10)}
                       </Text>
                     </Box>
@@ -368,13 +363,13 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 }
               />
             )}
-            <Text size="small" className="ml10" color="blueDark">
+            <Text size="small" className="ml10" color="grayLight">
               {trimString(account as string, 10)}
             </Text>
           </Box>
         )}
       </NavLinksRight>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };
 

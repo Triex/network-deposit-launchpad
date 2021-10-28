@@ -19,9 +19,9 @@ const Gutter = styled.div`
   justify-content: center;
 `;
 
-const RainbowBackground = styled.div`
+const GradientBackground = styled.div`
   background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+    `radial-gradient(circle at 100% -80%, ${p.theme.gradientLight})`};
   min-height: 100vh;
 `;
 
@@ -40,7 +40,7 @@ const _PageTemplate = ({
   header = title,
 }: Props): JSX.Element => {
   return (
-    <RainbowBackground>
+    <GradientBackground>
       <Helmet>
         <title>{title}</title>
         <meta property="og:title" content={title} />
@@ -58,7 +58,7 @@ const _PageTemplate = ({
           {children}
         </Content>
       </Gutter>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };
 

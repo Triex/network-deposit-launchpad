@@ -14,7 +14,7 @@ const LogoBackground = styled.div<LogoBackgroundProps>`
   margin: 20px auto auto;
   border-radius: 50%;
   background-color: ${p =>
-    p.isActive ? p.theme.blue.light : p.theme.gray.light};
+    p.isActive ? p.theme.purple.lavender : p.theme.gray.light};
   -webkit-transition: background-color 500ms ease-out;
   -moz-transition: background-color 500ms ease-out;
   -o-transition: background-color 500ms ease-out;
@@ -33,7 +33,7 @@ const SelectionText = styled(Heading)`
 `;
 
 const LanguageTag = styled.div`
-  background: ${p => p.theme.blue.light};
+  background: ${p => p.theme.purple.lavender};
   padding: 8px;
   font-size: 14px;
   text-align: center;

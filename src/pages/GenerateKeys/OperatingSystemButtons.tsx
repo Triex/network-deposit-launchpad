@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { operatingSystem } from './index';
 import MacLogo from '../../static/apple.svg';
 import LinuxLogo from '../../static/linux.svg';
-import WindowsLogo from '../../static/windows.svg';
 import { ImageSelectionBox } from '../../components/ImageSelectionBox';
 
 const Container = styled.div`
@@ -36,12 +35,6 @@ export const OperatingSystemButtons = ({
         onClick={() => setChosenOs(operatingSystem.LINUX)}
         isActive={chosenOs === operatingSystem.LINUX}
         src={LinuxLogo}
-      />
-      <ImageSelectionBox
-        text="Windows"
-        onClick={() => setChosenOs(operatingSystem.WINDOWS)}
-        isActive={chosenOs === operatingSystem.WINDOWS}
-        src={WindowsLogo}
       />
       <ImageSelectionBox
         text="Mac"

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FormattedMessage } from 'react-intl';
 import LuksoLogoPng from '../../static/LUKSO-logo.png';
-import EthRound from '../../static/eth-round-landing.svg';
+import LuksoRound from '../../static/lukso-round-landing.svg';
 import { Text } from '../../components/Text';
 import { Heading } from '../../components/Heading';
 import { Link } from '../../components/Link';
@@ -61,7 +61,7 @@ export const Introduction = (): JSX.Element => {
     <Container>
       <SubContainer className="py100 flex">
         <ImgContainer>
-          <img src={EthRound} alt="" />
+          <img src={LuksoRound} alt="" />
         </ImgContainer>
         <ContentContainer>
           <ScrollAnimation animateIn="fadeIn" animateOnce>

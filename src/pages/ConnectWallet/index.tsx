@@ -14,10 +14,8 @@ import { formatEther } from '@ethersproject/units';
 import { NoEthereumProviderError } from '@web3-react/injected-connector';
 import {
   AllowedNetworks,
-  fortmatic,
   metamask,
   NetworkChainId,
-  portis,
   useMetamaskEagerConnect,
   useMetamaskListener,
 } from './web3Utils';
@@ -29,8 +27,6 @@ import { Link } from '../../components/Link';
 import { Text } from '../../components/Text';
 import { WalletButton } from './WalletButton';
 import metamaskLogo from '../../static/metamask.svg';
-import portisLogo from '../../static/portis.svg';
-import fortmaticLogo from '../../static/fortmatic.svg';
 import { Paper } from '../../components/Paper';
 import { Heading } from '../../components/Heading';
 import { Dot } from '../../components/Dot';
@@ -40,11 +36,10 @@ import {
   WorkflowStep,
 } from '../../store/actions/workflowActions';
 import {
-  PORTIS_DAPP_ID,
-  ENABLE_RPC_FEATURES,
   IS_MAINNET,
   PRICE_PER_VALIDATOR,
   TICKER_NAME,
+  FAUCET_URL,
 } from '../../utils/envVars';
 import { routeToCorrectWorkflowStep } from '../../utils/RouteToCorrectWorkflowStep';
 import { MetamaskHardwareButton } from './MetamaskHardwareButton';
@@ -209,6 +204,7 @@ const _ConnectWalletPage = ({
   useMetamaskListener(!attemptedMMConnection);
 
   // sets the balance to the current wallet on provider or network change
+  // eslint-disable-next-line consistent-return
   useEffect((): any => {
     if (!!account && !!library) {
       library
@@ -233,6 +229,7 @@ const _ConnectWalletPage = ({
   }, [selectedWallet, walletProvider, library, chainId, depositKeys, account]);
 
   // adds event emitter to listen to new blocks & update balance if it changed
+  // eslint-disable-next-line consistent-return
   useEffect((): any => {
     if (!!account && !!library) {
       library.on('block', () => {
@@ -266,8 +263,6 @@ const _ConnectWalletPage = ({
   const getWalletName = (provider?: AbstractConnector) => {
     if (!provider) return '';
     if (provider === metamask) return 'Metamask';
-    if (provider === portis) return 'Portis';
-    if (provider === fortmatic) return 'Fortmatic';
     return '';
   };
 
@@ -408,10 +403,7 @@ const _ConnectWalletPage = ({
                       </>
                     )}
                     {!IS_MAINNET && lowBalance && (
-                      <FaucetLink
-                        to="https://faucet.goerli.mudit.blog/"
-                        primary
-                      >
+                      <FaucetLink to={FAUCET_URL} primary>
                         <FormattedMessage
                           defaultMessage="Get {TICKER_NAME}"
                           values={{
@@ -444,26 +436,6 @@ const _ConnectWalletPage = ({
                 title="Metamask"
                 error={walletProvider === metamask ? error : undefined}
               />
-
-              <WalletButton
-                invalid={PORTIS_DAPP_ID === ''}
-                selectedWallet={selectedWallet}
-                setSelectedWallet={setSelectedWallet}
-                logoSource={portisLogo}
-                walletProvider={portis}
-                title="Portis"
-                error={walletProvider === portis ? error : undefined}
-              />
-
-              <WalletButton
-                invalid={!ENABLE_RPC_FEATURES}
-                selectedWallet={selectedWallet}
-                setSelectedWallet={setSelectedWallet}
-                logoSource={fortmaticLogo}
-                walletProvider={fortmatic}
-                title="Fortmatic"
-                error={walletProvider === fortmatic ? error : undefined}
-              />
               <MetamaskHardwareButton />
             </WalletButtonSubContainer>
           </Animated>
@@ -489,7 +461,7 @@ const _ConnectWalletPage = ({
           <FormattedMessage
             defaultMessage="Your wallet is on the wrong network. Switch to {network}"
             values={{
-              network: IS_MAINNET ? 'Ethereum mainnet' : 'Göerli testnet',
+              network: IS_MAINNET ? 'Ethereum mainnet' : 'L15 testnet',
             }}
           />
         </div>
@@ -517,7 +489,7 @@ const _ConnectWalletPage = ({
         <Link to={routesEnum.summaryPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
+            gradient
             disabled={
               !walletProvider ||
               !walletConnected ||

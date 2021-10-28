@@ -15,11 +15,11 @@ const LUKSOMiniLogo = styled.img`
   margin-bottom: -3px;
 `;
 
-const RainbowBackground = styled.div`
+const GradientBackground = styled.div`
   min-width: 100%;
   overflow: hidden;
   background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+    `radial-gradient(circle at 100% -80%, ${p.theme.gradientFooter})`};
 `;
 
 const FooterStyles = styled.div`
@@ -68,7 +68,7 @@ export const Footer = () => {
   ];
 
   return (
-    <RainbowBackground>
+    <GradientBackground>
       <FooterStyles className="pb30">
         <div className="col">
           <Heading level={4}>
@@ -95,7 +95,7 @@ export const Footer = () => {
               className="cta-button"
             >
               <Button
-                rainbow
+                gradient
                 fullWidth
                 width={400}
                 label={
@@ -126,6 +126,6 @@ export const Footer = () => {
           <FormattedMessage defaultMessage="🌈 Forked from the Eth2 Launchpad" />
         </Link>
       </FooterStyles>
-    </RainbowBackground>
+    </GradientBackground>
   );
 };

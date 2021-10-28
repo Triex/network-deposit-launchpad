@@ -1,0 +1,63 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches: [feature/l15]
+
+env:
+  REPO_NAME: ${{ github.event.repository.name }}
+  GCR_PROJECT: l15-testnet
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - namespace: 'dev'
+          - namespace: 'staging'
+          - namespace: 'prod'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Check if version changed
+        uses: EndBug/version-check@v1
+        id: check
+        with:
+          diff-search: true
+
+      - run: |-
+          APP_VERSION=$(cat package.json \
+            | grep version \
+            | head -1 \
+            | awk -F: '{ print $2 }' \
+            | sed 's/[",]//g')
+          echo "APP_VERSION=${APP_VERSION/ /}" >> $GITHUB_ENV
+
+      - name: Cluster Authentication
+        if: steps.check.outputs.changed == 'true'
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GOOGLE_L15_SERVICE_ACCOUNT }}
+          project_id: l15-testnet
+
+      - name: Configure Gcloud
+        if: steps.check.outputs.changed == 'true'
+        run: |-
+          gcloud --quiet auth configure-docker
+
+      - name: Build
+        if: steps.check.outputs.changed == 'true'
+        run: |-
+          docker build \
+            --build-arg NETWORK=l15-${{ matrix.namespace }} \
+            --tag "eu.gcr.io/$GCR_PROJECT/$REPO_NAME:${{ env.APP_VERSION }}-${{ matrix.namespace }}" \
+            .
+
+      - name: Publish Image
+        if: steps.check.outputs.changed == 'true'
+        run: |-
+          docker push "eu.gcr.io/$GCR_PROJECT/$REPO_NAME:${{ env.APP_VERSION }}-${{ matrix.namespace }}"
+
+
