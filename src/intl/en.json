@@ -46,6 +46,9 @@
   "/5Hyyf": {
     "message": "Indonesian"
   },
+  "/P8Fo+": {
+    "message": "Make sure that your node has more than {VANGUARD_MIN_PEERS} peers."
+  },
   "/QPc9s": {
     "message": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
   },
@@ -184,6 +187,9 @@
   "2CYEJa": {
     "message": "Troubleshooting"
   },
+  "2Qn0Hh": {
+    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
+  },
   "2a1GTh": {
     "message": "you can always recalculate your signing key from your withdrawal key"
   },
@@ -239,10 +245,6 @@
   "47svuN": {
     "message": "Installation"
   },
-  "4At0e7": {
-    "description": "{pricePerValidator} represents deposit amount styled in bold",
-    "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} LYXt. This forms your initial balance."
-  },
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
   },
@@ -292,6 +294,9 @@
   "6nh4de": {
     "message": "You're joining a network in its early stages. As with any new piece of software, there is the potential for software bugs. While unlikely, potential bugs may result in slashing."
   },
+  "6pEeOG": {
+    "message": "Limiting the maximum stake to {pricePerValidator} LYX encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
+  },
   "6zye8g": {
     "message": "An implementation of the Eth2 protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
   },
@@ -318,9 +323,6 @@
   },
   "7XiYRi": {
     "message": "Slashed?"
-  },
-  "7bEnm6": {
-    "message": "If you go offline for a number of days under normal conditions you will lose an amount of LYXt roughly equivalent to the amount of LYXt you would have gained in that period. In other words, if you stood to earn ≈0.01 LYXt, you would instead be penalised ≈0.01 LYXt."
   },
   "7d3Nzd": {
     "description": "{variables} are Beacon Chain block explorers, with links to each (do not translate names)",
@@ -349,6 +351,9 @@
   },
   "82vl9l": {
     "message": "We can't detect MetaMask. Switch browsers or install MetaMask."
+  },
+  "8CD83F": {
+    "message": "Once you're comfortable, you'll go through generating your keys and depositing your LYX."
   },
   "8FmuYF": {
     "message": "Install pip3"
@@ -405,6 +410,9 @@
   "9qMyhY": {
     "message": "Read options and subcommands documentation"
   },
+  "9qp+vh": {
+    "message": "Your default Pandora node address should be 127.0.0.1. Verify it with the following command to check if it returns the client version correctly:"
+  },
   "9uOFF3": {
     "message": "Overview"
   },
@@ -426,9 +434,6 @@
   },
   "AMajpT": {
     "message": "Block rewards are calculated using a sliding scale based on the total amount of LYXt staked on the network."
-  },
-  "ANsnxE": {
-    "message": "No. There is no advantage to having more than {pricePerValidator} LYXt staked."
   },
   "AYKxmf": {
     "message": "Connect your hardware wallet to Metamask"
@@ -477,9 +482,6 @@
   "BPpnlJ": {
     "message": "Download MetaMask"
   },
-  "BWbrLK": {
-    "message": "Once you're comfortable, you'll go through generating your keys and depositing your LYXt."
-  },
   "Bf2QKg": {
     "message": "Validating is a long-term commitment"
   },
@@ -492,6 +494,9 @@
   "BoEpk9": {
     "message": "Introduction"
   },
+  "BzjsPJ": {
+    "message": "The answer to this question very much depends on how much LYX you have at your disposal."
+  },
   "C9dXhY": {
     "message": "The L15 clients"
   },
@@ -500,10 +505,6 @@
   },
   "CACPC+": {
     "message": "Czech"
-  },
-  "CALy1/": {
-    "description": "Asks users to check deposit contract address against a block explorer and confirm 32 LYXt deposits are present",
-    "message": "Are there recent {lyxtAmount} deposits?"
   },
   "CBbRux": {
     "message": "OpenEthereum is written in Rust and licensed under the GPLv3."
@@ -537,6 +538,9 @@
   "DNRQa7": {
     "message": "I have read and agree to the Launchpad terms of service."
   },
+  "DU0vnE": {
+    "message": "Is there any advantage to having more than {pricePerValidator} LYX at stake?"
+  },
   "DUnyVI": {
     "message": "Ideally your internet connection should be reliable and as close to 24/7 as possible without interruption."
   },
@@ -549,6 +553,9 @@
   },
   "DsJ/Mk": {
     "message": "Don’t just trust the contract address listed on this website."
+  },
+  "DzfXiX": {
+    "message": "If you go offline for a number of days under normal conditions you will lose an amount of LYX roughly equivalent to the amount of LYX you would have gained in that period. In other words, if you stood to earn ≈0.01 LYX, you would instead be penalised ≈0.01 LYX."
   },
   "E+Y27g": {
     "message": "You can check your Python version by typing {terminalCommand} in your terminal."
@@ -686,21 +693,22 @@
   "H5+NAX": {
     "message": "Balance"
   },
-  "HJVEQL": {
-    "description": "{lyxtAmount} will generally refer to 32 LYXt",
-    "message": "Does the site asking you for your {lyxtAmount} deposit have a URL you expect?"
-  },
-  "HMpGw2": {
-    "message": "You should certainly top up if your balance is close to 16 LYXt. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYXt)."
-  },
   "HoahTd": {
     "message": "If you do not supply a password, Nimbus will interactively ask for it on startup."
   },
   "HqRNN8": {
     "message": "Support"
   },
+  "HqiPLJ": {
+    "description": "Asks users to check deposit contract address against a block explorer and confirm 32 LYX deposits are present",
+    "message": "Are there recent {lyxtAmount} deposits?"
+  },
   "I212vY": {
     "message": "There is a short wait before your validator becomes active on the Beacon Chain. Use this time to complete the checklist and spend some time validating the {testnet}"
+  },
+  "I2HrQf": {
+    "description": "{lyxtAmount} will generally refer to 32 LYX",
+    "message": "Does the site asking you for your {lyxtAmount} deposit have a URL you expect?"
   },
   "I3JhPS": {
     "message": "Network"
@@ -826,6 +834,9 @@
   "LWIlKS": {
     "message": "You can also confirm the deposits individually below..."
   },
+  "LWtPqJ": {
+    "message": "You should certainly top up if your balance is close to 16 LYX. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYX)."
+  },
   "LeHQQm": {
     "message": "Validator FAQs"
   },
@@ -851,6 +862,9 @@
   },
   "MIsmjW": {
     "message": "Connect new wallet"
+  },
+  "MJ7IJv": {
+    "message": "How much LYX do I need to stake to become a validator?"
   },
   "MQTBvH": {
     "message": "Protect yourself against double deposits"
@@ -1041,9 +1055,6 @@
   "RrCui3": {
     "message": "Summary"
   },
-  "Ryptmy": {
-    "message": "Verify it with the following command to check if it returns the client version correctly:"
-  },
   "S0e/cN": {
     "message": "How do you want to run the CLI?"
   },
@@ -1150,9 +1161,6 @@
   "V0cb8p": {
     "message": "If you do not have a testnet folder it is likely you have not built and run Nimbus correctly. Run the make commands again."
   },
-  "V1O8Ob": {
-    "message": "How much LYXt do I need to stake to become a validator?"
-  },
   "VASo1/": {
     "message": "Connect wallet"
   },
@@ -1199,9 +1207,6 @@
   "WTPUDZ": {
     "message": "These steps are optional but are recommended to optimize your node."
   },
-  "WVMNkt": {
-    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {FAUCET_URL}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
-  },
   "WkrNSk": {
     "message": "English"
   },
@@ -1227,8 +1232,9 @@
     "description": "{filesPattern} refers to a computer command which will find {keyFile} and\n                {passwordFile} - both files within a computer.",
     "message": "{filesPattern} will expect that the {keyFile} exists, and the file containing the password for it is {passwordFile}."
   },
-  "Xwdwnq": {
-    "message": "Limiting the maximum stake to {pricePerValidator} LYXt encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
+  "XWOMxM": {
+    "description": "{pricePerValidator} represents deposit amount styled in bold",
+    "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} LYX. This forms your initial balance."
   },
   "Y47aYU": {
     "message": "Top up"
@@ -1299,9 +1305,6 @@
   "ZTo0Fl": {
     "message": "Why is there a wait?"
   },
-  "ZVn96Y": {
-    "message": "Is there any advantage to having more than {pricePerValidator} LYXt at stake?"
-  },
   "Zspg8H": {
     "message": "Section 1 - Before you start"
   },
@@ -1310,9 +1313,6 @@
   },
   "a+xjjV": {
     "message": "Become a validator with Prysm"
-  },
-  "aC5KNK": {
-    "message": "The answer to this question very much depends on how much LYXt you have at your disposal."
   },
   "aEBE6s": {
     "message": "2. Prep nodes"
@@ -1334,6 +1334,9 @@
   },
   "b4csjU": {
     "message": "However, bear in mind that for the foreseeable future, once you’ve exited, there’s no going back."
+  },
+  "bHjV4p": {
+    "message": "No. There is no advantage to having more than {pricePerValidator} LYX staked."
   },
   "bNFkSo": {
     "message": "Now follow the instructions presented to you in the terminal window to generate your keys."
@@ -1518,6 +1521,9 @@
   },
   "gjmx29": {
     "message": "YES"
+  },
+  "gpwdQO": {
+    "message": "At the other end of the spectrum, if your balance is closer to 31 LYX, it’s probably not worth adding the extra LYX required to get back to 32."
   },
   "gsuLMm": {
     "message": "Greek"
@@ -1779,9 +1785,6 @@
   },
   "nRdJct": {
     "message": "Continue without all transactions confirmed"
-  },
-  "nYkH/p": {
-    "message": "At the other end of the spectrum, if your balance is closer to 31 LYXt, it’s probably not worth adding the extra LYXt required to get back to 32."
   },
   "nZTFTz": {
     "message": "I understand that there is no advantage to depositing more than once per validator. Any extra {TICKER_NAME} sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
@@ -2136,9 +2139,6 @@
   },
   "yjBvUO": {
     "message": "Nethermind is built on .NET Core. Extend it, customise it - the sky’s the limit.."
-  },
-  "yoGtkz": {
-    "message": "Make sure that your node has more than 20 peers."
   },
   "z/ZhML": {
     "message": "Make sure you have set {flag} for {network}, otherwise the deposit will be invalid."
