@@ -13,11 +13,12 @@ export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID  
 
 // public
 export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'l15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
-export const TICKER_NAME                = IS_MAINNET ? 'LYX' : 'LYXt';
+export const TICKER_NAME                = IS_MAINNET ? 'LYX' : 'LYX';
 export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : `https://${networkName}explorer.pandora.l15.lukso.network`;
 export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://${networkName}explorer.vanguard.l15.lukso.network`;
 export const BEACONCHAIN_URL            = `https://${networkName}explorer.vanguard.l15.lukso.network`;
 export const FAUCET_URL                 = `https://${networkName}faucet.l15.lukso.network`;
+export const VANGUARD_MIN_PEERS         = 2;
 
 export const FORTMATIC_KEY                  = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
 export const CONTRACT_ADDRESS               = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';

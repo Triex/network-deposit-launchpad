@@ -116,12 +116,12 @@ export const FAQ = () => {
           </section>
           <section>
             <Heading level={4}>
-              <FormattedMessage defaultMessage="How much LYXt do I need to stake to become a validator?" />
+              <FormattedMessage defaultMessage="How much LYX do I need to stake to become a validator?" />
             </Heading>
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="Before you can run a validator and start to secure the network, you
-                  need to stake {pricePerValidator} LYXt. This forms your initial balance."
+                  need to stake {pricePerValidator} LYX. This forms your initial balance."
                 values={{
                   pricePerValidator: <strong>{PRICE_PER_VALIDATOR}</strong>,
                 }}
@@ -132,7 +132,7 @@ export const FAQ = () => {
           <section>
             <Heading level={4}>
               <FormattedMessage
-                defaultMessage="Is there any advantage to having more than {pricePerValidator} LYXt at stake?"
+                defaultMessage="Is there any advantage to having more than {pricePerValidator} LYX at stake?"
                 values={{
                   pricePerValidator: PRICE_PER_VALIDATOR,
                 }}
@@ -140,7 +140,7 @@ export const FAQ = () => {
             </Heading>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="No. There is no advantage to having more than {pricePerValidator} LYXt staked."
+                defaultMessage="No. There is no advantage to having more than {pricePerValidator} LYX staked."
                 values={{
                   pricePerValidator: PRICE_PER_VALIDATOR,
                 }}
@@ -148,7 +148,7 @@ export const FAQ = () => {
             </Text>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="Limiting the maximum stake to {pricePerValidator} LYXt encourages decentralization of power as it
+                defaultMessage="Limiting the maximum stake to {pricePerValidator} LYX encourages decentralization of power as it
                   prevents any single validator from having an excessively large vote on the state of the chain."
                 values={{
                   pricePerValidator: PRICE_PER_VALIDATOR,
@@ -167,10 +167,10 @@ export const FAQ = () => {
             </Heading>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="If you go offline for a number of days under normal conditions you will lose an amount of LYXt
-                  roughly equivalent to the amount of LYXt you would have gained in
-                  that period. In other words, if you stood to earn ≈0.01 LYXt, you
-                  would instead be penalised ≈0.01 LYXt."
+                defaultMessage="If you go offline for a number of days under normal conditions you will lose an amount of LYX
+                  roughly equivalent to the amount of LYX you would have gained in
+                  that period. In other words, if you stood to earn ≈0.01 LYX, you
+                  would instead be penalised ≈0.01 LYX."
               />
             </Text>
           </section>
@@ -180,22 +180,22 @@ export const FAQ = () => {
             </Heading>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="The answer to this question very much depends on how much LYXt you
+                defaultMessage="The answer to this question very much depends on how much LYX you
                   have at your disposal."
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="You should certainly top up if your balance is close to 16 LYXt.
+                defaultMessage="You should certainly top up if your balance is close to 16 LYX.
                   This is to ensure you don’t get kicked out of the validator
                   set (which automatically happens if your balance falls below 16
-                  LYXt)."
+                  LYX)."
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="At the other end of the spectrum, if your balance is closer to 31
-                  LYXt, it’s probably not worth adding the extra LYXt required to get back to 32."
+                  LYX, it’s probably not worth adding the extra LYX required to get back to 32."
               />
             </Text>
           </section>

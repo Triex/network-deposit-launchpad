@@ -3,7 +3,7 @@
 
 # LUKSO L15 Ephemeral Testnet Launchpad
 
-The [Launchpad](https://launchpad.l15.lukso.network/) is the official way to deposit your LYXt for the L15 testnet
+The [Launchpad](https://launchpad.l15.lukso.network/) is the official way to deposit your LYX for the L15 testnet
 
   - **Status**:  This Launchpad is in active development for testnet
 

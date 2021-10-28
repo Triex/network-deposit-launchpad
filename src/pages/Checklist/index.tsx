@@ -13,6 +13,7 @@ import {
   IS_MAINNET,
   TESTNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
+  VANGUARD_MIN_PEERS,
 } from '../../utils/envVars';
 import { routesEnum } from '../../Routes';
 import { Code } from '../../components/Code';
@@ -626,11 +627,11 @@ export const Checklist = () => {
           <ul className="sub-checklist-item">
             <li className="py5">
               <Text>
-                <FormattedMessage defaultMessage="Verify it with the following command to check if it returns the client version correctly:" />
+                <FormattedMessage defaultMessage="Your default Pandora node address should be 127.0.0.1. Verify it with the following command to check if it returns the client version correctly:" />
               </Text>
               <CodeSnippet>
                 <code>
-                  {`curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' http://<YourServerLocation>:8545`}
+                  {`curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' http://<YourPandoraNodeAddress>:8545`}
                 </code>
               </CodeSnippet>
             </li>
@@ -649,7 +650,10 @@ export const Checklist = () => {
           <ul className="sub-checklist-item">
             <li className="py5">
               <Text>
-                <FormattedMessage defaultMessage="Make sure that your node has more than 20 peers." />
+                <FormattedMessage
+                    values={{ VANGUARD_MIN_PEERS }}
+                    defaultMessage="Make sure that your node has more than {VANGUARD_MIN_PEERS} peers."
+                />
               </Text>
             </li>
           </ul>

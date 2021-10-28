@@ -135,7 +135,7 @@ export const SignupSteps = (): JSX.Element => {
             title={intl.formatMessage({ defaultMessage: '5. Time to deposit' })}
             content={intl.formatMessage({
               defaultMessage:
-                "Once you're comfortable, you'll go through generating your keys and depositing your LYXt.",
+                "Once you're comfortable, you'll go through generating your keys and depositing your LYX.",
             })}
           >
             <Link to={routesEnum.acknowledgementPage} primary>
