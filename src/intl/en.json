@@ -184,9 +184,6 @@
   "2CYEJa": {
     "message": "Troubleshooting"
   },
-  "2Qn0Hh": {
-    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
-  },
   "2a1GTh": {
     "message": "you can always recalculate your signing key from your withdrawal key"
   },
@@ -1202,6 +1199,9 @@
   "WTPUDZ": {
     "message": "These steps are optional but are recommended to optimize your node."
   },
+  "WVMNkt": {
+    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {FAUCET_URL}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
+  },
   "WkrNSk": {
     "message": "English"
   },
@@ -1361,9 +1361,6 @@
   },
   "bxU6sX": {
     "message": "Python installation instructions"
-  },
-  "c4KIsA": {
-    "message": "LYXt Faucet"
   },
   "c9DSZ1": {
     "message": "We strongly recommended you complete these steps on the current testnet before mainnet."
@@ -1679,6 +1676,9 @@
   },
   "kd/f4u": {
     "message": "Key list"
+  },
+  "klLKJB": {
+    "message": "L15 Faucet"
   },
   "kn7kJd": {
     "message": "More on consensus mechanisms"

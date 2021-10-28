@@ -1,24 +1,22 @@
-# pull official base image
-FROM node:14.10.1-alpine
+# build stage
+FROM node:14.10.1-alpine as build-stage
 RUN apk update
-RUN apk add git
+RUN apk add git python make g++
 
-# set working directory
+ARG NETWORK
+
 WORKDIR /app
+COPY package*.json ./
+COPY yarn.lock ./
+RUN yarn install --frozen-lockfile
+COPY . .
+RUN mv .env.$NETWORK .env
+RUN cat .env
+RUN yarn build
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
-
-# copy app dependencies
-COPY package.json .
-
-# Copy all other source code to work directory
-ADD . .
-
-# copy default config
-RUN source ./.env.l15
-RUN yarn global add serve
-
+# production stage
+FROM nginx:latest as production-stage
+COPY ./nginx/frontend.conf /etc/nginx/conf.d/default.conf
+COPY --from=build-stage /app/build /usr/share/nginx/html
 EXPOSE 80
-
-CMD ["serve", "-s", "build", "-l", "80"]
+CMD ["nginx", "-g", "daemon off;"]

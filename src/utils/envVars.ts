@@ -1,6 +1,6 @@
 export const IS_MAINNET                     = Boolean(process.env.REACT_APP_IS_MAINNET !== 'false');  // If REACT_APP_IS_MAINNET is unset, set it to true by default
 export const TESTNET_LAUNCHPAD_NAME         = process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME || 'Pandora';
-export let LUKSO_NETWORK_NAMESPACE          = (!process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE) ? 'dev' : process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE.toLowerCase();
+export const LUKSO_NETWORK_NAMESPACE        = (!process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE) ? 'dev' : process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE.toLowerCase();
 export const LUKSO_NETWORK_NAMESPACE_NAME   = LUKSO_NETWORK_NAMESPACE
 
 let networkName = ""
@@ -10,16 +10,14 @@ if (LUKSO_NETWORK_NAMESPACE !== 'prod') {
 
 // private vars (or derived from)
 export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID     || '';
-export const INFURA_PROJECT_ID          = process.env.REACT_APP_INFURA_PROJECT_ID  || '';
-export const ENABLE_RPC_FEATURES        = Boolean(INFURA_PROJECT_ID && INFURA_PROJECT_ID !== '');
-export const INFURA_URL                 = `https://${IS_MAINNET ? "mainnet" : "goerli"}.infura.io/v3/${INFURA_PROJECT_ID}`;
 
 // public
 export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'l15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
-export const TICKER_NAME                = IS_MAINNET ? 'LYXt' : 'LYXt';
+export const TICKER_NAME                = IS_MAINNET ? 'LYX' : 'LYXt';
 export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : `https://${networkName}explorer.pandora.l15.lukso.network`;
 export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://${networkName}explorer.vanguard.l15.lukso.network`;
 export const BEACONCHAIN_URL            = `https://${networkName}explorer.vanguard.l15.lukso.network`;
+export const FAUCET_URL                 = `https://${networkName}faucet.l15.lukso.network`;
 
 export const FORTMATIC_KEY                  = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
 export const CONTRACT_ADDRESS               = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';

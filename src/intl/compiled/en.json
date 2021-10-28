@@ -499,36 +499,6 @@
       "value": "Troubleshooting"
     }
   ],
-  "2Qn0Hh": [
-    {
-      "type": 0,
-      "value": "Importantly, as a validator you'll need to post "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " as collateral - in other words, have some funds at stake (get some at the "
-    },
-    {
-      "type": 1,
-      "value": "faucetLink"
-    },
-    {
-      "type": 0,
-      "value": "). The only way to become a validator is to make a one-way "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " transaction to the deposit contract on the current LUKSO L15 Testnet."
-    }
-  ],
   "2a1GTh": [
     {
       "type": 0,
@@ -3019,6 +2989,36 @@
       "value": "These steps are optional but are recommended to optimize your node."
     }
   ],
+  "WVMNkt": [
+    {
+      "type": 0,
+      "value": "Importantly, as a validator you'll need to post "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
+    },
+    {
+      "type": 0,
+      "value": " as collateral - in other words, have some funds at stake (get some at the "
+    },
+    {
+      "type": 1,
+      "value": "FAUCET_URL"
+    },
+    {
+      "type": 0,
+      "value": "). The only way to become a validator is to make a one-way "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
+    },
+    {
+      "type": 0,
+      "value": " transaction to the deposit contract on the current LUKSO L15 Testnet."
+    }
+  ],
   "WkrNSk": [
     {
       "type": 0,
@@ -3433,12 +3433,6 @@
     {
       "type": 0,
       "value": "Python installation instructions"
-    }
-  ],
-  "c4KIsA": [
-    {
-      "type": 0,
-      "value": "LYXt Faucet"
     }
   ],
   "c9DSZ1": [
@@ -4203,6 +4197,12 @@
     {
       "type": 0,
       "value": "Key list"
+    }
+  ],
+  "klLKJB": [
+    {
+      "type": 0,
+      "value": "L15 Faucet"
     }
   ],
   "kn7kJd": [
