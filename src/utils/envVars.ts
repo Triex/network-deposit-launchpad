@@ -1,6 +1,6 @@
 export const IS_MAINNET                     = Boolean(process.env.REACT_APP_IS_MAINNET !== 'false');  // If REACT_APP_IS_MAINNET is unset, set it to true by default
 export const TESTNET_LAUNCHPAD_NAME         = process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME || 'Pandora';
-export let LUKSO_NETWORK_NAMESPACE          = (!process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE) ? 'dev' : process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE.toLowerCase();
+export const LUKSO_NETWORK_NAMESPACE        = (!process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE) ? 'dev' : process.env.REACT_APP_LUKSO_NETWORK_NAMESPACE.toLowerCase();
 export const LUKSO_NETWORK_NAMESPACE_NAME   = LUKSO_NETWORK_NAMESPACE
 
 let networkName = ""

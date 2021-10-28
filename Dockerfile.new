@@ -3,16 +3,13 @@ FROM node:14.10.1-alpine as build-stage
 RUN apk update
 RUN apk add git python make g++
 
-ARG NETWORK
-
 WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --production
 COPY . .
-RUN mv .env.$NETWORK .env
-RUN cat .env
-RUN yarn build
+RUN source ./.env.l15-dev
+RUN yarn build 
 
 # production stage
 FROM nginx:latest as production-stage
