@@ -5,7 +5,7 @@ import {
 } from '@web3-react/injected-connector';
 import { useWeb3React } from '@web3-react/core';
 import { web3ReactInterface } from './index';
-import { IS_MAINNET } from '../../utils/envVars';
+import { CHAIN_ID, IS_MAINNET } from '../../utils/envVars';
 
 export enum NetworkChainId {
   'Mainnet' = 1,
@@ -13,7 +13,7 @@ export enum NetworkChainId {
   'Rinkeby' = 4,
   'Göerli' = 5,
   'Kovan' = 42,
-  'l15-dev' = 231,
+  'L15' = parseInt(CHAIN_ID as string, 10),
 }
 
 /*
@@ -27,11 +27,11 @@ const supportedNetworks = [
   NetworkChainId.Rinkeby,
   NetworkChainId.Ropsten,
   NetworkChainId.Kovan,
-  NetworkChainId['l15-dev'],
+  NetworkChainId.L15,
 ];
 
 enum Testnet {
-  'l15-dev',
+  'L15',
 }
 
 enum Mainnet {
