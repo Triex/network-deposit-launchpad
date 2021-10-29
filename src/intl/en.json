@@ -44,7 +44,7 @@
     "message": "Indonesian"
   },
   "/P8Fo+": {
-    "message": "Make sure that your node has more than {VANGUARD_MIN_PEERS} peers."
+    "message": "Make sure that your node has at least {VANGUARD_MIN_PEERS} peers."
   },
   "/QPc9s": {
     "message": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
@@ -603,7 +603,7 @@
     "message": "As a validator you are rewarded for proposing / attesting to blocks that are included in the chain."
   },
   "G8tAKU": {
-    "message": "Choose client"
+    "message": "LUKSO Clients"
   },
   "GBXzeJ": {
     "message": "Arguably the most impactful factor on rewards earned for validating transactions is the total amount of stake in the network. In other words, the total amount of validators. Depending on this figure the max annual return rate for a validator can be anywhere between 2 and 20%."

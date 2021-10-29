@@ -10,7 +10,7 @@ type Props = {
   luksoVersionStep: 'Pandora' | 'Vanguard';
   currentClient: ClientId;
   handleSubmit: LinkProps['onClick'];
-  updateStep: (nextStep: 'Pandora' | 'Vanguard') => void;
+  updateStep: (nextStep: 'Pandora') => void;
 };
 
 const SelectClientButtons = ({
@@ -20,27 +20,6 @@ const SelectClientButtons = ({
   updateStep,
 }: Props) => {
   const { formatMessage } = useIntl();
-
-  if (luksoVersionStep === 'Pandora') {
-    return (
-      <>
-        <Link to={routesEnum.acknowledgementPage}>
-          <Button
-            className="mr10"
-            width={100}
-            label={formatMessage({ defaultMessage: 'Back' })}
-          />
-        </Link>
-        <Button
-          width={300}
-          gradient
-          disabled={!currentClient}
-          label={formatMessage({ defaultMessage: 'Continue' })}
-          onClick={() => updateStep('Vanguard')}
-        />
-      </>
-    );
-  }
 
   return (
     <>

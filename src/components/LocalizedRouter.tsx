@@ -22,10 +22,10 @@ export const LocalizedRouter: React.FC<Props> = ({ children, history }) => (
         const { lang = AppLanguage.English } = params;
 
         /**
-         * If language provided is not supported, redirect to "languages" page
+         * If language provided is not supported, redirect to main page (languages are not supported for now)
          */
         if (supportedLanguages.indexOf(lang) < 0) {
-          return <Redirect push to={routesEnum.languagesPage} />;
+          return <Redirect push to={routesEnum.landingPage} />;
         }
 
         /**

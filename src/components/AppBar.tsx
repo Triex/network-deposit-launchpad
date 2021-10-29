@@ -293,9 +293,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   <DropdownLink to={routesEnum.checklistPage}>
                     <FormattedMessage defaultMessage="Staker checklist" />
                   </DropdownLink>
-                  <DropdownLink to={routesEnum.languagesPage}>
-                    <FormattedMessage defaultMessage="Languages" />
-                  </DropdownLink>
                   <Text className="my20">
                     <b>
                       <FormattedMessage defaultMessage="The L15 clients" />

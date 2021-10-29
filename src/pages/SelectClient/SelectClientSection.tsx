@@ -7,14 +7,18 @@ import { Heading } from '../../components/Heading';
 import { ImageSelectionBox } from '../../components/ImageSelectionBox';
 import { Client } from './index';
 import { ClientId } from '../../store/actions/clientActions';
+import {Alert} from "../../components/Alert";
+import {colors} from "../../styles/styledComponentsTheme";
+import {Link} from "../../components/Link";
 
-const ClientOptionContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+const Pre = styled.pre`
+  white-space: normal;
 `;
+
+const Highlight = styled.span`
+  background: ${p => p.theme.green.medium};
+`;
+
 
 type Props = {
   title?: string;
@@ -38,35 +42,41 @@ const SelectClientSection = ({
     </Heading>
     {luksoVersionStep === 'Pandora' && (
       <div style={{ paddingBottom: '1rem' }}>
-        <FormattedMessage
-          defaultMessage="To process incoming validator deposits from the Pandora chain,
-            you'll need to run a Pandora client in parallel to your Vanguard client. While
-            you can use a third-party service like Infura, we recommend running your
-            own client in order to ensure the network stays as decentralised as
-            possible."
-        />
+        <div className="mt30">
+          <ul>
+            <li>
+              <FormattedMessage defaultMessage="Run the following command to install LUKSO CLI locally" />
+            </li>
+            <Alert variant="secondary" className="my10">
+              <Pre className="my10">
+                <span style={{ color: colors.red.medium }}>curl https://install.l15.lukso.network | bash</span>
+              </Pre>
+            </Alert>
+            <li>
+              <FormattedMessage defaultMessage="Now you should be able to use LUKSO CLI on your machine" />
+            </li>
+            <Link
+                className="mt10"
+                primary
+                to="https://docs.lukso.tech/networks/l15-testnet"
+            >
+              <FormattedMessage
+                  values={{
+                    l15testNetworkName: <Highlight>l15 testnet</Highlight>,
+                  }}
+                  defaultMessage="Follow the instructions presented on the docs page for {l15testNetworkName}"
+
+              />
+            </Link>
+            <Alert variant="error" className="my30">
+              <FormattedMessage
+                  defaultMessage="To import validator keys you must generate them first. This is required to start validator client properly. Please go to the next step and see how to achieve this."
+              />
+            </Alert>
+          </ul>
+        </div>
       </div>
     )}
-    <Box className="flex flex-column space-between mt10">
-      <ClientOptionContainer>
-        {clients.map(({ clientId, name, imgUrl, language }) => {
-          const inputId = `${clientId}-client`;
-          const onClick = () => setCurrentClient(clientId);
-
-          return (
-            <ImageSelectionBox
-              fullWidthImg
-              key={inputId}
-              src={imgUrl}
-              isActive={currentClient === clientId}
-              onClick={onClick}
-              text={name}
-              language={language}
-            />
-          );
-        })}
-      </ClientOptionContainer>
-    </Box>
   </Paper>
 );
 

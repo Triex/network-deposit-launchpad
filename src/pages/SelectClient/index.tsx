@@ -61,15 +61,7 @@ const luksoClients: {
       imgUrl: GethCircle,
       language: 'Go',
     },
-  ]),
-  Vanguard: _shuffle([
-    {
-      clientId: ClientId.PRYSM,
-      name: 'Vanguard',
-      imgUrl: PrysmaticCircle,
-      language: 'Go',
-    },
-  ]),
+  ])
 };
 
 const _SelectClientPage = ({
@@ -80,7 +72,7 @@ const _SelectClientPage = ({
 }: Props): JSX.Element => {
   // set the default the eth version to 1 on initial render
   const [luksoVersionStep, setLuksoVersionStep] = useState<
-    'Pandora' | 'Vanguard'
+    'Pandora'
   >('Pandora');
 
   const { formatMessage } = useIntl();
@@ -92,10 +84,7 @@ const _SelectClientPage = ({
 
   // memoize the chosen client by step
   const selectedClient: ClientId = React.useMemo(
-    () =>
-      luksoVersionStep === 'Pandora'
-        ? chosenClients.pandoraClient
-        : chosenClients.vanguardClient,
+    () => chosenClients.pandoraClient,
     [luksoVersionStep, chosenClients]
   );
 
@@ -123,7 +112,7 @@ const _SelectClientPage = ({
 
   const title = formatMessage(
     {
-      defaultMessage: `Choose {lyxt} client`,
+      defaultMessage: `Get LUKSO Clients`,
       description:
         '{lyxt} injects Pandora or Vanguard networks depending on step',
     },
@@ -137,7 +126,7 @@ const _SelectClientPage = ({
       <SelectClientSection
         title={formatMessage(
           {
-            defaultMessage: `Choose your {luksoVersionStep} client and set up a node`,
+            defaultMessage: `Get LUKSO CLI and start with LUKSO Clients`,
             description: `{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on`,
           },
           { luksoVersionStep }
