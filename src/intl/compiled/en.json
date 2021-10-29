@@ -71,20 +71,6 @@
       "value": "Polish"
     }
   ],
-  "+rEvxo": [
-    {
-      "type": 0,
-      "value": "Choose "
-    },
-    {
-      "type": 1,
-      "value": "lyxt"
-    },
-    {
-      "type": 0,
-      "value": " client"
-    }
-  ],
   "+s8Gac": [
     {
       "type": 0,
@@ -133,20 +119,6 @@
     {
       "type": 0,
       "value": "Indonesian"
-    }
-  ],
-  "/P8Fo+": [
-    {
-      "type": 0,
-      "value": "Make sure that your node has more than "
-    },
-    {
-      "type": 1,
-      "value": "VANGUARD_MIN_PEERS"
-    },
-    {
-      "type": 0,
-      "value": " peers."
     }
   ],
   "/QPc9s": [
@@ -851,20 +823,6 @@
     {
       "type": 0,
       "value": "Romanian"
-    }
-  ],
-  "60BCbB": [
-    {
-      "type": 0,
-      "value": "Choose your "
-    },
-    {
-      "type": 1,
-      "value": "luksoVersionStep"
-    },
-    {
-      "type": 0,
-      "value": " client and set up a node"
     }
   ],
   "6CK2Nu": [
@@ -1579,12 +1537,6 @@
       "value": "As a validator you are rewarded for proposing / attesting to blocks that are included in the chain."
     }
   ],
-  "G8tAKU": [
-    {
-      "type": 0,
-      "value": "LUKSO Clients"
-    }
-  ],
   "GBXzeJ": [
     {
       "type": 0,
@@ -1621,16 +1573,16 @@
       "value": "Documentation on running Lighthouse"
     }
   ],
+  "Gb97QO": [
+    {
+      "type": 0,
+      "value": "Get LUKSO CLI and start with LUKSO Clients"
+    }
+  ],
   "Gbo300": [
     {
       "type": 0,
       "value": "Generate keys"
-    }
-  ],
-  "GsBRWL": [
-    {
-      "type": 0,
-      "value": "Languages"
     }
   ],
   "Gsixxx": [
@@ -1911,6 +1863,12 @@
     {
       "type": 0,
       "value": "Slashed"
+    }
+  ],
+  "K0VcJk": [
+    {
+      "type": 0,
+      "value": "To import validator keys you must generate them first. This is required to start validator client properly. Please go to the next step and see how to achieve this."
     }
   ],
   "K6+jQ3": [
@@ -2279,12 +2237,6 @@
     {
       "type": 0,
       "value": "Run the following command to generate the keys"
-    }
-  ],
-  "OF9qv9": [
-    {
-      "type": 0,
-      "value": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client in parallel to your Vanguard client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
     }
   ],
   "OIvXIO": [
@@ -3349,6 +3301,20 @@
       "value": "Online"
     }
   ],
+  "ch/W1r": [
+    {
+      "type": 0,
+      "value": "Make sure that your node has at least "
+    },
+    {
+      "type": 1,
+      "value": "VANGUARD_MIN_PEERS"
+    },
+    {
+      "type": 0,
+      "value": " peers."
+    }
+  ],
   "chw27s": [
     {
       "type": 0,
@@ -3397,6 +3363,16 @@
     {
       "type": 0,
       "value": "You must sign a transaction for every deposit you want to make."
+    }
+  ],
+  "dByl6E": [
+    {
+      "type": 0,
+      "value": "Follow the instructions presented on the docs page for "
+    },
+    {
+      "type": 1,
+      "value": "l15testNetworkName"
     }
   ],
   "dH5+MX": [
@@ -3491,6 +3467,12 @@
     {
       "type": 1,
       "value": "code3"
+    }
+  ],
+  "e8wCVF": [
+    {
+      "type": 0,
+      "value": "Now you should be able to use LUKSO CLI on your machine"
     }
   ],
   "eKEL/g": [
@@ -3665,6 +3647,12 @@
     {
       "type": 0,
       "value": "Become a L15 testnet validator and help secure the future of LUKSO."
+    }
+  ],
+  "gBe+wK": [
+    {
+      "type": 0,
+      "value": "Get LUKSO Clients"
     }
   ],
   "gFkou2": [
@@ -4721,6 +4709,12 @@
       "value": " when the time comes and no one can help you recover your mnemonic if you lose it."
     }
   ],
+  "s/HaQv": [
+    {
+      "type": 0,
+      "value": "Run the following command to install LUKSO CLI locally"
+    }
+  ],
   "s0FTco": [
     {
       "type": 0,
@@ -5111,6 +5105,12 @@
     {
       "type": 0,
       "value": "Run the following command:"
+    }
+  ],
+  "wmwEws": [
+    {
+      "type": 0,
+      "value": "LUKSO Clients"
     }
   ],
   "wqUcy/": [

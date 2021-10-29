@@ -60,7 +60,7 @@ const luksoClients: {
       imgUrl: GethCircle,
       language: 'Go',
     },
-  ])
+  ]),
 };
 
 const _SelectClientPage = ({
@@ -70,9 +70,9 @@ const _SelectClientPage = ({
   dispatchClientUpdate,
 }: Props): JSX.Element => {
   // set the default the eth version to 1 on initial render
-  const [luksoVersionStep, setLuksoVersionStep] = useState<
+  const [luksoVersionStep, setLuksoVersionStep] = useState<'Pandora'>(
     'Pandora'
-  >('Pandora');
+  );
 
   const { formatMessage } = useIntl();
 

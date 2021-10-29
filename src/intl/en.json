@@ -23,10 +23,6 @@
   "+ozGrs": {
     "message": "Polish"
   },
-  "+rEvxo": {
-    "description": "{lyxt} injects Pandora or Vanguard networks depending on step",
-    "message": "Choose {lyxt} client"
-  },
   "+s8Gac": {
     "message": "Connect {wallet} to {network}"
   },
@@ -42,9 +38,6 @@
   },
   "/5Hyyf": {
     "message": "Indonesian"
-  },
-  "/P8Fo+": {
-    "message": "Make sure that your node has at least {VANGUARD_MIN_PEERS} peers."
   },
   "/QPc9s": {
     "message": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
@@ -283,10 +276,6 @@
   },
   "5UH1sh": {
     "message": "Romanian"
-  },
-  "60BCbB": {
-    "description": "{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on",
-    "message": "Choose your {luksoVersionStep} client and set up a node"
   },
   "6CK2Nu": {
     "message": "Your wallet is on the wrong network. Switch to {network}"
@@ -602,9 +591,6 @@
   "G0aacl": {
     "message": "As a validator you are rewarded for proposing / attesting to blocks that are included in the chain."
   },
-  "G8tAKU": {
-    "message": "LUKSO Clients"
-  },
   "GBXzeJ": {
     "message": "Arguably the most impactful factor on rewards earned for validating transactions is the total amount of stake in the network. In other words, the total amount of validators. Depending on this figure the max annual return rate for a validator can be anywhere between 2 and 20%."
   },
@@ -623,11 +609,12 @@
   "GadkjP": {
     "message": "Documentation on running Lighthouse"
   },
+  "Gb97QO": {
+    "description": "{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on",
+    "message": "Get LUKSO CLI and start with LUKSO Clients"
+  },
   "Gbo300": {
     "message": "Generate keys"
-  },
-  "GsBRWL": {
-    "message": "Languages"
   },
   "Gsixxx": {
     "message": "Early adoption risks"
@@ -735,6 +722,9 @@
   },
   "JsTbFu": {
     "message": "Slashed"
+  },
+  "K0VcJk": {
+    "message": "To import validator keys you must generate them first. This is required to start validator client properly. Please go to the next step and see how to achieve this."
   },
   "K6+jQ3": {
     "message": "Geth installation documentation"
@@ -877,9 +867,6 @@
   },
   "ODMa6j": {
     "message": "Run the following command to generate the keys"
-  },
-  "OF9qv9": {
-    "message": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client in parallel to your Vanguard client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
   },
   "OIvXIO": {
     "message": "Complete remaining {remainingTxCount} deposits"
@@ -1288,6 +1275,9 @@
   "ccU6l/": {
     "message": "Online"
   },
+  "ch/W1r": {
+    "message": "Make sure that your node has at least {VANGUARD_MIN_PEERS} peers."
+  },
   "chw27s": {
     "message": "More on PegaSys Teku"
   },
@@ -1309,6 +1299,9 @@
   },
   "d5KEM8": {
     "message": "You must sign a transaction for every deposit you want to make."
+  },
+  "dByl6E": {
+    "message": "Follow the instructions presented on the docs page for {l15testNetworkName}"
   },
   "dH5+MX": {
     "message": "Bad behaviour"
@@ -1344,6 +1337,9 @@
   "e4f94H": {
     "description": "{code} values are terminal outputs and commands.",
     "message": "If {code1} is not {code2}, run: {code3}"
+  },
+  "e8wCVF": {
+    "message": "Now you should be able to use LUKSO CLI on your machine"
   },
   "eKEL/g": {
     "message": "Pending"
@@ -1409,6 +1405,10 @@
   },
   "g6zrLr": {
     "message": "Become a L15 testnet validator and help secure the future of LUKSO."
+  },
+  "gBe+wK": {
+    "description": "{lyxt} injects Pandora or Vanguard networks depending on step",
+    "message": "Get LUKSO Clients"
   },
   "gFkou2": {
     "message": "Your wallet is on the wrong network. To continue, connect to the {networkName} network."
@@ -1825,6 +1825,9 @@
   "rxttyC": {
     "message": "Your mnemonic is the backup for your signing keys and will be the ONLY way to withdraw your {TICKER_NAME} when the time comes and no one can help you recover your mnemonic if you lose it."
   },
+  "s/HaQv": {
+    "message": "Run the following command to install LUKSO CLI locally"
+  },
   "s0FTco": {
     "description": "APR refers to Annual Percentage Rate",
     "message": "APR"
@@ -1971,6 +1974,9 @@
   },
   "wm04oC": {
     "message": "Run the following command:"
+  },
+  "wmwEws": {
+    "message": "LUKSO Clients"
   },
   "wqUcy/": {
     "message": "Early adopter risks"

@@ -14,7 +14,7 @@ type Props = {
 };
 
 const SelectClientButtons = ({
-  luksoVersionStep,
+  // luksoVersionStep,
   currentClient,
   handleSubmit,
   updateStep,

@@ -106,10 +106,6 @@ const _SummaryPage = ({
   }
 
   if (!account || !connector) return <WalletDisconnected />;
-
-  console.log('DEBUG::: ', chainId);
-  console.log('DEBUG::: ', NETWORK_ID);
-
   if (chainId !== NETWORK_ID) return <WrongNetwork />;
 
   return (
