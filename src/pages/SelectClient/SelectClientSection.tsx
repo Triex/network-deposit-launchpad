@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box } from 'grommet';
 import { FormattedMessage } from 'react-intl';
 import { Paper } from '../../components/Paper';
 import { Heading } from '../../components/Heading';
-import { ImageSelectionBox } from '../../components/ImageSelectionBox';
 import { Client } from './index';
 import { ClientId } from '../../store/actions/clientActions';
 import {Alert} from "../../components/Alert";
@@ -31,9 +29,6 @@ type Props = {
 
 const SelectClientSection = ({
   title,
-  clients,
-  currentClient,
-  setCurrentClient,
   luksoVersionStep,
 }: Props): JSX.Element => (
   <Paper>

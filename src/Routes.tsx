@@ -18,7 +18,6 @@ import {
   Phishing,
   Checklist,
   TermsOfService,
-  Languages,
   TopUpPage,
 } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
