@@ -6,7 +6,7 @@ import { Link } from '../../components/Link';
 import { PageTemplate } from '../../components/PageTemplate';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
-import { PRICE_PER_VALIDATOR } from '../../utils/envVars';
+import { PRICE_PER_VALIDATOR, TICKER_NAME } from '../../utils/envVars';
 
 const FAQStyles = styled.div`
   section {
@@ -116,14 +116,18 @@ export const FAQ = () => {
           </section>
           <section>
             <Heading level={4}>
-              <FormattedMessage defaultMessage="How much LYX do I need to stake to become a validator?" />
+              <FormattedMessage
+                defaultMessage="How much {tickerName} do I need to stake to become a validator?"
+                values={{ tickerName: TICKER_NAME }}
+              />
             </Heading>
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="Before you can run a validator and start to secure the network, you
-                  need to stake {pricePerValidator} LYX. This forms your initial balance."
+                  need to stake {pricePerValidator} {tickerName}. This forms your initial balance."
                 values={{
                   pricePerValidator: <strong>{PRICE_PER_VALIDATOR}</strong>,
+                  tickerName: TICKER_NAME,
                 }}
                 description="{pricePerValidator} represents deposit amount styled in bold"
               />
@@ -132,23 +136,25 @@ export const FAQ = () => {
           <section>
             <Heading level={4}>
               <FormattedMessage
-                defaultMessage="Is there any advantage to having more than {pricePerValidator} LYX at stake?"
+                defaultMessage="Is there any advantage to having more than {pricePerValidator} {tickerName} at stake?"
                 values={{
                   pricePerValidator: PRICE_PER_VALIDATOR,
+                  tickerName: TICKER_NAME,
                 }}
               />
             </Heading>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="No. There is no advantage to having more than {pricePerValidator} LYX staked."
+                defaultMessage="No. There is no advantage to having more than {pricePerValidator} {tickerName}  staked."
                 values={{
                   pricePerValidator: PRICE_PER_VALIDATOR,
+                  tickerName: TICKER_NAME,
                 }}
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="Limiting the maximum stake to {pricePerValidator} LYX encourages decentralization of power as it
+                defaultMessage="Limiting the maximum stake to {pricePerValidator} {tickerName} encourages decentralization of power as it
                   prevents any single validator from having an excessively large vote on the state of the chain."
                 values={{
                   pricePerValidator: PRICE_PER_VALIDATOR,
@@ -167,10 +173,13 @@ export const FAQ = () => {
             </Heading>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="If you go offline for a number of days under normal conditions you will lose an amount of LYX
-                  roughly equivalent to the amount of LYX you would have gained in
-                  that period. In other words, if you stood to earn ≈0.01 LYX, you
-                  would instead be penalised ≈0.01 LYX."
+                defaultMessage="If you go offline for a number of days under normal conditions you will lose an amount of {tickerName}
+                  roughly equivalent to the amount of {tickerName} you would have gained in
+                  that period. In other words, if you stood to earn ≈0.01 {tickerName}, you
+                  would instead be penalised ≈0.01 {tickerName}."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
           </section>
@@ -180,22 +189,31 @@ export const FAQ = () => {
             </Heading>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="The answer to this question very much depends on how much LYX you
+                defaultMessage="The answer to this question very much depends on how much {tickerName} you
                   have at your disposal."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="You should certainly top up if your balance is close to 16 LYX.
+                defaultMessage="You should certainly top up if your balance is close to 16 {tickerName}.
                   This is to ensure you don’t get kicked out of the validator
                   set (which automatically happens if your balance falls below 16
-                  LYX)."
+                  {tickerName})."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="At the other end of the spectrum, if your balance is closer to 31
-                  LYX, it’s probably not worth adding the extra LYX required to get back to 32."
+                  {tickerName}, it’s probably not worth adding the extra {tickerName} required to get back to 32."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
           </section>
@@ -388,24 +406,33 @@ export const FAQ = () => {
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="Block rewards are calculated using a sliding scale based on the
-                  total amount of LYXt staked on the network."
+                  total amount of {tickerName} staked on the network."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="In other words: if the total amount of LYXt staked is low, the
+                defaultMessage="In other words: if the total amount of {tickerName} staked is low, the
                   reward (interest rate) is high, but as the total stake rises, the
                   reward (interest) paid out to each validator starts to fall."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="Why a sliding scale? While we won’t get into the gory details
                   here, the basic intution is that there needs to be a minimum
-                  number of validators (and hence a minimum amount of LYXt staked)
+                  number of validators (and hence a minimum amount of {tickerName} staked)
                   for the network to function properly. So, to incentivize more
                   validators to join, it’s important that the interest rate remains
                   high until this minimum number is reached."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
             <Text className="mt10">
@@ -485,9 +512,12 @@ export const FAQ = () => {
               <Text className="mt10">
                 <FormattedMessage
                   defaultMessage="Note that in the second (unlikely) scenario, you stand to
-                    progressively lose up to 50% (16 LYXt) of your stake over 21
+                    progressively lose up to 50% (16 {tickerName}) of your stake over 21
                     days. After 21 days you are ejected out of the validator pool.
                     This ensures that blocks start finalizing again at some point."
+                  values={{
+                    tickerName: TICKER_NAME,
+                  }}
                 />
               </Text>
             </BlockQuote>
@@ -531,8 +561,9 @@ export const FAQ = () => {
             </Text>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="The minimum amount that can be slashed is 1 LYXt, but {strongText}."
+                defaultMessage="The minimum amount that can be slashed is 1 {tickerName}, but {strongText}."
                 values={{
+                  tickerName: TICKER_NAME,
                   strongText: (
                     <strong>
                       {formatMessage({
@@ -651,7 +682,7 @@ export const FAQ = () => {
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="Over time, your balance will decrease as you are
-                  punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be
+                  punished for not participating in the consensus process. When your balance reaches 16 {tickerName}, you will be
                   automatically exited from the validator pool."
               />
             </Text>
@@ -685,8 +716,11 @@ export const FAQ = () => {
             </BlockQuote>
             <Text className="mt10">
               <FormattedMessage
-                defaultMessage="Your 16 LYXt can then be withdrawn – with your withdrawal key – after
+                defaultMessage="Your 16 {tickerName} can then be withdrawn – with your withdrawal key – after
                   a delay of around a day."
+                values={{
+                  tickerName: TICKER_NAME,
+                }}
               />
             </Text>
             <BlockQuote>

@@ -8,9 +8,6 @@
   "+V+ZX+": {
     "message": "Validator uptime"
   },
-  "+VetqJ": {
-    "message": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 LYXt) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
-  },
   "+e8bO+": {
     "message": "I understand that I will not be able to withdraw my funds if I lose my mnemonic phrase."
   },
@@ -101,8 +98,14 @@
   "07C4IQ": {
     "message": "Section 3 - After depositing"
   },
+  "0B58Ai": {
+    "message": "You should certainly top up if your balance is close to 16 {tickerName}. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 {tickerName})."
+  },
   "0GSZcr": {
     "message": "Staked"
+  },
+  "0PFj21": {
+    "message": "How much {tickerName} do I need to stake to become a validator?"
   },
   "0PlVao": {
     "message": "More on slashing prevention"
@@ -167,6 +170,9 @@
   "1lwIVT": {
     "message": "LUKSO validator checklist"
   },
+  "1vPxU/": {
+    "message": "Is there any advantage to having more than {pricePerValidator} {tickerName} at stake?"
+  },
   "22EpKq": {
     "description": "{JSON} is filetype extension",
     "message": "This isn't a valid {JSON} file"
@@ -204,6 +210,9 @@
   },
   "3H3ygi": {
     "message": "No validators found for your connected wallet"
+  },
+  "3JL9gM": {
+    "message": "If you go offline for a number of days under normal conditions you will lose an amount of {tickerName} roughly equivalent to the amount of {tickerName} you would have gained in that period. In other words, if you stood to earn ≈0.01 {tickerName}, you would instead be penalised ≈0.01 {tickerName}."
   },
   "3NHygY": {
     "message": "Testing on Goerli"
@@ -254,6 +263,9 @@
   "4l6vz1": {
     "message": "Copy"
   },
+  "4vBOdA": {
+    "message": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 {tickerName}, you will be automatically exited from the validator pool."
+  },
   "52qGy6": {
     "message": "CURRENT"
   },
@@ -290,9 +302,6 @@
   },
   "6nh4de": {
     "message": "You're joining a network in its early stages. As with any new piece of software, there is the potential for software bugs. While unlikely, potential bugs may result in slashing."
-  },
-  "6pEeOG": {
-    "message": "Limiting the maximum stake to {pricePerValidator} LYX encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
   },
   "6zye8g": {
     "message": "An implementation of the Eth2 protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
@@ -383,11 +392,11 @@
   "96pen8": {
     "message": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
   },
-  "9BcSOf": {
-    "message": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of LYXt staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
-  },
   "9JktQX": {
     "message": "There is no easy answer to this question as there are many factors that go into this calculation."
+  },
+  "9Mi2gn": {
+    "message": "Limiting the maximum stake to {pricePerValidator} {tickerName} encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
   },
   "9VZ9oy": {
     "message": "How are validators incentivized to stay active and honest?"
@@ -416,9 +425,6 @@
   },
   "ALg2MW": {
     "message": "Check the deposit contract on your favorite block explorer:"
-  },
-  "AMajpT": {
-    "message": "Block rewards are calculated using a sliding scale based on the total amount of LYXt staked on the network."
   },
   "AYKxmf": {
     "message": "Connect your hardware wallet to Metamask"
@@ -478,9 +484,6 @@
   "BoEpk9": {
     "message": "Introduction"
   },
-  "BzjsPJ": {
-    "message": "The answer to this question very much depends on how much LYX you have at your disposal."
-  },
   "C9dXhY": {
     "message": "The L15 clients"
   },
@@ -522,9 +525,6 @@
   "DNRQa7": {
     "message": "I have read and agree to the Launchpad terms of service."
   },
-  "DU0vnE": {
-    "message": "Is there any advantage to having more than {pricePerValidator} LYX at stake?"
-  },
   "DUnyVI": {
     "message": "Ideally your internet connection should be reliable and as close to 24/7 as possible without interruption."
   },
@@ -537,9 +537,6 @@
   },
   "DsJ/Mk": {
     "message": "Don’t just trust the contract address listed on this website."
-  },
-  "DzfXiX": {
-    "message": "If you go offline for a number of days under normal conditions you will lose an amount of LYX roughly equivalent to the amount of LYX you would have gained in that period. In other words, if you stood to earn ≈0.01 LYX, you would instead be penalised ≈0.01 LYX."
   },
   "E/P9zo": {
     "message": "3. Practice on a testnet"
@@ -652,6 +649,9 @@
   },
   "H5+NAX": {
     "message": "Balance"
+  },
+  "HfPABd": {
+    "message": "At the other end of the spectrum, if your balance is closer to 31 {tickerName}, it’s probably not worth adding the extra {tickerName} required to get back to 32."
   },
   "HgtwUH": {
     "description": "{variables} are Beacon Chain block explorers, with links to each (do not translate names)",
@@ -783,9 +783,6 @@
   "LWIlKS": {
     "message": "You can also confirm the deposits individually below..."
   },
-  "LWtPqJ": {
-    "message": "You should certainly top up if your balance is close to 16 LYX. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYX)."
-  },
   "LeHQQm": {
     "message": "Validator FAQs"
   },
@@ -811,9 +808,6 @@
   },
   "MIsmjW": {
     "message": "Connect new wallet"
-  },
-  "MJ7IJv": {
-    "message": "How much LYX do I need to stake to become a validator?"
   },
   "MQTBvH": {
     "message": "Protect yourself against double deposits"
@@ -974,6 +968,10 @@
   "R8eePn": {
     "message": "If you're slashed you're prevented from participating in the protocol further and are forcibly exited."
   },
+  "RBJI+G": {
+    "description": "{pricePerValidator} represents deposit amount styled in bold",
+    "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} {tickerName}. This forms your initial balance."
+  },
   "RCGrka": {
     "message": "only way"
   },
@@ -1061,6 +1059,9 @@
   "U7AOxj": {
     "message": "greater than 50%"
   },
+  "UEFdq7": {
+    "message": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of {tickerName} staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
+  },
   "UHbYCa": {
     "message": "Your validator has its own balance – with the initial balance outlined in the deposit contract. Your rewards and penalties are reflected in your validator's balance over time."
   },
@@ -1071,9 +1072,8 @@
     "description": "{etherscan} is a share link to this transaction on etherscan.io, labeled 'Etherscan'",
     "message": "Check {etherscan} for more details"
   },
-  "UYxJLB": {
-    "description": "{strongText} is a warning, bolded for emphasis",
-    "message": "The minimum amount that can be slashed is 1 LYXt, but {strongText}."
+  "UT5+iA": {
+    "message": "Block rewards are calculated using a sliding scale based on the total amount of {tickerName} staked on the network."
   },
   "Utck3E": {
     "message": "Language support"
@@ -1162,10 +1162,6 @@
     "description": "{filesPattern} refers to a computer command which will find {keyFile} and\n                {passwordFile} - both files within a computer.",
     "message": "{filesPattern} will expect that the {keyFile} exists, and the file containing the password for it is {passwordFile}."
   },
-  "XWOMxM": {
-    "description": "{pricePerValidator} represents deposit amount styled in bold",
-    "message": "Before you can run a validator and start to secure the network, you need to stake {pricePerValidator} LYX. This forms your initial balance."
-  },
   "Y47aYU": {
     "message": "Top up"
   },
@@ -1190,9 +1186,6 @@
   "YPsbIU": {
     "description": "{grafana} is 'Grafana' service, with link to its homepage (do not translate name)",
     "message": "I've set up my {grafana} service."
-  },
-  "YbS71f": {
-    "message": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
   },
   "YkznEp": {
     "message": "If you lose your withdrawal key, there is no way to access to the funds held by your validator."
@@ -1253,8 +1246,8 @@
   "b4csjU": {
     "message": "However, bear in mind that for the foreseeable future, once you’ve exited, there’s no going back."
   },
-  "bHjV4p": {
-    "message": "No. There is no advantage to having more than {pricePerValidator} LYX staked."
+  "b5IKKU": {
+    "message": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 {tickerName}) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
   },
   "bR1R2M": {
     "message": "Use this as a reference during client setup to check off important steps."
@@ -1432,9 +1425,6 @@
   "gjmx29": {
     "message": "YES"
   },
-  "gpwdQO": {
-    "message": "At the other end of the spectrum, if your balance is closer to 31 LYX, it’s probably not worth adding the extra LYX required to get back to 32."
-  },
   "gsuLMm": {
     "message": "Greek"
   },
@@ -1453,6 +1443,10 @@
   },
   "h8MTUo": {
     "message": "Your stake"
+  },
+  "hDvxS4": {
+    "description": "{strongText} is a warning, bolded for emphasis",
+    "message": "The minimum amount that can be slashed is 1 {tickerName}, but {strongText}."
   },
   "hFzE1M": {
     "message": "Rewards are given for actions that help the network reach consensus."
@@ -1497,6 +1491,9 @@
   },
   "iRQxxL": {
     "message": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
+  },
+  "iTFh8s": {
+    "message": "Your 16 {tickerName} can then be withdrawn – with your withdrawal key – after a delay of around a day."
   },
   "idDbou": {
     "message": "Thinking about staking?"
@@ -1671,6 +1668,9 @@
   "nGXGJr": {
     "message": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, when validating on Mainnet you will need to store your mnemonic safely in order to be able to withdraw."
   },
+  "nGqS/3": {
+    "message": "In other words: if the total amount of {tickerName} staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
+  },
   "nIb6XF": {
     "description": "{slashings} shows 'slashings' in bold for emphasis",
     "message": "And major penalities – or {slashings} – are given for malicious actions."
@@ -1704,9 +1704,6 @@
   },
   "on8WXn": {
     "message": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
-  },
-  "opSPEl": {
-    "message": "In other words: if the total amount of LYXt staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
   },
   "orM+1T": {
     "message": "Teku will also load validators from keystores (and passwords) from the paths found in the validator keys environment variable."
@@ -1770,9 +1767,6 @@
   "qQ+Xla": {
     "message": "Korean"
   },
-  "qROJ5v": {
-    "message": "Your 16 LYXt can then be withdrawn – with your withdrawal key – after a delay of around a day."
-  },
   "qZ59xY": {
     "message": "All validators"
   },
@@ -1834,6 +1828,9 @@
   "s0FTco": {
     "description": "APR refers to Annual Percentage Rate",
     "message": "APR"
+  },
+  "s1ObKz": {
+    "message": "No. There is no advantage to having more than {pricePerValidator} {tickerName} staked."
   },
   "s6gImC": {
     "message": "Teku can also be configured via a YAML file which is passed in via a few different ways."
@@ -1993,6 +1990,9 @@
   },
   "xP6BKs": {
     "message": "staker checklist"
+  },
+  "xPYfCA": {
+    "message": "The answer to this question very much depends on how much {tickerName} you have at your disposal."
   },
   "xQrU13": {
     "message": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."

@@ -21,12 +21,6 @@
       "value": "Validator uptime"
     }
   ],
-  "+VetqJ": [
-    {
-      "type": 0,
-      "value": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 LYXt) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
-    }
-  ],
   "+e8bO+": [
     {
       "type": 0,
@@ -305,10 +299,46 @@
       "value": "Section 3 - After depositing"
     }
   ],
+  "0B58Ai": [
+    {
+      "type": 0,
+      "value": "You should certainly top up if your balance is close to 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ". This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ")."
+    }
+  ],
   "0GSZcr": [
     {
       "type": 0,
       "value": "Staked"
+    }
+  ],
+  "0PFj21": [
+    {
+      "type": 0,
+      "value": "How much "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " do I need to stake to become a validator?"
     }
   ],
   "0PlVao": [
@@ -461,6 +491,28 @@
       "value": "LUKSO validator checklist"
     }
   ],
+  "1vPxU/": [
+    {
+      "type": 0,
+      "value": "Is there any advantage to having more than "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " at stake?"
+    }
+  ],
   "22EpKq": [
     {
       "type": 0,
@@ -589,6 +641,44 @@
       "value": "No validators found for your connected wallet"
     }
   ],
+  "3JL9gM": [
+    {
+      "type": 0,
+      "value": "If you go offline for a number of days under normal conditions you will lose an amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " roughly equivalent to the amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " you would have gained in that period. In other words, if you stood to earn ≈0.01 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", you would instead be penalised ≈0.01 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
   "3NHygY": [
     {
       "type": 0,
@@ -713,6 +803,20 @@
       "value": "Copy"
     }
   ],
+  "4vBOdA": [
+    {
+      "type": 0,
+      "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", you will be automatically exited from the validator pool."
+    }
+  ],
   "52qGy6": [
     {
       "type": 0,
@@ -795,20 +899,6 @@
     {
       "type": 0,
       "value": "You're joining a network in its early stages. As with any new piece of software, there is the potential for software bugs. While unlikely, potential bugs may result in slashing."
-    }
-  ],
-  "6pEeOG": [
-    {
-      "type": 0,
-      "value": "Limiting the maximum stake to "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYX encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
     }
   ],
   "6zye8g": [
@@ -1005,16 +1095,32 @@
       "value": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
     }
   ],
-  "9BcSOf": [
-    {
-      "type": 0,
-      "value": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of LYXt staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
-    }
-  ],
   "9JktQX": [
     {
       "type": 0,
       "value": "There is no easy answer to this question as there are many factors that go into this calculation."
+    }
+  ],
+  "9Mi2gn": [
+    {
+      "type": 0,
+      "value": "Limiting the maximum stake to "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
     }
   ],
   "9VZ9oy": [
@@ -1089,12 +1195,6 @@
     {
       "type": 0,
       "value": "Check the deposit contract on your favorite block explorer:"
-    }
-  ],
-  "AMajpT": [
-    {
-      "type": 0,
-      "value": "Block rewards are calculated using a sliding scale based on the total amount of LYXt staked on the network."
     }
   ],
   "AYKxmf": [
@@ -1227,12 +1327,6 @@
       "value": "Introduction"
     }
   ],
-  "BzjsPJ": [
-    {
-      "type": 0,
-      "value": "The answer to this question very much depends on how much LYX you have at your disposal."
-    }
-  ],
   "C9dXhY": [
     {
       "type": 0,
@@ -1319,20 +1413,6 @@
       "value": "I have read and agree to the Launchpad terms of service."
     }
   ],
-  "DU0vnE": [
-    {
-      "type": 0,
-      "value": "Is there any advantage to having more than "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYX at stake?"
-    }
-  ],
   "DUnyVI": [
     {
       "type": 0,
@@ -1371,12 +1451,6 @@
     {
       "type": 0,
       "value": "Don’t just trust the contract address listed on this website."
-    }
-  ],
-  "DzfXiX": [
-    {
-      "type": 0,
-      "value": "If you go offline for a number of days under normal conditions you will lose an amount of LYX roughly equivalent to the amount of LYX you would have gained in that period. In other words, if you stood to earn ≈0.01 LYX, you would instead be penalised ≈0.01 LYX."
     }
   ],
   "E/P9zo": [
@@ -1599,6 +1673,28 @@
     {
       "type": 0,
       "value": "Balance"
+    }
+  ],
+  "HfPABd": [
+    {
+      "type": 0,
+      "value": "At the other end of the spectrum, if your balance is closer to 31 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", it’s probably not worth adding the extra "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " required to get back to 32."
     }
   ],
   "HgtwUH": [
@@ -1943,12 +2039,6 @@
       "value": "You can also confirm the deposits individually below..."
     }
   ],
-  "LWtPqJ": [
-    {
-      "type": 0,
-      "value": "You should certainly top up if your balance is close to 16 LYX. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYX)."
-    }
-  ],
   "LeHQQm": [
     {
       "type": 0,
@@ -2023,12 +2113,6 @@
     {
       "type": 0,
       "value": "Connect new wallet"
-    }
-  ],
-  "MJ7IJv": [
-    {
-      "type": 0,
-      "value": "How much LYX do I need to stake to become a validator?"
     }
   ],
   "MQTBvH": [
@@ -2453,6 +2537,28 @@
       "value": "If you're slashed you're prevented from participating in the protocol further and are forcibly exited."
     }
   ],
+  "RBJI+G": [
+    {
+      "type": 0,
+      "value": "Before you can run a validator and start to secure the network, you need to stake "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ". This forms your initial balance."
+    }
+  ],
   "RCGrka": [
     {
       "type": 0,
@@ -2635,6 +2741,20 @@
       "value": "greater than 50%"
     }
   ],
+  "UEFdq7": [
+    {
+      "type": 0,
+      "value": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
+    }
+  ],
   "UHbYCa": [
     {
       "type": 0,
@@ -2661,18 +2781,18 @@
       "value": " for more details"
     }
   ],
-  "UYxJLB": [
+  "UT5+iA": [
     {
       "type": 0,
-      "value": "The minimum amount that can be slashed is 1 LYXt, but "
+      "value": "Block rewards are calculated using a sliding scale based on the total amount of "
     },
     {
       "type": 1,
-      "value": "strongText"
+      "value": "tickerName"
     },
     {
       "type": 0,
-      "value": "."
+      "value": " staked on the network."
     }
   ],
   "Utck3E": [
@@ -2923,20 +3043,6 @@
       "value": "."
     }
   ],
-  "XWOMxM": [
-    {
-      "type": 0,
-      "value": "Before you can run a validator and start to secure the network, you need to stake "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYX. This forms your initial balance."
-    }
-  ],
   "Y47aYU": [
     {
       "type": 0,
@@ -2991,12 +3097,6 @@
     {
       "type": 0,
       "value": " service."
-    }
-  ],
-  "YbS71f": [
-    {
-      "type": 0,
-      "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
     }
   ],
   "YkznEp": [
@@ -3153,18 +3253,18 @@
       "value": "However, bear in mind that for the foreseeable future, once you’ve exited, there’s no going back."
     }
   ],
-  "bHjV4p": [
+  "b5IKKU": [
     {
       "type": 0,
-      "value": "No. There is no advantage to having more than "
+      "value": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 "
     },
     {
       "type": 1,
-      "value": "pricePerValidator"
+      "value": "tickerName"
     },
     {
       "type": 0,
-      "value": " LYX staked."
+      "value": ") of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
     }
   ],
   "bR1R2M": [
@@ -3605,12 +3705,6 @@
       "value": "YES"
     }
   ],
-  "gpwdQO": [
-    {
-      "type": 0,
-      "value": "At the other end of the spectrum, if your balance is closer to 31 LYX, it’s probably not worth adding the extra LYX required to get back to 32."
-    }
-  ],
   "gsuLMm": [
     {
       "type": 0,
@@ -3669,6 +3763,28 @@
     {
       "type": 0,
       "value": "Your stake"
+    }
+  ],
+  "hDvxS4": [
+    {
+      "type": 0,
+      "value": "The minimum amount that can be slashed is 1 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", but "
+    },
+    {
+      "type": 1,
+      "value": "strongText"
+    },
+    {
+      "type": 0,
+      "value": "."
     }
   ],
   "hFzE1M": [
@@ -3765,6 +3881,20 @@
     {
       "type": 0,
       "value": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
+    }
+  ],
+  "iTFh8s": [
+    {
+      "type": 0,
+      "value": "Your 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " can then be withdrawn – with your withdrawal key – after a delay of around a day."
     }
   ],
   "idDbou": [
@@ -4197,6 +4327,20 @@
       "value": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, when validating on Mainnet you will need to store your mnemonic safely in order to be able to withdraw."
     }
   ],
+  "nGqS/3": [
+    {
+      "type": 0,
+      "value": "In other words: if the total amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
+    }
+  ],
   "nIb6XF": [
     {
       "type": 0,
@@ -4277,12 +4421,6 @@
     {
       "type": 0,
       "value": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
-    }
-  ],
-  "opSPEl": [
-    {
-      "type": 0,
-      "value": "In other words: if the total amount of LYXt staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
     }
   ],
   "orM+1T": [
@@ -4423,12 +4561,6 @@
     {
       "type": 0,
       "value": "Korean"
-    }
-  ],
-  "qROJ5v": [
-    {
-      "type": 0,
-      "value": "Your 16 LYXt can then be withdrawn – with your withdrawal key – after a delay of around a day."
     }
   ],
   "qZ59xY": [
@@ -4593,6 +4725,28 @@
     {
       "type": 0,
       "value": "APR"
+    }
+  ],
+  "s1ObKz": [
+    {
+      "type": 0,
+      "value": "No. There is no advantage to having more than "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " staked."
     }
   ],
   "s6gImC": [
@@ -4993,6 +5147,20 @@
     {
       "type": 0,
       "value": "staker checklist"
+    }
+  ],
+  "xPYfCA": [
+    {
+      "type": 0,
+      "value": "The answer to this question very much depends on how much "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " you have at your disposal."
     }
   ],
   "xQrU13": [
