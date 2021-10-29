@@ -7,7 +7,6 @@ import { CheckBox } from 'grommet';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { WorkflowPageTemplate } from '../../components/WorkflowPage/WorkflowPageTemplate';
 import { Paper } from '../../components/Paper';
-import { OperatingSystemButtons } from './OperatingSystemButtons';
 import { Instructions } from './Instructions';
 import { routeToCorrectWorkflowStep } from '../../utils/RouteToCorrectWorkflowStep';
 import { StoreState } from '../../store/reducers';
@@ -71,9 +70,7 @@ const _GenerateKeysPage = ({
     mnemonicAcknowledgementChecked,
     setMnemonicAcknowledgementChecked,
   ] = useState<boolean>(workflow > WorkflowStep.GENERATE_KEY_PAIRS);
-  const [chosenOs, setChosenOs] = useState<operatingSystem>(
-    operatingSystem.LINUX
-  );
+  const [chosenOs] = useState<operatingSystem>(operatingSystem.LINUX);
 
   const onCheckboxClick = (e: any) => {
     setMnemonicAcknowledgementChecked(e.target.checked);
@@ -118,25 +115,12 @@ const _GenerateKeysPage = ({
           </div>
         </div>
       </Paper>
-      <Paper className="mt20">
-        <Heading level={2} size="small" color="blueMedium">
-          <FormattedMessage defaultMessage="What is your current operating system?" />
-        </Heading>
-        <Text className="mt20 mb40">
-          <FormattedMessage
-            defaultMessage="Choose the OS of the computer you're currently using. This will be the
-              computer you use to generate your keys. It doesn't need to be the OS
-              you want to use for your node."
-          />
-        </Text>
-        <OperatingSystemButtons chosenOs={chosenOs} setChosenOs={setChosenOs} />
-      </Paper>
 
       <Instructions validatorCount={validatorCount} os={osMapping[chosenOs]} />
 
       <Paper className="mt20">
         <Heading level={2} size="small" color="blueMedium">
-          <FormattedMessage defaultMessage="Save the key files and get the validator file ready" />
+          <FormattedMessage defaultMessage="Store the key files safely" />
         </Heading>
         <Text className="mt20">
           <FormattedMessage

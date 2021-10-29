@@ -2,9 +2,6 @@
   "+Cieba": {
     "message": "{withdrawalCredentials} is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
   },
-  "+L0IkF": {
-    "message": "Step 2: Generate deposit keys using the Ethereum Foundation deposit tool"
-  },
   "+UUcBt": {
     "message": "Choose a language"
   },
@@ -52,9 +49,6 @@
   "/QPc9s": {
     "message": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
   },
-  "/SbhtD": {
-    "message": "You can also use {homebrew} to install pip3. For the most-up-to-date instructions on installing pip3, and for a direct download link, reference the {docs}"
-  },
   "/U09hN": {
     "message": "To avoid exposing your validator identity to the network, you can use a trustworthy VPN to help reduce the risk of revealing your IP address."
   },
@@ -66,6 +60,9 @@
   },
   "/WenEu": {
     "message": "You are responsible for the transaction. Fraudulent websites might try and lure you into sending the {pricePerValidator} to them, instead of the official deposit contract. Make sure that the address you are sending the transaction to is the correct address."
+  },
+  "/a5KPu": {
+    "message": "Run the following command to import the keys"
   },
   "/jJLYy": {
     "message": "Transactions"
@@ -121,9 +118,6 @@
   },
   "0i4cCJ": {
     "message": "Confirm deposits ({depositKeys})"
-  },
-  "0lHkrT": {
-    "message": "Second, install the dependency packages:"
   },
   "0oNdmk": {
     "message": "Validators FAQ"
@@ -202,9 +196,6 @@
   "32rBNK": {
     "message": "Terms of Service"
   },
-  "38VH2G": {
-    "message": "Install deposit-cli tool"
-  },
   "3CRtg8": {
     "message": "You do not have enough {eth} in this account for {numberOfValidators} {validator}"
   },
@@ -232,6 +223,9 @@
   "3UO4hS": {
     "message": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
   },
+  "3ePCvY": {
+    "message": "How to import validator keys"
+  },
   "3tR/V9": {
     "message": "Section 2 - During setup"
   },
@@ -244,6 +238,9 @@
   },
   "47svuN": {
     "message": "Installation"
+  },
+  "4C3+Cg": {
+    "message": "The first time you are asked for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
   },
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
@@ -315,6 +312,9 @@
   "7RVokJ": {
     "message": "More on the Vanguard Consensus Chain"
   },
+  "7UN/fz": {
+    "message": "The second time you are asked for a password, that will be the password that will protect your keys, you need to confirm it by typing it again, and you need to make sure that you store it safely, preferably offline / not on a computer."
+  },
   "7UOvbT": {
     "message": "Offline"
   },
@@ -355,14 +355,8 @@
   "8CD83F": {
     "message": "Once you're comfortable, you'll go through generating your keys and depositing your LYX."
   },
-  "8FmuYF": {
-    "message": "Install pip3"
-  },
   "8JtiQS": {
     "message": "Does the contract address listed on the website match?"
-  },
-  "8Rj/6A": {
-    "message": "Choose the OS of the computer you're currently using. This will be the computer you use to generate your keys. It doesn't need to be the OS you want to use for your node."
   },
   "8WtyrD": {
     "message": "Spanish"
@@ -385,9 +379,6 @@
   },
   "9/4mZe": {
     "message": "Validating involves two keys for security reasons. Your signing key must be available at all times. As such, it will need to be held online. Since anything online is vulnerable to being hacked, it’s not a good idea to use the same key for withdrawals."
-  },
-  "94dQms": {
-    "message": "For security, we recommend you disconnect from the internet to complete this step."
   },
   "96pen8": {
     "message": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
@@ -422,9 +413,6 @@
   "A6Oppp": {
     "message": "Prysm offers step-by-step guidelines to run their client after completing your deposit through the launchpad."
   },
-  "AC669U": {
-    "message": "If you need help, check out the Python documentation."
-  },
   "AIEf0K": {
     "description": "This phrase is a sentence ",
     "message": "LUKSO L15 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
@@ -446,10 +434,6 @@
   },
   "AbTYBZ": {
     "message": "Transfers between validators aren't possible yet. You will have to wait until after the Vanguard Consensus Engine mainnet is released before you can deposit, withdraw or transfer real tokens."
-  },
-  "Ad61gz": {
-    "description": "{url} is link to GitHub CLI release, made bold for emphasis",
-    "message": "Please make sure that you are downloading from the official Ethereum Foundation GitHub account by verifying the url: {url}"
   },
   "Affixg": {
     "message": "The deposit"
@@ -484,6 +468,9 @@
   },
   "Bf2QKg": {
     "message": "Validating is a long-term commitment"
+  },
+  "Bh1TUD": {
+    "message": "Your validator keystores should be available in the newly created 'validator_keys' directory."
   },
   "BiP9Gq": {
     "message": "More on the LUKSO vision"
@@ -557,22 +544,11 @@
   "DzfXiX": {
     "message": "If you go offline for a number of days under normal conditions you will lose an amount of LYX roughly equivalent to the amount of LYX you would have gained in that period. In other words, if you stood to earn ≈0.01 LYX, you would instead be penalised ≈0.01 LYX."
   },
-  "E+Y27g": {
-    "message": "You can check your Python version by typing {terminalCommand} in your terminal."
-  },
   "E/P9zo": {
     "message": "3. Practice on a testnet"
   },
-  "E1Mywn": {
-    "description": "this is used as a command line flag",
-    "message": "chain"
-  },
   "EFjTSf": {
     "message": "Minor penalties are given for inadvertant actions (or inactions) that hinder consensus."
-  },
-  "EIUapL": {
-    "description": "{deposit} = 'deposit' styled as code",
-    "message": "Use the terminal to move into the directory that contains the {deposit} executable"
   },
   "EOAJVt": {
     "message": "Today, you'll secure LUKSO's Vanguard Consensus Chain. It's a new and separate chain that uses a proof-of-stake consensus mechanism."
@@ -582,9 +558,6 @@
   },
   "EPlepr": {
     "message": "I've simulated power loss (server and internet) and automatic resumption."
-  },
-  "ETJ2T5": {
-    "message": "If you have questions about deposit-cli, please visit the GitHub repository."
   },
   "EThT2C": {
     "message": "5. Time to deposit"
@@ -627,9 +600,6 @@
   "FfLWt5": {
     "message": "An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems."
   },
-  "FgraU0": {
-    "message": "Step 1: Download the deposit command line interface app for your operating system"
-  },
   "FqgDIV": {
     "message": "Terms of service"
   },
@@ -641,9 +611,6 @@
   },
   "G0aacl": {
     "message": "As a validator you are rewarded for proposing / attesting to blocks that are included in the chain."
-  },
-  "G5IMoZ": {
-    "message": "Download master branch source code"
   },
   "G8tAKU": {
     "message": "Choose client"
@@ -725,9 +692,6 @@
   "IZFEUg": {
     "message": "Ready"
   },
-  "IdUtHu": {
-    "message": "Install virtualenv"
-  },
   "IhDJWs": {
     "description": "Plural form, for multiple remaining deposits",
     "message": "You have {remainingTxCount} outstanding deposits"
@@ -741,9 +705,6 @@
   "IwrKbS": {
     "description": "{impact} shows 'impact of effective balance' and links to article on 'Effective Balance'",
     "message": "It depends. In addition to the {impact} there are two important scenarios to be aware of:"
-  },
-  "J455S4": {
-    "message": "If you’re a git user, you can run {gitClone} to download the {master} branch."
   },
   "J5Lzz1": {
     "message": "Chinese (traditional)"
@@ -763,9 +724,6 @@
   "JPT/TK": {
     "message": "4. Avoid phishing"
   },
-  "JhUYU3": {
-    "message": "Download CLI app"
-  },
   "JpZRE1": {
     "message": "Can I withdraw my L15 LYXt to LYX or LYXe?"
   },
@@ -778,18 +736,12 @@
   "JsTbFu": {
     "message": "Slashed"
   },
-  "JtAiN/": {
-    "message": "What is your current operating system?"
-  },
   "K6+jQ3": {
     "message": "Geth installation documentation"
   },
   "KBSbmP": {
     "description": "{reloadYourWallet} is a link labeled 'reload your wallet'",
     "message": "You can {reloadYourWallet} to try again, or refresh the page. If issue persists, let us know on {github}."
-  },
-  "KBjoXt": {
-    "message": "Download and uncompress the master branch source code from GitHub."
   },
   "KC9jbz": {
     "message": "Hardware checklist"
@@ -814,9 +766,6 @@
   },
   "KvRSg5": {
     "message": "What exactly is slashing?"
-  },
-  "Kw+pTr": {
-    "message": "The python3 install process may differ depending on your linux build."
   },
   "KxUgHu": {
     "description": "{boldCaution} is states 'only stored on one validator machine', a bolded caution statement to users",
@@ -908,9 +857,6 @@
   "NSK+Li": {
     "message": "I've secured the root account."
   },
-  "NTWnJC": {
-    "message": "Download command line app"
-  },
   "NVljH4": {
     "message": "More on Prysmatic Labs"
   },
@@ -934,6 +880,9 @@
   },
   "O+3LJ1": {
     "message": "This validator's balance is at the effective maximum: {PRICE_PER_VALIDATOR} {TICKER_NAME}."
+  },
+  "ODMa6j": {
+    "message": "Run the following command to generate the keys"
   },
   "OF9qv9": {
     "message": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client in parallel to your Vanguard client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
@@ -988,9 +937,6 @@
   },
   "PurNgG": {
     "message": "Turkish"
-  },
-  "Px7wWb": {
-    "message": "pip documentation"
   },
   "Q+vr3v": {
     "message": "To become a validator on the L15 testnet, you need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
@@ -1055,9 +1001,6 @@
   "RrCui3": {
     "message": "Summary"
   },
-  "S0e/cN": {
-    "message": "How do you want to run the CLI?"
-  },
   "S943uU": {
     "message": "Double check the URL"
   },
@@ -1097,27 +1040,17 @@
   "Skc8c/": {
     "message": "I've imported my keystore(s) into my L15 validator client."
   },
-  "SqKNq2": {
-    "description": "{homebrew} = 'homebrew' and links to the homebrew package manager website documentation",
-    "message": "You can install python3 on your macOS device using {homebrew}"
-  },
   "Szwbym": {
     "message": "wrench"
   },
   "TMw9oz": {
     "message": "Visit this site on desktop to become a validator."
   },
-  "TfNuWP": {
-    "message": "virtualenv would help you to create an isolated Python environment for deposit-cli tool."
-  },
   "Tpe6yK": {
     "message": "rpc-http-enabled documentation"
   },
   "U/NPbq": {
     "message": "German"
-  },
-  "U0yY/A": {
-    "message": "View extensive client comparison"
   },
   "U3D1AX": {
     "message": "You can think of the deposit contract as a transfer of funds between LUKSO accounts and L15 validators."
@@ -1225,9 +1158,6 @@
   "X5KFEh": {
     "message": "That is not a valid deposit_data JSON file."
   },
-  "XBEBYR": {
-    "message": "More on installing pip"
-  },
   "XVehvN": {
     "description": "{filesPattern} refers to a computer command which will find {keyFile} and\n                {passwordFile} - both files within a computer.",
     "message": "{filesPattern} will expect that the {keyFile} exists, and the file containing the password for it is {passwordFile}."
@@ -1248,9 +1178,6 @@
   "Y9S0NE": {
     "message": "Send last deposit"
   },
-  "YBs4dR": {
-    "message": "The latest version of pip should have been installed with python 3.x.x. For more information about installing pip on Windows, visit {windowsInstallGuide}. Or you can install the pip package via {chocolatey}."
-  },
   "YFFqcn": {
     "message": "I understand proof-of-stake and why validators are needed."
   },
@@ -1266,9 +1193,6 @@
   },
   "YbS71f": {
     "message": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
-  },
-  "Yganfl": {
-    "message": "Type the following lines into the terminal window:"
   },
   "YkznEp": {
     "message": "If you lose your withdrawal key, there is no way to access to the funds held by your validator."
@@ -1308,9 +1232,6 @@
   "Zspg8H": {
     "message": "Section 1 - Before you start"
   },
-  "ZzTcj5": {
-    "message": "Download python3 and follow the installation instructions."
-  },
   "a+xjjV": {
     "message": "Become a validator with Prysm"
   },
@@ -1326,9 +1247,6 @@
   "ap/jla": {
     "message": "Phishing is a very real risk for LUKSO validators and, unfortunately, many people will lose funds due to these attacks."
   },
-  "azLmaD": {
-    "message": "Build deposit-cli from the Python source code"
-  },
   "b4Fwl0": {
     "message": "The L15 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted."
   },
@@ -1337,9 +1255,6 @@
   },
   "bHjV4p": {
     "message": "No. There is no advantage to having more than {pricePerValidator} LYX staked."
-  },
-  "bNFkSo": {
-    "message": "Now follow the instructions presented to you in the terminal window to generate your keys."
   },
   "bR1R2M": {
     "message": "Use this as a reference during client setup to check off important steps."
@@ -1362,9 +1277,6 @@
   "bt03u4": {
     "message": "L15 Clients: {clientName}"
   },
-  "bxU6sX": {
-    "message": "Python installation instructions"
-  },
   "c9DSZ1": {
     "message": "We strongly recommended you complete these steps on the current testnet before mainnet."
   },
@@ -1377,8 +1289,8 @@
   "cRzxes": {
     "message": "Current APR"
   },
-  "cav520": {
-    "message": "Download from GitHub"
+  "cZLHvd": {
+    "message": "Now follow the instructions presented to you in the terminal window."
   },
   "ccU6l/": {
     "message": "Online"
@@ -1498,9 +1410,6 @@
   "g0zIUd": {
     "message": "cannot withdraw"
   },
-  "g37XKP": {
-    "message": "More on virtualenv"
-  },
   "g6zrLr": {
     "message": "Become a L15 testnet validator and help secure the future of LUKSO."
   },
@@ -1509,9 +1418,6 @@
   },
   "gIauNz": {
     "message": "You should see that you have one keystore per validator. This keystore contains your signing key, encrypted with your password. You can use your mnemonic to generate your withdrawal key when you wish to withdraw."
-  },
-  "gQkd2y": {
-    "message": "Generate deposit keys using the Ethereum Foundation deposit tool"
   },
   "gVC0Wl": {
     "message": "It uses the assisted password in your secrets folder."
@@ -1587,13 +1493,6 @@
   },
   "iRQxxL": {
     "message": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
-  },
-  "iWg7mL": {
-    "description": "{flag} and {network} are terminal commands styled as code.",
-    "message": "Please make sure you have set {flag} for {network}, otherwise the deposit will be invalid."
-  },
-  "iZuIgB": {
-    "message": "Decompress the file you just downloaded"
   },
   "idDbou": {
     "message": "Thinking about staking?"
@@ -1710,19 +1609,8 @@
   "l5kq/q": {
     "message": "Confirm on-chain"
   },
-  "l6OJpv": {
-    "message": "First, create a venv virtualenv under repository directory:"
-  },
   "lD66ab": {
     "message": "Outstanding deposit"
-  },
-  "lLOZMD": {
-    "description": "{apt} and {yum} are both package manager names styled as code",
-    "message": "You can install pip using a Linux Package Manager like {apt} or {yum}."
-  },
-  "lQzdpT": {
-    "description": "this is used as a command line flag, short for \"number of validators\"",
-    "message": "num_validators"
   },
   "lR5uPQ": {
     "message": "I've installed and synced my Pandora node on {network} (do not wait on this as it can take several days)."
@@ -1894,8 +1782,9 @@
   "qgqVCE": {
     "message": "reconnect your wallet"
   },
-  "qkhah0": {
-    "message": "Save the key files and get the validator file ready"
+  "qtj6vU": {
+    "description": "{network} is either 'LUKSO Mainnet' or 'LUKSO L15 Testnet'",
+    "message": "Connect to {network}"
   },
   "qwh6gM": {
     "message": "I understand the early adopter and slashing risks."
@@ -1911,6 +1800,9 @@
   },
   "rNEdex": {
     "message": "you can think of a validator as a voter for new blocks"
+  },
+  "rPUs1H": {
+    "message": "How to generate validator keys"
   },
   "rTSJI9": {
     "message": "Try the testnet"
@@ -2061,8 +1953,8 @@
   "vyvUB5": {
     "message": "This JSON file isn't for the right network. Upload a file generated for your current network: {network}."
   },
-  "w6qYSU": {
-    "message": "Run the following command to launch the app"
+  "wCd7F/": {
+    "message": "Store the key files safely"
   },
   "wJ1PbL": {
     "description": "Indicates which operating system the instructions are for",
@@ -2076,10 +1968,6 @@
   },
   "wdb1NC": {
     "message": "More on proof of stake"
-  },
-  "wfSgCZ": {
-    "description": "{network} is either 'Ethereum mainnet' or 'Göerli testnet'",
-    "message": "Connect to {network}"
   },
   "wm04oC": {
     "message": "Run the following command:"
@@ -2105,9 +1993,6 @@
   },
   "xQrU13": {
     "message": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-  },
-  "xbet2w": {
-    "message": "Install python3.7+"
   },
   "xogY3N": {
     "message": "Besu is written in Java and released under the Apache 2.0 Licence."
@@ -2139,9 +2024,6 @@
   },
   "yjBvUO": {
     "message": "Nethermind is built on .NET Core. Extend it, customise it - the sky’s the limit.."
-  },
-  "z/ZhML": {
-    "message": "Make sure you have set {flag} for {network}, otherwise the deposit will be invalid."
   },
   "z63I56": {
     "message": "validator"

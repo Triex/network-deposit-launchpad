@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Box } from 'grommet';
 import { FormattedMessage } from 'react-intl';
-import { Link } from '../../components/Link';
 import { Paper } from '../../components/Paper';
 import { Heading } from '../../components/Heading';
 import { ImageSelectionBox } from '../../components/ImageSelectionBox';
@@ -15,15 +14,6 @@ const ClientOptionContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
-`;
-
-const ClientDescriptionContainer = styled.div`
-  width: 100%;
-  border-radius: 4px;
-  background: #fcfcfc;
-  border: 1px solid #ececec;
-  margin-top: 30px;
-  padding: 1rem 2rem;
 `;
 
 type Props = {
@@ -40,7 +30,6 @@ const SelectClientSection = ({
   clients,
   currentClient,
   setCurrentClient,
-  clientDetails,
   luksoVersionStep,
 }: Props): JSX.Element => (
   <Paper>
@@ -77,17 +66,6 @@ const SelectClientSection = ({
           );
         })}
       </ClientOptionContainer>
-      {luksoVersionStep === 'Pandora' && (
-        <Link
-          to="https://ethereum.org/en/developers/docs/nodes-and-clients/#clients"
-          primary
-        >
-          <FormattedMessage defaultMessage="View extensive client comparison" />
-        </Link>
-      )}
-      <ClientDescriptionContainer>
-        {clientDetails[currentClient]}
-      </ClientDescriptionContainer>
     </Box>
   </Paper>
 );

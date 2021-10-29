@@ -31,7 +31,6 @@ const supportedNetworks = [
 ];
 
 enum Testnet {
-  'Göerli',
   'l15-dev',
 }
 

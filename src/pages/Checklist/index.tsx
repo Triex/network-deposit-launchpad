@@ -651,8 +651,8 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                    values={{ VANGUARD_MIN_PEERS }}
-                    defaultMessage="Make sure that your node has more than {VANGUARD_MIN_PEERS} peers."
+                  values={{ VANGUARD_MIN_PEERS }}
+                  defaultMessage="Make sure that your node has more than {VANGUARD_MIN_PEERS} peers."
                 />
               </Text>
             </li>

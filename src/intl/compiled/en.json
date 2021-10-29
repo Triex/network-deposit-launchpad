@@ -9,12 +9,6 @@
       "value": " is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
     }
   ],
-  "+L0IkF": [
-    {
-      "type": 0,
-      "value": "Step 2: Generate deposit keys using the Ethereum Foundation deposit tool"
-    }
-  ],
   "+UUcBt": [
     {
       "type": 0,
@@ -141,24 +135,6 @@
       "value": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
     }
   ],
-  "/SbhtD": [
-    {
-      "type": 0,
-      "value": "You can also use "
-    },
-    {
-      "type": 1,
-      "value": "homebrew"
-    },
-    {
-      "type": 0,
-      "value": " to install pip3. For the most-up-to-date instructions on installing pip3, and for a direct download link, reference the "
-    },
-    {
-      "type": 1,
-      "value": "docs"
-    }
-  ],
   "/U09hN": [
     {
       "type": 0,
@@ -189,6 +165,12 @@
     {
       "type": 0,
       "value": " to them, instead of the official deposit contract. Make sure that the address you are sending the transaction to is the correct address."
+    }
+  ],
+  "/a5KPu": [
+    {
+      "type": 0,
+      "value": "Run the following command to import the keys"
     }
   ],
   "/jJLYy": [
@@ -345,12 +327,6 @@
     {
       "type": 0,
       "value": ")"
-    }
-  ],
-  "0lHkrT": [
-    {
-      "type": 0,
-      "value": "Second, install the dependency packages:"
     }
   ],
   "0oNdmk": [
@@ -575,12 +551,6 @@
       "value": "Terms of Service"
     }
   ],
-  "38VH2G": [
-    {
-      "type": 0,
-      "value": "Install deposit-cli tool"
-    }
-  ],
   "3CRtg8": [
     {
       "type": 0,
@@ -655,6 +625,12 @@
       "value": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
     }
   ],
+  "3ePCvY": [
+    {
+      "type": 0,
+      "value": "How to import validator keys"
+    }
+  ],
   "3tR/V9": [
     {
       "type": 0,
@@ -705,6 +681,12 @@
     {
       "type": 0,
       "value": "Installation"
+    }
+  ],
+  "4C3+Cg": [
+    {
+      "type": 0,
+      "value": "The first time you are asked for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
     }
   ],
   "4NvAhl": [
@@ -869,6 +851,12 @@
       "value": "More on the Vanguard Consensus Chain"
     }
   ],
+  "7UN/fz": [
+    {
+      "type": 0,
+      "value": "The second time you are asked for a password, that will be the password that will protect your keys, you need to confirm it by typing it again, and you need to make sure that you store it safely, preferably offline / not on a computer."
+    }
+  ],
   "7UOvbT": [
     {
       "type": 0,
@@ -963,22 +951,10 @@
       "value": "Once you're comfortable, you'll go through generating your keys and depositing your LYX."
     }
   ],
-  "8FmuYF": [
-    {
-      "type": 0,
-      "value": "Install pip3"
-    }
-  ],
   "8JtiQS": [
     {
       "type": 0,
       "value": "Does the contract address listed on the website match?"
-    }
-  ],
-  "8Rj/6A": [
-    {
-      "type": 0,
-      "value": "Choose the OS of the computer you're currently using. This will be the computer you use to generate your keys. It doesn't need to be the OS you want to use for your node."
     }
   ],
   "8WtyrD": [
@@ -1029,12 +1005,6 @@
     {
       "type": 0,
       "value": "Validating involves two keys for security reasons. Your signing key must be available at all times. As such, it will need to be held online. Since anything online is vulnerable to being hacked, it’s not a good idea to use the same key for withdrawals."
-    }
-  ],
-  "94dQms": [
-    {
-      "type": 0,
-      "value": "For security, we recommend you disconnect from the internet to complete this step."
     }
   ],
   "96pen8": [
@@ -1115,12 +1085,6 @@
       "value": "Prysm offers step-by-step guidelines to run their client after completing your deposit through the launchpad."
     }
   ],
-  "AC669U": [
-    {
-      "type": 0,
-      "value": "If you need help, check out the Python documentation."
-    }
-  ],
   "AIEf0K": [
     {
       "type": 0,
@@ -1169,16 +1133,6 @@
     {
       "type": 0,
       "value": "Transfers between validators aren't possible yet. You will have to wait until after the Vanguard Consensus Engine mainnet is released before you can deposit, withdraw or transfer real tokens."
-    }
-  ],
-  "Ad61gz": [
-    {
-      "type": 0,
-      "value": "Please make sure that you are downloading from the official Ethereum Foundation GitHub account by verifying the url: "
-    },
-    {
-      "type": 1,
-      "value": "url"
     }
   ],
   "Affixg": [
@@ -1261,6 +1215,12 @@
     {
       "type": 0,
       "value": "Validating is a long-term commitment"
+    }
+  ],
+  "Bh1TUD": [
+    {
+      "type": 0,
+      "value": "Your validator keystores should be available in the newly created 'validator_keys' directory."
     }
   ],
   "BiP9Gq": [
@@ -1433,50 +1393,16 @@
       "value": "If you go offline for a number of days under normal conditions you will lose an amount of LYX roughly equivalent to the amount of LYX you would have gained in that period. In other words, if you stood to earn ≈0.01 LYX, you would instead be penalised ≈0.01 LYX."
     }
   ],
-  "E+Y27g": [
-    {
-      "type": 0,
-      "value": "You can check your Python version by typing "
-    },
-    {
-      "type": 1,
-      "value": "terminalCommand"
-    },
-    {
-      "type": 0,
-      "value": " in your terminal."
-    }
-  ],
   "E/P9zo": [
     {
       "type": 0,
       "value": "3. Practice on a testnet"
     }
   ],
-  "E1Mywn": [
-    {
-      "type": 0,
-      "value": "chain"
-    }
-  ],
   "EFjTSf": [
     {
       "type": 0,
       "value": "Minor penalties are given for inadvertant actions (or inactions) that hinder consensus."
-    }
-  ],
-  "EIUapL": [
-    {
-      "type": 0,
-      "value": "Use the terminal to move into the directory that contains the "
-    },
-    {
-      "type": 1,
-      "value": "deposit"
-    },
-    {
-      "type": 0,
-      "value": " executable"
     }
   ],
   "EOAJVt": [
@@ -1495,12 +1421,6 @@
     {
       "type": 0,
       "value": "I've simulated power loss (server and internet) and automatic resumption."
-    }
-  ],
-  "ETJ2T5": [
-    {
-      "type": 0,
-      "value": "If you have questions about deposit-cli, please visit the GitHub repository."
     }
   ],
   "EThT2C": [
@@ -1589,12 +1509,6 @@
       "value": "An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems."
     }
   ],
-  "FgraU0": [
-    {
-      "type": 0,
-      "value": "Step 1: Download the deposit command line interface app for your operating system"
-    }
-  ],
   "FqgDIV": [
     {
       "type": 0,
@@ -1617,12 +1531,6 @@
     {
       "type": 0,
       "value": "As a validator you are rewarded for proposing / attesting to blocks that are included in the chain."
-    }
-  ],
-  "G5IMoZ": [
-    {
-      "type": 0,
-      "value": "Download master branch source code"
     }
   ],
   "G8tAKU": [
@@ -1801,12 +1709,6 @@
       "value": "Ready"
     }
   ],
-  "IdUtHu": [
-    {
-      "type": 0,
-      "value": "Install virtualenv"
-    }
-  ],
   "IhDJWs": [
     {
       "type": 0,
@@ -1845,28 +1747,6 @@
     {
       "type": 0,
       "value": " there are two important scenarios to be aware of:"
-    }
-  ],
-  "J455S4": [
-    {
-      "type": 0,
-      "value": "If you’re a git user, you can run "
-    },
-    {
-      "type": 1,
-      "value": "gitClone"
-    },
-    {
-      "type": 0,
-      "value": " to download the "
-    },
-    {
-      "type": 1,
-      "value": "master"
-    },
-    {
-      "type": 0,
-      "value": " branch."
     }
   ],
   "J5Lzz1": [
@@ -1913,12 +1793,6 @@
       "value": "4. Avoid phishing"
     }
   ],
-  "JhUYU3": [
-    {
-      "type": 0,
-      "value": "Download CLI app"
-    }
-  ],
   "JpZRE1": [
     {
       "type": 0,
@@ -1941,12 +1815,6 @@
     {
       "type": 0,
       "value": "Slashed"
-    }
-  ],
-  "JtAiN/": [
-    {
-      "type": 0,
-      "value": "What is your current operating system?"
     }
   ],
   "K6+jQ3": [
@@ -1975,12 +1843,6 @@
     {
       "type": 0,
       "value": "."
-    }
-  ],
-  "KBjoXt": [
-    {
-      "type": 0,
-      "value": "Download and uncompress the master branch source code from GitHub."
     }
   ],
   "KC9jbz": [
@@ -2041,12 +1903,6 @@
     {
       "type": 0,
       "value": "What exactly is slashing?"
-    }
-  ],
-  "Kw+pTr": [
-    {
-      "type": 0,
-      "value": "The python3 install process may differ depending on your linux build."
     }
   ],
   "KxUgHu": [
@@ -2263,12 +2119,6 @@
       "value": "I've secured the root account."
     }
   ],
-  "NTWnJC": [
-    {
-      "type": 0,
-      "value": "Download command line app"
-    }
-  ],
   "NVljH4": [
     {
       "type": 0,
@@ -2339,6 +2189,12 @@
     {
       "type": 0,
       "value": "."
+    }
+  ],
+  "ODMa6j": [
+    {
+      "type": 0,
+      "value": "Run the following command to generate the keys"
     }
   ],
   "OF9qv9": [
@@ -2459,12 +2315,6 @@
     {
       "type": 0,
       "value": "Turkish"
-    }
-  ],
-  "Px7wWb": [
-    {
-      "type": 0,
-      "value": "pip documentation"
     }
   ],
   "Q+vr3v": [
@@ -2665,12 +2515,6 @@
       "value": "Summary"
     }
   ],
-  "S0e/cN": [
-    {
-      "type": 0,
-      "value": "How do you want to run the CLI?"
-    }
-  ],
   "S943uU": [
     {
       "type": 0,
@@ -2749,16 +2593,6 @@
       "value": "I've imported my keystore(s) into my L15 validator client."
     }
   ],
-  "SqKNq2": [
-    {
-      "type": 0,
-      "value": "You can install python3 on your macOS device using "
-    },
-    {
-      "type": 1,
-      "value": "homebrew"
-    }
-  ],
   "Szwbym": [
     {
       "type": 0,
@@ -2771,12 +2605,6 @@
       "value": "Visit this site on desktop to become a validator."
     }
   ],
-  "TfNuWP": [
-    {
-      "type": 0,
-      "value": "virtualenv would help you to create an isolated Python environment for deposit-cli tool."
-    }
-  ],
   "Tpe6yK": [
     {
       "type": 0,
@@ -2787,12 +2615,6 @@
     {
       "type": 0,
       "value": "German"
-    }
-  ],
-  "U0yY/A": [
-    {
-      "type": 0,
-      "value": "View extensive client comparison"
     }
   ],
   "U3D1AX": [
@@ -3075,12 +2897,6 @@
       "value": "That is not a valid deposit_data JSON file."
     }
   ],
-  "XBEBYR": [
-    {
-      "type": 0,
-      "value": "More on installing pip"
-    }
-  ],
   "XVehvN": [
     {
       "type": 1,
@@ -3145,28 +2961,6 @@
       "value": "Send last deposit"
     }
   ],
-  "YBs4dR": [
-    {
-      "type": 0,
-      "value": "The latest version of pip should have been installed with python 3.x.x. For more information about installing pip on Windows, visit "
-    },
-    {
-      "type": 1,
-      "value": "windowsInstallGuide"
-    },
-    {
-      "type": 0,
-      "value": ". Or you can install the pip package via "
-    },
-    {
-      "type": 1,
-      "value": "chocolatey"
-    },
-    {
-      "type": 0,
-      "value": "."
-    }
-  ],
   "YFFqcn": [
     {
       "type": 0,
@@ -3203,12 +2997,6 @@
     {
       "type": 0,
       "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
-    }
-  ],
-  "Yganfl": [
-    {
-      "type": 0,
-      "value": "Type the following lines into the terminal window:"
     }
   ],
   "YkznEp": [
@@ -3307,12 +3095,6 @@
       "value": "Section 1 - Before you start"
     }
   ],
-  "ZzTcj5": [
-    {
-      "type": 0,
-      "value": "Download python3 and follow the installation instructions."
-    }
-  ],
   "a+xjjV": [
     {
       "type": 0,
@@ -3341,12 +3123,6 @@
     {
       "type": 0,
       "value": "Phishing is a very real risk for LUKSO validators and, unfortunately, many people will lose funds due to these attacks."
-    }
-  ],
-  "azLmaD": [
-    {
-      "type": 0,
-      "value": "Build deposit-cli from the Python source code"
     }
   ],
   "b4Fwl0": [
@@ -3389,12 +3165,6 @@
     {
       "type": 0,
       "value": " LYX staked."
-    }
-  ],
-  "bNFkSo": [
-    {
-      "type": 0,
-      "value": "Now follow the instructions presented to you in the terminal window to generate your keys."
     }
   ],
   "bR1R2M": [
@@ -3443,12 +3213,6 @@
       "value": "clientName"
     }
   ],
-  "bxU6sX": [
-    {
-      "type": 0,
-      "value": "Python installation instructions"
-    }
-  ],
   "c9DSZ1": [
     {
       "type": 0,
@@ -3473,10 +3237,10 @@
       "value": "Current APR"
     }
   ],
-  "cav520": [
+  "cZLHvd": [
     {
       "type": 0,
-      "value": "Download from GitHub"
+      "value": "Now follow the instructions presented to you in the terminal window."
     }
   ],
   "ccU6l/": [
@@ -3783,12 +3547,6 @@
       "value": "cannot withdraw"
     }
   ],
-  "g37XKP": [
-    {
-      "type": 0,
-      "value": "More on virtualenv"
-    }
-  ],
   "g6zrLr": [
     {
       "type": 0,
@@ -3813,12 +3571,6 @@
     {
       "type": 0,
       "value": "You should see that you have one keystore per validator. This keystore contains your signing key, encrypted with your password. You can use your mnemonic to generate your withdrawal key when you wish to withdraw."
-    }
-  ],
-  "gQkd2y": [
-    {
-      "type": 0,
-      "value": "Generate deposit keys using the Ethereum Foundation deposit tool"
     }
   ],
   "gVC0Wl": [
@@ -3999,34 +3751,6 @@
     {
       "type": 0,
       "value": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
-    }
-  ],
-  "iWg7mL": [
-    {
-      "type": 0,
-      "value": "Please make sure you have set "
-    },
-    {
-      "type": 1,
-      "value": "flag"
-    },
-    {
-      "type": 0,
-      "value": " for "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": ", otherwise the deposit will be invalid."
-    }
-  ],
-  "iZuIgB": [
-    {
-      "type": 0,
-      "value": "Decompress the file you just downloaded"
     }
   ],
   "idDbou": [
@@ -4281,44 +4005,10 @@
       "value": "Confirm on-chain"
     }
   ],
-  "l6OJpv": [
-    {
-      "type": 0,
-      "value": "First, create a venv virtualenv under repository directory:"
-    }
-  ],
   "lD66ab": [
     {
       "type": 0,
       "value": "Outstanding deposit"
-    }
-  ],
-  "lLOZMD": [
-    {
-      "type": 0,
-      "value": "You can install pip using a Linux Package Manager like "
-    },
-    {
-      "type": 1,
-      "value": "apt"
-    },
-    {
-      "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "yum"
-    },
-    {
-      "type": 0,
-      "value": "."
-    }
-  ],
-  "lQzdpT": [
-    {
-      "type": 0,
-      "value": "num_validators"
     }
   ],
   "lR5uPQ": [
@@ -4759,10 +4449,14 @@
       "value": "reconnect your wallet"
     }
   ],
-  "qkhah0": [
+  "qtj6vU": [
     {
       "type": 0,
-      "value": "Save the key files and get the validator file ready"
+      "value": "Connect to "
+    },
+    {
+      "type": 1,
+      "value": "network"
     }
   ],
   "qwh6gM": [
@@ -4793,6 +4487,12 @@
     {
       "type": 0,
       "value": "you can think of a validator as a voter for new blocks"
+    }
+  ],
+  "rPUs1H": [
+    {
+      "type": 0,
+      "value": "How to generate validator keys"
     }
   ],
   "rTSJI9": [
@@ -5213,10 +4913,10 @@
       "value": "."
     }
   ],
-  "w6qYSU": [
+  "wCd7F/": [
     {
       "type": 0,
-      "value": "Run the following command to launch the app"
+      "value": "Store the key files safely"
     }
   ],
   "wJ1PbL": [
@@ -5245,16 +4945,6 @@
     {
       "type": 0,
       "value": "More on proof of stake"
-    }
-  ],
-  "wfSgCZ": [
-    {
-      "type": 0,
-      "value": "Connect to "
-    },
-    {
-      "type": 1,
-      "value": "network"
     }
   ],
   "wm04oC": [
@@ -5303,12 +4993,6 @@
     {
       "type": 0,
       "value": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-    }
-  ],
-  "xbet2w": [
-    {
-      "type": 0,
-      "value": "Install python3.7+"
     }
   ],
   "xogY3N": [
@@ -5377,28 +5061,6 @@
     {
       "type": 0,
       "value": "Nethermind is built on .NET Core. Extend it, customise it - the sky’s the limit.."
-    }
-  ],
-  "z/ZhML": [
-    {
-      "type": 0,
-      "value": "Make sure you have set "
-    },
-    {
-      "type": 1,
-      "value": "flag"
-    },
-    {
-      "type": 0,
-      "value": " for "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": ", otherwise the deposit will be invalid."
     }
   ],
   "z63I56": [
