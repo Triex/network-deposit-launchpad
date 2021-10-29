@@ -17,6 +17,9 @@
   "+fnRDB": {
     "message": "I accept"
   },
+  "+l772C": {
+    "message": "You do not have enough {tickerName} in this account for {numberOfValidators} {validator}"
+  },
   "+mDtA4": {
     "message": "6. Wait to become active"
   },
@@ -196,9 +199,6 @@
   "32rBNK": {
     "message": "Terms of Service"
   },
-  "3CRtg8": {
-    "message": "You do not have enough {eth} in this account for {numberOfValidators} {validator}"
-  },
   "3GbrWR": {
     "message": "Why do rewards depend on the total number of validators in the network?"
   },
@@ -323,10 +323,6 @@
   },
   "7XiYRi": {
     "message": "Slashed?"
-  },
-  "7d3Nzd": {
-    "description": "{variables} are Beacon Chain block explorers, with links to each (do not translate names)",
-    "message": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using {beaconchain} or {beaconscan} blockchain explorers."
   },
   "7gmpID": {
     "message": "LUKSO validators community"
@@ -663,6 +659,10 @@
   },
   "H5+NAX": {
     "message": "Balance"
+  },
+  "HgtwUH": {
+    "description": "{variables} are Beacon Chain block explorers, with links to each (do not translate names)",
+    "message": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using {beaconchain} blockchain explorers."
   },
   "HoahTd": {
     "message": "If you do not supply a password, Nimbus will interactively ask for it on startup."

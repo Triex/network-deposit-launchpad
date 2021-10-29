@@ -384,11 +384,11 @@ const _ConnectWalletPage = ({
                     {networkAllowed && lowBalance && (
                       <>
                         <FormattedMessage
-                          defaultMessage="You do not have enough {eth} in this account for
+                          defaultMessage="You do not have enough {tickerName} in this account for
                           {numberOfValidators} {validator}"
                           values={{
                             numberOfValidators: depositKeys.length,
-                            eth: TICKER_NAME,
+                            tickerName: TICKER_NAME,
                             validator:
                               depositKeys.length > 1
                                 ? formatMessage({

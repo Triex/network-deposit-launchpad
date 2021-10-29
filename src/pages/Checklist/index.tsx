@@ -830,16 +830,11 @@ export const Checklist = () => {
             <FormattedMessage
               defaultMessage="You can use your validator client's graffiti flag to add a personal
                 touch to your proposed blocks (some text of your choice). You will be able to see
-                it using {beaconchain} or {beaconscan} blockchain explorers."
+                it using {beaconchain} blockchain explorers."
               values={{
                 beaconchain: (
                   <Link primary inline to={BEACONCHAIN_URL}>
                     Beaconcha.in
-                  </Link>
-                ),
-                beaconscan: (
-                  <Link primary inline to="https://beaconscan.com/">
-                    BeaconScan
                   </Link>
                 ),
               }}

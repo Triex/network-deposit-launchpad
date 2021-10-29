@@ -46,7 +46,7 @@ if(typeof process.env.REACT_APP_GENESIS_FORK_VERSION === 'string'){
     forkVersion = Buffer.from(process.env.REACT_APP_GENESIS_FORK_VERSION.replace(/0x/g, ''), 'hex');
 }
 export const GENESIS_FORK_VERSION = forkVersion;
-export const CHAIN_ID = process.env.REACT_APP_CHAIN_ID;
+export const CHAIN_ID = parseInt(process.env.REACT_APP_CHAIN_ID as string, 10);
 
 if(process.env.REACT_APP_PRICE_PER_VALIDATOR && Number.isNaN(Number(process.env.REACT_APP_PRICE_PER_VALIDATOR))) {
     throw new Error("REACT_APP_PRICE_PER_VALIDATOR must be of type: number")

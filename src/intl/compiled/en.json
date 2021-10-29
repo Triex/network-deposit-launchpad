@@ -39,6 +39,32 @@
       "value": "I accept"
     }
   ],
+  "+l772C": [
+    {
+      "type": 0,
+      "value": "You do not have enough "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " in this account for "
+    },
+    {
+      "type": 1,
+      "value": "numberOfValidators"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "validator"
+    }
+  ],
   "+mDtA4": [
     {
       "type": 0,
@@ -551,32 +577,6 @@
       "value": "Terms of Service"
     }
   ],
-  "3CRtg8": [
-    {
-      "type": 0,
-      "value": "You do not have enough "
-    },
-    {
-      "type": 1,
-      "value": "eth"
-    },
-    {
-      "type": 0,
-      "value": " in this account for "
-    },
-    {
-      "type": 1,
-      "value": "numberOfValidators"
-    },
-    {
-      "type": 0,
-      "value": " "
-    },
-    {
-      "type": 1,
-      "value": "validator"
-    }
-  ],
   "3GbrWR": [
     {
       "type": 0,
@@ -873,28 +873,6 @@
     {
       "type": 0,
       "value": "Slashed?"
-    }
-  ],
-  "7d3Nzd": [
-    {
-      "type": 0,
-      "value": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using "
-    },
-    {
-      "type": 1,
-      "value": "beaconchain"
-    },
-    {
-      "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "beaconscan"
-    },
-    {
-      "type": 0,
-      "value": " blockchain explorers."
     }
   ],
   "7gmpID": [
@@ -1641,6 +1619,20 @@
     {
       "type": 0,
       "value": "Balance"
+    }
+  ],
+  "HgtwUH": [
+    {
+      "type": 0,
+      "value": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using "
+    },
+    {
+      "type": 1,
+      "value": "beaconchain"
+    },
+    {
+      "type": 0,
+      "value": " blockchain explorers."
     }
   ],
   "HoahTd": [

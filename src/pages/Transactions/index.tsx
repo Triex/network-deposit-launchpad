@@ -32,10 +32,10 @@ import {
   updateWorkflow,
   WorkflowStep,
 } from '../../store/actions/workflowActions';
-import { IS_MAINNET } from '../../utils/envVars';
+import { IS_MAINNET, CHAIN_ID } from '../../utils/envVars';
 import { routeToCorrectWorkflowStep } from '../../utils/RouteToCorrectWorkflowStep';
 
-const NETWORK_ID = IS_MAINNET ? NetworkChainId.Mainnet : NetworkChainId.L15;
+const NETWORK_ID = IS_MAINNET ? NetworkChainId.Mainnet : CHAIN_ID;
 
 // Prop definitions
 interface OwnProps {}
