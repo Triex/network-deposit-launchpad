@@ -84,7 +84,7 @@ const _SelectClientPage = ({
   // memoize the chosen client by step
   const selectedClient: ClientId = React.useMemo(
     () => chosenClients.pandoraClient,
-    [luksoVersionStep, chosenClients]
+    [chosenClients]
   );
 
   const setClientFxn = (clientId: ClientId) => {
