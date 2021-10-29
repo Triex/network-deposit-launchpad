@@ -401,9 +401,6 @@
   "9qMyhY": {
     "message": "Read options and subcommands documentation"
   },
-  "9qp+vh": {
-    "message": "Your default Pandora node address should be 127.0.0.1. Verify it with the following command to check if it returns the client version correctly:"
-  },
   "9uOFF3": {
     "message": "Overview"
   },
@@ -565,10 +562,6 @@
   "EXLB88": {
     "message": "This is a test network ⚠️"
   },
-  "EoeAcv": {
-    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
-    "message": "I've synced my L15 vanguard node on {LUKSO_NETWORK_NAME}."
-  },
   "EuhIal": {
     "message": "Syncing your Pandora client may take a few days in the worst-case scenario."
   },
@@ -686,6 +679,9 @@
   },
   "I5lWZA": {
     "message": "Can I change the withdrawal credentials of my validator after the first deposit?"
+  },
+  "IAflHw": {
+    "message": "I've installed and synced my Pandora node on {network} (do not wait on this as it can take a while)."
   },
   "IBLsVn": {
     "message": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
@@ -897,11 +893,11 @@
   "ON2tXT": {
     "message": "The Nethermind documentation explains how to download and install the client."
   },
-  "OQ0r3H": {
-    "message": "I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)."
-  },
   "OdYQYh": {
     "message": "More on ConsenSys"
+  },
+  "OgAuMb": {
+    "message": "Incase Pandora runs on another machine, please substitute '127.0.0.1' with the specific IP of your Pandora node."
   },
   "OsO8ik": {
     "message": "I am technically capable of setting up and running a validator."
@@ -1005,6 +1001,9 @@
   "RrCui3": {
     "message": "Summary"
   },
+  "Ryptmy": {
+    "message": "Verify it with the following command to check if it returns the client version correctly:"
+  },
   "S943uU": {
     "message": "Double check the URL"
   },
@@ -1078,9 +1077,6 @@
   },
   "Utck3E": {
     "message": "Language support"
-  },
-  "UuqWUf": {
-    "message": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your vanguard node is vulnerable, your keystore is stored on a different machine."
   },
   "Uxs0RD": {
     "message": "Graffiti"
@@ -1307,6 +1303,10 @@
   },
   "clxIWO": {
     "message": "How much will I be penalized for acting maliciously?"
+  },
+  "coarsc": {
+    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
+    "message": "I've synced my L15 Vanguard node on {LUKSO_NETWORK_NAME}."
   },
   "cpxfOR": {
     "message": "What are withdrawal credentials?"
@@ -1616,9 +1616,6 @@
   "lD66ab": {
     "message": "Outstanding deposit"
   },
-  "lR5uPQ": {
-    "message": "I've installed and synced my Pandora node on {network} (do not wait on this as it can take several days)."
-  },
   "lS9VhN": {
     "message": "Total {TICKER_NAME} staked"
   },
@@ -1645,6 +1642,9 @@
   },
   "lxfupg": {
     "message": "By default, deposit-cli would generate withdrawal credentials with the {boldWithdrawalKey} derived via mnemonics in {eip2334} format."
+  },
+  "m3T512": {
+    "message": "I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)."
   },
   "mArJcj": {
     "message": "Hard drive"
@@ -1919,6 +1919,9 @@
   },
   "uprpgn": {
     "message": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
+  },
+  "v1hazw": {
+    "message": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your Vanguard node is vulnerable, your keystore is stored on a different machine."
   },
   "v2/6AL": {
     "message": "I understand that I need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} to become a validator, and that the transfer of {TICKER_NAME} to the Vanguard Consensus Chain is one-way, and non-reversible."

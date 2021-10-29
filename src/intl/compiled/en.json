@@ -1053,12 +1053,6 @@
       "value": "Read options and subcommands documentation"
     }
   ],
-  "9qp+vh": [
-    {
-      "type": 0,
-      "value": "Your default Pandora node address should be 127.0.0.1. Verify it with the following command to check if it returns the client version correctly:"
-    }
-  ],
   "9uOFF3": [
     {
       "type": 0,
@@ -1427,20 +1421,6 @@
       "value": "This is a test network ⚠️"
     }
   ],
-  "EoeAcv": [
-    {
-      "type": 0,
-      "value": "I've synced my L15 vanguard node on "
-    },
-    {
-      "type": 1,
-      "value": "LUKSO_NETWORK_NAME"
-    },
-    {
-      "type": 0,
-      "value": "."
-    }
-  ],
   "EuhIal": [
     {
       "type": 0,
@@ -1695,6 +1675,20 @@
     {
       "type": 0,
       "value": "Can I change the withdrawal credentials of my validator after the first deposit?"
+    }
+  ],
+  "IAflHw": [
+    {
+      "type": 0,
+      "value": "I've installed and synced my Pandora node on "
+    },
+    {
+      "type": 1,
+      "value": "network"
+    },
+    {
+      "type": 0,
+      "value": " (do not wait on this as it can take a while)."
     }
   ],
   "IBLsVn": [
@@ -2229,16 +2223,16 @@
       "value": "The Nethermind documentation explains how to download and install the client."
     }
   ],
-  "OQ0r3H": [
-    {
-      "type": 0,
-      "value": "I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)."
-    }
-  ],
   "OdYQYh": [
     {
       "type": 0,
       "value": "More on ConsenSys"
+    }
+  ],
+  "OgAuMb": [
+    {
+      "type": 0,
+      "value": "Incase Pandora runs on another machine, please substitute '127.0.0.1' with the specific IP of your Pandora node."
     }
   ],
   "OsO8ik": [
@@ -2521,6 +2515,12 @@
       "value": "Summary"
     }
   ],
+  "Ryptmy": [
+    {
+      "type": 0,
+      "value": "Verify it with the following command to check if it returns the client version correctly:"
+    }
+  ],
   "S943uU": [
     {
       "type": 0,
@@ -2679,12 +2679,6 @@
     {
       "type": 0,
       "value": "Language support"
-    }
-  ],
-  "UuqWUf": [
-    {
-      "type": 0,
-      "value": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your vanguard node is vulnerable, your keystore is stored on a different machine."
     }
   ],
   "Uxs0RD": [
@@ -3271,6 +3265,20 @@
     {
       "type": 0,
       "value": "How much will I be penalized for acting maliciously?"
+    }
+  ],
+  "coarsc": [
+    {
+      "type": 0,
+      "value": "I've synced my L15 Vanguard node on "
+    },
+    {
+      "type": 1,
+      "value": "LUKSO_NETWORK_NAME"
+    },
+    {
+      "type": 0,
+      "value": "."
     }
   ],
   "cpxfOR": [
@@ -4017,20 +4025,6 @@
       "value": "Outstanding deposit"
     }
   ],
-  "lR5uPQ": [
-    {
-      "type": 0,
-      "value": "I've installed and synced my Pandora node on "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": " (do not wait on this as it can take several days)."
-    }
-  ],
   "lS9VhN": [
     {
       "type": 0,
@@ -4139,6 +4133,12 @@
     {
       "type": 0,
       "value": " format."
+    }
+  ],
+  "m3T512": [
+    {
+      "type": 0,
+      "value": "I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)."
     }
   ],
   "mArJcj": [
@@ -4801,6 +4801,12 @@
     {
       "type": 0,
       "value": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
+    }
+  ],
+  "v1hazw": [
+    {
+      "type": 0,
+      "value": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your Vanguard node is vulnerable, your keystore is stored on a different machine."
     }
   ],
   "v2/6AL": [
