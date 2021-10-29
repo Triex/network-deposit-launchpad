@@ -32,12 +32,6 @@ export enum operatingSystem {
   'WINDOWS',
 }
 
-const osMapping: { [os: number]: 'mac' | 'linux' | 'windows' } = {
-  [operatingSystem.MAC]: 'mac',
-  [operatingSystem.LINUX]: 'linux',
-  [operatingSystem.WINDOWS]: 'windows',
-};
-
 const Highlight = styled.span`
   background: ${p => p.theme.green.medium};
 `;
@@ -70,7 +64,6 @@ const _GenerateKeysPage = ({
     mnemonicAcknowledgementChecked,
     setMnemonicAcknowledgementChecked,
   ] = useState<boolean>(workflow > WorkflowStep.GENERATE_KEY_PAIRS);
-  const [chosenOs] = useState<operatingSystem>(operatingSystem.LINUX);
 
   const onCheckboxClick = (e: any) => {
     setMnemonicAcknowledgementChecked(e.target.checked);
@@ -116,7 +109,7 @@ const _GenerateKeysPage = ({
         </div>
       </Paper>
 
-      <Instructions validatorCount={validatorCount} os={osMapping[chosenOs]} />
+      <Instructions />
 
       <Paper className="mt20">
         <Heading level={2} size="small" color="blueMedium">
