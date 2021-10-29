@@ -12,12 +12,13 @@ if (LUKSO_NETWORK_NAMESPACE !== 'prod') {
 export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID     || '';
 
 // public
-export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'l15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
+export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'L15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
 export const TICKER_NAME                = IS_MAINNET ? 'LYX' : 'LYXt';
 export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : `https://${networkName}explorer.pandora.l15.lukso.network`;
 export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://${networkName}explorer.vanguard.l15.lukso.network`;
 export const BEACONCHAIN_URL            = `https://${networkName}explorer.vanguard.l15.lukso.network`;
 export const FAUCET_URL                 = `https://${networkName}faucet.l15.lukso.network`;
+export const VANGUARD_MIN_PEERS         = 2;
 
 export const FORTMATIC_KEY                  = process.env.REACT_APP_FORTMATIC_KEY       || 'pk_test_D113D979E0D3508F';
 export const CONTRACT_ADDRESS               = process.env.REACT_APP_CONTRACT_ADDRESS    || '0x000000000000000000000000000000000000cafe';
@@ -45,7 +46,7 @@ if(typeof process.env.REACT_APP_GENESIS_FORK_VERSION === 'string'){
     forkVersion = Buffer.from(process.env.REACT_APP_GENESIS_FORK_VERSION.replace(/0x/g, ''), 'hex');
 }
 export const GENESIS_FORK_VERSION = forkVersion;
-
+export const CHAIN_ID = parseInt(process.env.REACT_APP_CHAIN_ID as string, 10);
 
 if(process.env.REACT_APP_PRICE_PER_VALIDATOR && Number.isNaN(Number(process.env.REACT_APP_PRICE_PER_VALIDATOR))) {
     throw new Error("REACT_APP_PRICE_PER_VALIDATOR must be of type: number")

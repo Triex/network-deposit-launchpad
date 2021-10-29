@@ -18,7 +18,6 @@ import {
   Phishing,
   Checklist,
   TermsOfService,
-  Languages,
   TopUpPage,
 } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
@@ -133,11 +132,6 @@ const routes: RouteType[] = [
     component: Checklist,
   },
   {
-    path: routesEnum.languagesPage,
-    exact: true,
-    component: Languages,
-  },
-  {
     path: routesEnum.topUpPage,
     exact: true,
     component: TopUpPage,
@@ -153,6 +147,11 @@ const localizeRoutes = (locale: String, _routes: RouteType[]) => {
     const routeHasLangPath = supportedLanguages.includes(languagePath);
     if (routeHasLangPath || route.path === '/*') {
       return route;
+    }
+    // TODO: remove this condition when translations are ready
+    if (locale !== 'en') {
+      // eslint-disable-next-line no-param-reassign
+      locale = 'en';
     }
     const localizedRoute: RouteType = {
       path: `/${locale}${route.path}`,

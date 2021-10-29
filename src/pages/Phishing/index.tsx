@@ -35,9 +35,9 @@ export const Phishing = () => {
                 defaultMessage="Does the site asking you for your {lyxtAmount} deposit have a URL you
                 expect?"
                 values={{
-                  lyxtAmount: `${PRICE_PER_VALIDATOR} LYXt`,
+                  lyxtAmount: `${PRICE_PER_VALIDATOR} LYX`,
                 }}
-                description="{lyxtAmount} will generally refer to 32 LYXt"
+                description="{lyxtAmount} will generally refer to 32 LYX"
               />
             </Text>
           </li>
@@ -81,7 +81,7 @@ export const Phishing = () => {
                     values={{
                       lyxtAmount: `${PRICE_PER_VALIDATOR} LYXt`,
                     }}
-                    description="Asks users to check deposit contract address against a block explorer and confirm 32 LYXt deposits are present"
+                    description="Asks users to check deposit contract address against a block explorer and confirm 32 LYX deposits are present"
                   />
                 </Text>
               </li>

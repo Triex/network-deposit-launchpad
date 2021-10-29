@@ -13,6 +13,7 @@ import {
   IS_MAINNET,
   TESTNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
+  VANGUARD_MIN_PEERS,
 } from '../../utils/envVars';
 import { routesEnum } from '../../Routes';
 import { Code } from '../../components/Code';
@@ -457,7 +458,7 @@ export const Checklist = () => {
             <tbody>
               <tr>
                 <td>Pandora</td>
-                <td>30303</td>
+                <td>30405</td>
                 <td>TCP</td>
               </tr>
               <tr>
@@ -600,9 +601,9 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've installed and synced my Pandora node on {network} (do not wait on this as it can take several days)."
+                  defaultMessage="I've installed and synced my Pandora node on {network} (do not wait on this as it can take a while)."
                   values={{
-                    network: IS_MAINNET ? 'mainnet' : 'Goerli',
+                    network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15',
                   }}
                 />
               </Text>
@@ -619,7 +620,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)." />
+                <FormattedMessage defaultMessage="I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)." />
               </Text>
             }
           />
@@ -630,16 +631,19 @@ export const Checklist = () => {
               </Text>
               <CodeSnippet>
                 <code>
-                  {`curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' http://<YourServerLocation>:8545`}
+                  {`curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' http://127.0.0.1:8545`}
                 </code>
               </CodeSnippet>
+              <Text>
+                <FormattedMessage defaultMessage="Incase Pandora runs on another machine, please substitute '127.0.0.1' with the specific IP of your Pandora node." />
+              </Text>
             </li>
           </ul>
           <CheckBox
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've synced my L15 vanguard node on {LUKSO_NETWORK_NAME}."
+                  defaultMessage="I've synced my L15 Vanguard node on {LUKSO_NETWORK_NAME}."
                   values={{ LUKSO_NETWORK_NAME }}
                   description="{LUKSO_NETWORK_NAME} is name of network, do not translate"
                 />
@@ -649,7 +653,10 @@ export const Checklist = () => {
           <ul className="sub-checklist-item">
             <li className="py5">
               <Text>
-                <FormattedMessage defaultMessage="Make sure that your node has more than 20 peers." />
+                <FormattedMessage
+                  values={{ VANGUARD_MIN_PEERS }}
+                  defaultMessage="Make sure that your node has at least {VANGUARD_MIN_PEERS} peers."
+                />
               </Text>
             </li>
           </ul>
@@ -811,7 +818,7 @@ export const Checklist = () => {
               <Text>
                 <FormattedMessage
                   defaultMessage="Moreover, you can set your Validator Client (VC) and Vanguard Node (VN)
-                    on separate machines and IPs so that even if your vanguard node is vulnerable, your 
+                    on separate machines and IPs so that even if your Vanguard node is vulnerable, your 
                     keystore is stored on a different machine."
                 />
               </Text>
@@ -826,16 +833,11 @@ export const Checklist = () => {
             <FormattedMessage
               defaultMessage="You can use your validator client's graffiti flag to add a personal
                 touch to your proposed blocks (some text of your choice). You will be able to see
-                it using {beaconchain} or {beaconscan} blockchain explorers."
+                it using {beaconchain} blockchain explorers."
               values={{
                 beaconchain: (
                   <Link primary inline to={BEACONCHAIN_URL}>
                     Beaconcha.in
-                  </Link>
-                ),
-                beaconscan: (
-                  <Link primary inline to="https://beaconscan.com/">
-                    BeaconScan
                   </Link>
                 ),
               }}

@@ -162,7 +162,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     ? TESTNET_LAUNCHPAD_URL
     : MAINNET_LAUNCHPAD_URL;
 
-  const networkName = IS_MAINNET ? 'mainnet' : 'Göerli testnet';
+  const networkName = IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15 Testnet';
 
   return (
     <GradientBackground
@@ -187,9 +187,11 @@ const _AppBar = ({ location }: RouteComponentProps) => {
               >
                 <Text>
                   <FormattedMessage
-                    defaultMessage="LUKSO L15 Testnet Launchpad"
+                    defaultMessage="LUKSO {network} Launchpad"
                     values={{
-                      network: IS_MAINNET ? '' : `${LUKSO_NETWORK_NAME} `,
+                      network: IS_MAINNET
+                        ? ''
+                        : `${LUKSO_NETWORK_NAME} Testnet`,
                     }}
                     description="{network} inserts the testnet name, only if on the testnet"
                   />
@@ -290,9 +292,6 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   </DropdownLink>
                   <DropdownLink to={routesEnum.checklistPage}>
                     <FormattedMessage defaultMessage="Staker checklist" />
-                  </DropdownLink>
-                  <DropdownLink to={routesEnum.languagesPage}>
-                    <FormattedMessage defaultMessage="Languages" />
                   </DropdownLink>
                   <Text className="my20">
                     <b>
