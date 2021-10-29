@@ -355,6 +355,10 @@
   "8CD83F": {
     "message": "Once you're comfortable, you'll go through generating your keys and depositing your LYX."
   },
+  "8CFQxw": {
+    "description": "{network} inserts the testnet name, only if on the testnet",
+    "message": "LUKSO {network} Launchpad"
+  },
   "8JtiQS": {
     "message": "Does the contract address listed on the website match?"
   },
@@ -1734,10 +1738,6 @@
   },
   "pfJX2D": {
     "message": "More on phishing"
-  },
-  "pkgxrV": {
-    "description": "{network} inserts the testnet name, only if on the testnet",
-    "message": "LUKSO L15 Testnet Launchpad"
   },
   "pnxB8A": {
     "message": "Nimbus looks for keystores in your validators folder."

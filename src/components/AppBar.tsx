@@ -187,9 +187,11 @@ const _AppBar = ({ location }: RouteComponentProps) => {
               >
                 <Text>
                   <FormattedMessage
-                    defaultMessage="LUKSO L15 Testnet Launchpad"
+                    defaultMessage="LUKSO {network} Launchpad"
                     values={{
-                      network: IS_MAINNET ? '' : `${LUKSO_NETWORK_NAME} `,
+                      network: IS_MAINNET
+                        ? ''
+                        : `${LUKSO_NETWORK_NAME} Testnet`,
                     }}
                     description="{network} inserts the testnet name, only if on the testnet"
                   />

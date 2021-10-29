@@ -12,8 +12,8 @@ if (LUKSO_NETWORK_NAMESPACE !== 'prod') {
 export const PORTIS_DAPP_ID             = process.env.REACT_APP_PORTIS_DAPP_ID     || '';
 
 // public
-export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'l15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
-export const TICKER_NAME                = IS_MAINNET ? 'LYX' : 'LYX';
+export const LUKSO_NETWORK_NAME         = (IS_MAINNET || !process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME) ? 'L15' : process.env.REACT_APP_TESTNET_LAUNCHPAD_NAME;
+export const TICKER_NAME                = IS_MAINNET ? 'LYX' : 'LYXt';
 export const ETHERSCAN_URL              = IS_MAINNET ? 'https://etherscan.io/tx' : `https://${networkName}explorer.pandora.l15.lukso.network`;
 export const BEACONSCAN_URL             = IS_MAINNET ? 'https://beaconscan.com/validator' : `https://${networkName}explorer.vanguard.l15.lukso.network`;
 export const BEACONCHAIN_URL            = `https://${networkName}explorer.vanguard.l15.lukso.network`;

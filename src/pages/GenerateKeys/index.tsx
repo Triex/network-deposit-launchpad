@@ -96,7 +96,7 @@ const _GenerateKeysPage = ({
           </div>
           <div className="ml50">
             <Text className="mb5">Cost</Text>
-            <Text>
+            <Text style={{ fontSize: '30px', lineHeight: '45px' }}>
               {validatorCount === ''
                 ? validatorCount
                 : new BigNumber(validatorCount)

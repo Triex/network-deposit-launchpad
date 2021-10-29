@@ -951,6 +951,20 @@
       "value": "Once you're comfortable, you'll go through generating your keys and depositing your LYX."
     }
   ],
+  "8CFQxw": [
+    {
+      "type": 0,
+      "value": "LUKSO "
+    },
+    {
+      "type": 1,
+      "value": "network"
+    },
+    {
+      "type": 0,
+      "value": " Launchpad"
+    }
+  ],
   "8JtiQS": [
     {
       "type": 0,
@@ -4353,12 +4367,6 @@
     {
       "type": 0,
       "value": "More on phishing"
-    }
-  ],
-  "pkgxrV": [
-    {
-      "type": 0,
-      "value": "LUKSO L15 Testnet Launchpad"
     }
   ],
   "pnxB8A": [
