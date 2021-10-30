@@ -57,8 +57,7 @@ const Container = styled.div`
 const WalletConnectedContainer = styled.div`
   pointer-events: none;
   width: 800px;
-  margin: auto;
-  position: absolute;
+  margin: 0 auto;
   left: calc(50% - 400px); // center - half width
   @media only screen and (max-width: ${p => p.theme.screenSizes.large}) {
     width: 100%;
@@ -118,7 +117,7 @@ const ButtonRow = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 128px;
+  margin: 0;
   @media only screen and (max-width: ${p => p.theme.screenSizes.large}) {
     flex-direction: column;
     align-items: center;
@@ -288,7 +287,7 @@ const _ConnectWalletPage = ({
           { defaultMessage: 'Connect {wallet} to {network}' },
           {
             wallet: getWalletName(walletProvider),
-            network: IS_MAINNET ? 'Ethereum mainnet' : 'Göerli testnet',
+            network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15 Testnet',
           }
         )
       );
@@ -385,11 +384,11 @@ const _ConnectWalletPage = ({
                     {networkAllowed && lowBalance && (
                       <>
                         <FormattedMessage
-                          defaultMessage="You do not have enough {eth} in this account for
+                          defaultMessage="You do not have enough {tickerName} in this account for
                           {numberOfValidators} {validator}"
                           values={{
                             numberOfValidators: depositKeys.length,
-                            eth: TICKER_NAME,
+                            tickerName: TICKER_NAME,
                             validator:
                               depositKeys.length > 1
                                 ? formatMessage({
@@ -461,7 +460,7 @@ const _ConnectWalletPage = ({
           <FormattedMessage
             defaultMessage="Your wallet is on the wrong network. Switch to {network}"
             values={{
-              network: IS_MAINNET ? 'Ethereum mainnet' : 'L15 testnet',
+              network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15 Testnet',
             }}
           />
         </div>
