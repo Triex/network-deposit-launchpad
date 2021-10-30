@@ -3,16 +3,9 @@ import {
   InjectedConnector,
   InjectedConnector as MetamaskConnector,
 } from '@web3-react/injected-connector';
-import { PortisConnector } from '@web3-react/portis-connector';
 import { useWeb3React } from '@web3-react/core';
-import { FortmaticConnector } from './fortmaticConnector';
 import { web3ReactInterface } from './index';
-import {
-  FORTMATIC_KEY,
-  IS_MAINNET,
-  PORTIS_DAPP_ID,
-  INFURA_URL, LUKSO_NETWORK_NAME, LUKSO_NETWORK_NAMESPACE,
-} from '../../utils/envVars';
+import { IS_MAINNET } from '../../utils/envVars';
 
 export enum NetworkChainId {
   'Mainnet' = 1,
@@ -20,7 +13,9 @@ export enum NetworkChainId {
   'Rinkeby' = 4,
   'Göerli' = 5,
   'Kovan' = 42,
-  'l15-dev' = 231,
+  'L15-dev' = 231,
+  'L15-staging' = 232,
+  'L15-prod' = 23,
 }
 
 /*
@@ -34,12 +29,15 @@ const supportedNetworks = [
   NetworkChainId.Rinkeby,
   NetworkChainId.Ropsten,
   NetworkChainId.Kovan,
-  NetworkChainId["l15-dev"],
+  NetworkChainId['L15-dev'],
+  NetworkChainId['L15-staging'],
+  NetworkChainId['L15-prod'],
 ];
 
 enum Testnet {
-  'Göerli',
-  'l15-dev',
+  'L15-dev',
+  'L15-staging',
+  'L15-prod',
 }
 
 enum Mainnet {
@@ -82,6 +80,7 @@ export function useMetamaskEagerConnect(): boolean {
 export function useMetamaskListener(suppress: boolean = false) {
   const { active, error, activate: connectTo } = useWeb3React();
 
+  // eslint-disable-next-line consistent-return
   useEffect((): any => {
     const { ethereum } = window as any;
 

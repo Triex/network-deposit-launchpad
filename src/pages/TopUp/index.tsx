@@ -110,14 +110,15 @@ const _TopUpPage: React.FC<Props> = () => {
                 `${BEACONCHAIN_URL}/api/v1/validator/${pubKeysCommaDelineated}`
               )
                 .then(r => r.json())
-                .then(({ data }: { data: BeaconChainValidator[] }) => {
-                  if (data.length === 0) {
+                .then(({ data: _data }: { data: BeaconChainValidator[] }) => {
+                  if (_data.length === 0) {
                     setShowDepositVerificationWarning(true);
                   }
-                  setValidators(data);
+                  setValidators(_data);
                   setLoading(false);
                 })
                 .catch(error => {
+                  // eslint-disable-next-line no-console
                   console.log(error);
                   setLoading(false);
                   setValidatorLoadError(true);
@@ -126,6 +127,7 @@ const _TopUpPage: React.FC<Props> = () => {
           }
         )
         .catch(error => {
+          // eslint-disable-next-line no-console
           console.log(error);
           setLoading(false);
           setValidatorLoadError(true);

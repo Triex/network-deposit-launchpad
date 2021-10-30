@@ -9,12 +9,6 @@
       "value": " is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
     }
   ],
-  "+L0IkF": [
-    {
-      "type": 0,
-      "value": "Step 2: Generate deposit keys using the Ethereum Foundation deposit tool"
-    }
-  ],
   "+UUcBt": [
     {
       "type": 0,
@@ -25,12 +19,6 @@
     {
       "type": 0,
       "value": "Validator uptime"
-    }
-  ],
-  "+VetqJ": [
-    {
-      "type": 0,
-      "value": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 LYXt) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
     }
   ],
   "+e8bO+": [
@@ -45,6 +33,32 @@
       "value": "I accept"
     }
   ],
+  "+l772C": [
+    {
+      "type": 0,
+      "value": "You do not have enough "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " in this account for "
+    },
+    {
+      "type": 1,
+      "value": "numberOfValidators"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "validator"
+    }
+  ],
   "+mDtA4": [
     {
       "type": 0,
@@ -55,20 +69,6 @@
     {
       "type": 0,
       "value": "Polish"
-    }
-  ],
-  "+rEvxo": [
-    {
-      "type": 0,
-      "value": "Choose "
-    },
-    {
-      "type": 1,
-      "value": "lyxt"
-    },
-    {
-      "type": 0,
-      "value": " client"
     }
   ],
   "+s8Gac": [
@@ -127,24 +127,6 @@
       "value": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
     }
   ],
-  "/SbhtD": [
-    {
-      "type": 0,
-      "value": "You can also use "
-    },
-    {
-      "type": 1,
-      "value": "homebrew"
-    },
-    {
-      "type": 0,
-      "value": " to install pip3. For the most-up-to-date instructions on installing pip3, and for a direct download link, reference the "
-    },
-    {
-      "type": 1,
-      "value": "docs"
-    }
-  ],
   "/U09hN": [
     {
       "type": 0,
@@ -175,6 +157,12 @@
     {
       "type": 0,
       "value": " to them, instead of the official deposit contract. Make sure that the address you are sending the transaction to is the correct address."
+    }
+  ],
+  "/a5KPu": [
+    {
+      "type": 0,
+      "value": "Run the following command to import the keys"
     }
   ],
   "/jJLYy": [
@@ -269,16 +257,58 @@
       "value": "Section 3 - After depositing"
     }
   ],
+  "0B58Ai": [
+    {
+      "type": 0,
+      "value": "You should certainly top up if your balance is close to 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ". This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ")."
+    }
+  ],
   "0GSZcr": [
     {
       "type": 0,
       "value": "Staked"
     }
   ],
+  "0PFj21": [
+    {
+      "type": 0,
+      "value": "How much "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " do I need to stake to become a validator?"
+    }
+  ],
   "0PlVao": [
     {
       "type": 0,
       "value": "More on slashing prevention"
+    }
+  ],
+  "0QLzxo": [
+    {
+      "type": 0,
+      "value": "Protocol"
     }
   ],
   "0RmIrh": [
@@ -311,12 +341,6 @@
     {
       "type": 0,
       "value": ")"
-    }
-  ],
-  "0lHkrT": [
-    {
-      "type": 0,
-      "value": "Second, install the dependency packages:"
     }
   ],
   "0oNdmk": [
@@ -395,12 +419,6 @@
       "value": "More stats"
     }
   ],
-  "1UmyRL": [
-    {
-      "type": 0,
-      "value": "latest stable software release"
-    }
-  ],
   "1VJ05X": [
     {
       "type": 0,
@@ -429,6 +447,28 @@
     {
       "type": 0,
       "value": "LUKSO validator checklist"
+    }
+  ],
+  "1vPxU/": [
+    {
+      "type": 0,
+      "value": "Is there any advantage to having more than "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " at stake?"
     }
   ],
   "22EpKq": [
@@ -483,16 +523,6 @@
     {
       "type": 0,
       "value": "Troubleshooting"
-    }
-  ],
-  "2PgclB": [
-    {
-      "type": 0,
-      "value": "It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. "
-    },
-    {
-      "type": 1,
-      "value": "learnMore"
     }
   ],
   "2Qn0Hh": [
@@ -557,38 +587,6 @@
       "value": "Terms of Service"
     }
   ],
-  "38VH2G": [
-    {
-      "type": 0,
-      "value": "Install deposit-cli tool"
-    }
-  ],
-  "3CRtg8": [
-    {
-      "type": 0,
-      "value": "You do not have enough "
-    },
-    {
-      "type": 1,
-      "value": "eth"
-    },
-    {
-      "type": 0,
-      "value": " in this account for "
-    },
-    {
-      "type": 1,
-      "value": "numberOfValidators"
-    },
-    {
-      "type": 0,
-      "value": " "
-    },
-    {
-      "type": 1,
-      "value": "validator"
-    }
-  ],
   "3GbrWR": [
     {
       "type": 0,
@@ -599,6 +597,44 @@
     {
       "type": 0,
       "value": "No validators found for your connected wallet"
+    }
+  ],
+  "3JL9gM": [
+    {
+      "type": 0,
+      "value": "If you go offline for a number of days under normal conditions you will lose an amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " roughly equivalent to the amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " you would have gained in that period. In other words, if you stood to earn ≈0.01 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", you would instead be penalised ≈0.01 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": "."
     }
   ],
   "3NHygY": [
@@ -635,6 +671,12 @@
     {
       "type": 0,
       "value": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
+    }
+  ],
+  "3ePCvY": [
+    {
+      "type": 0,
+      "value": "How to import validator keys"
     }
   ],
   "3tR/V9": [
@@ -689,24 +731,10 @@
       "value": "Installation"
     }
   ],
-  "4At0e7": [
+  "4C3+Cg": [
     {
       "type": 0,
-      "value": "Before you can run a validator and start to secure the network, you need to stake "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYXt. This forms your initial balance."
-    }
-  ],
-  "4FcLja": [
-    {
-      "type": 0,
-      "value": "Prysm is a Go implementation of Ethereum 2.0 protocol with a focus on usability, security, and reliability."
+      "value": "The first time you are asked for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
     }
   ],
   "4NvAhl": [
@@ -733,16 +761,24 @@
       "value": "Copy"
     }
   ],
+  "4vBOdA": [
+    {
+      "type": 0,
+      "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", you will be automatically exited from the validator pool."
+    }
+  ],
   "52qGy6": [
     {
       "type": 0,
       "value": "CURRENT"
-    }
-  ],
-  "53xzcb": [
-    {
-      "type": 0,
-      "value": "Configure your L15 client"
     }
   ],
   "54J/qs": [
@@ -773,20 +809,6 @@
     {
       "type": 0,
       "value": "Romanian"
-    }
-  ],
-  "60BCbB": [
-    {
-      "type": 0,
-      "value": "Choose your "
-    },
-    {
-      "type": 1,
-      "value": "luksoVersionStep"
-    },
-    {
-      "type": 0,
-      "value": " client and set up a node"
     }
   ],
   "6CK2Nu": [
@@ -863,6 +885,12 @@
       "value": "More on the Vanguard Consensus Chain"
     }
   ],
+  "7UN/fz": [
+    {
+      "type": 0,
+      "value": "The second time you are asked for a password, that will be the password that will protect your keys, you need to confirm it by typing it again, and you need to make sure that you store it safely, preferably offline / not on a computer."
+    }
+  ],
   "7UOvbT": [
     {
       "type": 0,
@@ -879,34 +907,6 @@
     {
       "type": 0,
       "value": "Slashed?"
-    }
-  ],
-  "7bEnm6": [
-    {
-      "type": 0,
-      "value": "If you go offline for a number of days under normal conditions you will lose an amount of LYXt roughly equivalent to the amount of LYXt you would have gained in that period. In other words, if you stood to earn ≈0.01 LYXt, you would instead be penalised ≈0.01 LYXt."
-    }
-  ],
-  "7d3Nzd": [
-    {
-      "type": 0,
-      "value": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using "
-    },
-    {
-      "type": 1,
-      "value": "beaconchain"
-    },
-    {
-      "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "beaconscan"
-    },
-    {
-      "type": 0,
-      "value": " blockchain explorers."
     }
   ],
   "7gmpID": [
@@ -951,28 +951,30 @@
       "value": "We can't detect MetaMask. Switch browsers or install MetaMask."
     }
   ],
-  "8FmuYF": [
+  "8CD83F": [
     {
       "type": 0,
-      "value": "Install pip3"
+      "value": "Once you're comfortable, you'll go through generating your keys and depositing your LYX."
     }
   ],
-  "8HxLGA": [
+  "8CFQxw": [
     {
       "type": 0,
-      "value": "Configure Teku"
+      "value": "LUKSO "
+    },
+    {
+      "type": 1,
+      "value": "network"
+    },
+    {
+      "type": 0,
+      "value": " Launchpad"
     }
   ],
   "8JtiQS": [
     {
       "type": 0,
       "value": "Does the contract address listed on the website match?"
-    }
-  ],
-  "8Rj/6A": [
-    {
-      "type": 0,
-      "value": "Choose the OS of the computer you're currently using. This will be the computer you use to generate your keys. It doesn't need to be the OS you want to use for your node."
     }
   ],
   "8WtyrD": [
@@ -1025,28 +1027,38 @@
       "value": "Validating involves two keys for security reasons. Your signing key must be available at all times. As such, it will need to be held online. Since anything online is vulnerable to being hacked, it’s not a good idea to use the same key for withdrawals."
     }
   ],
-  "94dQms": [
-    {
-      "type": 0,
-      "value": "For security, we recommend you disconnect from the internet to complete this step."
-    }
-  ],
   "96pen8": [
     {
       "type": 0,
       "value": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
     }
   ],
-  "9BcSOf": [
-    {
-      "type": 0,
-      "value": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of LYXt staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
-    }
-  ],
   "9JktQX": [
     {
       "type": 0,
       "value": "There is no easy answer to this question as there are many factors that go into this calculation."
+    }
+  ],
+  "9Mi2gn": [
+    {
+      "type": 0,
+      "value": "Limiting the maximum stake to "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
     }
   ],
   "9VZ9oy": [
@@ -1103,12 +1115,6 @@
       "value": "Prysm offers step-by-step guidelines to run their client after completing your deposit through the launchpad."
     }
   ],
-  "AC669U": [
-    {
-      "type": 0,
-      "value": "If you need help, check out the Python documentation."
-    }
-  ],
   "AIEf0K": [
     {
       "type": 0,
@@ -1127,26 +1133,6 @@
     {
       "type": 0,
       "value": "Check the deposit contract on your favorite block explorer:"
-    }
-  ],
-  "AMajpT": [
-    {
-      "type": 0,
-      "value": "Block rewards are calculated using a sliding scale based on the total amount of LYXt staked on the network."
-    }
-  ],
-  "ANsnxE": [
-    {
-      "type": 0,
-      "value": "No. There is no advantage to having more than "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYXt staked."
     }
   ],
   "AYKxmf": [
@@ -1171,16 +1157,6 @@
     {
       "type": 0,
       "value": "Transfers between validators aren't possible yet. You will have to wait until after the Vanguard Consensus Engine mainnet is released before you can deposit, withdraw or transfer real tokens."
-    }
-  ],
-  "Ad61gz": [
-    {
-      "type": 0,
-      "value": "Please make sure that you are downloading from the official Ethereum Foundation GitHub account by verifying the url: "
-    },
-    {
-      "type": 1,
-      "value": "url"
     }
   ],
   "Affixg": [
@@ -1259,16 +1235,16 @@
       "value": "Download MetaMask"
     }
   ],
-  "BWbrLK": [
-    {
-      "type": 0,
-      "value": "Once you're comfortable, you'll go through generating your keys and depositing your LYXt."
-    }
-  ],
   "Bf2QKg": [
     {
       "type": 0,
       "value": "Validating is a long-term commitment"
+    }
+  ],
+  "Bh1TUD": [
+    {
+      "type": 0,
+      "value": "Your validator keystores should be available in the newly created 'validator_keys' directory."
     }
   ],
   "BiP9Gq": [
@@ -1289,18 +1265,6 @@
       "value": "Introduction"
     }
   ],
-  "BvD9ay": [
-    {
-      "type": 0,
-      "value": "Lighthouse is a Ethereum 2.0 implementation, written in Rust with a heavy focus on speed and security."
-    }
-  ],
-  "C/gb74": [
-    {
-      "type": 0,
-      "value": "Configure Lighthouse"
-    }
-  ],
   "C9dXhY": [
     {
       "type": 0,
@@ -1317,20 +1281,6 @@
     {
       "type": 0,
       "value": "Czech"
-    }
-  ],
-  "CALy1/": [
-    {
-      "type": 0,
-      "value": "Are there recent "
-    },
-    {
-      "type": 1,
-      "value": "lyxtAmount"
-    },
-    {
-      "type": 0,
-      "value": " deposits?"
     }
   ],
   "CBbRux": [
@@ -1441,50 +1391,16 @@
       "value": "Don’t just trust the contract address listed on this website."
     }
   ],
-  "E+Y27g": [
-    {
-      "type": 0,
-      "value": "You can check your Python version by typing "
-    },
-    {
-      "type": 1,
-      "value": "terminalCommand"
-    },
-    {
-      "type": 0,
-      "value": " in your terminal."
-    }
-  ],
   "E/P9zo": [
     {
       "type": 0,
       "value": "3. Practice on a testnet"
     }
   ],
-  "E1Mywn": [
-    {
-      "type": 0,
-      "value": "chain"
-    }
-  ],
   "EFjTSf": [
     {
       "type": 0,
       "value": "Minor penalties are given for inadvertant actions (or inactions) that hinder consensus."
-    }
-  ],
-  "EIUapL": [
-    {
-      "type": 0,
-      "value": "Use the terminal to move into the directory that contains the "
-    },
-    {
-      "type": 1,
-      "value": "deposit"
-    },
-    {
-      "type": 0,
-      "value": " executable"
     }
   ],
   "EOAJVt": [
@@ -1505,12 +1421,6 @@
       "value": "I've simulated power loss (server and internet) and automatic resumption."
     }
   ],
-  "ETJ2T5": [
-    {
-      "type": 0,
-      "value": "If you have questions about deposit-cli, please visit the GitHub repository."
-    }
-  ],
   "EThT2C": [
     {
       "type": 0,
@@ -1521,20 +1431,6 @@
     {
       "type": 0,
       "value": "This is a test network ⚠️"
-    }
-  ],
-  "EoeAcv": [
-    {
-      "type": 0,
-      "value": "I've synced my L15 vanguard node on "
-    },
-    {
-      "type": 1,
-      "value": "LUKSO_NETWORK_NAME"
-    },
-    {
-      "type": 0,
-      "value": "."
     }
   ],
   "EuhIal": [
@@ -1597,12 +1493,6 @@
       "value": "An Ethereum client with a huge pool of developers. It's perfect for enterprise-grade systems."
     }
   ],
-  "FgraU0": [
-    {
-      "type": 0,
-      "value": "Step 1: Download the deposit command line interface app for your operating system"
-    }
-  ],
   "FqgDIV": [
     {
       "type": 0,
@@ -1625,18 +1515,6 @@
     {
       "type": 0,
       "value": "As a validator you are rewarded for proposing / attesting to blocks that are included in the chain."
-    }
-  ],
-  "G5IMoZ": [
-    {
-      "type": 0,
-      "value": "Download master branch source code"
-    }
-  ],
-  "G8tAKU": [
-    {
-      "type": 0,
-      "value": "Choose client"
     }
   ],
   "GBXzeJ": [
@@ -1675,16 +1553,16 @@
       "value": "Documentation on running Lighthouse"
     }
   ],
+  "Gb97QO": [
+    {
+      "type": 0,
+      "value": "Get LUKSO CLI and start with LUKSO Clients"
+    }
+  ],
   "Gbo300": [
     {
       "type": 0,
       "value": "Generate keys"
-    }
-  ],
-  "GsBRWL": [
-    {
-      "type": 0,
-      "value": "Languages"
     }
   ],
   "Gsixxx": [
@@ -1729,24 +1607,40 @@
       "value": "Balance"
     }
   ],
-  "HJVEQL": [
+  "HfPABd": [
     {
       "type": 0,
-      "value": "Does the site asking you for your "
+      "value": "At the other end of the spectrum, if your balance is closer to 31 "
     },
     {
       "type": 1,
-      "value": "lyxtAmount"
+      "value": "tickerName"
     },
     {
       "type": 0,
-      "value": " deposit have a URL you expect?"
-    }
-  ],
-  "HMpGw2": [
+      "value": ", it’s probably not worth adding the extra "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
     {
       "type": 0,
-      "value": "You should certainly top up if your balance is close to 16 LYXt. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 LYXt)."
+      "value": " required to get back to 32."
+    }
+  ],
+  "HgtwUH": [
+    {
+      "type": 0,
+      "value": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using "
+    },
+    {
+      "type": 1,
+      "value": "beaconchain"
+    },
+    {
+      "type": 0,
+      "value": " blockchain explorers."
     }
   ],
   "HoahTd": [
@@ -1761,6 +1655,20 @@
       "value": "Support"
     }
   ],
+  "HqiPLJ": [
+    {
+      "type": 0,
+      "value": "Are there recent "
+    },
+    {
+      "type": 1,
+      "value": "lyxtAmount"
+    },
+    {
+      "type": 0,
+      "value": " deposits?"
+    }
+  ],
   "I212vY": [
     {
       "type": 0,
@@ -1769,6 +1677,20 @@
     {
       "type": 1,
       "value": "testnet"
+    }
+  ],
+  "I2HrQf": [
+    {
+      "type": 0,
+      "value": "Does the site asking you for your "
+    },
+    {
+      "type": 1,
+      "value": "lyxtAmount"
+    },
+    {
+      "type": 0,
+      "value": " deposit have a URL you expect?"
     }
   ],
   "I3JhPS": [
@@ -1781,6 +1703,20 @@
     {
       "type": 0,
       "value": "Can I change the withdrawal credentials of my validator after the first deposit?"
+    }
+  ],
+  "IAflHw": [
+    {
+      "type": 0,
+      "value": "I've installed and synced my Pandora node on "
+    },
+    {
+      "type": 1,
+      "value": "network"
+    },
+    {
+      "type": 0,
+      "value": " (do not wait on this as it can take a while)."
     }
   ],
   "IBLsVn": [
@@ -1799,12 +1735,6 @@
     {
       "type": 0,
       "value": "Ready"
-    }
-  ],
-  "IdUtHu": [
-    {
-      "type": 0,
-      "value": "Install virtualenv"
     }
   ],
   "IhDJWs": [
@@ -1845,28 +1775,6 @@
     {
       "type": 0,
       "value": " there are two important scenarios to be aware of:"
-    }
-  ],
-  "J455S4": [
-    {
-      "type": 0,
-      "value": "If you’re a git user, you can run "
-    },
-    {
-      "type": 1,
-      "value": "gitClone"
-    },
-    {
-      "type": 0,
-      "value": " to download the "
-    },
-    {
-      "type": 1,
-      "value": "master"
-    },
-    {
-      "type": 0,
-      "value": " branch."
     }
   ],
   "J5Lzz1": [
@@ -1913,12 +1821,6 @@
       "value": "4. Avoid phishing"
     }
   ],
-  "JhUYU3": [
-    {
-      "type": 0,
-      "value": "Download CLI app"
-    }
-  ],
   "JpZRE1": [
     {
       "type": 0,
@@ -1943,10 +1845,10 @@
       "value": "Slashed"
     }
   ],
-  "JtAiN/": [
+  "K0VcJk": [
     {
       "type": 0,
-      "value": "What is your current operating system?"
+      "value": "To import validator keys you must generate them first. This is required to start validator client properly. Please go to the next step and see how to achieve this."
     }
   ],
   "K6+jQ3": [
@@ -1975,12 +1877,6 @@
     {
       "type": 0,
       "value": "."
-    }
-  ],
-  "KBjoXt": [
-    {
-      "type": 0,
-      "value": "Download and uncompress the master branch source code from GitHub."
     }
   ],
   "KC9jbz": [
@@ -2013,20 +1909,6 @@
       "value": " will NOT be counted in your effective balance on the Vanguard Chain. Withdrawing your deposits also won't currently be possible."
     }
   ],
-  "KLfakO": [
-    {
-      "type": 0,
-      "value": "I've installed the "
-    },
-    {
-      "type": 1,
-      "value": "latestRelease"
-    },
-    {
-      "type": 0,
-      "value": " of my L15 client."
-    }
-  ],
   "KMyzzI": [
     {
       "type": 0,
@@ -2051,22 +1933,10 @@
       "value": "Once the process is complete, you should see the following:"
     }
   ],
-  "KrVaDy": [
-    {
-      "type": 0,
-      "value": "I've joined my client's Discord server."
-    }
-  ],
   "KvRSg5": [
     {
       "type": 0,
       "value": "What exactly is slashing?"
-    }
-  ],
-  "Kw+pTr": [
-    {
-      "type": 0,
-      "value": "The python3 install process may differ depending on your linux build."
     }
   ],
   "KxUgHu": [
@@ -2171,12 +2041,6 @@
       "value": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset."
     }
   ],
-  "LyJqWj": [
-    {
-      "type": 0,
-      "value": "More on validator roles and responsibilities"
-    }
-  ],
   "M3GwXS": [
     {
       "type": 0,
@@ -2277,12 +2141,6 @@
       "value": "I've secured the root account."
     }
   ],
-  "NTWnJC": [
-    {
-      "type": 0,
-      "value": "Download command line app"
-    }
-  ],
   "NVljH4": [
     {
       "type": 0,
@@ -2355,10 +2213,10 @@
       "value": "."
     }
   ],
-  "OF9qv9": [
+  "ODMa6j": [
     {
       "type": 0,
-      "value": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client in parallel to your Vanguard client. While you can use a third-party service like Infura, we recommend running your own client in order to ensure the network stays as decentralised as possible."
+      "value": "Run the following command to generate the keys"
     }
   ],
   "OIvXIO": [
@@ -2381,16 +2239,16 @@
       "value": "The Nethermind documentation explains how to download and install the client."
     }
   ],
-  "OQ0r3H": [
-    {
-      "type": 0,
-      "value": "I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)."
-    }
-  ],
   "OdYQYh": [
     {
       "type": 0,
       "value": "More on ConsenSys"
+    }
+  ],
+  "OgAuMb": [
+    {
+      "type": 0,
+      "value": "Incase Pandora runs on another machine, please substitute '127.0.0.1' with the specific IP of your Pandora node."
     }
   ],
   "OsO8ik": [
@@ -2473,12 +2331,6 @@
     {
       "type": 0,
       "value": "Turkish"
-    }
-  ],
-  "Px7wWb": [
-    {
-      "type": 0,
-      "value": "pip documentation"
     }
   ],
   "Q+vr3v": [
@@ -2617,6 +2469,28 @@
       "value": "If you're slashed you're prevented from participating in the protocol further and are forcibly exited."
     }
   ],
+  "RBJI+G": [
+    {
+      "type": 0,
+      "value": "Before you can run a validator and start to secure the network, you need to stake "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ". This forms your initial balance."
+    }
+  ],
   "RCGrka": [
     {
       "type": 0,
@@ -2683,12 +2557,6 @@
     {
       "type": 0,
       "value": "Verify it with the following command to check if it returns the client version correctly:"
-    }
-  ],
-  "S0e/cN": [
-    {
-      "type": 0,
-      "value": "How do you want to run the CLI?"
     }
   ],
   "S943uU": [
@@ -2769,16 +2637,6 @@
       "value": "I've imported my keystore(s) into my L15 validator client."
     }
   ],
-  "SqKNq2": [
-    {
-      "type": 0,
-      "value": "You can install python3 on your macOS device using "
-    },
-    {
-      "type": 1,
-      "value": "homebrew"
-    }
-  ],
   "Szwbym": [
     {
       "type": 0,
@@ -2789,12 +2647,6 @@
     {
       "type": 0,
       "value": "Visit this site on desktop to become a validator."
-    }
-  ],
-  "TfNuWP": [
-    {
-      "type": 0,
-      "value": "virtualenv would help you to create an isolated Python environment for deposit-cli tool."
     }
   ],
   "Tpe6yK": [
@@ -2809,12 +2661,6 @@
       "value": "German"
     }
   ],
-  "U0yY/A": [
-    {
-      "type": 0,
-      "value": "View extensive client comparison"
-    }
-  ],
   "U3D1AX": [
     {
       "type": 0,
@@ -2825,6 +2671,20 @@
     {
       "type": 0,
       "value": "greater than 50%"
+    }
+  ],
+  "UEFdq7": [
+    {
+      "type": 0,
+      "value": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
     }
   ],
   "UHbYCa": [
@@ -2853,30 +2713,24 @@
       "value": " for more details"
     }
   ],
-  "UYxJLB": [
+  "UT5+iA": [
     {
       "type": 0,
-      "value": "The minimum amount that can be slashed is 1 LYXt, but "
+      "value": "Block rewards are calculated using a sliding scale based on the total amount of "
     },
     {
       "type": 1,
-      "value": "strongText"
+      "value": "tickerName"
     },
     {
       "type": 0,
-      "value": "."
+      "value": " staked on the network."
     }
   ],
   "Utck3E": [
     {
       "type": 0,
       "value": "Language support"
-    }
-  ],
-  "UuqWUf": [
-    {
-      "type": 0,
-      "value": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your vanguard node is vulnerable, your keystore is stored on a different machine."
     }
   ],
   "Uxs0RD": [
@@ -2911,12 +2765,6 @@
     {
       "type": 0,
       "value": "If you do not have a testnet folder it is likely you have not built and run Nimbus correctly. Run the make commands again."
-    }
-  ],
-  "V1O8Ob": [
-    {
-      "type": 0,
-      "value": "How much LYXt do I need to stake to become a validator?"
     }
   ],
   "VASo1/": [
@@ -2957,12 +2805,6 @@
     {
       "type": 0,
       "value": " launchpad"
-    }
-  ],
-  "VKfWR3": [
-    {
-      "type": 0,
-      "value": "Recommended"
     }
   ],
   "VLDKor": [
@@ -3107,12 +2949,6 @@
       "value": "That is not a valid deposit_data JSON file."
     }
   ],
-  "XBEBYR": [
-    {
-      "type": 0,
-      "value": "More on installing pip"
-    }
-  ],
   "XVehvN": [
     {
       "type": 1,
@@ -3139,20 +2975,6 @@
       "value": "."
     }
   ],
-  "Xwdwnq": [
-    {
-      "type": 0,
-      "value": "Limiting the maximum stake to "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYXt encourages decentralization of power as it prevents any single validator from having an excessively large vote on the state of the chain."
-    }
-  ],
   "Y47aYU": [
     {
       "type": 0,
@@ -3175,28 +2997,6 @@
     {
       "type": 0,
       "value": "Send last deposit"
-    }
-  ],
-  "YBs4dR": [
-    {
-      "type": 0,
-      "value": "The latest version of pip should have been installed with python 3.x.x. For more information about installing pip on Windows, visit "
-    },
-    {
-      "type": 1,
-      "value": "windowsInstallGuide"
-    },
-    {
-      "type": 0,
-      "value": ". Or you can install the pip package via "
-    },
-    {
-      "type": 1,
-      "value": "chocolatey"
-    },
-    {
-      "type": 0,
-      "value": "."
     }
   ],
   "YFFqcn": [
@@ -3229,18 +3029,6 @@
     {
       "type": 0,
       "value": " service."
-    }
-  ],
-  "YbS71f": [
-    {
-      "type": 0,
-      "value": "Over time, your balance will decrease as you are punished for not participating in the consensus process. When your balance reaches 16 LYXt, you will be automatically exited from the validator pool."
-    }
-  ],
-  "Yganfl": [
-    {
-      "type": 0,
-      "value": "Type the following lines into the terminal window:"
     }
   ],
   "YkznEp": [
@@ -3333,36 +3121,10 @@
       "value": "Why is there a wait?"
     }
   ],
-  "ZVn96Y": [
-    {
-      "type": 0,
-      "value": "Is there any advantage to having more than "
-    },
-    {
-      "type": 1,
-      "value": "pricePerValidator"
-    },
-    {
-      "type": 0,
-      "value": " LYXt at stake?"
-    }
-  ],
-  "Zi+EED": [
-    {
-      "type": 0,
-      "value": "PegaSys Teku is a Java-based Ethereum 2.0 client built to meet institutional needs and security requirements."
-    }
-  ],
   "Zspg8H": [
     {
       "type": 0,
       "value": "Section 1 - Before you start"
-    }
-  ],
-  "ZzTcj5": [
-    {
-      "type": 0,
-      "value": "Download python3 and follow the installation instructions."
     }
   ],
   "a+xjjV": [
@@ -3371,22 +3133,10 @@
       "value": "Become a validator with Prysm"
     }
   ],
-  "aC5KNK": [
-    {
-      "type": 0,
-      "value": "The answer to this question very much depends on how much LYXt you have at your disposal."
-    }
-  ],
   "aEBE6s": [
     {
       "type": 0,
       "value": "2. Prep nodes"
-    }
-  ],
-  "aS6dBe": [
-    {
-      "type": 0,
-      "value": "Configure Nimbus"
     }
   ],
   "aXT3iO": [
@@ -3405,12 +3155,6 @@
     {
       "type": 0,
       "value": "Phishing is a very real risk for LUKSO validators and, unfortunately, many people will lose funds due to these attacks."
-    }
-  ],
-  "azLmaD": [
-    {
-      "type": 0,
-      "value": "Build deposit-cli from the Python source code"
     }
   ],
   "b4Fwl0": [
@@ -3441,10 +3185,18 @@
       "value": "However, bear in mind that for the foreseeable future, once you’ve exited, there’s no going back."
     }
   ],
-  "bNFkSo": [
+  "b5IKKU": [
     {
       "type": 0,
-      "value": "Now follow the instructions presented to you in the terminal window to generate your keys."
+      "value": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ") of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
     }
   ],
   "bR1R2M": [
@@ -3493,18 +3245,6 @@
       "value": "clientName"
     }
   ],
-  "bxU6sX": [
-    {
-      "type": 0,
-      "value": "Python installation instructions"
-    }
-  ],
-  "c4KIsA": [
-    {
-      "type": 0,
-      "value": "LYXt Faucet"
-    }
-  ],
   "c9DSZ1": [
     {
       "type": 0,
@@ -3529,16 +3269,30 @@
       "value": "Current APR"
     }
   ],
-  "cav520": [
+  "cZLHvd": [
     {
       "type": 0,
-      "value": "Download from GitHub"
+      "value": "Now follow the instructions presented to you in the terminal window."
     }
   ],
   "ccU6l/": [
     {
       "type": 0,
       "value": "Online"
+    }
+  ],
+  "ch/W1r": [
+    {
+      "type": 0,
+      "value": "Make sure that your node has at least "
+    },
+    {
+      "type": 1,
+      "value": "VANGUARD_MIN_PEERS"
+    },
+    {
+      "type": 0,
+      "value": " peers."
     }
   ],
   "chw27s": [
@@ -3559,6 +3313,20 @@
       "value": "How much will I be penalized for acting maliciously?"
     }
   ],
+  "coarsc": [
+    {
+      "type": 0,
+      "value": "I've synced my L15 Vanguard node on "
+    },
+    {
+      "type": 1,
+      "value": "LUKSO_NETWORK_NAME"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
   "cpxfOR": [
     {
       "type": 0,
@@ -3575,6 +3343,16 @@
     {
       "type": 0,
       "value": "You must sign a transaction for every deposit you want to make."
+    }
+  ],
+  "dByl6E": [
+    {
+      "type": 0,
+      "value": "Follow the instructions presented on the docs page for "
+    },
+    {
+      "type": 1,
+      "value": "l15testNetworkName"
     }
   ],
   "dH5+MX": [
@@ -3669,6 +3447,12 @@
     {
       "type": 1,
       "value": "code3"
+    }
+  ],
+  "e8wCVF": [
+    {
+      "type": 0,
+      "value": "Now you should be able to use LUKSO CLI on your machine"
     }
   ],
   "eKEL/g": [
@@ -3839,16 +3623,16 @@
       "value": "cannot withdraw"
     }
   ],
-  "g37XKP": [
-    {
-      "type": 0,
-      "value": "More on virtualenv"
-    }
-  ],
   "g6zrLr": [
     {
       "type": 0,
       "value": "Become a L15 testnet validator and help secure the future of LUKSO."
+    }
+  ],
+  "gBe+wK": [
+    {
+      "type": 0,
+      "value": "Get LUKSO Clients"
     }
   ],
   "gFkou2": [
@@ -3869,12 +3653,6 @@
     {
       "type": 0,
       "value": "You should see that you have one keystore per validator. This keystore contains your signing key, encrypted with your password. You can use your mnemonic to generate your withdrawal key when you wish to withdraw."
-    }
-  ],
-  "gQkd2y": [
-    {
-      "type": 0,
-      "value": "Generate deposit keys using the Ethereum Foundation deposit tool"
     }
   ],
   "gVC0Wl": [
@@ -3955,6 +3733,28 @@
       "value": "Your stake"
     }
   ],
+  "hDvxS4": [
+    {
+      "type": 0,
+      "value": "The minimum amount that can be slashed is 1 "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": ", but "
+    },
+    {
+      "type": 1,
+      "value": "strongText"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
   "hFzE1M": [
     {
       "type": 0,
@@ -4027,12 +3827,6 @@
       "value": "I understand that it is important to keep my validator online and updated."
     }
   ],
-  "iCpuph": [
-    {
-      "type": 0,
-      "value": "Clients"
-    }
-  ],
   "iHH0gC": [
     {
       "type": 0,
@@ -4057,32 +3851,18 @@
       "value": "Nimbus is a client implementation for both Eth1 and Eth2 that strives to be as lightweight as possible in terms of resources used. This allows it to perform well on embedded systems, resource-restricted devices -- including Raspberry Pis -- and multi-purpose servers."
     }
   ],
-  "iWg7mL": [
+  "iTFh8s": [
     {
       "type": 0,
-      "value": "Please make sure you have set "
+      "value": "Your 16 "
     },
     {
       "type": 1,
-      "value": "flag"
+      "value": "tickerName"
     },
     {
       "type": 0,
-      "value": " for "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": ", otherwise the deposit will be invalid."
-    }
-  ],
-  "iZuIgB": [
-    {
-      "type": 0,
-      "value": "Decompress the file you just downloaded"
+      "value": " can then be withdrawn – with your withdrawal key – after a delay of around a day."
     }
   ],
   "idDbou": [
@@ -4275,6 +4055,12 @@
       "value": "Key list"
     }
   ],
+  "klLKJB": [
+    {
+      "type": 0,
+      "value": "L15 Faucet"
+    }
+  ],
   "kn7kJd": [
     {
       "type": 0,
@@ -4331,58 +4117,10 @@
       "value": "Confirm on-chain"
     }
   ],
-  "l6OJpv": [
-    {
-      "type": 0,
-      "value": "First, create a venv virtualenv under repository directory:"
-    }
-  ],
   "lD66ab": [
     {
       "type": 0,
       "value": "Outstanding deposit"
-    }
-  ],
-  "lLOZMD": [
-    {
-      "type": 0,
-      "value": "You can install pip using a Linux Package Manager like "
-    },
-    {
-      "type": 1,
-      "value": "apt"
-    },
-    {
-      "type": 0,
-      "value": " or "
-    },
-    {
-      "type": 1,
-      "value": "yum"
-    },
-    {
-      "type": 0,
-      "value": "."
-    }
-  ],
-  "lQzdpT": [
-    {
-      "type": 0,
-      "value": "num_validators"
-    }
-  ],
-  "lR5uPQ": [
-    {
-      "type": 0,
-      "value": "I've installed and synced my Pandora node on "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": " (do not wait on this as it can take several days)."
     }
   ],
   "lS9VhN": [
@@ -4495,6 +4233,12 @@
       "value": " format."
     }
   ],
+  "m3T512": [
+    {
+      "type": 0,
+      "value": "I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)."
+    }
+  ],
   "mArJcj": [
     {
       "type": 0,
@@ -4551,6 +4295,20 @@
       "value": "To become a validator you'll need to know about managing keys and protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that during this process you will not derive the keys needed to withdraw later, when validating on Mainnet you will need to store your mnemonic safely in order to be able to withdraw."
     }
   ],
+  "nGqS/3": [
+    {
+      "type": 0,
+      "value": "In other words: if the total amount of "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
+    }
+  ],
   "nIb6XF": [
     {
       "type": 0,
@@ -4569,12 +4327,6 @@
     {
       "type": 0,
       "value": "Continue without all transactions confirmed"
-    }
-  ],
-  "nYkH/p": [
-    {
-      "type": 0,
-      "value": "At the other end of the spectrum, if your balance is closer to 31 LYXt, it’s probably not worth adding the extra LYXt required to get back to 32."
     }
   ],
   "nZTFTz": [
@@ -4633,22 +4385,10 @@
       "value": "Formerly Parity, OpenEthereum is designed to be “the fastest, lightest, and most secure Ethereum client”."
     }
   ],
-  "omJNJw": [
-    {
-      "type": 0,
-      "value": "Warning!"
-    }
-  ],
   "on8WXn": [
     {
       "type": 0,
       "value": "I've imported the dashboard config to my Grafana server and double checked that my node is alive."
-    }
-  ],
-  "opSPEl": [
-    {
-      "type": 0,
-      "value": "In other words: if the total amount of LYXt staked is low, the reward (interest rate) is high, but as the total stake rises, the reward (interest) paid out to each validator starts to fall."
     }
   ],
   "orM+1T": [
@@ -4727,12 +4467,6 @@
       "value": "More on phishing"
     }
   ],
-  "pkgxrV": [
-    {
-      "type": 0,
-      "value": "LUKSO L15 Testnet Launchpad"
-    }
-  ],
   "pnxB8A": [
     {
       "type": 0,
@@ -4797,12 +4531,6 @@
       "value": "Korean"
     }
   ],
-  "qROJ5v": [
-    {
-      "type": 0,
-      "value": "Your 16 LYXt can then be withdrawn – with your withdrawal key – after a delay of around a day."
-    }
-  ],
   "qZ59xY": [
     {
       "type": 0,
@@ -4821,22 +4549,20 @@
       "value": "reconnect your wallet"
     }
   ],
-  "qkhah0": [
+  "qtj6vU": [
     {
       "type": 0,
-      "value": "Save the key files and get the validator file ready"
+      "value": "Connect to "
+    },
+    {
+      "type": 1,
+      "value": "network"
     }
   ],
   "qwh6gM": [
     {
       "type": 0,
       "value": "I understand the early adopter and slashing risks."
-    }
-  ],
-  "r2BH1M": [
-    {
-      "type": 0,
-      "value": "Configure Prysm"
     }
   ],
   "r4JsKB": [
@@ -4861,6 +4587,12 @@
     {
       "type": 0,
       "value": "you can think of a validator as a voter for new blocks"
+    }
+  ],
+  "rPUs1H": [
+    {
+      "type": 0,
+      "value": "How to generate validator keys"
     }
   ],
   "rTSJI9": [
@@ -4957,10 +4689,38 @@
       "value": " when the time comes and no one can help you recover your mnemonic if you lose it."
     }
   ],
+  "s/HaQv": [
+    {
+      "type": 0,
+      "value": "Run the following command to install LUKSO CLI locally"
+    }
+  ],
   "s0FTco": [
     {
       "type": 0,
       "value": "APR"
+    }
+  ],
+  "s1ObKz": [
+    {
+      "type": 0,
+      "value": "No. There is no advantage to having more than "
+    },
+    {
+      "type": 1,
+      "value": "pricePerValidator"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " staked."
     }
   ],
   "s6gImC": [
@@ -5015,40 +4775,6 @@
     {
       "type": 0,
       "value": "Your deposit_data.json suggests you wanted to set up more validators. These deposits are still outstanding. If you think you've already made these deposits, wait an hour before trying again to avoid duplicate deposits."
-    }
-  ],
-  "tYu+4O": [
-    {
-      "type": 0,
-      "value": "The L15 clients support Prometheus and Grafana to help you visualise important real-time metrics about your validator. You can find client-specific instructions here: "
-    },
-    {
-      "type": 1,
-      "value": "lighthouse"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "nimbus"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "prysm"
-    },
-    {
-      "type": 0,
-      "value": " | "
-    },
-    {
-      "type": 1,
-      "value": "teku"
     }
   ],
   "teyxVk": [
@@ -5205,6 +4931,12 @@
       "value": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
     }
   ],
+  "v1hazw": [
+    {
+      "type": 0,
+      "value": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your Vanguard node is vulnerable, your keystore is stored on a different machine."
+    }
+  ],
   "v2/6AL": [
     {
       "type": 0,
@@ -5315,10 +5047,10 @@
       "value": "."
     }
   ],
-  "w6qYSU": [
+  "wCd7F/": [
     {
       "type": 0,
-      "value": "Run the following command to launch the app"
+      "value": "Store the key files safely"
     }
   ],
   "wJ1PbL": [
@@ -5349,20 +5081,16 @@
       "value": "More on proof of stake"
     }
   ],
-  "wfSgCZ": [
-    {
-      "type": 0,
-      "value": "Connect to "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    }
-  ],
   "wm04oC": [
     {
       "type": 0,
       "value": "Run the following command:"
+    }
+  ],
+  "wmwEws": [
+    {
+      "type": 0,
+      "value": "LUKSO Clients"
     }
   ],
   "wqUcy/": [
@@ -5401,22 +5129,24 @@
       "value": "staker checklist"
     }
   ],
+  "xPYfCA": [
+    {
+      "type": 0,
+      "value": "The answer to this question very much depends on how much "
+    },
+    {
+      "type": 1,
+      "value": "tickerName"
+    },
+    {
+      "type": 0,
+      "value": " you have at your disposal."
+    }
+  ],
   "xQrU13": [
     {
       "type": 0,
       "value": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."
-    }
-  ],
-  "xYRzZY": [
-    {
-      "type": 0,
-      "value": "Nimbus is a research project and a client implementation for Ethereum 2.0 designed to perform well on embedded systems and personal mobile devices."
-    }
-  ],
-  "xbet2w": [
-    {
-      "type": 0,
-      "value": "Install python3.7+"
     }
   ],
   "xogY3N": [
@@ -5485,34 +5215,6 @@
     {
       "type": 0,
       "value": "Nethermind is built on .NET Core. Extend it, customise it - the sky’s the limit.."
-    }
-  ],
-  "yoGtkz": [
-    {
-      "type": 0,
-      "value": "Make sure that your node has more than 20 peers."
-    }
-  ],
-  "z/ZhML": [
-    {
-      "type": 0,
-      "value": "Make sure you have set "
-    },
-    {
-      "type": 1,
-      "value": "flag"
-    },
-    {
-      "type": 0,
-      "value": " for "
-    },
-    {
-      "type": 1,
-      "value": "network"
-    },
-    {
-      "type": 0,
-      "value": ", otherwise the deposit will be invalid."
     }
   ],
   "z63I56": [

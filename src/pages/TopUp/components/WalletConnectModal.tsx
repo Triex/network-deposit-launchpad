@@ -13,13 +13,7 @@ import {
 import { WalletButton } from '../../ConnectWallet/WalletButton';
 import { web3ReactInterface } from '../../ConnectWallet';
 import metamaskLogo from '../../../static/metamask.svg';
-import {
-  ENABLE_RPC_FEATURES,
-  IS_MAINNET,
-  PORTIS_DAPP_ID,
-} from '../../../utils/envVars';
-import portisLogo from '../../../static/portis.svg';
-import fortmaticLogo from '../../../static/fortmatic.svg';
+import { IS_MAINNET } from '../../../utils/envVars';
 import { Heading } from '../../../components/Heading';
 import { Text } from '../../../components/Text';
 import { MetamaskHardwareButton } from '../../ConnectWallet/MetamaskHardwareButton';
@@ -59,9 +53,9 @@ const WalletConnectModal: React.FC = () => {
             <FormattedMessage
               defaultMessage="Connect to {network}"
               values={{
-                network: IS_MAINNET ? 'Ethereum mainnet' : 'Göerli testnet',
+                network: IS_MAINNET ? 'LUKSO mainnet' : 'LUKSO L15 Testnet',
               }}
-              description="{network} is either 'Ethereum mainnet' or 'Göerli testnet'"
+              description="{network} is either 'LUKSO Mainnet' or 'LUKSO L15 Testnet'"
             />
           </Text>
         </div>

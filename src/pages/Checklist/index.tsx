@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import _shuffle from 'lodash/shuffle';
 import { CheckBox } from 'grommet';
 import { FormattedDate, FormattedMessage, useIntl } from 'react-intl';
 import { FormNext } from 'grommet-icons';
@@ -14,12 +13,8 @@ import {
   IS_MAINNET,
   TESTNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_NAME,
+  VANGUARD_MIN_PEERS,
 } from '../../utils/envVars';
-import { ClientCard } from '../Congratulations/ClientCard';
-import PrysmaticBg from '../../static/prysmatic-bg.png';
-import LighthouseBg from '../../static/lighthouse-bg.png';
-import NimbusBg from '../../static/nimbus-bg.png';
-import TekuBg from '../../static/teku-bg.png';
 import { routesEnum } from '../../Routes';
 import { Code } from '../../components/Code';
 import { Alert } from '../../components/Alert';
@@ -74,13 +69,6 @@ const CodeSnippet = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
-`;
-
-const ClientContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 2.5rem;
 `;
 
 const Subtitle = styled.p`
@@ -180,56 +168,6 @@ interface Client {
 
 export const Checklist = () => {
   const { formatMessage } = useIntl();
-  const clientInfo: Client[] = _shuffle([
-    {
-      header: 'Lighthouse',
-      text: formatMessage({
-        defaultMessage:
-          'Lighthouse is a Ethereum 2.0 implementation, written in Rust with a heavy focus on speed and security.',
-      }),
-      imgUrl: LighthouseBg,
-      url: routesEnum.lighthouse,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Lighthouse',
-      }),
-    },
-    {
-      header: 'Nimbus',
-      text: formatMessage({
-        defaultMessage:
-          'Nimbus is a research project and a client implementation for Ethereum 2.0 designed to perform well on embedded systems and personal mobile devices.',
-      }),
-      imgUrl: NimbusBg,
-      url: routesEnum.nimbus,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Nimbus',
-      }),
-    },
-    {
-      header: 'Prysm',
-      text: formatMessage({
-        defaultMessage:
-          'Prysm is a Go implementation of Ethereum 2.0 protocol with a focus on usability, security, and reliability.',
-      }),
-      imgUrl: PrysmaticBg,
-      url: routesEnum.prysm,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Prysm',
-      }),
-    },
-    {
-      header: 'Teku',
-      text: formatMessage({
-        defaultMessage:
-          'PegaSys Teku is a Java-based Ethereum 2.0 client built to meet institutional needs and security requirements.',
-      }),
-      imgUrl: TekuBg,
-      url: routesEnum.teku,
-      linkText: formatMessage({
-        defaultMessage: 'Configure Teku',
-      }),
-    },
-  ]);
 
   return (
     <PageTemplate
@@ -512,28 +450,29 @@ export const Checklist = () => {
                 <th>
                   <FormattedMessage defaultMessage="Default Port" />
                 </th>
+                <th>
+                  <FormattedMessage defaultMessage="Protocol" />
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Geth</td>
-                <td>30303 TCP/UDP</td>
+                <td>Pandora</td>
+                <td>30405</td>
+                <td>TCP</td>
               </tr>
               <tr>
-                <td>Lighthouse</td>
-                <td>9000 TCP/UDP</td>
-              </tr>
-              <tr>
-                <td>Nimbus</td>
-                <td>9000 UDP/TCP</td>
-              </tr>
-              <tr>
-                <td>Prysm</td>
-                <td>12000 UDP, 13000 TCP</td>
-              </tr>
-              <tr>
-                <td>Teku</td>
-                <td>9000 TCP/UDP</td>
+                <td>Vanguard</td>
+                <td>
+                  12000
+                  <br />
+                  13000
+                </td>
+                <td>
+                  UDP
+                  <br />
+                  TCP
+                </td>
               </tr>
             </tbody>
           </PortTable>
@@ -662,69 +601,10 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've installed and synced my Pandora node on {network} (do not wait on this as it can take several days)."
+                  defaultMessage="I've installed and synced my Pandora node on {network} (do not wait on this as it can take a while)."
                   values={{
-                    network: IS_MAINNET ? 'mainnet' : 'Goerli',
+                    network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15',
                   }}
-                />
-              </Text>
-            }
-          />
-        </section>
-        <section>
-          <Heading level={3}>
-            <FormattedMessage defaultMessage="Configure your L15 client" />
-          </Heading>
-          <Link className="mt10" to="/faq" primary>
-            <FormattedMessage defaultMessage="More on validator roles and responsibilities" />
-          </Link>
-          <ClientContainer>
-            {clientInfo.map(client => (
-              <ClientCard
-                className="mt10"
-                header={client.header}
-                imgUrl={client.imgUrl}
-                text={client.text}
-                key={client.header}
-                url={client.url}
-                linkText={client.linkText}
-              />
-            ))}
-          </ClientContainer>
-          <Alert variant="error" className="mt30 mb20">
-            <Heading level={4}>
-              <FormattedMessage defaultMessage="Warning!" />
-            </Heading>
-            <Text className="mt20">
-              <FormattedMessage
-                defaultMessage="It is high risk to run your L15 validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
-                values={{
-                  learnMore: (
-                    <Link primary inline to="/faq#responsibilities">
-                      {formatMessage({
-                        defaultMessage: 'More on slashing risks',
-                      })}
-                    </Link>
-                  ),
-                }}
-              />
-            </Text>
-          </Alert>
-          <CheckBox
-            label={
-              <Text className="checkbox-label">
-                <FormattedMessage
-                  defaultMessage="I've installed the {latestRelease} of my L15 client."
-                  values={{
-                    latestRelease: (
-                      <strong>
-                        {formatMessage({
-                          defaultMessage: 'latest stable software release',
-                        })}
-                      </strong>
-                    ),
-                  }}
-                  description="{latestReleased} = 'latest stable software release', being styled in bold"
                 />
               </Text>
             }
@@ -740,7 +620,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I'm able to connect my L15 vanguard node to my Pandora client via HTTP API(s)." />
+                <FormattedMessage defaultMessage="I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)." />
               </Text>
             }
           />
@@ -751,16 +631,19 @@ export const Checklist = () => {
               </Text>
               <CodeSnippet>
                 <code>
-                  {`curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' http://<YourServerLocation>:8545`}
+                  {`curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' http://127.0.0.1:8545`}
                 </code>
               </CodeSnippet>
+              <Text>
+                <FormattedMessage defaultMessage="Incase Pandora runs on another machine, please substitute '127.0.0.1' with the specific IP of your Pandora node." />
+              </Text>
             </li>
           </ul>
           <CheckBox
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've synced my L15 vanguard node on {LUKSO_NETWORK_NAME}."
+                  defaultMessage="I've synced my L15 Vanguard node on {LUKSO_NETWORK_NAME}."
                   values={{ LUKSO_NETWORK_NAME }}
                   description="{LUKSO_NETWORK_NAME} is name of network, do not translate"
                 />
@@ -770,37 +653,13 @@ export const Checklist = () => {
           <ul className="sub-checklist-item">
             <li className="py5">
               <Text>
-                <FormattedMessage defaultMessage="Make sure that your node has more than 20 peers." />
+                <FormattedMessage
+                  values={{ VANGUARD_MIN_PEERS }}
+                  defaultMessage="Make sure that your node has at least {VANGUARD_MIN_PEERS} peers."
+                />
               </Text>
             </li>
           </ul>
-          <Heading level={4} className="mt10">
-            <FormattedMessage defaultMessage="Recommended" />
-          </Heading>
-          <CheckBox
-            label={
-              <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I've joined my client's Discord server." />
-              </Text>
-            }
-          />
-          <Text className="ml20">
-            <Link primary inline to="https://discord.gg/uC7TuaH">
-              Lighthouse
-            </Link>{' '}
-            |{' '}
-            <Link primary inline to="https://discord.gg/YbTCNat">
-              Nimbus
-            </Link>{' '}
-            |{' '}
-            <Link primary inline to="https://discord.gg/z9efH7e">
-              Prysm
-            </Link>{' '}
-            |{' '}
-            <Link primary inline to="https://discord.gg/7hPv2T6">
-              Teku
-            </Link>
-          </Text>
         </section>
         <section>
           <Heading level={3}>
@@ -862,52 +721,6 @@ export const Checklist = () => {
           <Heading level={4} className="my10">
             <FormattedMessage defaultMessage="Prometheus and Grafana monitor" />
           </Heading>
-          <Text>
-            <FormattedMessage
-              defaultMessage="The L15 clients support Prometheus and Grafana to help you
-                visualise important real-time metrics about your validator. You can
-                find client-specific instructions here: {lighthouse} | {nimbus} | {prysm} | {teku}"
-              values={{
-                lighthouse: (
-                  <Link
-                    primary
-                    inline
-                    to="https://github.com/sigp/lighthouse-metrics"
-                  >
-                    Lighthouse
-                  </Link>
-                ),
-                nimbus: (
-                  <Link
-                    primary
-                    inline
-                    to="https://status-im.github.io/nimbus-eth2/metrics-pretty-pictures.html"
-                  >
-                    Nimbus
-                  </Link>
-                ),
-                prysm: (
-                  <Link
-                    primary
-                    inline
-                    to="https://docs.prylabs.network/docs/prysm-usage/monitoring/grafana-dashboard/"
-                  >
-                    Prysm
-                  </Link>
-                ),
-                teku: (
-                  <Link
-                    primary
-                    inline
-                    to="https://docs.teku.consensys.net/en/latest/HowTo/Monitor/Metrics/"
-                  >
-                    Teku
-                  </Link>
-                ),
-              }}
-              description="{variables} are client names, each linking to documentation (do not translate names)"
-            />
-          </Text>
           <CheckBox
             label={
               <Text className="checkbox-label">
@@ -1005,7 +818,7 @@ export const Checklist = () => {
               <Text>
                 <FormattedMessage
                   defaultMessage="Moreover, you can set your Validator Client (VC) and Vanguard Node (VN)
-                    on separate machines and IPs so that even if your vanguard node is vulnerable, your 
+                    on separate machines and IPs so that even if your Vanguard node is vulnerable, your 
                     keystore is stored on a different machine."
                 />
               </Text>
@@ -1020,16 +833,11 @@ export const Checklist = () => {
             <FormattedMessage
               defaultMessage="You can use your validator client's graffiti flag to add a personal
                 touch to your proposed blocks (some text of your choice). You will be able to see
-                it using {beaconchain} or {beaconscan} blockchain explorers."
+                it using {beaconchain} blockchain explorers."
               values={{
                 beaconchain: (
                   <Link primary inline to={BEACONCHAIN_URL}>
                     Beaconcha.in
-                  </Link>
-                ),
-                beaconscan: (
-                  <Link primary inline to="https://beaconscan.com/">
-                    BeaconScan
                   </Link>
                 ),
               }}

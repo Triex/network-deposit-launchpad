@@ -1,11 +1,11 @@
 import React from 'react';
+import { FormattedMessage, useIntl } from 'react-intl';
 import { AcknowledgementSection } from '../Summary/AcknowledgementSection';
 import { Text } from '../../components/Text';
 import { WorkflowPageTemplate } from '../../components/WorkflowPage/WorkflowPageTemplate';
 import { IS_MAINNET } from '../../utils/envVars';
-import { FormattedMessage, useIntl } from 'react-intl';
 
-const networkName = IS_MAINNET ? 'Mainnet' : 'Göerli testnet';
+const networkName = IS_MAINNET ? 'Mainnet' : 'LUKSO L15 Testnet';
 
 export const WrongNetwork = () => {
   const { formatMessage } = useIntl();

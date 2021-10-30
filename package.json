@@ -1,6 +1,6 @@
 {
   "name": "eth2.0-deposit",
-  "version": "1.0.1",
+  "version": "1.1.8",
   "private": true,
   "dependencies": {
     "@chainsafe/bls": "^2.0.0",
@@ -100,12 +100,13 @@
       "yarn compile",
       "git add src/intl/*",
       "npx prettier --write '{,!(node_modules)/**/}*.{ts,tsx}'",
-      "yarn run eslint src --ext .js,.jsx,.ts,.tsx --fix-dry-run"
+      "yarn run lint"
     ]
   },
   "scripts": {
     "start": "rescripts start",
     "build": "rescripts build",
+    "lint": "yarn run eslint src --ext .js,.jsx,.ts,.tsx --fix-dry-run",
     "test": "rescripts test",
     "eject": "rescripts eject",
     "extract": "formatjs extract 'src/**/*.{t,j}sx' --out-file src/intl/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]' --format crowdin",

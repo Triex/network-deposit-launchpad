@@ -4,7 +4,11 @@ import styled from 'styled-components';
 import { AcknowledgementIdsEnum } from '../../store/reducers';
 import { Link } from '../../components/Link';
 import { Text } from '../../components/Text';
-import { PRICE_PER_VALIDATOR, TICKER_NAME } from '../../utils/envVars';
+import {
+  PRICE_PER_VALIDATOR,
+  TICKER_NAME,
+  FAUCET_URL,
+} from '../../utils/envVars';
 
 const BoldCaps = styled.strong`
   text-transform: uppercase;
@@ -40,12 +44,8 @@ export const pageContent = {
             values={{
               TICKER_NAME,
               faucetLink: (
-                <Link
-                  to="https://faucet.l15.lukso.network/"
-                  className="inline"
-                  primary
-                >
-                  <FormattedMessage defaultMessage="LYXt Faucet" />
+                <Link to={FAUCET_URL} className="inline" primary>
+                  <FormattedMessage defaultMessage="L15 Faucet" />
                 </Link>
               ),
             }}

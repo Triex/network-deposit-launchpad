@@ -10,7 +10,6 @@ import SelectClientSection from './SelectClientSection';
 import SelectClientButtons from './SelectClientButtons';
 import { PrysmDetails } from '../Clients/Eth2/Prysm';
 import { GethDetails } from '../Clients/Eth1/Geth';
-import PrysmaticCircle from '../../static/prysmatic-labs-circle.png';
 import GethCircle from '../../static/gethereum-mascot-circle.png';
 
 import {
@@ -62,14 +61,6 @@ const luksoClients: {
       language: 'Go',
     },
   ]),
-  Vanguard: _shuffle([
-    {
-      clientId: ClientId.PRYSM,
-      name: 'Vanguard',
-      imgUrl: PrysmaticCircle,
-      language: 'Go',
-    },
-  ]),
 };
 
 const _SelectClientPage = ({
@@ -79,9 +70,9 @@ const _SelectClientPage = ({
   dispatchClientUpdate,
 }: Props): JSX.Element => {
   // set the default the eth version to 1 on initial render
-  const [luksoVersionStep, setLuksoVersionStep] = useState<
-    'Pandora' | 'Vanguard'
-  >('Pandora');
+  const [luksoVersionStep, setLuksoVersionStep] = useState<'Pandora'>(
+    'Pandora'
+  );
 
   const { formatMessage } = useIntl();
 
@@ -92,11 +83,8 @@ const _SelectClientPage = ({
 
   // memoize the chosen client by step
   const selectedClient: ClientId = React.useMemo(
-    () =>
-      luksoVersionStep === 'Pandora'
-        ? chosenClients.pandoraClient
-        : chosenClients.vanguardClient,
-    [luksoVersionStep, chosenClients]
+    () => chosenClients.pandoraClient,
+    [chosenClients]
   );
 
   const setClientFxn = (clientId: ClientId) => {
@@ -123,7 +111,7 @@ const _SelectClientPage = ({
 
   const title = formatMessage(
     {
-      defaultMessage: `Choose {lyxt} client`,
+      defaultMessage: `Get LUKSO Clients`,
       description:
         '{lyxt} injects Pandora or Vanguard networks depending on step',
     },
@@ -137,7 +125,7 @@ const _SelectClientPage = ({
       <SelectClientSection
         title={formatMessage(
           {
-            defaultMessage: `Choose your {luksoVersionStep} client and set up a node`,
+            defaultMessage: `Get LUKSO CLI and start with LUKSO Clients`,
             description: `{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on`,
           },
           { luksoVersionStep }

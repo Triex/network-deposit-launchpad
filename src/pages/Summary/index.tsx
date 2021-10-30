@@ -29,6 +29,7 @@ import {
   WorkflowStep,
 } from '../../store/actions/workflowActions';
 import {
+  CHAIN_ID,
   IS_MAINNET,
   PRICE_PER_VALIDATOR,
   TICKER_NAME,
@@ -51,9 +52,7 @@ const Row = styled.div`
 const Container = styled.div`
   width: 100%;
 `;
-const NETWORK_ID = IS_MAINNET
-  ? NetworkChainId.Mainnet
-  : NetworkChainId['l15-dev'];
+const NETWORK_ID = IS_MAINNET ? NetworkChainId.Mainnet : CHAIN_ID;
 
 // Prop definitions
 interface OwnProps {}

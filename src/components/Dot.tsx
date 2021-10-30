@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Checkmark } from 'grommet-icons';
-import { Close } from 'grommet-icons';
+import { Checkmark, Close } from 'grommet-icons';
 
 interface DotProps {
   theme?: any;
@@ -27,9 +26,12 @@ const StyledDiv = styled.div`
   border-radius: 50%;
 `;
 
-export const Dot = (props: DotProps) => (
-  <StyledDiv {...props}>
-    {props.success && <Checkmark size="small" color="white" />}
-    {!props.success && <Close size="small" color="white" />}
-  </StyledDiv>
-);
+export const Dot = (props: DotProps) => {
+  const { success } = props;
+  return (
+    <StyledDiv {...props}>
+      {success && <Checkmark size="small" color="white" />}
+      {!success && <Close size="small" color="white" />}
+    </StyledDiv>
+  );
+};
