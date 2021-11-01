@@ -24,7 +24,6 @@ import {
   PRICE_PER_VALIDATOR,
   TESTNET_LAUNCHPAD_NAME,
   IS_MAINNET,
-  MAINNET_LAUNCHPAD_URL,
   TESTNET_LAUNCHPAD_URL,
   TICKER_NAME,
 } from '../../utils/envVars';
@@ -316,16 +315,7 @@ const _CongratulationsPage = ({
               </>
             )}
             {!IS_MAINNET && (
-              <FormattedMessage
-                defaultMessage="You've successfully set up a testnet validator! We recommend you complete the checklist before validating on {mainnet}"
-                values={{
-                  mainnet: (
-                    <Link primary inline to={MAINNET_LAUNCHPAD_URL}>
-                      mainnet
-                    </Link>
-                  ),
-                }}
-              />
+              <FormattedMessage defaultMessage="You've successfully set up a testnet validator!" />
             )}
           </Alert>
           <div>

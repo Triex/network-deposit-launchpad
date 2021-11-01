@@ -729,16 +729,6 @@
       "value": " package."
     }
   ],
-  "4+3cIr": [
-    {
-      "type": 0,
-      "value": "You've successfully set up a testnet validator! We recommend you complete the checklist before validating on "
-    },
-    {
-      "type": 1,
-      "value": "mainnet"
-    }
-  ],
   "47svuN": [
     {
       "type": 0,
@@ -3217,6 +3207,12 @@
     {
       "type": 0,
       "value": ") of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
+    }
+  ],
+  "bQqJep": [
+    {
+      "type": 0,
+      "value": "You've successfully set up a testnet validator!"
     }
   ],
   "bR1R2M": [

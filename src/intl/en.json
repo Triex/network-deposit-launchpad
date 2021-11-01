@@ -235,9 +235,6 @@
     "description": "{code} values are terminal outputs and commands.",
     "message": "If you see error message {code1}, you may need to install {code2} or {code3} package."
   },
-  "4+3cIr": {
-    "message": "You've successfully set up a testnet validator! We recommend you complete the checklist before validating on {mainnet}"
-  },
   "47svuN": {
     "message": "Installation"
   },
@@ -1235,6 +1232,9 @@
   },
   "b5IKKU": {
     "message": "Note that in the second (unlikely) scenario, you stand to progressively lose up to 50% (16 {tickerName}) of your stake over 21 days. After 21 days you are ejected out of the validator pool. This ensures that blocks start finalizing again at some point."
+  },
+  "bQqJep": {
+    "message": "You've successfully set up a testnet validator!"
   },
   "bR1R2M": {
     "message": "Use this as a reference during client setup to check off important steps."
