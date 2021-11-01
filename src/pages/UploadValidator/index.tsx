@@ -346,10 +346,11 @@ const _UploadValidatorPage = ({
       <Container className="mt20">
         <Text className="mb20">
           <FormattedMessage
-            defaultMessage="Upload the deposit data file you just generated. The {json} is located in your {validatorKeys} directory."
+            defaultMessage="Upload the deposit data file you just generated. The {json} is located in your {validatorKeys} directory (by default you can find {validatorKeys} in the same directory where {luksoDepositCli} is located)."
             values={{
               json: <Code>deposit_data-[timestamp].json</Code>,
-              validatorKeys: <Code>/eth2.0-deposit-cli/validator_keys</Code>,
+              validatorKeys: <Code>./validator_keys</Code>,
+              luksoDepositCli: <Code>lukso-deposit-cli</Code>,
             }}
           />
         </Text>
