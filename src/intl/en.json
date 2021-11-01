@@ -207,6 +207,9 @@
   "3JL9gM": {
     "message": "If you go offline for a number of days under normal conditions you will lose an amount of {tickerName} roughly equivalent to the amount of {tickerName} you would have gained in that period. In other words, if you stood to earn ≈0.01 {tickerName}, you would instead be penalised ≈0.01 {tickerName}."
   },
+  "3MVppS": {
+    "message": "Generate the validator keys"
+  },
   "3NHygY": {
     "message": "Testing on Goerli"
   },
@@ -224,9 +227,6 @@
   },
   "3UO4hS": {
     "message": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
-  },
-  "3ePCvY": {
-    "message": "How to import validator keys"
   },
   "3tR/V9": {
     "message": "Section 2 - During setup"
@@ -777,6 +777,9 @@
     "description": "{goerli} shows '--config goerli' terminal command",
     "message": "Use {goerli} to sync the Goerli testnet."
   },
+  "LrpQ9h": {
+    "message": "Start your validator node"
+  },
   "Ltd/hJ": {
     "description": "{directoriesPattern} refers to a computer command which will find {keyDirectory} and\n                {passwordDirectory} - both folders within a computer.",
     "message": "{directoriesPattern} will find {keyDirectory}, and expect to find {passwordDirectory}."
@@ -1300,9 +1303,6 @@
   "d5KEM8": {
     "message": "You must sign a transaction for every deposit you want to make."
   },
-  "dByl6E": {
-    "message": "Follow the instructions presented on the docs page for {l15testNetworkName}"
-  },
   "dH5+MX": {
     "message": "Bad behaviour"
   },
@@ -1792,9 +1792,6 @@
   "rNEdex": {
     "message": "you can think of a validator as a voter for new blocks"
   },
-  "rPUs1H": {
-    "message": "How to generate validator keys"
-  },
   "rTSJI9": {
     "message": "Try the testnet"
   },
@@ -2030,6 +2027,9 @@
   },
   "yjBvUO": {
     "message": "Nethermind is built on .NET Core. Extend it, customise it - the sky’s the limit.."
+  },
+  "yqQl3a": {
+    "message": "Import the validator keys"
   },
   "z63I56": {
     "message": "validator"

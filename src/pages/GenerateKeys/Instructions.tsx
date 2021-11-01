@@ -4,6 +4,7 @@ import { Paper } from '../../components/Paper';
 import { Option1 } from './Option1';
 import { Option2 } from './Option2';
 import { Heading } from '../../components/Heading';
+import { HowToStartValidator } from './HowToStartValidator';
 
 interface Props {
   validatorCount: number | string;
@@ -15,7 +16,7 @@ export const Instructions = () => {
     <div>
       <Paper className="mt20" style={{ animation: 'fadeIn 1s' }}>
         <Heading level={2} size="small" color="blueMedium">
-          <FormattedMessage defaultMessage="How to generate validator keys" />
+          <FormattedMessage defaultMessage="Generate the validator keys" />
         </Heading>
         <div>
           <Option1 />
@@ -24,10 +25,19 @@ export const Instructions = () => {
 
       <Paper className="mt20" style={{ animation: 'fadeIn 1s' }}>
         <Heading level={2} size="small" color="blueMedium">
-          <FormattedMessage defaultMessage="How to import validator keys" />
+          <FormattedMessage defaultMessage="Import the validator keys" />
         </Heading>
         <div>
           <Option2 />
+        </div>
+      </Paper>
+
+      <Paper className="mt20" style={{ animation: 'fadeIn 1s' }}>
+        <Heading level={2} size="small" color="blueMedium">
+          <FormattedMessage defaultMessage="Start your validator node" />
+        </Heading>
+        <div>
+          <HowToStartValidator />
         </div>
       </Paper>
     </div>

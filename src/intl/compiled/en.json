@@ -651,6 +651,12 @@
       "value": "."
     }
   ],
+  "3MVppS": [
+    {
+      "type": 0,
+      "value": "Generate the validator keys"
+    }
+  ],
   "3NHygY": [
     {
       "type": 0,
@@ -685,12 +691,6 @@
     {
       "type": 0,
       "value": "There’s no way for you to re-activate your validator, and you won’t be able to transfer or withdraw your funds until this is enabled on the mainnet validator platform."
-    }
-  ],
-  "3ePCvY": [
-    {
-      "type": 0,
-      "value": "How to import validator keys"
     }
   ],
   "3tR/V9": [
@@ -2037,6 +2037,12 @@
     {
       "type": 0,
       "value": " to sync the Goerli testnet."
+    }
+  ],
+  "LrpQ9h": [
+    {
+      "type": 0,
+      "value": "Start your validator node"
     }
   ],
   "Ltd/hJ": [
@@ -3393,16 +3399,6 @@
       "value": "You must sign a transaction for every deposit you want to make."
     }
   ],
-  "dByl6E": [
-    {
-      "type": 0,
-      "value": "Follow the instructions presented on the docs page for "
-    },
-    {
-      "type": 1,
-      "value": "l15testNetworkName"
-    }
-  ],
   "dH5+MX": [
     {
       "type": 0,
@@ -4615,12 +4611,6 @@
       "value": "you can think of a validator as a voter for new blocks"
     }
   ],
-  "rPUs1H": [
-    {
-      "type": 0,
-      "value": "How to generate validator keys"
-    }
-  ],
   "rTSJI9": [
     {
       "type": 0,
@@ -5241,6 +5231,12 @@
     {
       "type": 0,
       "value": "Nethermind is built on .NET Core. Extend it, customise it - the sky’s the limit.."
+    }
+  ],
+  "yqQl3a": [
+    {
+      "type": 0,
+      "value": "Import the validator keys"
     }
   ],
   "z63I56": [
