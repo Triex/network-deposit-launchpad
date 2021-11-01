@@ -322,9 +322,6 @@
   "7gmpID": {
     "message": "LUKSO validators community"
   },
-  "7iEYck": {
-    "message": "More on LUKSO economics"
-  },
   "7lhBkq": {
     "message": "Use L15LYX to sync the L15 testnet."
   },
@@ -612,6 +609,9 @@
   },
   "Gbo300": {
     "message": "Generate keys"
+  },
+  "Ge9ojY": {
+    "message": "Upload the deposit data file you just generated. The {json} is located in your {validatorKeys} directory (by default you can find {validatorKeys} in the same directory where {luksoDepositCli} is located)."
   },
   "Gsixxx": {
     "message": "Early adoption risks"
@@ -1618,9 +1618,6 @@
   },
   "lVARlA": {
     "message": "Please enter a valid top-up value."
-  },
-  "lVdzDK": {
-    "message": "Upload the deposit data file you just generated. The {json} is located in your {validatorKeys} directory."
   },
   "lfV1bj": {
     "message": "Importing from Launchpad documentation"

@@ -5,7 +5,7 @@ import {
 } from '@web3-react/injected-connector';
 import { useWeb3React } from '@web3-react/core';
 import { web3ReactInterface } from './index';
-import { IS_MAINNET } from '../../utils/envVars';
+import { CHAIN_ID, IS_MAINNET } from '../../utils/envVars';
 
 export enum NetworkChainId {
   'Mainnet' = 1,
@@ -34,9 +34,13 @@ const supportedNetworks = [
   NetworkChainId['L15-prod'],
 ];
 
-enum Testnet {
+enum TestnetDev {
   'L15-dev',
+}
+enum TestnetStaging {
   'L15-staging',
+}
+enum TestnetProd {
   'L15-prod',
 }
 
@@ -44,7 +48,23 @@ enum Mainnet {
   'Mainnet',
 }
 
-export const AllowedNetworks = IS_MAINNET ? Mainnet : Testnet;
+const getTestnetByChainId = (networkId: number) => {
+  switch (networkId) {
+    case 231:
+      console.log('TestnetDev');
+      return TestnetDev;
+    case 232:
+      console.log('TestnetStaging');
+      return TestnetStaging;
+    default:
+      console.log('TestnetProd');
+      return TestnetProd;
+  }
+};
+
+export const AllowedNetworks = IS_MAINNET
+  ? Mainnet
+  : getTestnetByChainId(CHAIN_ID);
 
 export const metamask: InjectedConnector = new MetamaskConnector({
   supportedChainIds: supportedNetworks,

@@ -919,12 +919,6 @@
       "value": "LUKSO validators community"
     }
   ],
-  "7iEYck": [
-    {
-      "type": 0,
-      "value": "More on LUKSO economics"
-    }
-  ],
   "7lhBkq": [
     {
       "type": 0,
@@ -1573,6 +1567,44 @@
     {
       "type": 0,
       "value": "Generate keys"
+    }
+  ],
+  "Ge9ojY": [
+    {
+      "type": 0,
+      "value": "Upload the deposit data file you just generated. The "
+    },
+    {
+      "type": 1,
+      "value": "json"
+    },
+    {
+      "type": 0,
+      "value": " is located in your "
+    },
+    {
+      "type": 1,
+      "value": "validatorKeys"
+    },
+    {
+      "type": 0,
+      "value": " directory (by default you can find "
+    },
+    {
+      "type": 1,
+      "value": "validatorKeys"
+    },
+    {
+      "type": 0,
+      "value": " in the same directory where "
+    },
+    {
+      "type": 1,
+      "value": "luksoDepositCli"
+    },
+    {
+      "type": 0,
+      "value": " is located)."
     }
   ],
   "Gsixxx": [
@@ -4157,28 +4189,6 @@
     {
       "type": 0,
       "value": "Please enter a valid top-up value."
-    }
-  ],
-  "lVdzDK": [
-    {
-      "type": 0,
-      "value": "Upload the deposit data file you just generated. The "
-    },
-    {
-      "type": 1,
-      "value": "json"
-    },
-    {
-      "type": 0,
-      "value": " is located in your "
-    },
-    {
-      "type": 1,
-      "value": "validatorKeys"
-    },
-    {
-      "type": 0,
-      "value": " directory."
     }
   ],
   "lfV1bj": [

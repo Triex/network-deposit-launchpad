@@ -268,6 +268,8 @@ const _ConnectWalletPage = ({
   // sets the status copy on provider or network change
   useEffect(() => {
     if (chainId) {
+      console.log(AllowedNetworks);
+      console.log(network);
       setNetwork(NetworkChainId[chainId]);
       setNetworkAllowed(Object.values(AllowedNetworks).includes(network));
     }
@@ -355,7 +357,7 @@ const _ConnectWalletPage = ({
                   </Heading>
                 </Row>
                 <Text color={networkAllowed ? 'greenDark' : 'redMedium'}>
-                  {network === 'Mainnet' ? network : `${network} testnet`}
+                  {network === 'Mainnet' ? network : `L15 testnet`}
                 </Text>
               </Network>
               <div>

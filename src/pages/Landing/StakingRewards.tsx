@@ -5,7 +5,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { FormattedMessage } from 'react-intl';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
-import { Link } from '../../components/Link';
 import { TICKER_NAME } from '../../utils/envVars';
 
 /**
