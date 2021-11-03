@@ -13,7 +13,7 @@ export const Option1 = () => {
     <div className="mt30">
       <ul>
         <li>
-          <FormattedMessage defaultMessage="Run the following command to generate the keys" />
+          <FormattedMessage defaultMessage="Run the following command to generate the keys, you can accept all the default values." />
         </li>
         <Alert variant="secondary" className="my10">
           <Pre className="my10">

@@ -33,12 +33,20 @@ export const Option2 = () => {
         <Alert variant="info" className="my40">
           <ul>
             <li>
-              <FormattedMessage defaultMessage="The first time you are asked for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own." />
+              <FormattedMessage defaultMessage="The first time you are prompted for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own." />
               <br />
+              <br />
+              <FormattedMessage defaultMessage="These are the rules that apply to the password:" />
+              <ul>
+                <li>at least 8 characters</li>
+                <li>at least 1 alphabetical character</li>
+                <li>at least 1 unicode symbol</li>
+                <li>at least 1 number</li>
+              </ul>
               <br />
             </li>
             <li>
-              <FormattedMessage defaultMessage="The second time you are asked for a password, that will be the password that will protect your keys, you need to confirm it by typing it again, and you need to make sure that you store it safely, preferably offline / not on a computer." />
+              <FormattedMessage defaultMessage="The second time you are asked for a password, you need to enter the password that you used to protect your keys in the step 'Generate the validator keys'." />
             </li>
           </ul>
         </Alert>

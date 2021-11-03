@@ -235,9 +235,6 @@
   "47svuN": {
     "message": "Installation"
   },
-  "4C3+Cg": {
-    "message": "The first time you are asked for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
-  },
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
   },
@@ -271,6 +268,9 @@
   "5UH1sh": {
     "message": "Romanian"
   },
+  "65XhZE": {
+    "message": "Run the following command to generate the keys, you can accept all the default values."
+  },
   "6CK2Nu": {
     "message": "Your wallet is on the wrong network. Switch to {network}"
   },
@@ -303,9 +303,6 @@
   },
   "7RVokJ": {
     "message": "More on the Vanguard Consensus Chain"
-  },
-  "7UN/fz": {
-    "message": "The second time you are asked for a password, that will be the password that will protect your keys, you need to confirm it by typing it again, and you need to make sure that you store it safely, preferably offline / not on a computer."
   },
   "7UOvbT": {
     "message": "Offline"
@@ -866,9 +863,6 @@
   "O+3LJ1": {
     "message": "This validator's balance is at the effective maximum: {PRICE_PER_VALIDATOR} {TICKER_NAME}."
   },
-  "ODMa6j": {
-    "message": "Run the following command to generate the keys"
-  },
   "OIvXIO": {
     "message": "Complete remaining {remainingTxCount} deposits"
   },
@@ -925,6 +919,9 @@
   },
   "Q1ZwPT": {
     "message": "clipboard"
+  },
+  "Q8NNa1": {
+    "message": "These are the rules that apply to the password:"
   },
   "Q8P0rZ": {
     "message": "Validators have a maximum effective balance of {PRICE_PER_VALIDATOR} {TICKER_NAME}. You only need to top up {maxTopupValue} {TICKER_NAME} to max out your effective balance."
@@ -998,6 +995,9 @@
   },
   "SR0qHv": {
     "message": "Avoid overly-complicated setups and be aware of trade offs. Being offline for brief periods of time will result in small inactivity penalities, but will be recouped easily after being online again for about the same amount of time. Complicated power backups can add to the expense of your setup, and redundant backup validators can lead to slashing."
+  },
+  "SUFeax": {
+    "message": "The second time you are asked for a password, you need to enter the password that you used to protect your keys in the step 'Generate the validator keys'."
   },
   "SaR1pU": {
     "message": "Deposit already exists"
@@ -1874,6 +1874,9 @@
   },
   "tzMNF3": {
     "message": "Status"
+  },
+  "tzz6xF": {
+    "message": "The first time you are prompted for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
   },
   "u28qA1": {
     "message": "After depositing"

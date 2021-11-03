@@ -729,12 +729,6 @@
       "value": "Installation"
     }
   ],
-  "4C3+Cg": [
-    {
-      "type": 0,
-      "value": "The first time you are asked for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
-    }
-  ],
   "4NvAhl": [
     {
       "type": 0,
@@ -809,6 +803,12 @@
       "value": "Romanian"
     }
   ],
+  "65XhZE": [
+    {
+      "type": 0,
+      "value": "Run the following command to generate the keys, you can accept all the default values."
+    }
+  ],
   "6CK2Nu": [
     {
       "type": 0,
@@ -881,12 +881,6 @@
     {
       "type": 0,
       "value": "More on the Vanguard Consensus Chain"
-    }
-  ],
-  "7UN/fz": [
-    {
-      "type": 0,
-      "value": "The second time you are asked for a password, that will be the password that will protect your keys, you need to confirm it by typing it again, and you need to make sure that you store it safely, preferably offline / not on a computer."
     }
   ],
   "7UOvbT": [
@@ -2261,12 +2255,6 @@
       "value": "."
     }
   ],
-  "ODMa6j": [
-    {
-      "type": 0,
-      "value": "Run the following command to generate the keys"
-    }
-  ],
   "OIvXIO": [
     {
       "type": 0,
@@ -2407,6 +2395,12 @@
     {
       "type": 0,
       "value": "clipboard"
+    }
+  ],
+  "Q8NNa1": [
+    {
+      "type": 0,
+      "value": "These are the rules that apply to the password:"
     }
   ],
   "Q8P0rZ": [
@@ -2615,6 +2609,12 @@
     {
       "type": 0,
       "value": "Avoid overly-complicated setups and be aware of trade offs. Being offline for brief periods of time will result in small inactivity penalities, but will be recouped easily after being online again for about the same amount of time. Complicated power backups can add to the expense of your setup, and redundant backup validators can lead to slashing."
+    }
+  ],
+  "SUFeax": [
+    {
+      "type": 0,
+      "value": "The second time you are asked for a password, you need to enter the password that you used to protect your keys in the step 'Generate the validator keys'."
     }
   ],
   "SaR1pU": [
@@ -4847,6 +4847,12 @@
     {
       "type": 0,
       "value": "Status"
+    }
+  ],
+  "tzz6xF": [
+    {
+      "type": 0,
+      "value": "The first time you are prompted for a password, that will be the password the validator client needs to open up the wallet we are just creating. You will just need to enter this once, since it is stored in a file, so that the validator client can open the wallet on its own."
     }
   ],
   "u28qA1": [
