@@ -30,7 +30,7 @@ const SelectClientSection = ({
       {title}
     </Heading>
     <Alert variant="error" className="my10">
-      <FormattedMessage defaultMessage="In case you are currently running an archive node, please stop the node with this command:" />
+      <FormattedMessage defaultMessage="In case you are currently running a node already, please stop it with this command:" />
       <Pre className="my10">
         <span style={{ color: colors.red.medium }}>
           # Linux

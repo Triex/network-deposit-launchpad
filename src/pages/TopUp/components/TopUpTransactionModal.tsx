@@ -66,7 +66,7 @@ const TopUpTransactionModal: React.FC<TopUpTransactionModalProps> = ({
               defaultMessage="Check {etherscan} for more details"
               values={{
                 etherscan: (
-                  <Link primary inline to={`${ETHERSCAN_URL}/${txHash}`}>
+                  <Link primary inline to={`${ETHERSCAN_URL}/tx/${txHash}`}>
                     Pandora Explorer
                   </Link>
                 ),

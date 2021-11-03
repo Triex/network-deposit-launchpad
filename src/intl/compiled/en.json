@@ -803,6 +803,12 @@
       "value": "Romanian"
     }
   ],
+  "5vfntO": [
+    {
+      "type": 0,
+      "value": "In case you are currently running a node already, please stop it with this command:"
+    }
+  ],
   "65XhZE": [
     {
       "type": 0,
@@ -2959,12 +2965,6 @@
     {
       "type": 0,
       "value": "These steps are optional but are recommended to optimize your node."
-    }
-  ],
-  "WcqV8m": [
-    {
-      "type": 0,
-      "value": "In case you are currently running an archive node, please stop the node with this command:"
     }
   ],
   "WkrNSk": [

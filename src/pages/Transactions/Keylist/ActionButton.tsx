@@ -81,7 +81,7 @@ export const ActionButton = ({
   if (transactionStatus === TransactionStatus.STARTED) {
     return (
       <div className="flex">
-        <ButtonLink to={`${ETHERSCAN_URL}/${txHash}`}>
+        <ButtonLink to={`${ETHERSCAN_URL}/tx/${txHash}`}>
           Pandora Explorer
         </ButtonLink>
       </div>

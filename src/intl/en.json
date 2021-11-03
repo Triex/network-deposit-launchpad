@@ -268,6 +268,9 @@
   "5UH1sh": {
     "message": "Romanian"
   },
+  "5vfntO": {
+    "message": "In case you are currently running a node already, please stop it with this command:"
+  },
   "65XhZE": {
     "message": "Run the following command to generate the keys, you can accept all the default values."
   },
@@ -1127,9 +1130,6 @@
   },
   "WTPUDZ": {
     "message": "These steps are optional but are recommended to optimize your node."
-  },
-  "WcqV8m": {
-    "message": "In case you are currently running an archive node, please stop the node with this command:"
   },
   "WkrNSk": {
     "message": "English"
