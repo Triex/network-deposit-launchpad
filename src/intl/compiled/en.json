@@ -3085,6 +3085,12 @@
       "value": " service."
     }
   ],
+  "YaKn5v": [
+    {
+      "type": 0,
+      "value": "Replace YOUR_ETH1_ADDRESS with an address you own the private key of. This address will receive the transaction fees of blocks that the validator client has produced."
+    }
+  ],
   "YkznEp": [
     {
       "type": 0,

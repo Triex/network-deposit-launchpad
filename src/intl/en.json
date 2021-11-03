@@ -1178,6 +1178,9 @@
     "description": "{grafana} is 'Grafana' service, with link to its homepage (do not translate name)",
     "message": "I've set up my {grafana} service."
   },
+  "YaKn5v": {
+    "message": "Replace YOUR_ETH1_ADDRESS with an address you own the private key of. This address will receive the transaction fees of blocks that the validator client has produced."
+  },
   "YkznEp": {
     "message": "If you lose your withdrawal key, there is no way to access to the funds held by your validator."
   },
