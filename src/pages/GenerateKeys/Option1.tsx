@@ -17,7 +17,14 @@ export const Option1 = () => {
         </li>
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
-            <span style={{ color: colors.red.medium }}>lukso keygen </span>
+            <span style={{ color: colors.red.medium }}>
+              # Linux
+              <br />$ lukso keygen
+              <br />
+              <br />
+              # MacOS
+              <br />$ sudo lukso keygen
+            </span>
           </Pre>
         </Alert>
         <li>

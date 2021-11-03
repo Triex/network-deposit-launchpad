@@ -111,7 +111,7 @@ const _SelectClientPage = ({
 
   const title = formatMessage(
     {
-      defaultMessage: `Get LUKSO Clients`,
+      defaultMessage: `LUKSO Clients`,
       description:
         '{lyxt} injects Pandora or Vanguard networks depending on step',
     },
@@ -125,7 +125,7 @@ const _SelectClientPage = ({
       <SelectClientSection
         title={formatMessage(
           {
-            defaultMessage: `Get LUKSO CLI and start with LUKSO Clients`,
+            defaultMessage: `Install the latest clients and CLI (command-line interface)`,
             description: `{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on`,
           },
           { luksoVersionStep }

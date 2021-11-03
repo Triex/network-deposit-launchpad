@@ -159,7 +159,7 @@ const _TopUpPage: React.FC<Props> = () => {
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <AlertIcon color="redLight" />
             <Text className="ml10">
-              <FormattedMessage defaultMessage="There was an error loading your validator information from Beaconcha.in" />
+              <FormattedMessage defaultMessage="There was an error loading your validator information from Vanguard Explorer" />
             </Text>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -203,7 +203,7 @@ const _TopUpPage: React.FC<Props> = () => {
               <Text className="ml10">
                 <FormattedMessage
                   defaultMessage="You may have an {TICKER_NAME} deposit that was accepted but is being
-                    validated on chain. It will be available here when beaconcha.in
+                    validated on chain. It will be available here when the Vanguard Explorer
                     has confirmed 2048 blocks."
                   values={{ TICKER_NAME }}
                 />

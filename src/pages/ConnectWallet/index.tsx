@@ -268,8 +268,6 @@ const _ConnectWalletPage = ({
   // sets the status copy on provider or network change
   useEffect(() => {
     if (chainId) {
-      console.log(AllowedNetworks);
-      console.log(network);
       setNetwork(NetworkChainId[chainId]);
       setNetworkAllowed(Object.values(AllowedNetworks).includes(network));
     }

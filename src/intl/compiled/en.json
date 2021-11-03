@@ -521,12 +521,6 @@
       "value": "."
     }
   ],
-  "2AHkym": [
-    {
-      "type": 0,
-      "value": "There was an error loading your validator information from Beaconcha.in"
-    }
-  ],
   "2Avb9j": [
     {
       "type": 0,
@@ -1401,6 +1395,12 @@
       "value": "3. Practice on a testnet"
     }
   ],
+  "E/uaX5": [
+    {
+      "type": 0,
+      "value": "LUKSO Clients"
+    }
+  ],
   "EFjTSf": [
     {
       "type": 0,
@@ -1435,6 +1435,12 @@
     {
       "type": 0,
       "value": "This is a test network ⚠️"
+    }
+  ],
+  "EbhGgA": [
+    {
+      "type": 0,
+      "value": "There was an error loading your validator information from Vanguard Explorer"
     }
   ],
   "EuhIal": [
@@ -1555,12 +1561,6 @@
     {
       "type": 0,
       "value": "Documentation on running Lighthouse"
-    }
-  ],
-  "Gb97QO": [
-    {
-      "type": 0,
-      "value": "Get LUKSO CLI and start with LUKSO Clients"
     }
   ],
   "Gbo300": [
@@ -1887,12 +1887,6 @@
       "value": "Slashed"
     }
   ],
-  "K0VcJk": [
-    {
-      "type": 0,
-      "value": "To import validator keys you must generate them first. This is required to start validator client properly. Please go to the next step and see how to achieve this."
-    }
-  ],
   "K6+jQ3": [
     {
       "type": 0,
@@ -2023,6 +2017,12 @@
     {
       "type": 0,
       "value": "Validator FAQs"
+    }
+  ],
+  "Lia/NI": [
+    {
+      "type": 0,
+      "value": "Install the latest clients and CLI (command-line interface)"
     }
   ],
   "LibVut": [
@@ -2497,20 +2497,6 @@
       "value": "Transaction rejected"
     }
   ],
-  "Qs/oj3": [
-    {
-      "type": 0,
-      "value": "You may have an "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " deposit that was accepted but is being validated on chain. It will be available here when beaconcha.in has confirmed 2048 blocks."
-    }
-  ],
   "R8eePn": [
     {
       "type": 0,
@@ -2895,6 +2881,20 @@
       "value": "martial arts uniform"
     }
   ],
+  "Vb/sis": [
+    {
+      "type": 0,
+      "value": "You may have an "
+    },
+    {
+      "type": 1,
+      "value": "TICKER_NAME"
+    },
+    {
+      "type": 0,
+      "value": " deposit that was accepted but is being validated on chain. It will be available here when the Vanguard Explorer has confirmed 2048 blocks."
+    }
+  ],
   "VctWDX": [
     {
       "type": 0,
@@ -2959,6 +2959,12 @@
     {
       "type": 0,
       "value": "These steps are optional but are recommended to optimize your node."
+    }
+  ],
+  "WcqV8m": [
+    {
+      "type": 0,
+      "value": "In case you are currently running an archive node, please stop the node with this command:"
     }
   ],
   "WkrNSk": [
@@ -3493,12 +3499,6 @@
       "value": "code3"
     }
   ],
-  "e8wCVF": [
-    {
-      "type": 0,
-      "value": "Now you should be able to use LUKSO CLI on your machine"
-    }
-  ],
   "eKEL/g": [
     {
       "type": 0,
@@ -3671,12 +3671,6 @@
     {
       "type": 0,
       "value": "Become a L15 testnet validator and help secure the future of LUKSO."
-    }
-  ],
-  "gBe+wK": [
-    {
-      "type": 0,
-      "value": "Get LUKSO Clients"
     }
   ],
   "gFkou2": [
@@ -4647,6 +4641,12 @@
       "value": "No, you cannot change your withdrawal credentials in top-ups."
     }
   ],
+  "rrFmMb": [
+    {
+      "type": 0,
+      "value": "Install / update all the binaries:"
+    }
+  ],
   "rs4eqr": [
     {
       "type": 0,
@@ -4703,12 +4703,6 @@
     {
       "type": 0,
       "value": " when the time comes and no one can help you recover your mnemonic if you lose it."
-    }
-  ],
-  "s/HaQv": [
-    {
-      "type": 0,
-      "value": "Run the following command to install LUKSO CLI locally"
     }
   ],
   "s0FTco": [

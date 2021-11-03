@@ -62,7 +62,7 @@ export const ActionButton = ({
         className="mr5"
         data-tip
       >
-        Beaconcha.in
+        Vanguard Explorer
       </ButtonLink>
     );
   }
@@ -81,7 +81,9 @@ export const ActionButton = ({
   if (transactionStatus === TransactionStatus.STARTED) {
     return (
       <div className="flex">
-        <ButtonLink to={`${ETHERSCAN_URL}/${txHash}`}>Etherscan</ButtonLink>
+        <ButtonLink to={`${ETHERSCAN_URL}/${txHash}`}>
+          Pandora Explorer
+        </ButtonLink>
       </div>
     );
   }
@@ -100,7 +102,7 @@ export const ActionButton = ({
             className="mr5"
             data-tip
           >
-            Beaconcha.in
+            Vanguard Explorer
           </ButtonLink>
         </span>
         <ReactTooltip id="beaconchain-warning" place="top" effect="solid" />

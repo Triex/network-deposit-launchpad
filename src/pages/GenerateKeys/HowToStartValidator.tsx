@@ -18,8 +18,14 @@ export const HowToStartValidator = () => {
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
             <span style={{ color: colors.red.medium }}>
-              lukso start --validate --node-name "REPLACE-WITH-NODE-NAME"
-              --wallet-password-file /path/to/wallet/password-file.txt
+              # Linux
+              <br />$ lukso start --validate --node-name
+              "REPLACE-WITH-NODE-NAME"
+              <br />
+              <br />
+              # MacOS
+              <br />$ sudo lukso start --validate --node-name
+              "REPLACE-WITH-NODE-NAME"
             </span>
           </Pre>
         </Alert>

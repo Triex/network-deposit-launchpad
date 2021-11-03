@@ -174,9 +174,6 @@
     "description": "The {semicolon} and {colon} variables refer to the keyboard characters ';' and ':'.",
     "message": "The path separator is operating system dependent, and should be {semicolon} in Windows rather than {colon}."
   },
-  "2AHkym": {
-    "message": "There was an error loading your validator information from Beaconcha.in"
-  },
   "2Avb9j": {
     "message": "Thank you for supporting the LUKSO L15 ephemeral testnet!"
   },
@@ -524,6 +521,10 @@
   "E/P9zo": {
     "message": "3. Practice on a testnet"
   },
+  "E/uaX5": {
+    "description": "{lyxt} injects Pandora or Vanguard networks depending on step",
+    "message": "LUKSO Clients"
+  },
   "EFjTSf": {
     "message": "Minor penalties are given for inadvertant actions (or inactions) that hinder consensus."
   },
@@ -541,6 +542,9 @@
   },
   "EXLB88": {
     "message": "This is a test network ⚠️"
+  },
+  "EbhGgA": {
+    "message": "There was an error loading your validator information from Vanguard Explorer"
   },
   "EuhIal": {
     "message": "Syncing your Pandora client may take a few days in the worst-case scenario."
@@ -602,10 +606,6 @@
   },
   "GadkjP": {
     "message": "Documentation on running Lighthouse"
-  },
-  "Gb97QO": {
-    "description": "{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on",
-    "message": "Get LUKSO CLI and start with LUKSO Clients"
   },
   "Gbo300": {
     "message": "Generate keys"
@@ -720,9 +720,6 @@
   "JsTbFu": {
     "message": "Slashed"
   },
-  "K0VcJk": {
-    "message": "To import validator keys you must generate them first. This is required to start validator client properly. Please go to the next step and see how to achieve this."
-  },
   "K6+jQ3": {
     "message": "Geth installation documentation"
   },
@@ -772,6 +769,10 @@
   },
   "LeHQQm": {
     "message": "Validator FAQs"
+  },
+  "Lia/NI": {
+    "description": "{luksoVersionStep} is either 'Pandora' or 'Vanguard', depending on which step user is on",
+    "message": "Install the latest clients and CLI (command-line interface)"
   },
   "LibVut": {
     "description": "{goerli} shows '--config goerli' terminal command",
@@ -949,9 +950,6 @@
   "QqqeNk": {
     "message": "Transaction rejected"
   },
-  "Qs/oj3": {
-    "message": "You may have an {TICKER_NAME} deposit that was accepted but is being validated on chain. It will be available here when beaconcha.in has confirmed 2048 blocks."
-  },
   "R8eePn": {
     "message": "If you're slashed you're prevented from participating in the protocol further and are forcibly exited."
   },
@@ -1099,6 +1097,9 @@
   "VUuZsb": {
     "message": "martial arts uniform"
   },
+  "Vb/sis": {
+    "message": "You may have an {TICKER_NAME} deposit that was accepted but is being validated on chain. It will be available here when the Vanguard Explorer has confirmed 2048 blocks."
+  },
   "VctWDX": {
     "message": "I am certain that the validator I am topping up is my validator."
   },
@@ -1126,6 +1127,9 @@
   },
   "WTPUDZ": {
     "message": "These steps are optional but are recommended to optimize your node."
+  },
+  "WcqV8m": {
+    "message": "In case you are currently running an archive node, please stop the node with this command:"
   },
   "WkrNSk": {
     "message": "English"
@@ -1338,9 +1342,6 @@
     "description": "{code} values are terminal outputs and commands.",
     "message": "If {code1} is not {code2}, run: {code3}"
   },
-  "e8wCVF": {
-    "message": "Now you should be able to use LUKSO CLI on your machine"
-  },
   "eKEL/g": {
     "message": "Pending"
   },
@@ -1405,10 +1406,6 @@
   },
   "g6zrLr": {
     "message": "Become a L15 testnet validator and help secure the future of LUKSO."
-  },
-  "gBe+wK": {
-    "description": "{lyxt} injects Pandora or Vanguard networks depending on step",
-    "message": "Get LUKSO Clients"
   },
   "gFkou2": {
     "message": "Your wallet is on the wrong network. To continue, connect to the {networkName} network."
@@ -1810,6 +1807,9 @@
   "rnDgcN": {
     "message": "No, you cannot change your withdrawal credentials in top-ups."
   },
+  "rrFmMb": {
+    "message": "Install / update all the binaries:"
+  },
   "rs4eqr": {
     "message": "You may need to top up your validator's balance for two important reasons. If your validator's effective balance is below {PRICE_PER_VALIDATOR} {TICKER_NAME} you won't be earning your full staker rewards. And if it drops as low as {EJECTION_PRICE} {TICKER_NAME} the system will eject your validator."
   },
@@ -1818,9 +1818,6 @@
   },
   "rxttyC": {
     "message": "Your mnemonic is the backup for your signing keys and will be the ONLY way to withdraw your {TICKER_NAME} when the time comes and no one can help you recover your mnemonic if you lose it."
-  },
-  "s/HaQv": {
-    "message": "Run the following command to install LUKSO CLI locally"
   },
   "s0FTco": {
     "description": "APR refers to Annual Percentage Rate",
