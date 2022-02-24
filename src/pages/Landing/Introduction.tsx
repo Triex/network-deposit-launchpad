@@ -66,7 +66,7 @@ export const Introduction = (): JSX.Element => {
         <ContentContainer>
           <ScrollAnimation animateIn="fadeIn" animateOnce>
             <Heading level={2} size="medium" color="blueDark" margin="none">
-              <FormattedMessage defaultMessage="Validators and L15" />
+              <FormattedMessage defaultMessage="Validators and L16" />
             </Heading>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
@@ -79,7 +79,7 @@ export const Introduction = (): JSX.Element => {
               />
             </Text>
             <Text className="mt20">
-              <FormattedMessage defaultMessage="Currently we are running the L15 Ephemeral Testnet to prepare for L16, and we need your help!" />
+              <FormattedMessage defaultMessage="Currently we are running the L16 Ephemeral Testnet to prepare for L16, and we need your help!" />
             </Text>
             <Link className="mt20 mb40" to="https://medium.com/lukso">
               <FormattedMessage defaultMessage="More on the LUKSO vision" />

@@ -129,7 +129,7 @@ export const Lighthouse = () => {
   return (
     <PageTemplate
       title={formatMessage(
-        { defaultMessage: 'L15 Clients: {clientName}' },
+        { defaultMessage: 'L16 Clients: {clientName}' },
         { clientName: 'Lighthouse' }
       )}
     >

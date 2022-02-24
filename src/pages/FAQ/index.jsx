@@ -87,7 +87,7 @@ export const FAQ = () => {
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="You can think of the deposit contract as a transfer of funds between LUKSO accounts and
-                  L15 validators."
+                  L16 validators."
               />
             </Text>
             <Text className="mt10">
@@ -245,10 +245,10 @@ export const FAQ = () => {
           </section>
           <section>
             <Heading level={4}>
-              <FormattedMessage defaultMessage="Can I withdraw my L15 LYXt to LYX or LYXe?" />
+              <FormattedMessage defaultMessage="Can I withdraw my L16 LYXt to LYX or LYXe?" />
             </Heading>
             <Text className="mt10">
-              <FormattedMessage defaultMessage="Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset." />
+              <FormattedMessage defaultMessage="Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L16 is an testnet, meaning the state will not be persistent and the network will be frequently reset." />
             </Text>
           </section>
         </section>
@@ -590,7 +590,7 @@ export const FAQ = () => {
             <Text className="mt10">
               <FormattedMessage
                 defaultMessage="Slashing has two purposes: (1) to make it prohibitively expensive
-                  to attack L15, and (2) to stop validators from being lazy by
+                  to attack L16, and (2) to stop validators from being lazy by
                   checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
               />
             </Text>

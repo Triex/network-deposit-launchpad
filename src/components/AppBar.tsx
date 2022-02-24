@@ -162,7 +162,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     ? TESTNET_LAUNCHPAD_URL
     : MAINNET_LAUNCHPAD_URL;
 
-  const networkName = IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15 Testnet';
+  const networkName = IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L16 Testnet';
 
   return (
     <GradientBackground
@@ -265,7 +265,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   <span>
                     <FormattedMessage defaultMessage="Launchpad network:" />{' '}
                     <b>
-                      {IS_MAINNET ? `L15` : `${TESTNET_LAUNCHPAD_NAME} testnet`}
+                      {IS_MAINNET ? `L16` : `${TESTNET_LAUNCHPAD_NAME} testnet`}
                     </b>
                   </span>
                   <Link primary to={switchLaunchpadUrl}>
@@ -275,7 +275,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                         network: `${
                           IS_MAINNET
                             ? `${TESTNET_LAUNCHPAD_NAME} testnet`
-                            : `L15`
+                            : `L16`
                         }`,
                       }}
                     />
@@ -295,7 +295,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   </DropdownLink>
                   <Text className="my20">
                     <b>
-                      <FormattedMessage defaultMessage="The L15 clients" />
+                      <FormattedMessage defaultMessage="The L16 clients" />
                     </b>
                   </Text>
                   <DropdownLink to={routesEnum.lighthouse}>
@@ -314,7 +314,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             className="secondary-link"
             label={
               <NetworkText>
-                {IS_MAINNET ? `L15` : `${LUKSO_NETWORK_NAME}`}
+                {IS_MAINNET ? `L16` : `${LUKSO_NETWORK_NAME}`}
                 <FormDown />
               </NetworkText>
             }
@@ -334,7 +334,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                         network: `${
                           IS_MAINNET
                             ? `${TESTNET_LAUNCHPAD_NAME} testnet`
-                            : `L15`
+                            : `L16`
                         }`,
                       }}
                     />

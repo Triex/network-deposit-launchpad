@@ -186,7 +186,7 @@ const _SummaryPage = ({
         <Row>
           <Link
             isTextLink={false}
-            to="https://explorer.pandora.l15.lukso.network/address/0x000000000000000000000000000000000000cafE"
+            to="https://explorer.pandora.l16.lukso.network/address/0x000000000000000000000000000000000000cafE"
             primary
           >
             <Button

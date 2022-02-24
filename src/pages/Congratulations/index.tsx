@@ -479,7 +479,7 @@ const _CongratulationsPage = ({
             <div>
               <div className="flex">
                 <Heading level={3} size="medium" color="white" margin="none">
-                  <FormattedMessage defaultMessage="Thank you for supporting the LUKSO L15 ephemeral testnet!" />
+                  <FormattedMessage defaultMessage="Thank you for supporting the LUKSO L16 testnet!" />
                 </Heading>
                 <Text color="white" className="mt10">
                   <FormattedMessage

@@ -26,7 +26,7 @@ export const pageContent = {
     content: (
       <>
         <Text size="medium" className="my10">
-          <FormattedMessage defaultMessage="The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L15 is the ephemeral testnet prior to L16, and mainnet launch." />
+          <FormattedMessage defaultMessage="The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L16 is the testnet prior to L16, and mainnet launch." />
         </Text>
         <Text size="medium" className="my10">
           <FormattedMessage
@@ -40,12 +40,12 @@ export const pageContent = {
             defaultMessage="Importantly, as a validator you'll need to post {TICKER_NAME} as
               collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a
               validator is to make a one-way {TICKER_NAME} transaction to the deposit contract
-              on the current LUKSO L15 Testnet."
+              on the current LUKSO L16 Testnet."
             values={{
               TICKER_NAME,
               faucetLink: (
                 <Link to={FAUCET_URL} className="inline" primary>
-                  <FormattedMessage defaultMessage="L15 Faucet" />
+                  <FormattedMessage defaultMessage="L16 Faucet" />
                 </Link>
               ),
             }}
@@ -70,7 +70,7 @@ export const pageContent = {
       <>
         <Text size="medium" className="my10">
           <FormattedMessage
-            defaultMessage="To become a validator on the L15 testnet, you need to deposit
+            defaultMessage="To become a validator on the L16 testnet, you need to deposit
               {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
             values={{ PRICE_PER_VALIDATOR, TICKER_NAME }}
           />

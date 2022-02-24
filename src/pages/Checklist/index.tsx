@@ -171,7 +171,7 @@ export const Checklist = () => {
 
   return (
     <PageTemplate
-      title={formatMessage({ defaultMessage: 'L15 validator checklist' })}
+      title={formatMessage({ defaultMessage: 'L16 validator checklist' })}
     >
       <div id="top" />
       <Subtitle>
@@ -603,7 +603,7 @@ export const Checklist = () => {
                 <FormattedMessage
                   defaultMessage="I've installed and synced my Pandora node on {network} (do not wait on this as it can take a while)."
                   values={{
-                    network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15',
+                    network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L16',
                   }}
                 />
               </Text>
@@ -612,7 +612,7 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="L15 Vanguard Node (VN)" />
+            <FormattedMessage defaultMessage="L16 Vanguard Node (VN)" />
           </Heading>
           <Heading level={4} className="mt10">
             <FormattedMessage defaultMessage="Required" />
@@ -620,7 +620,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)." />
+                <FormattedMessage defaultMessage="I'm able to connect my L16 Vanguard node to my Pandora client via HTTP API(s)." />
               </Text>
             }
           />
@@ -643,7 +643,7 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've synced my L15 Vanguard node on {LUKSO_NETWORK_NAME}."
+                  defaultMessage="I've synced my L16 Vanguard node on {LUKSO_NETWORK_NAME}."
                   values={{ LUKSO_NETWORK_NAME }}
                   description="{LUKSO_NETWORK_NAME} is name of network, do not translate"
                 />
@@ -663,7 +663,7 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="L15 Validator Client (VC)" />
+            <FormattedMessage defaultMessage="L16 Validator Client (VC)" />
           </Heading>
           <Heading level={4} className="mt10">
             <FormattedMessage defaultMessage="Required" />
@@ -671,7 +671,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I've imported my keystore(s) into my L15 validator client." />
+                <FormattedMessage defaultMessage="I've imported my keystore(s) into my L16 validator client." />
               </Text>
             }
           />
@@ -796,7 +796,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I've simulated how to migrate from one L15 client to another L15 client." />
+                <FormattedMessage defaultMessage="I've simulated how to migrate from one L16 client to another L16 client." />
               </Text>
             }
           />

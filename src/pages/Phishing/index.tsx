@@ -104,7 +104,7 @@ export const Phishing = () => {
           </li>
           <li>
             <Text className="mt10">
-              <FormattedMessage defaultMessage="Check your favorite L15 block explorer:" />
+              <FormattedMessage defaultMessage="Check your favorite L16 block explorer:" />
             </Text>
             <ul>
               <li>
@@ -114,7 +114,7 @@ export const Phishing = () => {
               </li>
               <li>
                 <Text className="mt10">
-                  <FormattedMessage defaultMessage="The current URLs are: https://explorer.pandora.l15.lukso.network/ and https://explorer.vanguard.l15.lukso.network/" />
+                  <FormattedMessage defaultMessage="The current URLs are: https://explorer.pandora.l16.lukso.network/ and https://explorer.vanguard.l16.lukso.network/" />
                 </Text>
               </li>
             </ul>

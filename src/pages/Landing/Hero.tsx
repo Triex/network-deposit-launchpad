@@ -174,10 +174,10 @@ export const Hero = () => {
                       <LogoContainer className={m ? 'mb50' : undefined}>
                         <LogoText>
                           {IS_MAINNET ? (
-                            <FormattedMessage defaultMessage="LUKSO L15 Testnet Launchpad" />
+                            <FormattedMessage defaultMessage="LUKSO L16 Testnet Launchpad" />
                           ) : (
                             <FormattedMessage
-                              defaultMessage="LUKSO L15 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
+                              defaultMessage="LUKSO L16 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
                               values={{ TESTNET_LAUNCHPAD_NAME }}
                               description="This phrase is a sentence "
                             />
@@ -195,7 +195,7 @@ export const Hero = () => {
                       color="brand"
                       className="my20"
                     >
-                      <FormattedMessage defaultMessage="Become a L15 testnet validator and help secure the future of LUKSO" />
+                      <FormattedMessage defaultMessage="Become a L16 testnet validator and help secure the future of LUKSO" />
                     </Heading>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="fadeInUp" delay={750} animateOnce>

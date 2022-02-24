@@ -31,7 +31,7 @@ export const GethDetails = () => (
       </Text>
       <Link
         primary
-        to="https://docs.lukso.tech/networks/l15-testnet"
+        to="https://docs.lukso.tech/networks/l16-testnet"
         className="mt10"
       >
         <FormattedMessage defaultMessage="Geth installation documentation" />
@@ -47,11 +47,11 @@ export const GethDetails = () => (
       {!IS_MAINNET && (
         <>
           <Heading level={3} className="mt20">
-            <FormattedMessage defaultMessage="Testing on L15" />
+            <FormattedMessage defaultMessage="Testing on L16" />
           </Heading>
           <Text className="mt10">
             <FormattedMessage
-              defaultMessage="Use L15LYX to sync the L15 testnet."
+              defaultMessage="Use L16LYX to sync the L16 testnet."
               values={{
                 goerli: <Code className="mt20">--goerli</Code>,
               }}
@@ -61,7 +61,7 @@ export const GethDetails = () => (
             primary
             to="https://geth.ethereum.org/docs/interface/command-line-options"
           >
-            <FormattedMessage defaultMessage="Geth on L15 documentation" />
+            <FormattedMessage defaultMessage="Geth on L16 documentation" />
           </Link>
         </>
       )}
@@ -70,7 +70,7 @@ export const GethDetails = () => (
       </Heading>
       <Text className="mt10">
         <FormattedMessage
-          defaultMessage="Use {http} to connect your L15 node to the JSON RPC
+          defaultMessage="Use {http} to connect your L16 node to the JSON RPC
           endpoint. This will enable the JSON RPC services on the default 8545
           port."
           values={{

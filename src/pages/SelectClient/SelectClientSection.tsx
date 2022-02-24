@@ -53,11 +53,11 @@ const SelectClientSection = ({
               <Pre className="my10">
                 <span style={{ color: colors.red.medium }}>
                   # Linux
-                  <br />$ curl https://install.l15.lukso.network | bash
+                  <br />$ curl https://install.l16.lukso.network | bash
                   <br />
                   <br />
                   # MacOS
-                  <br />$ sudo curl https://install.l15.lukso.network | bash
+                  <br />$ sudo curl https://install.l16.lukso.network | bash
                 </span>
               </Pre>
             </Alert>

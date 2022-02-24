@@ -112,13 +112,13 @@ const TransactionProgress: React.FC<TransactionProgressProps> = ({
     <Container>
       <div className="flex">
         <ProgressCircle step={1} status={signTxStatus} />
-        <Text className="mt10 ml15">
+        <Text className="mt10 ml16">
           <FormattedMessage defaultMessage="Sign transaction with your wallet" />
         </Text>
       </div>
       <div className="mt30 flex">
         <ProgressCircle step={2} status={confirmOnChainStatus} />
-        <Text className="mt10 ml15">
+        <Text className="mt10 ml16">
           <FormattedMessage defaultMessage="Confirm on-chain" />
         </Text>
       </div>

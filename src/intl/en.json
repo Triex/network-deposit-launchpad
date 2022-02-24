@@ -1,6 +1,13 @@
 {
+  "+4eW0o": {
+    "description": "This phrase is a sentence ",
+    "message": "LUKSO L16 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
+  },
   "+Cieba": {
     "message": "{withdrawalCredentials} is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
+  },
+  "+Doi8A": {
+    "message": "I'm able to connect my L16 Vanguard node to my Pandora client via HTTP API(s)."
   },
   "+UUcBt": {
     "message": "Choose a language"
@@ -26,10 +33,6 @@
   "+s8Gac": {
     "message": "Connect {wallet} to {network}"
   },
-  "+sCvYi": {
-    "description": "{http} shows '--http' terminal command",
-    "message": "Use {http} to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
-  },
   "/+atl4": {
     "message": "Recommendation disclaimer"
   },
@@ -38,6 +41,10 @@
   },
   "/5Hyyf": {
     "message": "Indonesian"
+  },
+  "/H5bJt": {
+    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
+    "message": "I've synced my L16 Vanguard node on {LUKSO_NETWORK_NAME}."
   },
   "/QPc9s": {
     "message": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
@@ -90,6 +97,9 @@
   },
   "07C4IQ": {
     "message": "Section 3 - After depositing"
+  },
+  "08nz3y": {
+    "message": "The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L16 is the testnet prior to L16, and mainnet launch."
   },
   "0B58Ai": {
     "message": "You should certainly top up if your balance is close to 16 {tickerName}. This is to ensure you don’t get kicked out of the validator set (which automatically happens if your balance falls below 16 {tickerName})."
@@ -174,14 +184,8 @@
     "description": "The {semicolon} and {colon} variables refer to the keyboard characters ';' and ':'.",
     "message": "The path separator is operating system dependent, and should be {semicolon} in Windows rather than {colon}."
   },
-  "2Avb9j": {
-    "message": "Thank you for supporting the LUKSO L15 ephemeral testnet!"
-  },
   "2CYEJa": {
     "message": "Troubleshooting"
-  },
-  "2Qn0Hh": {
-    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L15 Testnet."
   },
   "2a1GTh": {
     "message": "you can always recalculate your signing key from your withdrawal key"
@@ -194,6 +198,12 @@
   },
   "32rBNK": {
     "message": "Terms of Service"
+  },
+  "3DtccQ": {
+    "message": "L16 Vanguard Node (VN)"
+  },
+  "3GPkk7": {
+    "message": "LUKSO L16 Testnet Launchpad"
   },
   "3GbrWR": {
     "message": "Why do rewards depend on the total number of validators in the network?"
@@ -238,9 +248,6 @@
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
   },
-  "4TOYsg": {
-    "message": "LUKSO L15 Ephemeral Testnet Launchpad"
-  },
   "4hnEBA": {
     "message": "Has the smart contract code been verified?"
   },
@@ -268,6 +275,9 @@
   "5UH1sh": {
     "message": "Romanian"
   },
+  "5r8yCq": {
+    "message": "L16 validator checklist"
+  },
   "5vfntO": {
     "message": "In case you are currently running a node already, please stop it with this command:"
   },
@@ -277,8 +287,8 @@
   "6CK2Nu": {
     "message": "Your wallet is on the wrong network. Switch to {network}"
   },
-  "6RJOKW": {
-    "message": "I've simulated how to migrate from one L15 client to another L15 client."
+  "6JWRZ2": {
+    "message": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L16 is an testnet, meaning the state will not be persistent and the network will be frequently reset."
   },
   "6UUL73": {
     "message": "More on validators"
@@ -316,11 +326,11 @@
   "7XiYRi": {
     "message": "Slashed?"
   },
+  "7dZXoC": {
+    "message": "Use L16LYX to sync the L16 testnet."
+  },
   "7gmpID": {
     "message": "LUKSO validators community"
-  },
-  "7lhBkq": {
-    "message": "Use L15LYX to sync the L15 testnet."
   },
   "7s6XNV": {
     "message": "Staking and rewards"
@@ -347,6 +357,9 @@
   "8JtiQS": {
     "message": "Does the contract address listed on the website match?"
   },
+  "8SWLsM": {
+    "message": "Slashing has two purposes: (1) to make it prohibitively expensive to attack L16, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
+  },
   "8WtyrD": {
     "message": "Spanish"
   },
@@ -369,6 +382,9 @@
   "9/4mZe": {
     "message": "Validating involves two keys for security reasons. Your signing key must be available at all times. As such, it will need to be held online. Since anything online is vulnerable to being hacked, it’s not a good idea to use the same key for withdrawals."
   },
+  "90mSq7": {
+    "message": "Become a L16 testnet validator and help secure the future of LUKSO."
+  },
   "96pen8": {
     "message": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
   },
@@ -390,6 +406,9 @@
   "9qMyhY": {
     "message": "Read options and subcommands documentation"
   },
+  "9rYfcZ": {
+    "message": "The L16 clients"
+  },
   "9uOFF3": {
     "message": "Overview"
   },
@@ -398,10 +417,6 @@
   },
   "A6Oppp": {
     "message": "Prysm offers step-by-step guidelines to run their client after completing your deposit through the launchpad."
-  },
-  "AIEf0K": {
-    "description": "This phrase is a sentence ",
-    "message": "LUKSO L15 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
   },
   "ALg2MW": {
     "message": "Check the deposit contract on your favorite block explorer:"
@@ -464,8 +479,8 @@
   "BoEpk9": {
     "message": "Introduction"
   },
-  "C9dXhY": {
-    "message": "The L15 clients"
+  "ByUfps": {
+    "message": "Become a L16 testnet validator and help secure the future of LUKSO"
   },
   "C9fTX1": {
     "message": "Answers to common questions on becoming a validator."
@@ -549,9 +564,16 @@
   "EuhIal": {
     "message": "Syncing your Pandora client may take a few days in the worst-case scenario."
   },
+  "EvlAFB": {
+    "description": "{network} is either 'LUKSO Mainnet' or 'LUKSO L16 Testnet'",
+    "message": "Connect to {network}"
+  },
   "F7VIgY": {
     "description": "Link to documentation about Pandora client Besu, specifically for goerli testnet",
     "message": "Besu on Goerli documentation"
+  },
+  "F8t3Fk": {
+    "message": "The current URLs are: https://explorer.pandora.l16.lukso.network/ and https://explorer.vanguard.l16.lukso.network/"
   },
   "FEbVwB": {
     "message": "The key concept is the following:"
@@ -561,6 +583,9 @@
   },
   "FSRfSJ": {
     "message": "I understand that this transaction is not reversible."
+  },
+  "FYO3nJ": {
+    "message": "L16 Clients: {clientName}"
   },
   "FYRKlK": {
     "message": "Proof-of-stake (PoS) and the Vanguard Consensus Chain"
@@ -619,14 +644,8 @@
   "GuIwY6": {
     "message": "When should I top up my validator’s balance?"
   },
-  "GxQors": {
-    "message": "You'll need to run a L15 node to become a validator. Take a look at the checklist to prepare yourself and your equipment."
-  },
   "H+Wcch": {
     "message": "Section 2"
-  },
-  "H+cVuO": {
-    "message": "LUKSO L15 Testnet Launchpad"
   },
   "H+kIpp": {
     "message": "Total amount required"
@@ -651,6 +670,10 @@
     "description": "Asks users to check deposit contract address against a block explorer and confirm 32 LYX deposits are present",
     "message": "Are there recent {lyxtAmount} deposits?"
   },
+  "HrjYox": {
+    "description": "{http} shows '--JsonRpc.Enabled true' terminal command",
+    "message": "Use {http} to connect your L16 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+  },
   "I212vY": {
     "message": "There is a short wait before your validator becomes active on the Beacon Chain. Use this time to complete the checklist and spend some time validating the {testnet}"
   },
@@ -670,6 +693,9 @@
   "IBLsVn": {
     "message": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
   },
+  "IBUHmu": {
+    "message": "I've simulated how to migrate from one L16 client to another L16 client."
+  },
   "IJw06E": {
     "message": "Sign transaction with your wallet"
   },
@@ -682,6 +708,9 @@
   },
   "Il9tBQ": {
     "message": "Geth is written in Go, fully open source and licensed under the GNU LGPL v3."
+  },
+  "IlqaDW": {
+    "message": "Thank you for supporting the LUKSO L16 testnet!"
   },
   "IugT5/": {
     "message": "cannot transfer"
@@ -702,14 +731,14 @@
   "JDGiXT": {
     "message": "The OpenEthereum documentation explains how to download and install the client."
   },
+  "JGkODx": {
+    "message": "To become a validator on the L16 testnet, you need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
+  },
   "JMcBLZ": {
     "message": "Outstanding deposits ({remainingTxCount})"
   },
   "JPT/TK": {
     "message": "4. Avoid phishing"
-  },
-  "JpZRE1": {
-    "message": "Can I withdraw my L15 LYXt to LYX or LYXe?"
   },
   "JqVeL+": {
     "message": "Resource usage can vary significantly between clients. Research the different clients if you're working with resource constraints."
@@ -730,9 +759,6 @@
   "KC9jbz": {
     "message": "Hardware checklist"
   },
-  "KCBqlo": {
-    "message": "Check your favorite L15 block explorer:"
-  },
   "KFSZ68": {
     "message": "{warning} Duplicate deposits with the same keyfile public key will be considered as a double deposit. Any extra balance more than {lyxt} will NOT be counted in your effective balance on the Vanguard Chain. Withdrawing your deposits also won't currently be possible."
   },
@@ -741,6 +767,9 @@
   },
   "KN7zKn": {
     "message": "Error"
+  },
+  "KVWEwB": {
+    "message": "L16 Faucet"
   },
   "KjcAm2": {
     "message": "Rewards and penalties are issued roughly every six and a half minutes – a period of time known as an epoch."
@@ -790,9 +819,6 @@
   },
   "Lv3Pmp": {
     "message": "Your initial deposit has already been made for this validator public key. Please wait and check the status of your deposit on the Beaconchain data provider."
-  },
-  "Lva1dX": {
-    "message": "Testnet tokens (LYXt) are non-transferrable to other testnets, mainnet (LYX) or LYXe. L15 is an ephemeral testnet, meaning the state will not be persistent and the network will be frequently reset."
   },
   "M3GwXS": {
     "message": "You'll only get your full rewards if your validator is online and up to date. This is your responsibility. If your validator goes offline you'll be penalized. The penalties for being offline are roughly equal to the rewards for actively participating."
@@ -857,9 +883,6 @@
   "Nb5DNK": {
     "message": "Become a validator with Teku"
   },
-  "NmiAuT": {
-    "message": "Learn more about the roles and responsibilities of L15 validators."
-  },
   "NwzcYT": {
     "message": "Teku needs to be pointed at files containing keystores and their associated passwords at startup. There are 3 methods for doing so."
   },
@@ -887,9 +910,6 @@
   "P+nziG": {
     "message": "As a validator, you'll need to have funds at stake so you can be penalized for behaving dishonestly."
   },
-  "P7/KZ1": {
-    "message": "The LUKSO Mainnet is the first to bring proof-of-stake consensus based on Ethereum's Beacon Chain Architecture. L15 is the ephemeral testnet prior to L16, and mainnet launch."
-  },
   "P91KmA": {
     "message": "Become a validator {emoji}"
   },
@@ -899,14 +919,14 @@
   "PIQDar": {
     "message": "We recommend you go through the entire process on a testnet first to get comfortable."
   },
+  "PTBYde": {
+    "message": "Learn more about the roles and responsibilities of L16 validators."
+  },
   "PfoT0C": {
     "message": "This checklist will help you understand the role of a validator and prepare you for the role."
   },
   "PglO1W": {
     "message": "Formal verification report"
-  },
-  "PlU6f3": {
-    "message": "Testing on L15"
   },
   "PoBIK+": {
     "message": "You'll need SSD storage to consistently handle necessary read/write speeds."
@@ -917,9 +937,6 @@
   "PurNgG": {
     "message": "Turkish"
   },
-  "Q+vr3v": {
-    "message": "To become a validator on the L15 testnet, you need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} per validator that you wish to run."
-  },
   "Q1ZwPT": {
     "message": "clipboard"
   },
@@ -928,9 +945,6 @@
   },
   "Q8P0rZ": {
     "message": "Validators have a maximum effective balance of {PRICE_PER_VALIDATOR} {TICKER_NAME}. You only need to top up {maxTopupValue} {TICKER_NAME} to max out your effective balance."
-  },
-  "QBAX97": {
-    "message": "L15 Vanguard Node (VN)"
   },
   "QKFeMq": {
     "message": "Internet"
@@ -996,6 +1010,9 @@
   "SGzXoY": {
     "message": "Your stake has reached the deposit contract!"
   },
+  "SIenib": {
+    "message": "Importantly, as a validator you'll need to post {TICKER_NAME} as collateral - in other words, have some funds at stake (get some at the {faucetLink}). The only way to become a validator is to make a one-way {TICKER_NAME} transaction to the deposit contract on the current LUKSO L16 Testnet."
+  },
   "SR0qHv": {
     "message": "Avoid overly-complicated setups and be aware of trade offs. Being offline for brief periods of time will result in small inactivity penalities, but will be recouped easily after being online again for about the same amount of time. Complicated power backups can add to the expense of your setup, and redundant backup validators can lead to slashing."
   },
@@ -1023,12 +1040,6 @@
   "Seanpx": {
     "message": "Required"
   },
-  "ShW01z": {
-    "message": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Vanguard Consensus Chain / L15 testnet."
-  },
-  "Skc8c/": {
-    "message": "I've imported my keystore(s) into my L15 validator client."
-  },
   "Szwbym": {
     "message": "wrench"
   },
@@ -1041,20 +1052,17 @@
   "U/NPbq": {
     "message": "German"
   },
-  "U3D1AX": {
-    "message": "You can think of the deposit contract as a transfer of funds between LUKSO accounts and L15 validators."
-  },
   "U7AOxj": {
     "message": "greater than 50%"
+  },
+  "U9qatE": {
+    "message": "Geth on L16 documentation"
   },
   "UEFdq7": {
     "message": "Why a sliding scale? While we won’t get into the gory details here, the basic intution is that there needs to be a minimum number of validators (and hence a minimum amount of {tickerName} staked) for the network to function properly. So, to incentivize more validators to join, it’s important that the interest rate remains high until this minimum number is reached."
   },
   "UHbYCa": {
     "message": "Your validator has its own balance – with the initial balance outlined in the deposit contract. Your rewards and penalties are reflected in your validator's balance over time."
-  },
-  "UJFSst": {
-    "message": "The current URLs are: https://explorer.pandora.l15.lukso.network/ and https://explorer.vanguard.l15.lukso.network/"
   },
   "UJMct0": {
     "description": "{etherscan} is a share link to this transaction on etherscan.io, labeled 'Etherscan'",
@@ -1106,6 +1114,9 @@
   "VctWDX": {
     "message": "I am certain that the validator I am topping up is my validator."
   },
+  "Vi8WfU": {
+    "message": "Validators and L16"
+  },
   "VzGJkB": {
     "message": "Staker checklist"
   },
@@ -1118,9 +1129,8 @@
   "W8nHSd": {
     "message": "FAQ"
   },
-  "WDkfhR": {
-    "description": "{http} shows '--JsonRpc.Enabled true' terminal command",
-    "message": "Use {http} to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+  "WDGUmd": {
+    "message": "You can think of the deposit contract as a transfer of funds between LUKSO accounts and L16 validators."
   },
   "WDszx6": {
     "message": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client as well as your Vanguard client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
@@ -1164,6 +1174,9 @@
   },
   "Y9S0NE": {
     "message": "Send last deposit"
+  },
+  "YCQ4fX": {
+    "message": "Can I withdraw my L16 LYXt to LYX or LYXe?"
   },
   "YFFqcn": {
     "message": "I understand proof-of-stake and why validators are needed."
@@ -1234,9 +1247,6 @@
   "ap/jla": {
     "message": "Phishing is a very real risk for LUKSO validators and, unfortunately, many people will lose funds due to these attacks."
   },
-  "b4Fwl0": {
-    "message": "The L15 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted."
-  },
   "b4csjU": {
     "message": "However, bear in mind that for the foreseeable future, once you’ve exited, there’s no going back."
   },
@@ -1263,9 +1273,6 @@
   },
   "bnuvhg": {
     "message": "Lighthouse is built in Rust and offered under an Apache 2.0 License."
-  },
-  "bt03u4": {
-    "message": "L15 Clients: {clientName}"
   },
   "c9DSZ1": {
     "message": "We strongly recommended you complete these steps on the current testnet before mainnet."
@@ -1297,10 +1304,6 @@
   "clxIWO": {
     "message": "How much will I be penalized for acting maliciously?"
   },
-  "coarsc": {
-    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
-    "message": "I've synced my L15 Vanguard node on {LUKSO_NETWORK_NAME}."
-  },
   "cpxfOR": {
     "message": "What are withdrawal credentials?"
   },
@@ -1318,6 +1321,9 @@
   },
   "dM/KIM": {
     "message": "What exactly is a validator?"
+  },
+  "dMszfG": {
+    "message": "Check your favorite L16 block explorer:"
   },
   "dTOtPO": {
     "message": "Top Up"
@@ -1345,6 +1351,9 @@
     "description": "{code} values are terminal outputs and commands.",
     "message": "If {code1} is not {code2}, run: {code3}"
   },
+  "eBN2J3": {
+    "message": "I've imported my keystore(s) into my L16 validator client."
+  },
   "eKEL/g": {
     "message": "Pending"
   },
@@ -1353,9 +1362,6 @@
   },
   "eOpZjd": {
     "message": "It specifies who is staking, who is validating, how much is being staked, and who can withdraw the funds."
-  },
-  "eRntau": {
-    "message": "The L15 upgrades will only be successful if validators understand the risks and responsibilities."
   },
   "eaU/aL": {
     "message": "To maximize security and efficiency of your node, use dedicated hardware to run your clients. This reduces risk of malware exposure and minimizes competition for computing resources, ensuring your node handles the network load and its validator responsibilities at all times."
@@ -1407,9 +1413,6 @@
   "g0zIUd": {
     "message": "cannot withdraw"
   },
-  "g6zrLr": {
-    "message": "Become a L15 testnet validator and help secure the future of LUKSO."
-  },
   "gFkou2": {
     "message": "Your wallet is on the wrong network. To continue, connect to the {networkName} network."
   },
@@ -1438,6 +1441,12 @@
   "gx6frf": {
     "message": "clock"
   },
+  "h+RHeh": {
+    "message": "The L16 deposit contract requires a minimum of {minTopupValue} {TICKER_NAME} to be sent at one time to be accepted."
+  },
+  "h+tqGf": {
+    "message": "The L16 upgrades will only be successful if validators understand the risks and responsibilities."
+  },
   "h1nTWx": {
     "message": "If you try to cheat the system, you will be liable to incur a penalty, known as slashing. Running your validator keys simultaneously on two or more machines will result in slashing."
   },
@@ -1463,12 +1472,6 @@
   },
   "hZrkPB": {
     "message": "In other words, you maximize your rewards by providing the greatest benefit to the network as a whole."
-  },
-  "hat13W": {
-    "message": "Validators and L15"
-  },
-  "hjjX06": {
-    "message": "L15 Validator Client (VC)"
   },
   "hkg3fb": {
     "message": "More on effective balance"
@@ -1500,9 +1503,6 @@
   },
   "igGcu9": {
     "message": "Validating in LUKSO is not the same as mining. The outcomes are similar: the work you do will extend and secure the chain. But the process is completely different because they use different consensus mechanisms."
-  },
-  "ijbdN4": {
-    "message": "L15 validator checklist"
   },
   "irRdC0": {
     "message": "Hardware suggestions are an ever-evolving target. Current minimum requirements are likely to increase by an order of magnitude after the merge and introduction of shard chains. Do your own research before depositing funds."
@@ -1550,9 +1550,6 @@
     "description": "Warns users to not run backup validators that have a live copy of their signing keys. Keys should only be on one validator machine at once.",
     "message": "Warning: Do not store keys on multiple (backup) validators at once"
   },
-  "jsaN7g": {
-    "message": "The L15 ephemeral test network"
-  },
   "jse8rl": {
     "message": "How great does my uptime need to be for my validator to be net profitable?"
   },
@@ -1583,9 +1580,6 @@
   "kd/f4u": {
     "message": "Key list"
   },
-  "klLKJB": {
-    "message": "L15 Faucet"
-  },
   "kn7kJd": {
     "message": "More on consensus mechanisms"
   },
@@ -1613,11 +1607,18 @@
   "lD66ab": {
     "message": "Outstanding deposit"
   },
+  "lLEzAg": {
+    "description": "{http} shows '--http' terminal command",
+    "message": "Use {http} to connect your L16 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
+  },
   "lS9VhN": {
     "message": "Total {TICKER_NAME} staked"
   },
   "lVARlA": {
     "message": "Please enter a valid top-up value."
+  },
+  "lbreEp": {
+    "message": "You'll need to run a L16 node to become a validator. Take a look at the checklist to prepare yourself and your equipment."
   },
   "lfV1bj": {
     "message": "Importing from Launchpad documentation"
@@ -1637,9 +1638,6 @@
   "lxfupg": {
     "message": "By default, deposit-cli would generate withdrawal credentials with the {boldWithdrawalKey} derived via mnemonics in {eip2334} format."
   },
-  "m3T512": {
-    "message": "I'm able to connect my L15 Vanguard node to my Pandora client via HTTP API(s)."
-  },
   "mArJcj": {
     "message": "Hard drive"
   },
@@ -1652,12 +1650,12 @@
   "mpmFDY": {
     "message": "No pending deposits"
   },
-  "mqhL5p": {
-    "description": "{http} shows '-rpc-http-enabled' terminal command",
-    "message": "Use {http} to connect your L15 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
-  },
   "mr1BWl": {
     "message": "Risks and acknowledgements:"
+  },
+  "mvqAAs": {
+    "description": "{http} shows '-rpc-http-enabled' terminal command",
+    "message": "Use {http} to connect your L16 node to the JSON RPC endpoint. This will enable the JSON RPC services on the default 8545 port."
   },
   "n7yYXG": {
     "message": "Service"
@@ -1689,6 +1687,9 @@
   },
   "o9QvTP": {
     "message": "Before you start"
+  },
+  "oV6oX8": {
+    "message": "LUKSO L16 Ephemeral Testnet Launchpad"
   },
   "oWhj8Q": {
     "message": "How often are rewards/penalties issued?"
@@ -1727,6 +1728,9 @@
   "pA+UVF": {
     "message": "If you'd like to see the launchpad in another language, or if you can help translate, {getInTouch}!"
   },
+  "pF4giW": {
+    "message": "Currently we are running the L16 Ephemeral Testnet to prepare for L16, and we need your help!"
+  },
   "pXyH++": {
     "message": "The Besu documentation explains how to download and install the client."
   },
@@ -1748,6 +1752,9 @@
   },
   "q0rXsF": {
     "message": "🌈 Forked from the Eth2 Launchpad"
+  },
+  "q1rX9p": {
+    "message": "L16 Validator Client (VC)"
   },
   "q2XW/k": {
     "message": "If your withdrawal key is stolen, the thief can transfer your validator’s balance, but only once the validator has exited."
@@ -1773,10 +1780,6 @@
   "qgqVCE": {
     "message": "reconnect your wallet"
   },
-  "qtj6vU": {
-    "description": "{network} is either 'LUKSO Mainnet' or 'LUKSO L15 Testnet'",
-    "message": "Connect to {network}"
-  },
   "qwh6gM": {
     "message": "I understand the early adopter and slashing risks."
   },
@@ -1785,6 +1788,9 @@
   },
   "rD3ot9": {
     "message": "Phishing guide"
+  },
+  "rF6aDk": {
+    "message": "Testing on L16"
   },
   "rFe61n": {
     "message": "As a validator, you'll be responsible for securing the network and receive continuous payouts for actions that help the network reach consensus."
@@ -1850,8 +1856,8 @@
   "szN3Fl": {
     "message": "I understand and agree to the terms-of-service and everything stated in the previous sections."
   },
-  "tDJxoT": {
-    "message": "Become a L15 testnet validator and help secure the future of LUKSO"
+  "tC/D6r": {
+    "message": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Vanguard Consensus Chain / L16 testnet."
   },
   "tJcyUM": {
     "message": "Your deposit_data.json suggests you wanted to set up more validators. These deposits are still outstanding. If you think you've already made these deposits, wait an hour before trying again to avoid duplicate deposits."
@@ -1864,9 +1870,6 @@
   },
   "tkFTZw": {
     "message": "Balance after topping up"
-  },
-  "tkad+U": {
-    "message": "Currently we are running the L15 Ephemeral Testnet to prepare for L16, and we need your help!"
   },
   "tsfX5f": {
     "message": "Confirm deposit"
@@ -1890,9 +1893,6 @@
   "u81G9+": {
     "message": "Uptime"
   },
-  "uHaXQZ": {
-    "message": "Geth on L15 documentation"
-  },
   "uJzGSb": {
     "message": "Make sure you're aware of how to avoid phishing attacks. We've prepared a list of things to look out for."
   },
@@ -1910,9 +1910,6 @@
   },
   "ukfwum": {
     "message": "Become a validator with Nimbus"
-  },
-  "ulXbuO": {
-    "message": "Slashing has two purposes: (1) to make it prohibitively expensive to attack L15, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
   },
   "uprpgn": {
     "message": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
@@ -1968,6 +1965,9 @@
   },
   "wdb1NC": {
     "message": "More on proof of stake"
+  },
+  "wkkgH/": {
+    "message": "The L16 test network"
   },
   "wm04oC": {
     "message": "Run the following command:"

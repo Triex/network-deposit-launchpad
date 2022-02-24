@@ -53,9 +53,9 @@ const WalletConnectModal: React.FC = () => {
             <FormattedMessage
               defaultMessage="Connect to {network}"
               values={{
-                network: IS_MAINNET ? 'LUKSO mainnet' : 'LUKSO L15 Testnet',
+                network: IS_MAINNET ? 'LUKSO mainnet' : 'LUKSO L16 Testnet',
               }}
-              description="{network} is either 'LUKSO Mainnet' or 'LUKSO L15 Testnet'"
+              description="{network} is either 'LUKSO Mainnet' or 'LUKSO L16 Testnet'"
             />
           </Text>
         </div>

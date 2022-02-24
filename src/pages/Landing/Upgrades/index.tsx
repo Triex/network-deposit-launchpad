@@ -79,7 +79,7 @@ export const Upgrades = (): JSX.Element => {
       title: formatMessage({ defaultMessage: 'Validators FAQ' }),
       subTitle: formatMessage({
         defaultMessage:
-          'Learn more about the roles and responsibilities of L15 validators.',
+          'Learn more about the roles and responsibilities of L16 validators.',
       }),
       linkUrl: '/faq',
       link: formatMessage({ defaultMessage: 'More on validators' }),
@@ -109,7 +109,7 @@ export const Upgrades = (): JSX.Element => {
                     secures Ethereum today. It rewards validators for
                     building the chain, but slashes their deposits if they try to
                     attack it, incentivising healthy behaviour. This upgrade is
-                    already live in the form of the Vanguard Consensus Chain / L15 testnet."
+                    already live in the form of the Vanguard Consensus Chain / L16 testnet."
                 />
               </Text>
               <Link

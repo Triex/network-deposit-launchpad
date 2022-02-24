@@ -287,7 +287,7 @@ const _ConnectWalletPage = ({
           { defaultMessage: 'Connect {wallet} to {network}' },
           {
             wallet: getWalletName(walletProvider),
-            network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15 Testnet',
+            network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L16 Testnet',
           }
         )
       );
@@ -355,7 +355,7 @@ const _ConnectWalletPage = ({
                   </Heading>
                 </Row>
                 <Text color={networkAllowed ? 'greenDark' : 'redMedium'}>
-                  {network === 'Mainnet' ? network : `L15 testnet`}
+                  {network === 'Mainnet' ? network : `L16 testnet`}
                 </Text>
               </Network>
               <div>
@@ -460,7 +460,7 @@ const _ConnectWalletPage = ({
           <FormattedMessage
             defaultMessage="Your wallet is on the wrong network. Switch to {network}"
             values={{
-              network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L15 Testnet',
+              network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L16 Testnet',
             }}
           />
         </div>

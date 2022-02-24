@@ -5,7 +5,7 @@ import { Text } from '../../components/Text';
 import { WorkflowPageTemplate } from '../../components/WorkflowPage/WorkflowPageTemplate';
 import { IS_MAINNET } from '../../utils/envVars';
 
-const networkName = IS_MAINNET ? 'Mainnet' : 'LUKSO L15 Testnet';
+const networkName = IS_MAINNET ? 'Mainnet' : 'LUKSO L16 Testnet';
 
 export const WrongNetwork = () => {
   const { formatMessage } = useIntl();
