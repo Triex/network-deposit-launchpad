@@ -260,9 +260,9 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="To process incoming validator deposits from the Geth
-                    chain, you'll need to run a Geth client as well as your
-                    Beacon client. You can use a third-party service
+                  defaultMessage="To process incoming validator deposits from the Execution
+                    chain, you'll need to run a Execution client as well as your
+                    Consensus client. You can use a third-party service
                     like Infura, but we recommend running your own client to
                     keep the network as decentralised as possible."
                 />
@@ -271,7 +271,7 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="You'll need a significant amount of space for the Geth chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
+                  defaultMessage="You'll need a significant amount of space for the Execution chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
                   values={{
                     date: (
                       <FormattedDate
@@ -287,7 +287,7 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="The Beacon Chain had its genesis on {date}. It is growing in size over time, and the
+                  defaultMessage="The Consensus Chain had its genesis on {date}. It is growing in size over time, and the
                     introduction of sharding will also increase storage, memory, and bandwidth requirements."
                   values={{
                     date: (
@@ -377,7 +377,7 @@ export const Checklist = () => {
             </li>
             <li className="py5">
               <Text>
-                <FormattedMessage defaultMessage="Syncing your Geth client may take a few days in the worst-case scenario." />
+                <FormattedMessage defaultMessage="Syncing your Execution client may take a few days in the worst-case scenario." />
               </Text>
             </li>
           </ul>
@@ -457,12 +457,12 @@ export const Checklist = () => {
             </thead>
             <tbody>
               <tr>
-                <td>Geth</td>
+                <td>Execution</td>
                 <td>30405</td>
                 <td>TCP</td>
               </tr>
               <tr>
-                <td>Beacon</td>
+                <td>Consensus</td>
                 <td>
                   12000
                   <br />
@@ -595,15 +595,15 @@ export const Checklist = () => {
         </Alert>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="Configure your Geth Client" />
+            <FormattedMessage defaultMessage="Configure your Execution Client" />
           </Heading>
           <CheckBox
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've installed and synced my Geth node on {network} (do not wait on this as it can take a while)."
+                  defaultMessage="I've installed and synced my Execution node on {network} (do not wait on this as it can take a while)."
                   values={{
-                    network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L16',
+                    network: IS_MAINNET ? 'LUKSO Mainnet' : 'LUKSO L16 Beta',
                   }}
                 />
               </Text>
@@ -612,7 +612,7 @@ export const Checklist = () => {
         </section>
         <section>
           <Heading level={3}>
-            <FormattedMessage defaultMessage="L16 Beacon Node (BN)" />
+            <FormattedMessage defaultMessage="L16 Consensus Node (CN)" />
           </Heading>
           <Heading level={4} className="mt10">
             <FormattedMessage defaultMessage="Required" />
@@ -620,7 +620,7 @@ export const Checklist = () => {
           <CheckBox
             label={
               <Text className="checkbox-label">
-                <FormattedMessage defaultMessage="I'm able to connect my L16 Beacon node to my Geth client via HTTP API(s)." />
+                <FormattedMessage defaultMessage="I'm able to connect my L16 Consensus node to my Execution client via HTTP API(s)." />
               </Text>
             }
           />
@@ -635,7 +635,7 @@ export const Checklist = () => {
                 </code>
               </CodeSnippet>
               <Text>
-                <FormattedMessage defaultMessage="Incase Geth runs on another machine, please substitute '127.0.0.1' with the specific IP of your Geth node." />
+                <FormattedMessage defaultMessage="Incase Execution runs on another machine, please substitute '127.0.0.1' with the specific IP of your Execution node." />
               </Text>
             </li>
           </ul>
@@ -643,7 +643,7 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've synced my L16 Beacon node on {LUKSO_NETWORK_NAME}."
+                  defaultMessage="I've synced my L16 Consensus node on {LUKSO_NETWORK_NAME}."
                   values={{ LUKSO_NETWORK_NAME }}
                   description="{LUKSO_NETWORK_NAME} is name of network, do not translate"
                 />
@@ -780,7 +780,7 @@ export const Checklist = () => {
             label={
               <Text className="checkbox-label">
                 <FormattedMessage
-                  defaultMessage="I've simulated how to manually stop and restart my Beacon Node (BN)
+                  defaultMessage="I've simulated how to manually stop and restart my Consensus Node (CN)
                     and Validator Client (VC) gracefully."
                 />
               </Text>
@@ -817,8 +817,8 @@ export const Checklist = () => {
             <li className="py5">
               <Text>
                 <FormattedMessage
-                  defaultMessage="Moreover, you can set your Validator Client (VC) and Beacon Node (BN)
-                    on separate machines and IPs so that even if your Beacon node is vulnerable, your
+                  defaultMessage="Moreover, you can set your Validator Client (VC) and Consensus Node (BN)
+                    on separate machines and IPs so that even if your Consensus node is vulnerable, your
                     keystore is stored on a different machine."
                 />
               </Text>
@@ -841,7 +841,7 @@ export const Checklist = () => {
                   </Link>
                 ),
               }}
-              description="{variables} are Beacon Chain block explorers, with links to each (do not translate names)"
+              description="{variables} are Consensus Chain block explorers, with links to each (do not translate names)"
             />
           </Text>
           <CheckBox
