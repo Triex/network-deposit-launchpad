@@ -18,11 +18,7 @@ export const HowToStartValidator = () => {
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
             <span style={{ color: colors.red.medium }}>
-              # Linux
               <br />$ make start
-              <br />
-              <br />
-              # MacOS
               <br />$ make start-validator
             </span>
           </Pre>

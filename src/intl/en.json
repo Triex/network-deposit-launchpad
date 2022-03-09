@@ -1,13 +1,6 @@
 {
-  "+4eW0o": {
-    "description": "This phrase is a sentence ",
-    "message": "LUKSO L16 Testnet Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
-  },
   "+Cieba": {
     "message": "{withdrawalCredentials} is a 32-byte field in the deposit, for verifying the destination of valid withdrawals."
-  },
-  "+Doi8A": {
-    "message": "I'm able to connect my L16 Vanguard node to my Pandora client via HTTP API(s)."
   },
   "+UUcBt": {
     "message": "Choose a language"
@@ -41,10 +34,6 @@
   },
   "/5Hyyf": {
     "message": "Indonesian"
-  },
-  "/H5bJt": {
-    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
-    "message": "I've synced my L16 Vanguard node on {LUKSO_NETWORK_NAME}."
   },
   "/QPc9s": {
     "message": "You can signal your intent to stop validating by signing a voluntary exit message with your validator."
@@ -134,9 +123,6 @@
   "0uqjBl": {
     "message": "Earn continuous rewards for providing a public good to the community."
   },
-  "0zaPZK": {
-    "message": "You'll need a significant amount of space for the Pandora chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
-  },
   "122+yR": {
     "message": "withdrawal key"
   },
@@ -199,12 +185,6 @@
   "32rBNK": {
     "message": "Terms of Service"
   },
-  "3DtccQ": {
-    "message": "L16 Vanguard Node (VN)"
-  },
-  "3GPkk7": {
-    "message": "LUKSO L16 Testnet Launchpad"
-  },
   "3GbrWR": {
     "message": "Why do rewards depend on the total number of validators in the network?"
   },
@@ -248,6 +228,9 @@
   "4NvAhl": {
     "message": "Start by setting up your chosen hardware and operating system."
   },
+  "4h5++P": {
+    "message": "LUKSO L16 Beta Network Ephemeral Testnet Launchpad"
+  },
   "4hnEBA": {
     "message": "Has the smart contract code been verified?"
   },
@@ -278,6 +261,9 @@
   "5r8yCq": {
     "message": "L16 validator checklist"
   },
+  "5tp7XL": {
+    "message": "I'm able to connect my L16 Consensus node to my Execution client via HTTP API(s)."
+  },
   "5vfntO": {
     "message": "In case you are currently running a node already, please stop it with this command:"
   },
@@ -298,6 +284,9 @@
   },
   "6nh4de": {
     "message": "You're joining a network in its early stages. As with any new piece of software, there is the potential for software bugs. While unlikely, potential bugs may result in slashing."
+  },
+  "6ocrjN": {
+    "message": "LUKSO L16 Beta Network Launchpad"
   },
   "6zye8g": {
     "message": "An implementation of the Eth2 protocol with a focus on usability, security, and reliability. Prysm is developed by Prysmatic Labs, a company with the sole focus on the development of their client."
@@ -373,6 +362,9 @@
   "8sTrb4": {
     "message": "Your balance is updated periodically by the LUKSO network rules as you carry (or fail to carry) out your responsibilities."
   },
+  "8ujy92": {
+    "message": "The Consensus Chain had its genesis on {date}. It is growing in size over time, and the introduction of sharding will also increase storage, memory, and bandwidth requirements."
+  },
   "8wd0q5": {
     "message": "An Ethereum client designed to be enterprise-friendly for both public and private, permissioned network use cases."
   },
@@ -381,9 +373,6 @@
   },
   "9/4mZe": {
     "message": "Validating involves two keys for security reasons. Your signing key must be available at all times. As such, it will need to be held online. Since anything online is vulnerable to being hacked, it’s not a good idea to use the same key for withdrawals."
-  },
-  "90mSq7": {
-    "message": "Become a L16 testnet validator and help secure the future of LUKSO."
   },
   "96pen8": {
     "message": "Sharding will make more data available to the network by introducing 64 parallel chains. Each new chain will be able to handle at least as much data as mainnet today, probably more."
@@ -445,11 +434,11 @@
   "Anqi3n": {
     "message": "Become a validator with Lighthouse"
   },
+  "AoOEC/": {
+    "message": "You'll need a significant amount of space for the Execution chain data alone (For reference; as of {date}, Eth1 is ~400GB and growing at ~1GB/day)."
+  },
   "Aw1mMs": {
     "message": "Top up validator"
-  },
-  "AzR2Fq": {
-    "message": "I've simulated how to manually stop and restart my Vanguard Node (VN) and Validator Client (VC) gracefully."
   },
   "BCsPjJ": {
     "message": "Start deposit process"
@@ -514,6 +503,10 @@
   "DGHD9y": {
     "message": "Lighthouse has dedicated tooling to make the transfer from the Launchpad as easy as possible."
   },
+  "DIRZl3": {
+    "description": "{variables} are Consensus Chain block explorers, with links to each (do not translate names)",
+    "message": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using {beaconchain} blockchain explorers."
+  },
   "DKSrR+": {
     "message": "I understand that if I act contrary to the specification, I am liable to be slashed."
   },
@@ -543,9 +536,6 @@
   "EFjTSf": {
     "message": "Minor penalties are given for inadvertant actions (or inactions) that hinder consensus."
   },
-  "EOAJVt": {
-    "message": "Today, you'll secure LUKSO's Vanguard Consensus Chain. It's a new and separate chain that uses a proof-of-stake consensus mechanism."
-  },
   "EPCHZV": {
     "message": "If you lose your signing key, your validator can no longer propose or attest."
   },
@@ -560,9 +550,6 @@
   },
   "EbhGgA": {
     "message": "There was an error loading your validator information from Vanguard Explorer"
-  },
-  "EuhIal": {
-    "message": "Syncing your Pandora client may take a few days in the worst-case scenario."
   },
   "EvlAFB": {
     "description": "{network} is either 'LUKSO Mainnet' or 'LUKSO L16 Testnet'",
@@ -656,10 +643,6 @@
   "HfPABd": {
     "message": "At the other end of the spectrum, if your balance is closer to 31 {tickerName}, it’s probably not worth adding the extra {tickerName} required to get back to 32."
   },
-  "HgtwUH": {
-    "description": "{variables} are Beacon Chain block explorers, with links to each (do not translate names)",
-    "message": "You can use your validator client's graffiti flag to add a personal touch to your proposed blocks (some text of your choice). You will be able to see it using {beaconchain} blockchain explorers."
-  },
   "HoahTd": {
     "message": "If you do not supply a password, Nimbus will interactively ask for it on startup."
   },
@@ -686,9 +669,6 @@
   },
   "I5lWZA": {
     "message": "Can I change the withdrawal credentials of my validator after the first deposit?"
-  },
-  "IAflHw": {
-    "message": "I've installed and synced my Pandora node on {network} (do not wait on this as it can take a while)."
   },
   "IBLsVn": {
     "message": "An Eth2/Vanguard client with a heavy focus on speed and security. Built by Sigma Prime, an information security and software engineering firm who have funded Lighthouse along with the Ethereum Foundation, Consensys, and private individuals."
@@ -771,6 +751,9 @@
   "KVWEwB": {
     "message": "L16 Faucet"
   },
+  "KVbAYO": {
+    "message": "Syncing your Execution client may take a few days in the worst-case scenario."
+  },
   "KjcAm2": {
     "message": "Rewards and penalties are issued roughly every six and a half minutes – a period of time known as an epoch."
   },
@@ -789,6 +772,9 @@
   },
   "L8jrV5": {
     "message": "reload your wallet"
+  },
+  "LUqjnF": {
+    "message": "Incase Execution runs on another machine, please substitute '127.0.0.1' with the specific IP of your Execution node."
   },
   "LVy+cS": {
     "message": "Check with client documentation to ensure the hardware you want to use is sufficient and supported."
@@ -850,6 +836,9 @@
   "MmZjeu": {
     "message": "Top-up details"
   },
+  "Mz7RJT": {
+    "message": "Today, you'll secure LUKSO's Consensus Chain. It's a new and separate chain that uses a proof-of-stake consensus mechanism."
+  },
   "N0rwnt": {
     "message": "{depositFileName} isn't a valid deposit_data JSON file. Try again."
   },
@@ -897,9 +886,6 @@
   },
   "OdYQYh": {
     "message": "More on ConsenSys"
-  },
-  "OgAuMb": {
-    "message": "Incase Pandora runs on another machine, please substitute '127.0.0.1' with the specific IP of your Pandora node."
   },
   "OsO8ik": {
     "message": "I am technically capable of setting up and running a validator."
@@ -1040,8 +1026,14 @@
   "Seanpx": {
     "message": "Required"
   },
+  "Sj3hON": {
+    "message": "Become a L16 Beta Network validator and help secure the future of LUKSO."
+  },
   "Szwbym": {
     "message": "wrench"
+  },
+  "TAWKUS": {
+    "message": "To process incoming validator deposits from the Execution chain, you'll need to run a Execution client as well as your Consensus client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
   },
   "TMw9oz": {
     "message": "Visit this site on desktop to become a validator."
@@ -1132,9 +1124,6 @@
   "WDGUmd": {
     "message": "You can think of the deposit contract as a transfer of funds between LUKSO accounts and L16 validators."
   },
-  "WDszx6": {
-    "message": "To process incoming validator deposits from the Pandora chain, you'll need to run a Pandora client as well as your Vanguard client. You can use a third-party service like Infura, but we recommend running your own client to keep the network as decentralised as possible."
-  },
   "WMLn/w": {
     "message": "{totalTxCount} validators"
   },
@@ -1163,11 +1152,18 @@
     "description": "{filesPattern} refers to a computer command which will find {keyFile} and\n                {passwordFile} - both files within a computer.",
     "message": "{filesPattern} will expect that the {keyFile} exists, and the file containing the password for it is {passwordFile}."
   },
+  "Xf3Sea": {
+    "description": "This phrase is a sentence ",
+    "message": "LUKSO L16 Beta Network Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
+  },
   "Y47aYU": {
     "message": "Top up"
   },
   "Y4OdcM": {
     "message": "The first LUKSO testnet brings a series of upgrades that makes things easier, more scaleable, secure, and sustainable. LUKSO aims to change the way you think about, use and interact with the blockchain, dApps, NFTs, wallets, both as a user, and as a developer. More on how we do that:"
+  },
+  "Y4VUA8": {
+    "message": "Configure your Execution Client"
   },
   "Y8YLHs": {
     "message": "If your signing key is not under the thief’s control, the thief cannot exit your validator."
@@ -1388,6 +1384,9 @@
   "f/N7FO": {
     "message": "What happens if I lose my signing key?"
   },
+  "fABDHY": {
+    "message": "I've simulated how to manually stop and restart my Consensus Node (CN) and Validator Client (VC) gracefully."
+  },
   "fQ5yno": {
     "message": "Arabic"
   },
@@ -1406,9 +1405,6 @@
   },
   "frGVRP": {
     "message": "impact of effective balance"
-  },
-  "fw/omY": {
-    "message": "Configure your Pandora Client"
   },
   "g0zIUd": {
     "message": "cannot withdraw"
@@ -1516,6 +1512,10 @@
   "iv88b5": {
     "message": "Send all {totalTxCount} deposits"
   },
+  "j/4NH9": {
+    "description": "{LUKSO_NETWORK_NAME} is name of network, do not translate",
+    "message": "I've synced my L16 Consensus node on {LUKSO_NETWORK_NAME}."
+  },
   "j81rpi": {
     "message": "Dig deeper into how LUKSO moves towards Mainnet."
   },
@@ -1550,6 +1550,9 @@
     "description": "Warns users to not run backup validators that have a live copy of their signing keys. Keys should only be on one validator machine at once.",
     "message": "Warning: Do not store keys on multiple (backup) validators at once"
   },
+  "jp+4mI": {
+    "message": "L16 Consensus Node (CN)"
+  },
   "jse8rl": {
     "message": "How great does my uptime need to be for my validator to be net profitable?"
   },
@@ -1558,6 +1561,9 @@
   },
   "jytPQU": {
     "message": "Nimbus documentation"
+  },
+  "k7Ch7w": {
+    "message": "Moreover, you can set your Validator Client (VC) and Consensus Node (BN) on separate machines and IPs so that even if your Consensus node is vulnerable, your keystore is stored on a different machine."
   },
   "kFS5Sd": {
     "message": "Deposit contract formally verified"
@@ -1687,9 +1693,6 @@
   },
   "o9QvTP": {
     "message": "Before you start"
-  },
-  "oV6oX8": {
-    "message": "LUKSO L16 Ephemeral Testnet Launchpad"
   },
   "oWhj8Q": {
     "message": "How often are rewards/penalties issued?"
@@ -1914,9 +1917,6 @@
   "uprpgn": {
     "message": "This launchpad will help you become a validator, so you can play an active part in LUKSO's future. Validators are key to the more secure, scalable, and sustainable network we're building together."
   },
-  "v1hazw": {
-    "message": "Moreover, you can set your Validator Client (VC) and Vanguard Node (VN) on separate machines and IPs so that even if your Vanguard node is vulnerable, your keystore is stored on a different machine."
-  },
   "v2/6AL": {
     "message": "I understand that I need to deposit {PRICE_PER_VALIDATOR} {TICKER_NAME} to become a validator, and that the transfer of {TICKER_NAME} to the Vanguard Consensus Chain is one-way, and non-reversible."
   },
@@ -1928,9 +1928,6 @@
   },
   "vJez0K": {
     "message": "Proceed with caution. Our on-chain data source is down and we are unable to flag any double deposits."
-  },
-  "vNopl9": {
-    "message": "The Vanguard Chain had its genesis on {date}. It is growing in size over time, and the introduction of sharding will also increase storage, memory, and bandwidth requirements."
   },
   "vY2wig": {
     "message": "Loading error"
@@ -1974,6 +1971,9 @@
   },
   "wmwEws": {
     "message": "LUKSO Clients"
+  },
+  "wqGDIB": {
+    "message": "I've installed and synced my Execution node on {network} (do not wait on this as it can take a while)."
   },
   "wqUcy/": {
     "message": "Early adopter risks"
