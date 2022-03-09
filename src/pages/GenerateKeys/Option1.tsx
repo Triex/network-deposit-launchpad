@@ -18,12 +18,13 @@ export const Option1 = () => {
         <Alert variant="secondary" className="my10">
           <Pre className="my10">
             <span style={{ color: colors.red.medium }}>
-              # Linux
-              <br />$ lukso keygen
+              <br />$ make mnemonic
               <br />
               <br />
-              # MacOS
-              <br />$ sudo lukso keygen
+              <br />$ make create-deposit
+              <br />
+              <br />
+              <br /> make create-wallet
             </span>
           </Pre>
         </Alert>

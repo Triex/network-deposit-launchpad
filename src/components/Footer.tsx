@@ -72,7 +72,7 @@ export const Footer = () => {
       <FooterStyles className="pb30">
         <div className="col">
           <Heading level={4}>
-            <FormattedMessage defaultMessage="LUKSO L16 Testnet Launchpad" />
+            <FormattedMessage defaultMessage="LUKSO L16 Beta Network Launchpad" />
           </Heading>
           <Link to={routesEnum.acknowledgementPage}>
             <FormattedMessage defaultMessage="Deposit" />

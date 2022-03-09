@@ -51,7 +51,7 @@ export const NotFoundPage = (): JSX.Element => {
         <LogoContainer>
           <LuksoLogo src={LuksoLogoPng} />
           <LogoText className="mt20" center size="large">
-            LUKSO L16 Testnet Launchpad
+            LUKSO L16 BETA Network Launchpad
           </LogoText>
         </LogoContainer>
         <Text center className="mt20">
