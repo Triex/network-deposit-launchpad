@@ -93,7 +93,7 @@ export const Introduction = (): JSX.Element => {
             </Text>
             <Text className="mt20">
               <FormattedMessage
-                defaultMessage="Today, you'll secure LUKSO's Vanguard Consensus Chain.
+                defaultMessage="Today, you'll secure LUKSO's Beacon Consensus Chain.
                   It's a new and separate chain that uses a proof-of-stake consensus
                   mechanism."
               />

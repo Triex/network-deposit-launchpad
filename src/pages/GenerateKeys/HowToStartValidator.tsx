@@ -19,13 +19,11 @@ export const HowToStartValidator = () => {
           <Pre className="my10">
             <span style={{ color: colors.red.medium }}>
               # Linux
-              <br />$ lukso start --validate --node-name
-              "REPLACE-WITH-NODE-NAME" --coinbase YOUR_ETH1_ADDRESS
+              <br />$ make start
               <br />
               <br />
               # MacOS
-              <br />$ sudo lukso start --validate --node-name
-              "REPLACE-WITH-NODE-NAME" --coinbase YOUR_ETH1_ADDRESS
+              <br />$ make start-validator
             </span>
           </Pre>
         </Alert>
