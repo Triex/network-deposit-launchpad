@@ -33,12 +33,7 @@ const SelectClientSection = ({
       <FormattedMessage defaultMessage="In case you are currently running a node already, please stop it with this command:" />
       <Pre className="my10">
         <span style={{ color: colors.red.medium }}>
-          # Linux
-          <br />$ lukso stop
-          <br />
-          <br />
-          # MacOS
-          <br />$ sudo lukso stop
+          <br />$ make stop
         </span>
       </Pre>
     </Alert>
@@ -52,12 +47,11 @@ const SelectClientSection = ({
             <Alert variant="secondary" className="my10">
               <Pre className="my10">
                 <span style={{ color: colors.red.medium }}>
-                  # Linux
-                  <br />$ curl https://install.l16.lukso.network | bash
+                  <br />$ mkdir lukso-l16-testnet && cd lukso-l16-testnet
+                  <br />$ curl
+                  https://raw.githubusercontent.com/lukso-network/network-configs/l16-dev/l16/network_setup_kit/install.sh
+                  | bash
                   <br />
-                  <br />
-                  # MacOS
-                  <br />$ sudo curl https://install.l16.lukso.network | bash
                 </span>
               </Pre>
             </Alert>

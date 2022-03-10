@@ -24,7 +24,7 @@ export const Option1 = () => {
               <br />$ make create-deposit
               <br />
               <br />
-              <br /> make create-wallet
+              <br />$ make create-wallet
             </span>
           </Pre>
         </Alert>
